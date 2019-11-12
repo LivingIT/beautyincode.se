@@ -28,8 +28,8 @@
    * Header layout
    */
   #header {
-    background: #453527;
-    color: #fff;
+    background: hsl(29, 91%, 57%);
+    color: hsl(0, 0%, 100%);
     padding: 1rem;
   }
 
@@ -96,8 +96,8 @@
 
   #skip a:focus,
   #skip a:active {
-    background: #444;
-    color: #fff;
+    background: hsl(0, 0%, 27%);
+    color: hsl(0, 0%, 100%);
     display: block;
     font-weight: bold;
     left: 9999px;
