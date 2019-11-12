@@ -1,6 +1,6 @@
 # Site settings
 title: 'Beauty In Code | 2019'
-baseurl: ''
+baseurl: '/beautyincode.se/'
 url: 'https://beautyincode.se'
 permalink: 'pretty'
 
