@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  {% include head.html %}
+</head>
+<body{% if page.layout_class %} class="{{ page.layout_class }}"{% endif %}>
+
+  {% include header.html %}
+
+  <main id="main-content">
+
+    <div class="landmark-content">
+      {{ content }}
+    </div>
+
+  </main>
+
+  {% include footer.html %}
+
+  {% for js in site.static_files %}
+    {% if js.path contains "gui/js" %}
+      <script src="{{ site.baseurl }}{{ js.path }}" defer></script>
+    {% endif %}
+  {% endfor %}
+  {% include sprite.svg %}
+</body>
+</html>
