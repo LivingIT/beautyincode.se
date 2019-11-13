@@ -51,9 +51,9 @@
 
   .logo .icon {
     display: block;
-    --width: calc(7em + 13vw);
-    height: calc(var(--width) / 4.5);
-    width: var(--width);
+    --size: 7em;
+    height: var(--size);
+    width: var(--size);
   }
 
   /**
