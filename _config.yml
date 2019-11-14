@@ -1,11 +1,11 @@
 # Site settings
-title: 'Beauty In Code | 2019'
+title: 'Beauty In Code | 2020'
 baseurl: ''
 url: 'https://beautyincode.se'
 permalink: 'pretty'
 
 # Google Analytics tracking code
-analytics: 'UA-XXXXXXXX-X'
+analytics: 'UA-113788547-1'
 
 # Jekyll plugins
 plugins:
@@ -30,3 +30,5 @@ exclude:
   - 'svg-sprite.config.json'
   - 'vendor'
   - 'yarn.lock'
+  - 'Dockerfile'
+  - 'docker-compose.yml'
