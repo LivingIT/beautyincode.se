@@ -18,7 +18,7 @@
   {% include footer.html %}
 
   {% for js in site.static_files %}
-    {% if js.path contains "gui/js" %}
+    {% if js.path contains "js" %}
       <script src="{{ site.baseurl }}{{ js.path }}" defer></script>
     {% endif %}
   {% endfor %}

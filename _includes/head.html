@@ -5,7 +5,7 @@
 
 <!-- Styleshet -->
 {% for css in site.static_files %}
-  {% if css.path contains "gui/css" %}
+  {% if css.path contains "/css" %}
     <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}">
   {% endif %}
 {% endfor %}
