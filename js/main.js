@@ -20,52 +20,48 @@ if (didCutTheMustard) {
   /**
    * Countdown timer
    */
-  (function () {
-
+  function countdown(endDate) {
     const countDownElem = document.querySelector('#countdown');
 
     if (!countDownElem) return;
 
-    function getTimeRemaining(endtime) {
-      var t = Date.parse(endtime) - Date.parse(new Date());
-      var seconds = Math.floor((t / 1000) % 60);
-      var minutes = Math.floor((t / 1000 / 60) % 60);
-      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-      return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-      };
+    let days, hours, minutes, seconds;
+
+    endDate = new Date(endDate).getTime();
+
+    if (isNaN(endDate)) {
+      return;
     }
 
-    function initializeClock(countDownElem, endtime) {
-      var daysSpan = countDownElem.querySelector('.days');
-      var hoursSpan = countDownElem.querySelector('.hours');
-      var minutesSpan = countDownElem.querySelector('.minutes');
-      var secondsSpan = countDownElem.querySelector('.seconds');
+    setInterval(calculate, 1000);
 
-      function updateClock() {
-        var t = getTimeRemaining(endtime);
+    function calculate() {
+      let startDate = new Date().getTime();
 
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      let timeRemaining = parseInt((endDate - startDate) / 1000);
 
-        if (t.total <= 0) {
-          clearInterval(timeinterval);
-        }
+      if (timeRemaining >= 0) {
+        days = parseInt(timeRemaining / 86400);
+        timeRemaining = (timeRemaining % 86400);
+
+        hours = parseInt(timeRemaining / 3600);
+        timeRemaining = (timeRemaining % 3600);
+
+        minutes = parseInt(timeRemaining / 60);
+        timeRemaining = (timeRemaining % 60);
+
+        seconds = parseInt(timeRemaining);
+
+        countDownElem.querySelector('.days').innerHTML = parseInt(days, 10);
+        countDownElem.querySelector('.hours').innerHTML = hours < 10 ? "0" + hours : hours;
+        countDownElem.querySelector('.minutes').innerHTML = minutes < 10 ? "0" + minutes : minutes;
+        countDownElem.querySelector('.seconds').innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      } else {
+        return;
       }
-
-      updateClock();
-      var timeinterval = setInterval(updateClock, 1000);
     }
+  }
 
-    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-
-    initializeClock(countDownElem, deadline);
-  })();
+  // Start the countdown
+  countdown('2020/03/07 08:15:00');
 }
