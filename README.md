@@ -14,7 +14,7 @@ $ docker-compose up
 
 ## 🛠 Workflow
 
-_This repo is automatically deployed from the `master` branch. Do not commit directly to `master` unless you know what you are doing!_
+_This repo is automatically deployed from the `master` branch. **Do not commit directly to `master` unless you know what you are doing!**_
 
 Since Github auto-deploys from `master`, we're employing a simplified version version of Git Flow, where development is henceforth being done only on `develop`. When any feature is ready for deployment, make a pull request, make sure any tests pass (WIP) and merge.
 
