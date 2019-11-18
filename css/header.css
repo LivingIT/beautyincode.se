@@ -1,0 +1,24 @@
+/**
+ * Header
+ */
+
+@media screen {
+
+  /**
+   * Layout
+   */
+  #header {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+  }
+
+  @supports (position: -webkit-sticky) or (position: sticky) {
+
+    #header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+  }
+}
