@@ -5,33 +5,15 @@
 @media screen {
 
   body {
-    min-height: 100vh;
-  }
-
-  body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    min-height: 110vh;
+    display: grid;
+    grid-template-rows:
+      [main-start] auto
+      [content-start] 1fr
+      [footer-start] auto
+      [main-end];
     background: url("/images/malmo-live.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
-    filter: brightness(100%);
-  }
-
-  body > * {
-    position: relative;
-  }
-
-  /**
-   * Main layout
-   */
-  #header,
-  main,
-  #footer {
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   /**

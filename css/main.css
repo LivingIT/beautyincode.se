@@ -21,33 +21,6 @@
   }
 
   /**
-   * Main navigation
-   */
-  #main-nav {
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #main-nav li {
-    display: inline-block;
-    flex: 0 0 auto;
-  }
-
-  #main-nav li + li {
-    margin-top: 0;
-  }
-
-  #main-nav li a {
-    display: block;
-    padding: 0.25em 0 0.25em 1em;
-    text-decoration: none;
-  }
-
-  /**
    * CTA (Call to action)
    */
   .cta {
@@ -85,14 +58,5 @@
     text-align: center;
     top: 0;
     width: 100%;
-  }
-
-  /**
-   * Footer
-   */
-  #footer {
-    background-color: hsl(0, 0%, 15%);
-    color: hsl(0, 0%, 100%);
-    padding-bottom: 2em;
   }
 }
