@@ -1,0 +1,39 @@
+/**
+ * Schedule
+ */
+
+@media screen {
+
+  .schedule__item {
+    display: grid;
+    grid-template-columns:
+      [timeslot] 8rem
+      [derp] 2rem
+      [image] 10rem
+      [content] 1fr
+      [main-end];
+  }
+
+  .schedule__item > * {
+    margin-top: 0;
+  }
+
+  .schedule__item-timeslot {
+    grid-column: timeslot / derp;
+  }
+
+  .schedule__item-image {
+    grid-column: derp / content;
+    grid-row: 1;
+  }
+
+  .schedule__item-image img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .schedule__item-content {
+    grid-column: content / main-end;
+  }
+}

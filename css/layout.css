@@ -12,8 +12,16 @@
       [content-start] 1fr
       [footer-start] auto
       [main-end];
-    background: url("/images/malmo-live.jpg") no-repeat fixed 50% 50%;
+    background: url("/images/malmo-live-night.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
+  }
+
+  /**
+   * Content block
+   */
+  .content-block {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
   }
 
   /**

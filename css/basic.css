@@ -251,7 +251,7 @@
   /**
    * Visually hidden (still visible to AT:s)
    */
-  .offscreen {
+  .at-only {
     height: 1px;
     left: -10000px;
     overflow: hidden;
@@ -259,5 +259,4 @@
     top: auto;
     width: 1px;
   }
-
 }
