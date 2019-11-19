@@ -8,7 +8,10 @@
   name: "GeePaw Hill"
   title: ""
   image: ""
-  description: ""
+  description: |
+    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+
+    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 -
   timeslot: "09:45 - 10:15"
   name: "Fika"
@@ -19,13 +22,19 @@
   name: "Nyari Samushonga"
   title: ""
   image: ""
-  description: ""
+  description: |
+    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+
+    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 -
   timeslot: "11:15 - 12:00"
   name: "Brian Rasmussen"
   title: ""
   image: ""
-  description: ""
+  description: |
+    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+
+    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 -
   timeslot: "12:00 - 13:00"
   name: "Lunch"
@@ -45,7 +54,10 @@
   name: "Aslam Khan"
   title: ""
   image: ""
-  description: ""
+  description: |
+    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+
+    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 -
   timeslot: "14:45 - 15:15"
   name: "Coffee"
@@ -56,4 +68,7 @@
   name: "Alistair Cockburn"
   title: ""
   image: ""
-  description: ""
+  description: |
+    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+
+    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
