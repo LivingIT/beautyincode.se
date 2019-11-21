@@ -29,8 +29,6 @@
 
   .schedule__item-image img {
     display: block;
-    border-radius: 50%;
-    object-fit: cover;
   }
 
   .schedule__item-content {

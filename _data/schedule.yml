@@ -6,7 +6,7 @@
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
   title: ""
-  image: ""
+  image: "/images/geepaw-hill.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
 
@@ -66,7 +66,7 @@
 - timeslot: "15:15 - 16:00"
   name: "Alistair Cockburn"
   title: ""
-  image: ""
+  image: "/images/alistair-cockburn.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
 
