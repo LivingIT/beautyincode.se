@@ -1,1 +1,1 @@
-**Beauty in Code** is back, better than ever! Something something on March 7, 2020. Schedule and speakers coming soon!
+**Beauty in Code** is back, better than ever! We open the doors on March 7, 2020. Schedule and speakers coming soon!
