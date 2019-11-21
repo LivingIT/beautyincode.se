@@ -29,7 +29,7 @@
 - timeslot: "11:15 - 12:00"
   name: "Brian Rasmussen"
   title: ""
-  image: ""
+  image: "/images/brian-rasmussen.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
 
