@@ -9,7 +9,7 @@
     grid-template-columns:
       [timeslot] 8rem
       [derp] 2rem
-      [image] 10rem
+      [image] 8rem
       [content] 1fr
       [main-end];
   }
@@ -20,11 +20,21 @@
 
   .schedule__item-timeslot {
     grid-column: timeslot / derp;
+    align-self: center;
+  }
+
+  .schedule__item-timeslot span {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0.1em 0.2em;
   }
 
   .schedule__item-image {
     grid-column: derp / content;
     grid-row: 1;
+    padding: 0 1rem;
   }
 
   .schedule__item-image img {
@@ -33,5 +43,19 @@
 
   .schedule__item-content {
     grid-column: content / main-end;
+  }
+
+  .heading-name {
+    font-size: 1em;
+  }
+
+  .heading-title {
+    color: hsl(29, 91%, 57%);
+    display: block;
+    margin: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
   }
 }
