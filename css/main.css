@@ -32,6 +32,13 @@
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
+    border-radius: 0.3em;
+  }
+
+  .cta:hover,
+  .cta:focus,
+  .cta:active {
+    color: hsl(0, 0%, 100%);
   }
 
   /**

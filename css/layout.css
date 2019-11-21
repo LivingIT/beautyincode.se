@@ -6,14 +6,14 @@
 
   body {
     min-height: 100vh;
-    display: grid;
-    grid-template-rows:
-      [main-start] auto
-      [content-start] 1fr
-      [footer-start] auto
-      [main-end];
+    display: flex;
+    align-items: center;
     background: url("/images/malmo-live-night.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
+  }
+
+  body > * {
+    flex: 1 1 auto;
   }
 
   /**

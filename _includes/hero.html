@@ -6,8 +6,8 @@
   </div>
 
   <div class="hero__message">
-    <p>The one-day IT conference <strong>Beauty in Code</strong> is back again
-      with an interesting mix of stars from near and far!</p>
+    {% capture hero %}{% include content/hero.md %}{% endcapture %}
+    {{ hero | markdownify }}
     {% include cta.html text="Register now" url="#" %}
   </div>
 

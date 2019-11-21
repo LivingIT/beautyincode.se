@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (min-width: 32em) {
+@media screen and (min-width: 36em) {
 
   .hero {
     background-color: transparent;
@@ -28,12 +28,12 @@
     grid-template-columns:
       [main-start] 1fr
       [logo-start] 18rem
-      [message-start] 24rem
+      [message-start] minmax(10rem, 24rem)
       [message-end] 1fr
       [main-end];
     grid-template-rows:
       [main-start] 3rem
-      [content-start] 12rem
+      [content-start] max-content
       [content-end] 3rem
       [main-end];
     grid-gap: 0 1rem;
