@@ -13,13 +13,20 @@
     padding: 1rem;
   }
 
-  @supports (position: -webkit-sticky) or (position: sticky) {
+  .header__landmark {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1;
+  }
 
-    #header {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__logo .icon {
+    --logo-size: 4rem;
+    height: var(--logo-size);
+    width: var(--logo-size);
   }
 }

@@ -259,4 +259,15 @@
     top: auto;
     width: 1px;
   }
+
+  /**
+   * SVG icons
+   */
+  .icon {
+    display: inline-block;
+    fill: currentcolor;
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: -0.2em;
+  }
 }

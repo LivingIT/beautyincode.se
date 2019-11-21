@@ -9,60 +9,11 @@
   }
 
   .hero__message {
-    background-color: hsl(0, 0%, 100%);
     padding: 1rem;
   }
 
   .hero__logo .icon {
     height: 7rem;
     width: 7rem;
-  }
-}
-
-@media screen and (min-width: 32em) {
-
-  .hero {
-    background-color: transparent;
-    padding: unset;
-    display: grid;
-    grid-template-columns:
-      [main-start] 1fr
-      [logo-start] 18rem
-      [message-start] 24rem
-      [message-end] 1fr
-      [main-end];
-    grid-template-rows:
-      [main-start] 3rem
-      [content-start] 12rem
-      [content-end] 3rem
-      [main-end];
-    grid-gap: 0 1rem;
-  }
-
-  .hero > * {
-    margin-top: 0;
-  }
-
-  .hero::before {
-    content: "";
-    background-color: hsl(0, 0%, 100%);
-    grid-row: content-start / content-end;
-    grid-column: main-start / main-end;
-  }
-
-  .hero__logo {
-    grid-column: logo-start / message-start;
-    grid-row: main-start / main-end;
-  }
-
-  .hero__logo .icon {
-    height: 100%;
-    width: 100%;
-  }
-
-  .hero__message {
-    grid-column: message-start / message-end;
-    grid-row: content-start / content-end;
-    padding: 1rem;
   }
 }

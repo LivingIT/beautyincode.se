@@ -2,7 +2,24 @@
 
   <div class="landmark-content">
 
-    <p>Footer things here</p>
+    <h2 class="at-only">{{ site.title }} in social media</h2>
+
+    <ul class="footer-links">
+      {% for item in site.data.footer-links %}
+      <li>
+        <a href="{{ item.url }}">
+          {% include svg.html icon=item.icon %}
+          <span class="at-only">{{ item.label }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="at-only">Presented by</h2>
+
+    <a href="https://livingit.se" class="founder-logo">
+      {% include svg.html icon="livingit" %}
+    </a>
 
   </div>
 

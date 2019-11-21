@@ -8,8 +8,8 @@
    * Table of contents
    */
   .toc {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .toc__item + .toc__item {

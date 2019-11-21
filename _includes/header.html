@@ -1,6 +1,11 @@
 <header id="header">
 
-  <div class="landmark-content">
+  <div class="landmark-content header__landmark">
+
+    <div class="header__logo">
+      <h1 class="at-only">{{ site.title }}</h1>
+      {% include svg.html icon="logo" %}
+    </div>
 
     <ul class="toc">
       <li class="toc__item"><a href="#speakers">Speakers</a></li>
