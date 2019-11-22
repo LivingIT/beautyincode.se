@@ -8,7 +8,7 @@
     "start": "concurrently 'yarn run watch' 'yarn run jekyll:serve'",
     "prebuild": "yarn run dist:clean",
     "watch": "onchange ./src/svg/* -i -- yarn run svg",
-    "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
+    "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes svg/*.svg",
     "jekyll:serve": "sleep 1; jekyll serve --incremental",
     "jekyll:build": "jekyll build --incremental"
   },

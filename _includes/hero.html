@@ -1,0 +1,14 @@
+<div class="hero">
+
+  <div class="hero__logo">
+    <h1 class="at-only">{{ site.title }}</h1>
+    {% include svg.html icon="logo" %}
+  </div>
+
+  <div class="hero__message">
+    {% capture hero %}{% include content/hero.md %}{% endcapture %}
+    {{ hero | markdownify }}
+    {% include cta.html text="Register now" url="#" %}
+  </div>
+
+</div>
