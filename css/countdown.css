@@ -11,7 +11,7 @@
     color: hsl(0, 0%, 100%);
     line-height: 1;
     padding: 1rem 0.5rem;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    text-shadow: 0 0 1px hsla(0, 0%, 0%, 0.9);
   }
 
   .countdown > * {

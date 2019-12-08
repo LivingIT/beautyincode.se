@@ -19,6 +19,13 @@
     margin: 0 auto;
     max-width: 40rem;
   }
+  
+  /**
+   * Main
+   */
+  main {
+    margin-top: 0;
+  }
 
   /**
    * Footer
