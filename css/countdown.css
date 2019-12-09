@@ -8,10 +8,8 @@
     display: none;
     font-size: calc(1.4em + 3vw);
     font-weight: 500;
-    color: hsl(0, 0%, 100%);
     line-height: 1;
     padding: 1rem 0.5rem;
-    text-shadow: 0 0 1px hsla(0, 0%, 0%, 0.9);
   }
 
   .countdown > * {
