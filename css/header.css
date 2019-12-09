@@ -8,16 +8,22 @@
    * Layout
    */
   #header {
-    background-color: hsl(0, 0%, 8%);
+    background-image: url("/images/nyari.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
     color: hsl(0, 0%, 100%);
-    padding: 1rem;
   }
 
   .header__landmark {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    padding: 1rem;
+  }
+
+  .header__nav {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    line-height: 1;
   }
 
   .header__logo {
