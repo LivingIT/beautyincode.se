@@ -4,6 +4,10 @@
 
 @media screen {
 
+  .schedule__item + .schedule__item {
+    margin-top: 2em;
+  }
+
   .schedule__item-timeslot span {
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
@@ -21,7 +25,6 @@
   }
 
   .heading-title {
-    color: hsl(29, 91%, 57%);
     display: block;
     margin: 0;
     margin-top: 0;

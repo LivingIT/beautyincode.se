@@ -12,6 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
+    background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
   }
 

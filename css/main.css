@@ -7,30 +7,16 @@
 @media screen {
 
   /**
-   * Logo
-   */
-  .logo {
-    margin-top: 0;
-  }
-
-  .logo .icon {
-    display: block;
-    --size: 7em;
-    height: var(--size);
-    width: var(--size);
-  }
-
-  /**
    * CTA (Call to action)
    */
   .cta {
     display: inline-block;
-    background-color: hsl(29, 91%, 57%);
+    background-color: hsl(346, 86%, 39%);
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     padding: 0.4em 0.8em;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 700;
     text-transform: uppercase;
     text-shadow: none;
   }
