@@ -36,7 +36,7 @@
 
   /* Content block heading */
   .content-block h2 {
-    font-size: 2.4em;
+    font-size: 2em;
   }
 
   /**
@@ -78,5 +78,21 @@
     text-align: center;
     top: 0;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 32em) {
+
+  /**
+   * Figure + text
+   */
+  .figure-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+  }
+
+  .figure-text > * {
+    margin-top: 0;
   }
 }

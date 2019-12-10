@@ -21,5 +21,6 @@
 
   .hero__time-date {
     font-size: calc(1em + 1vw);
+    font-weight: bold;
   }
 }
