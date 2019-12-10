@@ -7,6 +7,39 @@
 @media screen {
 
   /**
+   * Content block
+   */
+  .content-block {
+    background-color: hsl(0, 0%, 100%);
+    padding: 4rem 1rem;
+  }
+
+  .content-block + .content-block {
+    margin-top: 0;
+  }
+
+  /* Themes */
+  .content-block.theme-1 {
+    background-color: hsl(346, 86%, 39%);
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .content-block.theme-2 {
+    background-color: hsl(153, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .content-block.theme-3 {
+    background-color: hsl(215, 47%, 21%);
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  /* Content block heading */
+  .content-block h2 {
+    font-size: 2.4em;
+  }
+
+  /**
    * CTA (Call to action)
    */
   .cta {
