@@ -23,6 +23,10 @@
     margin-left: 0.5em;
   }
 
+  .footer-links a {
+    display: block;
+  }
+
   .footer-links .icon {
     height: 2em;
     width: 2em;
