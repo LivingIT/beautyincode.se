@@ -5,7 +5,7 @@
 
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
-  title: ""
+  title: "Put title here"
   image: "/images/geepaw-hill.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -19,7 +19,7 @@
 
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
-  title: ""
+  title: "Put title here"
   image: ""
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -28,7 +28,7 @@
 
 - timeslot: "11:15 - 12:00"
   name: "Brian Rasmussen"
-  title: ""
+  title: "Put title here"
   image: "/images/brian-rasmussen.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -51,7 +51,7 @@
 
 - timeslot: "14:00 - 14:45"
   name: "Aslam Khan"
-  title: ""
+  title: "Put title here"
   image: ""
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -65,7 +65,7 @@
 
 - timeslot: "15:15 - 16:00"
   name: "Alistair Cockburn"
-  title: ""
+  title: "Put title here"
   image: "/images/alistair-cockburn.jpg"
   description: |
     You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
