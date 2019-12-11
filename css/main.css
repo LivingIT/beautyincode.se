@@ -21,17 +21,17 @@
   /* Themes */
   .content-block.theme-1 {
     background-color: hsl(346, 86%, 39%);
-    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.8);
   }
 
   .content-block.theme-2 {
     background-color: hsl(153, 100%, 13%);
-    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.8);
   }
 
   .content-block.theme-3 {
     background-color: hsl(215, 47%, 21%);
-    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.8);
   }
 
   /* Content block heading */
@@ -90,6 +90,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2em;
+  }
+
+  .figure-text figure img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .figure-text > * {
