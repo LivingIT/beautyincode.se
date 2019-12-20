@@ -35,4 +35,35 @@
     height: var(--logo-size);
     width: var(--logo-size);
   }
+
+  /**
+   * Table of contents
+   */
+  .toc {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc__item + .toc__item {
+    margin-left: 1em;
+  }
+
+  .toc__item a {
+    text-decoration: none;
+  }
+
+  .toc__item a:hover,
+  .toc__item a:active {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 22em) {
+
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
