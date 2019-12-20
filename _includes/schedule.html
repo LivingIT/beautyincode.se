@@ -6,8 +6,8 @@
     </div>
     <div class="schedule__item-content">
       <h3>
-        <span class="heading-name">{{ item.name }}</span>
-        <span class="heading-title">{{ item.title }}</span>
+        {% if item.name %}<span class="heading-name">{{ item.name }}</span>{% endif %}
+        {% if item.title %}<span class="heading-title">{{ item.title }}</span>{% endif %}
       </h3>
       {% if item.description %}
       <div class="schedule__item-description">
