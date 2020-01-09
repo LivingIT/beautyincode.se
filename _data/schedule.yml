@@ -18,7 +18,7 @@
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
   title: ""
-  image: ""
+  image: "/images/nyari.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
   #
@@ -49,7 +49,7 @@
 - timeslot: "14:00 - 14:45"
   name: "Aslam Khan"
   title: ""
-  image: ""
+  image: "/images/aslam.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
   #
