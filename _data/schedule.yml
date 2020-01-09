@@ -4,12 +4,12 @@
 
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
-  title: "Put title here"
+  title: ""
   image: "/images/geepaw-hill.jpg"
-  description: |
-    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-
-    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 
 - timeslot: "09:45 - 10:15"
   name: "Fika"
@@ -17,21 +17,21 @@
 
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
-  title: "Put title here"
+  title: ""
   image: ""
-  description: |
-    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-
-    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 
 - timeslot: "11:15 - 12:00"
   name: "Brian Rasmussen"
-  title: "Put title here"
+  title: ""
   image: "/images/brian-rasmussen.jpg"
-  description: |
-    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-
-    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 
 - timeslot: "12:00 - 13:00"
   name: "Lunch"
@@ -48,12 +48,12 @@
 
 - timeslot: "14:00 - 14:45"
   name: "Aslam Khan"
-  title: "Put title here"
+  title: ""
   image: ""
-  description: |
-    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-
-    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 
 - timeslot: "14:45 - 15:15"
   name: "Coffee"
@@ -61,9 +61,9 @@
 
 - timeslot: "15:15 - 16:00"
   name: "Alistair Cockburn"
-  title: "Put title here"
+  title: ""
   image: "/images/alistair-cockburn.jpg"
-  description: |
-    You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-
-    Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
