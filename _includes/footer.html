@@ -1,8 +1,30 @@
 <footer id="footer">
 
-  <div class="landmark-content">
+  <div class="landmark-content" id="contact">
 
-    <p>Footer things here</p>
+    <div class="colophon">
+      <p>The name <strong>Beauty in Code</strong> is inspired by a chapter in Adam Tornhill's book Your Code As A Crime Scene</p>
+    </div>
+
+    <h2 class="at-only">Contact us</h2>
+
+    <ul class="footer-links">
+      {% for item in site.data.footer-links %}
+      <li>
+        <a href="{{ item.url }}">
+          {% include svg.html icon=item.icon %}
+          <span class="at-only">{{ item.label }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="at-only">Presented by</h2>
+
+    <a href="https://livingit.se" class="founder-logo">
+      <span class="at-only">Living IT</span>
+      {% include svg.html icon="livingit" %}
+    </a>
 
   </div>
 

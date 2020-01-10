@@ -120,7 +120,7 @@
    */
   html,
   body {
-    background: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
     color: hsl(0, 0%, 20%);
   }
 
@@ -130,7 +130,7 @@
    */
   html {
     font: 100%/1.5 "Helvetica Neue", Helvetica, Arial, serif;
-    font-weight: 400;
+    font-weight: 300;
     text-size-adjust: 100%;
   }
 
@@ -153,7 +153,10 @@
   h4,
   h5,
   h6 {
-    font-weight: 400;
+    font-weight: 700;
+    line-height: 1.125;
+    margin: 2em 0 1em;
+    text-transform: uppercase;
   }
 
   h1:first-child,
@@ -210,8 +213,6 @@
   ul[class],
   ol[class] {
     list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   /**
@@ -258,5 +259,16 @@
     position: absolute;
     top: auto;
     width: 1px;
+  }
+
+  /**
+   * SVG icons
+   */
+  .icon {
+    display: inline-block;
+    fill: currentcolor;
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: -0.2em;
   }
 }

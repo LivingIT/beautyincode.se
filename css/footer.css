@@ -5,8 +5,55 @@
 @media screen {
 
   #footer {
-    background-color: hsl(0, 0%, 15%);
+    background-color: hsl(210, 50%, 5%);
     color: hsl(0, 0%, 100%);
-    padding: 1em;
+    padding: 2.5em 1em;
+    text-align: center;
+  }
+
+  .colophon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+    max-width: 28em;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  /**
+   * Footer links
+   */
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .footer-links li + li {
+    margin-left: 0.5em;
+  }
+
+  .footer-links a {
+    display: block;
+  }
+
+  .footer-links .icon {
+    height: 2em;
+    width: 2em;
+  }
+
+  /**
+   * Founder logo
+   */
+  .founder-logo {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .founder-logo .icon {
+    height: 2em;
+    width: 6em;
   }
 }

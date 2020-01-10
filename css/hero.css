@@ -6,63 +6,21 @@
 
   .hero {
     padding: 0 1rem;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px hsla(0, 0%, 0%, 0.9);
   }
 
   .hero__message {
-    background-color: hsl(0, 0%, 100%);
     padding: 1rem;
+    text-align: center;
   }
 
-  .hero__logo .icon {
-    height: 7rem;
-    width: 7rem;
-  }
-}
-
-@media screen and (min-width: 36em) {
-
-  .hero {
-    background-color: transparent;
-    padding: unset;
-    display: grid;
-    grid-template-columns:
-      [main-start] 1fr
-      [logo-start] 18rem
-      [message-start] minmax(10rem, 24rem)
-      [message-end] 1fr
-      [main-end];
-    grid-template-rows:
-      [main-start] 3rem
-      [content-start] max-content
-      [content-end] 3rem
-      [main-end];
-    grid-gap: 0 1rem;
-  }
-
-  .hero > * {
-    margin-top: 0;
-  }
-
-  .hero::before {
-    content: "";
-    background-color: hsl(0, 0%, 100%);
-    grid-row: content-start / content-end;
-    grid-column: main-start / main-end;
-  }
-
-  .hero__logo {
-    grid-column: logo-start / message-start;
-    grid-row: main-start / main-end;
-  }
-
-  .hero__logo .icon {
-    height: 100%;
-    width: 100%;
-  }
-
-  .hero__message {
-    grid-column: message-start / message-end;
-    grid-row: content-start / content-end;
-    padding: 1rem;
+  .hero__time-date {
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
   }
 }

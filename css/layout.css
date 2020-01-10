@@ -4,33 +4,19 @@
 
 @media screen {
 
-  body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("/images/malmo-live-night.jpg") no-repeat fixed 50% 50%;
-    background-size: cover;
-    padding: 1em 0;
-  }
-
-  body > * {
-    flex: 1 1 auto;
-  }
-
-  /**
-   * Content block
-   */
-  .content-block {
-    background-color: hsl(0, 0%, 100%);
-    padding: 1rem;
-  }
-
   /**
    * Landmark content
    */
   .landmark-content {
     margin: 0 auto;
-    max-width: 40rem;
+    max-width: 44rem;
+  }
+
+  /**
+   * Main
+   */
+  main {
+    margin-top: 0;
   }
 
   /**
