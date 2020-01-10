@@ -11,7 +11,7 @@
    */
   .content-block {
     background-color: hsl(0, 0%, 100%);
-    padding: 4rem 1rem;
+    padding: 4em 1em;
   }
 
   .content-block + .content-block {
