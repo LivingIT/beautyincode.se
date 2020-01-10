@@ -5,10 +5,8 @@
       <span>{{ item.timeslot }}</span>
     </div>
     <div class="schedule__item-content">
-      <h3>
-        {% if item.name %}<span class="heading-name">{{ item.name }}</span>{% endif %}
-        {% if item.title %}<span class="heading-title">{{ item.title }}</span>{% endif %}
-      </h3>
+      {% if item.name %}<h3>{{ item.name }}</h3>{% endif %}
+      {% if item.title %}<h4>{{ item.title }}</h4>{% endif %}
       {% if item.description %}
       <div class="schedule__item-description">
         {{ item.description | markdownify }}

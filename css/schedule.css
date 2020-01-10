@@ -10,7 +10,7 @@
 
   .schedule__item {
     background-color: hsla(0, 0%, 100%, 0.05);
-    padding: 1em;
+    padding: 2em 1em;
     margin-top: 0;
   }
 
@@ -28,17 +28,17 @@
     display: block;
   }
 
-  .heading-name {
-    font-size: 1em;
+  .schedule__item-content h3 {
+    font-size: 1.3em;
+    margin-bottom: 0;
   }
 
-  .heading-title {
+  .schedule__item-content h4 {
     display: block;
-    margin: 0;
-    margin-top: 0;
+    margin-top: 0.5em;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   @supports (display: grid) {

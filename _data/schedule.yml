@@ -4,7 +4,7 @@
 
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
-  title: ""
+  # title: ""
   image: "/images/geepaw-hill.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -17,7 +17,7 @@
 
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
-  title: ""
+  # title: ""
   image: "/images/nyari.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -26,7 +26,7 @@
 
 - timeslot: "11:15 - 12:00"
   name: "TBA"
-  title: ""
+  # title: ""
   image: "/images/placeholder.png"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -42,13 +42,18 @@
   title: "Lambda? You Keep Using that Word"
   image: "/images/kevlin-henney.jpg"
   description: |
-    Lambdas. All the cool kid languages have them. But does 'lambda' mean what C#, Java, Python, C++, etc. mean by 'lambda'? Where did lambdas come from? What were they originally for? What is their relationship to data abstraction?
+    Lambdas. All the cool kid languages have them. But does 'lambda' mean what
+    C#, Java, Python, C++, etc. mean by 'lambda'? Where did lambdas come from?
+    What were they originally for? What is their relationship to data
+    abstraction?
 
-    In this session we will look into the history, the syntax and the uses of lambdas and the way in which lambda constructs in various languages do (or do not) match the original construct introduced in lambda calculus.
+    In this session we will look into the history, the syntax and the uses of
+    lambdas and the way in which lambda constructs in various languages do (or
+    do not) match the original construct introduced in lambda calculus.
 
 - timeslot: "14:00 - 14:45"
   name: "Aslam Khan"
-  title: ""
+  # title: ""
   image: "/images/aslam.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
@@ -61,7 +66,7 @@
 
 - timeslot: "15:15 - 16:00"
   name: "Alistair Cockburn"
-  title: ""
+  # title: ""
   image: "/images/alistair-cockburn.jpg"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
