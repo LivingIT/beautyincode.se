@@ -25,9 +25,9 @@
   #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
 
 - timeslot: "11:15 - 12:00"
-  name: "Brian Rasmussen"
+  name: "TBA"
   title: ""
-  image: "/images/brian-rasmussen.jpg"
+  image: "/images/placeholder.png"
   # description: |
   #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
   #
