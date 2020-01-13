@@ -8,6 +8,8 @@ on:
 jobs:
   lint-css:
 
+    name: CSS linting
+
     runs-on: ubuntu-18.04
 
     steps:
@@ -19,6 +21,8 @@ jobs:
           PATTERN: 'src/css/*.css'
 
   lint-js:
+
+    name: JS linting
 
     runs-on: ubuntu-18.04
 
@@ -37,6 +41,8 @@ jobs:
         run: yarn run lint:js
 
   html-proofer:
+
+    name: Website checks
 
     runs-on: ubuntu-18.04
 
