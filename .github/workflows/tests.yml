@@ -1,0 +1,73 @@
+name: Test 🧪
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint-css:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: stylelint
+        uses: actions-hub/stylelint@v1.1.2
+        env:
+          PATTERN: 'src/css/*.css'
+
+  lint-js:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.16'
+
+      - name: Install Node packages
+        run: yarn install --production --pure-lockfile --non-interactive
+
+      - name: eslint
+        run: yarn run lint:js
+
+  html-proofer:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.16'
+
+      - name: Install Node packages
+        run: yarn install --production --pure-lockfile --non-interactive
+
+      - name: Build assets
+        run: yarn run build
+
+      - name: Set up Ruby 2.4
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.4.x
+
+      - name: Bundle install
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+
+      - name: Jekyll build
+        run: jekyll build --config "_config.yml,_config.prod.yml"
+
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: './_site'
+          arguments: '--empty_alt_ignore --http-status-ignore 999'
