@@ -6,43 +6,9 @@ on:
       - master
 
 jobs:
-  lint-css:
+  test:
 
-    name: CSS linting
-
-    runs-on: ubuntu-18.04
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: stylelint
-        uses: actions-hub/stylelint@v1.1.2
-        env:
-          PATTERN: 'src/css/*.css'
-
-  lint-js:
-
-    name: JS linting
-
-    runs-on: ubuntu-18.04
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.16'
-
-      - name: Install Node packages
-        run: yarn install --production --pure-lockfile --non-interactive
-
-      - name: eslint
-        run: yarn run lint:js
-
-  html-proofer:
-
-    name: Website checks
+    name: Run linting tasks & HTML proofer
 
     runs-on: ubuntu-18.04
 
@@ -73,7 +39,27 @@ jobs:
       - name: Jekyll build
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
-      - uses: chabad360/htmlproofer@master
+      - name: stylelint
+        run: yanr run lint:css
+
+      - name: eslint
+        run: yarn run lint:js
+
+      - name: htmlproofer
+        uses: chabad360/htmlproofer@master
         with:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 999'
+
+      - name: Slack Notification
+        uses: homoluctus/slatify@master
+        if: always()
+        with:
+          type: ${{ job.status }}
+          job_name: '*Tests*'
+          mention: 'here'
+          mention_if: 'failure'
+          channel: '#beautyincode-site'
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          commit: true
+          token: ${{ secrets.GITHUB_TOKEN }}
