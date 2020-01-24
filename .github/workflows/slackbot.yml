@@ -10,9 +10,15 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: Post to Slack
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: pullreminders/slack-action@master
+      - name: Slack Notification
+        uses: homoluctus/slatify@master
+        if: always()
         with:
-          args: '{\"channel\":\"CSSELRM3K\",\"text\":\"OHAI!\"}'
+          type: ${{ job.status }}
+          job_name: '*Lint Check*'
+          mention: 'here'
+          mention_if: 'failure'
+          channel: '#github-actions-test'
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          commit: true
+          token: ${{ secrets.GITHUB_TOKEN }}
