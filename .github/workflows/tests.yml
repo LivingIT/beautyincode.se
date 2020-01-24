@@ -40,7 +40,7 @@ jobs:
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: stylelint
-        run: yanr run lint:css
+        run: yarn run lint:css
 
       - name: eslint
         run: yarn run lint:js
