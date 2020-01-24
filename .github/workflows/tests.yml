@@ -28,7 +28,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: pullreminders/slack-action@master
         with:
-          args: '{"channel":"CPVT8SKAP","text":"OHAI!"}'
+          args: '{\"channel\":\"CPVT8SKAP\",\"text\":\"OHAI!\"}'
 
   lint-js:
 
