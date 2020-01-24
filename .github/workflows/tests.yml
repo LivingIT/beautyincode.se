@@ -1,9 +1,6 @@
 name: Test 🧪
 
 on:
-  push:
-    branches:
-      - develop
   pull_request:
     branches:
       - master
@@ -22,13 +19,6 @@ jobs:
         uses: actions-hub/stylelint@v1.1.2
         env:
           PATTERN: 'src/css/*.css'
-
-      - name: Post results to Slack
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: pullreminders/slack-action@master
-        with:
-          args: '{\"channel\":\"CPVT8SKAP\",\"text\":\"OHAI!\"}'
 
   lint-js:
 
