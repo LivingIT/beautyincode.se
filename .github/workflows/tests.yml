@@ -20,6 +20,13 @@ jobs:
         env:
           PATTERN: 'src/css/*.css'
 
+      - name: Post results to Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: pullreminders/slack-action@master
+        with:
+          args: '{"channel":"CPVT8SKAP","text":"OHAI!"}'
+
   lint-js:
 
     name: JS linting
