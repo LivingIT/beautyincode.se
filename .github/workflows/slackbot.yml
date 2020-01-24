@@ -15,7 +15,7 @@ jobs:
         if: always()
         with:
           type: ${{ job.status }}
-          job_name: '*Lint Check*'
+          job_name: '*Tests*'
           mention: 'here'
           mention_if: 'failure'
           channel: '#github-actions-test'
