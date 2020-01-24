@@ -1,4 +1,4 @@
-name: Github Actions bot test
+name: Github Actions bot test 🤖
 
 on: [push]
 
