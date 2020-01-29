@@ -4,12 +4,18 @@
 
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
-  # title: ""
+  title: "Changing Changing Software: An Introduction to Change-Harvesting"
   image: "/images/geepaw-hill.jpg"
-  # description: |
-  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-  #
-  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  description: |
+    At its center, the software trade is about changing software. From the outside,
+    the trade seems to be flourishing, but when you look close, you see the
+    unmistakable signs of a feverish and decidedly unhealthy entity. So we're going
+    to have to change it. In this talk, GeePaw introduces the various challenges we
+    face in changing changing software, and offers an approach: re-centering our
+    entire trade — not just the code or the coding, but the entire industry — around
+    the fundamental activity: harvesting the value from making one change, then using
+    that value to fuel the next one. It's change, harvest, change, harvest, change,
+    harvest, over and over, day after day, world without end.
 
 - timeslot: "09:45 - 10:15"
   name: "Fika"
