@@ -40,7 +40,7 @@ jobs:
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2.5.1
+        uses: peaceiris/actions-gh-pages@v2.10.1
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: LivingIT/dev.beautyincode.se
@@ -53,7 +53,7 @@ jobs:
         with:
           type: ${{ job.status }}
           job_name: '*Deploy to https://dev.beautyincode.se*'
-          mention: 'here'
+          mention: 'frippz'
           mention_if: 'failure'
           channel: '#beautyincode-site'
           url: ${{ secrets.SLACK_WEBHOOK }}
