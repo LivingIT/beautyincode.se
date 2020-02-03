@@ -53,8 +53,6 @@ jobs:
         with:
           type: ${{ job.status }}
           job_name: '*Deploy to https://dev.beautyincode.se*'
-          mention: '@frippz'
-          mention_if: 'failure'
           channel: '#beautyincode-site'
           url: ${{ secrets.SLACK_WEBHOOK }}
           commit: true
