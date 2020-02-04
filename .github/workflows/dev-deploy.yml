@@ -39,7 +39,7 @@ jobs:
           JEKYLL_ENV: production
         run: |
           jekyll build --config "_config.yml,_config.prod.yml"
-          rm _site/CNAME
+          echo dev.beautyincode.se > _site/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.10.1
