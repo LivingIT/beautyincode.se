@@ -23,12 +23,19 @@
 
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
-  # title: ""
+  title: "Misguided Loyalties"
   image: "/images/nyari.jpg"
-  # description: |
-  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-  #
-  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  description: |
+    We all want to predictably deliver quality software solutions. Many
+    technical and process methodologies have been created to make this
+    possible. Yet time and again we repeat the age old patterns of late
+    delivery and poor quality, ensuring we continue to face the backlash of
+    unmet expectations. Could it be that while we profess to want to do better,
+    our overt and hidden attachments to unproductive ways mean we self sabotage
+    and follow patterns that ensure repeated failure? In this talk I'd like us
+    to peel away the layers and take a close look at some of the ways that what
+    we do ensures we do not get what we want. We have the tools to win we just
+    need to choose to use them.
 
 - timeslot: "11:15 - 12:00"
   name: "Dr. Markus Borg"
@@ -40,7 +47,7 @@
     introduces new challenges. As features are trained rather than coded, the beauty
     concept must expand to cover also data. But even with beauty in the training data,
     how could we possibly trust AI in critical applications such as self-driving cars?
-    
+
     In this talk, we will look at testing of a pedestrian detection system in
     state-of-the-art automotive simulators. We will discuss how the concept of
     safety fundamentally changes with ML and present a promising approach to testing.
@@ -85,7 +92,7 @@
     wondered what would have happened if the risky option was attempted.
     That very thought scared the developer; and what came of this developer of
     beauty, we don't know.
-    
+
     This talk is about taking risks; the beast that co-exists with beauty.
     I'll share some risks I've taken and what has helped me along the way;
     and why I embrace the beast that is risk.
