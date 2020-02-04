@@ -1,9 +1,9 @@
-name: 🚀 Deploy to live
+name: 🚀 Deploy to dev
 
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   deploy:
@@ -37,12 +37,15 @@ jobs:
       - name: Jekyll build
         env:
           JEKYLL_ENV: production
-        run: jekyll build --config "_config.yml,_config.prod.yml"
+        run: |
+          jekyll build --config "_config.yml,_config.prod.yml"
+          echo dev.beautyincode.se > _site/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.10.1
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEV_DEPLOY_KEY }}
+          EXTERNAL_REPOSITORY: LivingIT/dev.beautyincode.se
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: _site
 
@@ -51,9 +54,7 @@ jobs:
         if: always()
         with:
           type: ${{ job.status }}
-          job_name: '*Deploy to https://beautyincode.se*'
-          mention: 'here'
-          mention_if: 'failure'
+          job_name: '*Deploy to https://dev.beautyincode.se*'
           channel: '#beautyincode-site'
           url: ${{ secrets.SLACK_WEBHOOK }}
           commit: true
