@@ -4,4 +4,4 @@
 
 Our idea is to create a conference for everyone involved in the software industry. We put it on a Saturday so no-one gets denied due to work. We keep the fee very low so everyone can afford to attend. In fact, you only pay for the lunch and fika; the actual conference is on us, because we love to share knowledge and this is our way of giving back to the community.
 
-We wish *you* welcome to an **inspiring** day at Malmö Live!
+We wish *you* welcome to an inspiring day at Malmö Live!
