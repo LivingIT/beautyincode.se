@@ -2,12 +2,6 @@
 
 The Jekyll/Github Pages files for the future beautyincode.se
 
-![🧪 Tests](https://github.com/LivingIT/beautyincode.se/workflows/Test%20%F0%9F%A7%AA/badge.svg)
-
-![🚀 Dev build status](https://github.com/LivingIT/beautyincode.se/workflows/Deploy%20to%20dev%20%F0%9F%9A%80/badge.svg)
-
-![🚀 Live build status](https://github.com/LivingIT/beautyincode.se/workflows/Deploy%20%F0%9F%9A%80/badge.svg)
-
 ## 🐳 Get up and running
 
 The easiest way is to use Docker, then you only need to run

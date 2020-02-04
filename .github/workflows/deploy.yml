@@ -1,4 +1,4 @@
-name: Deploy 🚀
+name: 🚀 Deploy to live
 
 on:
   push:
