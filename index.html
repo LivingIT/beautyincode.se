@@ -22,3 +22,10 @@ layout: default
     {% include schedule.html %}
   </div>
 </div>
+
+<div class="content-block theme-1">
+  <div class="landmark-content">
+    {% capture content %}{% include_relative _content/coc.md %}{% endcapture %}
+    {{ content | markdownify }}
+  </div>
+</div>
