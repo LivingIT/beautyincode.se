@@ -58,9 +58,12 @@
   name: "Lunch"
   image: "/images/lunch.jpg"
   description: |
-    Lemon and oregano chicken, wild rice, Chevré, pickled carrots, lace bowl, roasted walnuts with orange dressing and honey vinaigrette.
+    Lemon and oregano chicken, wild rice, Chevré, pickled carrots, pointed cabbage,
+    roasted walnuts with orange dressing and honey vinaigrette.
 
-    **Vegetarian and vegan option:** Red quinoa, beetroot hummus, baked butternut squash, broccoli, pickled red onion, alfalfa sprouts, roasted sunflower seeds with basil and lemon dressing.
+    **Vegetarian and vegan option:** Red quinoa, beetroot hummus, baked
+    butternut squash, broccoli, pickled red onion, alfalfa sprouts, roasted
+    sunflower seeds with basil and lemon dressing.
 
 - timeslot: "13:00 - 13:45"
   name: "Kevlin Henney"
