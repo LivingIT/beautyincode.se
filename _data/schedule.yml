@@ -110,9 +110,14 @@
 
 - timeslot: "15:15 - 16:00"
   name: "Dr. Alistair Cockburn"
-  # title: ""
+  title: "Getting Back to the Heart of Agile"
   image: "/images/alistair-cockburn.jpg"
-  # description: |
-  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
-  #
-  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+  description: |
+    Agile has become overly decorated, with vocabulary and rules to make your
+    head spin. It wasn't intended that way. In this talk, Dr. Alistair Cockburn,
+    one of the authors of the agile manifesto, shows how to abbreviate it all to
+    just four words: Collaborate, Deliver, Reflect, Improve. Oddly, shortening it
+    to those four words makes it easier to learn and more broadly applicable. Not
+    only that, it helps us find new, relevant topics, such as guest leadership
+    and solutions focus. What's best, these four words apply to all initiatives,
+    not just software or product development.
