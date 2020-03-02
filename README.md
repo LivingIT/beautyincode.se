@@ -18,4 +18,8 @@ $ docker-compose up
 
 _This repo is automatically deployed from the `master` branch. **Do not commit directly to `master` unless you know what you are doing!**_
 
-Since Github auto-deploys from `master`, we're employing a simplified version version of Git Flow, where development is henceforth being done only on `develop`. When any feature is ready for deployment, make a pull request, make sure any tests pass (WIP) and merge.
+Since Github auto-deploys to production from `master`, we're employing a simplified version version of Git Flow, where development is being done on `develop`. When any feature is ready for deployment, make a pull request, make sure any tests pass and merge.
+
+### Development environment
+
+Commits to `develop` are automatically deployed to [https://dev.beautyincode.se](https://dev.beautyincode.se).
