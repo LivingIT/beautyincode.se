@@ -1,6 +1,8 @@
 - timeslot: "08:15 - 09:00"
   name: "The doors open"
   image: "/images/welcome.jpg"
+  description: |
+    Coffee and tea will be served.
 
 - timeslot: "09:00 - 09:45"
   name: "GeePaw Hill"
@@ -20,6 +22,8 @@
 - timeslot: "09:45 - 10:15"
   name: "Fika"
   image: "/images/fika.jpg"
+  description: |
+    Coffee and tea with a light snack will be served.
 
 - timeslot: "10:15 - 11:00"
   name: "Nyari Samushonga"
@@ -107,6 +111,8 @@
 - timeslot: "14:45 - 15:15"
   name: "Coffee"
   image: "/images/coffee.jpg"
+  description: |
+    Coffee and tea with a light snack will be served.
 
 - timeslot: "15:15 - 16:00"
   name: "Dr. Alistair Cockburn"
