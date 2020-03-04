@@ -39,7 +39,7 @@ jobs:
           JEKYLL_ENV: production
         run: |
           jekyll build --config "_config.yml,_config.prod.yml"
-          echo "User-agent: *\nDisallow: /" > _site/robots.txt
+          printf "User-agent: *\nDisallow: /" > _site/robots.txt
           echo dev.beautyincode.se > _site/CNAME
 
       - name: Deploy to GitHub Pages
