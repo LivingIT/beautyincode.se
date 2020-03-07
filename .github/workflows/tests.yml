@@ -18,10 +18,10 @@ jobs:
           node-version: '10.16'
 
       - name: Install Node packages
-        run: yarn install --production --pure-lockfile --non-interactive
+        run: npm ci --production
 
       - name: Build assets
-        run: yarn run build
+        run: npm run build
 
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
@@ -37,10 +37,10 @@ jobs:
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: stylelint
-        run: yarn run lint:css
+        run: npm run lint:css
 
       - name: eslint
-        run: yarn run lint:js
+        run: npm run lint:js
 
       - name: htmlproofer
         uses: chabad360/htmlproofer@master

@@ -4,16 +4,16 @@ RUN apk add --no-cache \
   g++ \
   make \
   nodejs \
-  yarn
+  npm
 
 RUN gem install bundler
 
-WORKDIR /srv/jekyll
+WORKDIR /jekyll
 
-COPY Gemfile* /srv/jekyll/
+COPY Gemfile* /jekyll/
 
 RUN bundle install
 
-COPY package.json yarn.lock /srv/jekyll/
+COPY package.json package-lock.json /jekyll/
 
-RUN yarn install --pure-lockfile
+RUN npm ci
