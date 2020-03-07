@@ -14,6 +14,6 @@ COPY Gemfile* /jekyll/
 
 RUN bundle install
 
-COPY package.json /jekyll/
+COPY package.json package-lock.json /jekyll/
 
-RUN npm install
+RUN npm ci
