@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  {% include head.html %}
+</head>
+<body>
+
+  {% include header.html hideHero="true" %}
+
+  <main id="main-content">
+
+    {{ content }}
+
+  </main>
+
+  {% include footer.html %}
+
+  <style>{% include styles.css %}</style>
+  <script>{% include main.js %}</script>
+  {% include sprite.svg %}
+</body>
+</html>

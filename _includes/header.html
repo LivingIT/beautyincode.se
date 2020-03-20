@@ -4,21 +4,24 @@
 
     <div class="landmark-content header__nav">
       <div class="header__logo">
-        <h1 class="at-only">{{ site.title }}</h1>
-        {% include svg.html icon="logo" %}
+        <a href="/">
+          <h1 class="at-only">{{ site.title }}</h1>
+          {% include svg.html icon="logo" %}
+        </a>
       </div>
 
       <ul class="toc">
-        <li class="toc__item"><a href="#schedule">Schedule</a></li>
-        <li class="toc__item"><a href="#videos">Videos</a></li>
-        <li class="toc__item"><a href="#contact">Contact</a></li>
+        <li class="toc__item"><a href="/2020">Videos</a></li>
+        <li class="toc__item"><a href="/#contact">Contact</a></li>
       </ul>
     </div>
 
   </div>
-
+  {% if include.hideHero != "true" %}
   <div class="landmark-content">
     {% include hero.html %}
   </div>
+  {% endif %}
+
 
 </header>

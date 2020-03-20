@@ -1,0 +1,11 @@
+---
+layout: noheader
+---
+
+<div class="content-block theme-3" id="videos">
+  <div class="landmark-content">
+    <h2>Videos</h2>
+    {% capture videoContent %}{% include_relative _content/videos.md %}{% endcapture %}
+    {{ videoContent | markdownify }}
+  </div>
+</div>
