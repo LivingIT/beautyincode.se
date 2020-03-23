@@ -4,8 +4,20 @@ layout: noheader
 
 <div class="content-block theme-3" id="videos">
   <div class="landmark-content">
-    <h2>2018</h2>
+    <div style="display: flex; justify-content: flex-start; align-content: top;">
+      <strong>
+        <a href="/2019">&lt;&nbsp;2019</a>
+      </strong>
+    </div>
+    <h2 style="margin-top: 0.5em;" >2018</h2>
     {% capture videoContent %}{% include_relative _content/videos/2018.md %}{% endcapture %}
     {{ videoContent | markdownify }}
+  </div>
+  <div class="landmark-content">
+    <div style="margin-top: 2em; display: flex; justify-content: flex-start; align-content: top;">
+      <strong>
+        <a href="/2019">&lt;&nbsp;2019</a>
+      </strong>
+    </div>
   </div>
 </div>
