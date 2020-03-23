@@ -6,6 +6,6 @@ If you have any suggestions, feel free to contact us (see bottom of page).
 
 Until then you can find the recorded sessions from previous conferences here:
 
-<a href="/2020">2020</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="/2019">2019</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="/2018">2018</a> 
+<a href="/videos/#2020">2020</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="/videos/#2019">2019</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="/videos/#2018">2018</a> 
