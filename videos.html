@@ -1,0 +1,30 @@
+---
+layout: noheader
+---
+
+<div class="content-block theme-3" id="videos">
+  <div class="landmark-content">
+    <h1>
+      Videos
+    </h1>
+    <p>Couldn’t attend the conference? Not to worry. 
+      We’ve got everything on video and we’ll be posting each keynote here as soon as they’ve been edited. 
+      Check back here every now and then for new material.
+    </p>
+    <br />
+    <a href="#2020">2020</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#2019">2019</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#2018">2018</a>
+
+    <h2 id="2020">2020</h2>
+    {% capture videoContent %}{% include_relative _content/videos/2020.md %}{% endcapture %}
+    {{ videoContent | markdownify }}
+    <h2 id="2019">2019</h2>
+    {% capture videoContent %}{% include_relative _content/videos/2019.md %}{% endcapture %}
+    {{ videoContent | markdownify }}
+    <h2 id="2018">2018</h2>
+    {% capture videoContent %}{% include_relative _content/videos/2018.md %}{% endcapture %}
+    {{ videoContent | markdownify }}
+  </div>
+
+</div>
