@@ -26,5 +26,10 @@ layout: noheader
     {% capture videoContent %}{% include_relative _content/videos/2018.md %}{% endcapture %}
     {{ videoContent | markdownify }}
   </div>
+</div>
 
+<div id="scrollToTopContainer">
+  <button id="scrollToTopButton">
+    {% include svg.html icon="arrow_up" %}
+  </button>
 </div>
