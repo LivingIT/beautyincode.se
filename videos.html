@@ -28,8 +28,5 @@ layout: noheader
   </div>
 </div>
 
-<div id="scrollToTopContainer">
-  <button id="scrollToTopButton">
-    {% include svg.html icon="arrow_up" %}
-  </button>
-</div>
+{% capture content %}{% include scrollToTop.html %}{% endcapture %}
+{{ content }}
