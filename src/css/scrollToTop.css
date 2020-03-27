@@ -1,0 +1,29 @@
+#scrollToTopContainer {
+  position: fixed;
+  bottom: 2rem;
+  right: 10%;
+  color: hsl(1, 100%, 100%);
+}
+
+#scrollToTopContainer button {
+  border-radius: 100vw;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: inherit;
+  background-color: hsl(346, 86%, 39%);
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#scrollToTopContainer svg {
+  width: 80%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  #scrollToTopContainer {
+    right: 2rem;
+  }
+}

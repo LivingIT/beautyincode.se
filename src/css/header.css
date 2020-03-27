@@ -39,7 +39,9 @@
    * Table of contents
    */
   .toc {
+    display: flex;
     font-weight: bold;
+    text-align: right;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -56,13 +58,5 @@
   .toc__item a:hover,
   .toc__item a:active {
     text-decoration: underline;
-  }
-}
-
-@media only screen and (min-width: 22em) {
-
-  .toc {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
