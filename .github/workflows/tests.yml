@@ -42,12 +42,6 @@ jobs:
       - name: eslint
         run: npm run lint:js
 
-      - name: htmlproofer
-        uses: chabad360/htmlproofer@master
-        with:
-          directory: './_site'
-          arguments: '--empty_alt_ignore --http-status-ignore 999'
-
       - name: Slack Notification
         uses: homoluctus/slatify@master
         if: failure()
