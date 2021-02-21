@@ -2,7 +2,7 @@
 Thank you all who attended and helped us making it yet a great success!
 If you have any suggestions, feel free to contact us (see bottom of page).
 
-**The next Beauty in Code will be on March 6, 2021.**
+**The next Beauty in Code will be on March 5, 2022.**
 
 Until then you can find the recorded sessions from previous conferences here:
 
