@@ -10,7 +10,7 @@ services:
       dockerfile: Dockerfile
 
     volumes:
-      - $PWD:/jekyll
+      - $PWD/:/jekyll
       - /jekyll/node_modules
 
     working_dir: /jekyll
