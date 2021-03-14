@@ -1,6 +1,6 @@
-## Beauty in Code is over this year
-Thank you all who attended and helped us making it yet a great success!
-If you have any suggestions, feel free to contact us (see bottom of page).
+## Beauty in Code stopped at a breakpoint
+Even though we all are longing to meet you all again face to face, we
+saw it necessary to cancel the 2021 conference, due to the current situation.
 
 **The next Beauty in Code will be on March 5, 2022.**
 
