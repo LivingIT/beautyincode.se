@@ -1,4 +1,4 @@
-## Beauty in Code is skipping a year
+## Beauty in Code stopped at a breakpoint
 Even though we all are longing to meet you all again face to face, we
 saw it necessary to cancel the 2021 conference, due to the current situation.
 
