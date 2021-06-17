@@ -16,7 +16,7 @@ $ docker compose up
 
 ## 🛠 Workflow
 
-Deploys to productions occur when a release is created on Github. A Github Actions automatically creates the next version to be relased and adds any pull requests merged to the `master` branch since the last release to the release notes.
+Deploy to production occur when a release is created on Github. A Github Actions automatically creates the next version to be relased and adds any pull requests merged to the `master` branch since the last release to the release notes.
 
 1. Go to the [releases page](https://github.com/LivingIT/beautyincode.se/releases)
 2. Edit the draft release (make sure that it's up to date, i.e. let the automated workflow finish first if you’ve recently merged a PR. If there’s no draft, it likely means that no PRs or commits have been made or that the workflow isn’t finished yet)
