@@ -30,9 +30,6 @@ jobs:
           ruby-version: 2.6
           bundler-cache: true
 
-      - name: Run bundle install
-        run: bundle install --jobs 4 --retry 3
-
       - name: Jekyll build
         env:
           JEKYLL_ENV: production
