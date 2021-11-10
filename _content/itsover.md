@@ -1,8 +1,6 @@
-## Beauty in Code stopped at a breakpoint
-Even though we all are longing to meet you all again face to face, we
-saw it necessary to cancel the 2021 conference, due to the current situation.
-
-**The next Beauty in Code will be on March 5, 2022.**
+## March 5, 2022 - save the date!
+Obviously we had to cancel the 2021 version of Beauty in Code, but we
+keep our hopes high and fingers crossed to reunion in 2022! So save the date!
 
 Until then you can find the recorded sessions from previous conferences here:
 
