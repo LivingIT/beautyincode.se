@@ -16,10 +16,14 @@ $ docker-compose up --build
 
 ## 🛠 Workflow
 
-_This repo is automatically deployed from the `master` branch. **Do not commit directly to `master` unless you know what you are doing!**_
+Deploy to production occur when a release is created on Github. A Github Actions automatically creates the next version to be relased and adds any pull requests merged to the `master` branch since the last release to the release notes.
 
-Since Github auto-deploys to production from `master`, we're employing a simplified version version of Git Flow, where development is being done on `develop`. When any feature is ready for deployment, make a pull request, make sure any tests pass and merge.
+1. Go to the [releases page](https://github.com/LivingIT/beautyincode.se/releases)
+2. Edit the draft release (make sure that it's up to date, i.e. let the automated workflow finish first if you’ve recently merged a PR. If there’s no draft, it likely means that no PRs or commits have been made or that the workflow isn’t finished yet)
+3. Make sure that the title field matches the tag field (if the next version is for example `1.6.0` make sure both fields says `v1.6.0`)
+4. Check that the release notes contain all relevant info (only merged PRs are automatically added to the notes, if you made commits directly to `master` you need to add those by hand)
+5. Publish release
 
 ### Development environment
 
-Commits to `develop` are automatically deployed to [https://dev.beautyincode.se](https://dev.beautyincode.se).
+Commits to `master` are automatically deployed to [https://dev.beautyincode.se](https://dev.beautyincode.se).

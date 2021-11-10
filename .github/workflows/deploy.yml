@@ -1,22 +1,27 @@
 name: Deploy to live
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   deploy:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
+
+      - name: Cache NPM
+        uses: actions/cache@v2
         with:
-          node-version: '10.16'
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Node packages
         run: npm ci --production
@@ -25,19 +30,15 @@ jobs:
         run: npm run build
 
       - name: Set up Ruby 2.6
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
-
-      - name: Bundle install
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
+          ruby-version: 2.6
+          bundler-cache: true
 
       - name: Jekyll build
         env:
           JEKYLL_ENV: production
-        run: jekyll build --config "_config.yml,_config.prod.yml"
+        run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.10.1
@@ -45,16 +46,3 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: _site
-
-      - name: Slack Notification
-        uses: homoluctus/slatify@master
-        if: always()
-        with:
-          type: ${{ job.status }}
-          job_name: '*Deploy to https://beautyincode.se*'
-          mention: 'here'
-          mention_if: 'failure'
-          channel: '#beautyincode-site'
-          url: ${{ secrets.SLACK_WEBHOOK }}
-          commit: true
-          token: ${{ secrets.GITHUB_TOKEN }}
