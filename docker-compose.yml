@@ -20,6 +20,8 @@ services:
       JEKYLL_ENV: development
 
     ports:
+      - '4000:4000'
       - '5005:5005'
 
+    #command: sh -c "npm start"
     command: npm start

@@ -9,7 +9,7 @@ The Jekyll/Github Pages files for the future beautyincode.se
 The easiest way is to use Docker, then you only need to run
 
 ~~~bash
-$ docker-compose up
+$ docker-compose up --build
 ~~~
 
 …and you’re good to go!
