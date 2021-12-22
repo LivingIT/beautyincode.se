@@ -1,6 +1,6 @@
-## March 5, 2022 - save the date!
-Obviously we had to cancel the 2021 version of Beauty in Code, but we
-keep our hopes high and fingers crossed to reunion in 2022! So save the date!
+## Postponed again... 😢
+Given the current circumstances we must unfortunately postpone Beauty in Code further into 2022.
+At the moment we haven't fixed a new date, but stay tuned!
 
 Until then you can find the recorded sessions from previous conferences here:
 
