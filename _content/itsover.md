@@ -1,6 +1,6 @@
 ## Postponed again... 😢
-Given the current circumstances we must unfortunately postpone Beauty in Code further into 2022.
-At the moment we haven't fixed a new date, but stay tuned!
+Given the current circumstances we must unfortunately postpone Beauty in Code 2022.
+Are hopes are high to meet again in 2023!  So save the date!
 
 Until then you can find the recorded sessions from previous conferences here:
 
