@@ -2,9 +2,6 @@
 layout: default
 ---
 
-{% capture content %}{% include itsover.html %}{% endcapture %}
-{{ content }}
-
 <div class="content-block theme-1">
   <div class="landmark-content">
     <div class="figure-text">
@@ -16,5 +13,19 @@ layout: default
         {{ content | markdownify }}
       </article>
     </div>
+  </div>
+</div>
+
+<div class="content-block theme-3" id="schedule">
+  <div class="landmark-content">
+    <h2>Schedule</h2>
+    {% include schedule.html %}
+  </div>
+</div>
+
+<div class="content-block theme-1">
+  <div class="landmark-content">
+    {% capture content %}{% include_relative _content/coc.md %}{% endcapture %}
+    {{ content | markdownify }}
   </div>
 </div>
