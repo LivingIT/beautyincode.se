@@ -4,7 +4,7 @@
   "description": "Web site for Beauty In Code",
   "main": "index.html",
   "scripts": {
-    "start": "concurrently 'npm run watch' 'npm run jekyll:serve'",
+    "start": "npm run watch",
     "watch": "concurrently 'npm run watch:css' 'npm run watch:svg' 'npm run watch:js'",
     "watch:css": "onchange ./src/css/* -i -- npm run css",
     "watch:js": "onchange ./src/js/* -i -- npm run js",
