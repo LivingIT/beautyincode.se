@@ -9,13 +9,13 @@
   }
 
   .schedule__item {
-    background-color: hsla(0, 0%, 100%, 0.05);
+    background-color: hsla(0, 0%, 100%, 0.10);
     padding: 2em 1em;
     margin-top: 0;
   }
 
   .schedule__item:nth-child(odd) {
-    background-color: hsla(0, 0%, 100%, 0.07);
+    background-color: 	hsla(0, 0%, 100%, 0.20);
   }
 
   .schedule__item-timeslot span {

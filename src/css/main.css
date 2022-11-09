@@ -20,8 +20,8 @@
 
   /* Themes */
   .content-block.theme-1 {
-    background-color: hsl(346, 86%, 39%);
-    color: hsla(0, 0%, 100%, 0.8);
+    background-color: hsl(20, 10%, 18%);
+    color: hsl(25, 83%, 56%);
   }
 
   .content-block.theme-2 {
@@ -30,8 +30,8 @@
   }
 
   .content-block.theme-3 {
-    background-color: hsl(215, 47%, 21%);
-    color: hsla(0, 0%, 100%, 0.8);
+    background-color: 	hsl(30, 79%, 65%);
+    color: hsl(20, 10%, 18%);
   }
 
   /* Content block heading */
