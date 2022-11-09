@@ -37,7 +37,7 @@ jobs:
           echo dev.beautyincode.se > _site/CNAME
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2.10.1
+        uses: peaceiris/actions-gh-pages@v3.9.0
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEV_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: LivingIT/dev.beautyincode.se
