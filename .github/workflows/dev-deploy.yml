@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.9.0
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.ACTIONS_DEV_DEPLOY_KEY }}
           external_repository: LivingIT/dev.beautyincode.se
           publish_branch: gh-pages
           publish_dir: _site
