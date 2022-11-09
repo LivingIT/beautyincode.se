@@ -44,7 +44,7 @@ jobs:
           publish_dir: _site
 
       - name: Slack Notification
-        uses: homoluctus/slatify@master
+        uses: homoluctus/slatify@v3
         if: failure()
         with:
           type: ${{ job.status }}
