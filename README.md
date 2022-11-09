@@ -4,15 +4,23 @@ The Jekyll/Github Pages files for the future beautyincode.se
 
 ![Tests](https://github.com/LivingIT/beautyincode.se/workflows/Tests/badge.svg) ![Deploy to dev](https://github.com/LivingIT/beautyincode.se/workflows/Deploy%20to%20dev/badge.svg) ![Deploy to live](https://github.com/LivingIT/beautyincode.se/workflows/Deploy%20to%20live/badge.svg)
 
-## 🐳 Get up and running
+## Get up and running
 
-The easiest way is to use Docker, then you only need to run
+### 🐳 Docker
 
 ~~~bash
-$ docker-compose up --build
+$ docker-compose up
 ~~~
 
-…and you’re good to go!
+This will launch a Jekyll container in Docker.
+
+### <img width="75px" src="https://github.com/Pedro-Murilo/icons-for-readme/blob/main/.github/js-icon.svg" alt=""> Node
+
+~~~bash
+$ npm run start
+~~~
+
+This will watch for changes in CSS, JS and SVG files and run tasks accordingly.
 
 ## 🛠 Workflow
 
