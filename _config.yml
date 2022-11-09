@@ -28,3 +28,4 @@ exclude:
   - 'vendor'
   - 'Dockerfile'
   - 'docker-compose.yml'
+  - 'renovate.json'
