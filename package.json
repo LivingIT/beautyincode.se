@@ -28,7 +28,7 @@
     "onchange": "^6.1.0",
     "stylelint": "^14.0.0",
     "stylelint-color-format": "^1.0.0",
-    "svg-sprite": "^1.5.4",
+    "svg-sprite": "^2.0.0",
     "uglify-es": "^3.0.28",
     "uglifycss": "^0.0.29"
   },
