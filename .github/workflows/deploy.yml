@@ -41,7 +41,7 @@ jobs:
         run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2.10.1
+        uses: peaceiris/actions-gh-pages@v3.9.0
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
