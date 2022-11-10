@@ -85,19 +85,35 @@
 
 - timeslot: "13:00 - 13:45"
   name: "Pelonomi Moiloa"
-  title: "TBD"
+  title: "Protecting Machines from Us: Lessons from the Majority World"
   image: "/images/speakers/pelonomi-moiloa.jpg"
   bio: |
-    TBD. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Pelonomi is co-founder and CEO at Lelapa.AI, a machine learning startup bringing
+    low-resource-powered African technology to the world. Pelonomi has eight years of
+    experience in the data science space and has spent the past four years leading data
+    science projects and productionalising machine learning solutions in the finance sector.
+    
+    Pelonomi has biomedical and electrical engineering degrees from the university of the
+    Witwatersrand with a Masters in Biomedical Engineering obtained while on scholarship
+    at Tohoku University in Japan. With a passion for community, Pelonomi enjoys getting
+    involved in inititatives outside of the purely technical domain. She has been a mentor
+    for the Jeppe Ruth First Scholarship for the past 10 years and is Trustee of the Ruth
+    First Jeppe Memorial Trust. (The trust provides full tuition sholarship to over 120
+    disadvantaged high school girls). She also dedicates her energy to advocating for
+    responsible AI, running and teaching at the Code Kamoso coding academy, and volunteering
+    for the Ungovernable NPC where she is involved in reclaimer advocacy work and the
+    organisation of a community guerilla garden. She is a carpentry novice and a writer
+    of music in her spare time.
   description: |
-    TBD. In the meantime, please enjoy this lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    The possibilities of machine learning are ever expanding and therein lies prospects
+    for a utopian AI-Human hybrid future. With increased opportunities to do good however
+    there are just as many opportunities to do harm and even in the case that good intentions
+    are at the helm, evidence suggests that opportunities for good may eventually prove
+    to be the opposite. The greatest threat to what machine learning is able to achieve
+    and to us as humans is twofold: Machine learning created with harmful biases built
+    into its core with intent, and machine learning that does not reflect the diversity
+    of the users it is meant to serve. The human experience is fundamentally flawed but
+    how do we keep the worst parts of ourselves from manifesting in the machines we create?
 
 - timeslot: "14:00 - 14:45"
   name: "Roy Osherove"
