@@ -11,7 +11,7 @@
   height: 50px;
   border: 0;
   color: inherit;
-  background-color: hsl(346, 86%, 39%);
+  background-color: hsla(20, 10%, 18%, 0.9);
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

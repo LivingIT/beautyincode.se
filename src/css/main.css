@@ -42,12 +42,12 @@
   /**
    * CTA (Call to action)
    */
-  .cta {
+  a.cta {
     display: inline-block;
-    background-color: hsl(346, 86%, 39%);
-    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 83%, 56%);
+    color: hsl(20, 10%, 18%);
     text-decoration: none;
-    padding: 0.4em 0.8em;
+    padding: 1em 3em;
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
