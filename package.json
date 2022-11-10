@@ -4,6 +4,7 @@
   "description": "Web site for Beauty In Code",
   "main": "index.html",
   "scripts": {
+    "prepare": "husky install",
     "start": "nodemon",
     "watch": "concurrently 'npm run watch:css' 'npm run watch:svg' 'npm run watch:js'",
     "watch:css": "onchange ./src/css/* -i -- npm run css",
@@ -17,8 +18,7 @@
     "build": "npm run css && npm run svg && npm run js",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:js": "eslint src/js/*.js",
-    "lint:css": "stylelint ./src/css/*.css",
-    "prepare": "husky install"
+    "lint:css": "stylelint ./src/css/*.css"
   },
   "author": "Fredrik Frodlund",
   "license": "UNLICENSED",
@@ -34,13 +34,8 @@
     "uglifycss": "^0.0.29"
   },
   "devDependencies": {
-    "husky": "^8.0.2",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && tsc"
-    }
   },
   "lint-staged": {
     "*.css": [
