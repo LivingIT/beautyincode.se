@@ -8,3 +8,10 @@ _includes/styles.css
 
 # Node stuff
 node_modules
+
+# OS, editors & miscellaneous
+.vscode
+.cache
+.env
+.DS_Store
+.idea
