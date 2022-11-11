@@ -212,6 +212,7 @@
   ul[class],
   ol[class] {
     list-style: none;
+    margin-left: 0;
   }
 
   /**

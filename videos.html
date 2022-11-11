@@ -7,9 +7,12 @@ layout: noheader
     <h1>
       Videos
     </h1>
+
+    <ul class="article-toc">
     {% for video in site.data.videos %}
-      <a href="#y{{video.year}}">{{video.year}}</a>
+      <li><a href="#y{{video.year}}">{{video.year}}</a></li>
     {% endfor %}
+    </ul>
 
     {% for video in site.data.videos %}
       <h2 id="y{{video.year}}">{{ video.year }}</h2>
