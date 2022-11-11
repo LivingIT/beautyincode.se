@@ -14,7 +14,7 @@ $ docker-compose up
 
 This will launch a Jekyll container in Docker.
 
-### 👩‍💻 Node
+### 🪛 Node
 
 ~~~bash
 $ npm run start
