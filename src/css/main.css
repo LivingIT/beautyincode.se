@@ -81,6 +81,22 @@
   }
 
   /**
+   * Article ToC (Table of Contents)
+   */
+  .article-toc {
+    display: flex;
+  }
+
+  .article-toc li + li {
+    margin-left: 0.5em;
+  }
+
+  .article-toc li + li::before {
+    content: "|";
+    margin-right: 0.5em;
+  }
+
+  /**
    * Embed container
    */
   .embed-container {
