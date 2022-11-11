@@ -5,7 +5,11 @@
     <div class="landmark-content header__nav">
       <div class="header__logo">
         <a href="/">
-          <h1 class="at-only">{{ site.title }}</h1>
+          {% if page.layout == "noheader" %}
+            <p class="at-only">{{ site.title }}</p>
+          {% else %}
+            <h1 class="at-only">{{ site.title }}</h1>
+          {% endif %}
           {% include svg.html icon="logo_new" %}
         </a>
       </div>
