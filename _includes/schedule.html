@@ -5,17 +5,15 @@
       <span>{{ item.timeslot }}</span>
     </div>
     <div class="schedule__item-content">
-      {% if item.name %}<h3>{{ item.name }}</h3>{% endif %}
+      {% if item.name and item.bio%}
+        <h3><a href="/speakers/#{{ item.name | slugify }}">{{ item.name }}</a></h3>
+      {% else %}
+      <h3>{{ item.name }}</h3>
+      {% endif %}
       {% if item.title %}<h4>{{ item.title }}</h4>{% endif %}
       {% if item.description %}
       <div class="schedule__item-description">
         {{ item.description | markdownify }}
-      </div>
-      {% endif %}
-      {% if item.bio %}
-      <div class="schedule__item-bio">
-        <h4>About {{ item.name }}</h4>
-        {{ item.bio | markdownify }}
       </div>
       {% endif %}
     </div>
