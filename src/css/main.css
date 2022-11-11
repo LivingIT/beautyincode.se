@@ -52,6 +52,13 @@
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: none;
+    border-radius: 50em;
+    transition: transform 500ms;
+  }
+
+  a.cta:hover,
+  a.cta:focus {
+    transform: scale(1.1);
   }
 
   /**
