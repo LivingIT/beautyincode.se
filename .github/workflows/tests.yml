@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install Node packages
-        run: npm ci --production
+        run: npm ci --production --omit=dev --ignore-scripts
 
       - name: Build assets
         run: npm run build

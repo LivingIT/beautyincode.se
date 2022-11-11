@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Node packages
-        run: npm ci --production
+        run: npm ci --production --omit=dev --ignore-scripts
 
       - name: Build assets
         run: npm run build
