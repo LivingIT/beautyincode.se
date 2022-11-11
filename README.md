@@ -22,7 +22,17 @@ $ npm run start
 
 This will watch for changes in CSS, JS and SVG files and run tasks accordingly.
 
-## 🛠 Workflow
+## 👩‍💻 Contributing
+
+Adding new stuff? Awesome! Follow these steps:
+
+1. Create a feature branch based on `master` (you can name it whatever you like, for example `my-awesome-feature`)
+2. Push this branch to Github once you're done and create a new [pull request](https://github.com/LivingIT/beautyincode.se/pulls).
+3. This will run tests on the code making sure everything works as expected.
+4. Either ask a colleague to review it, or if you think you're awesome, you can merge it yourself! 💪 _(just make sure that the tests aren't failing 😉)_
+5. A merge to `master` will trigger a deploy to our development environment ([https://dev.beautyincode.se](https://dev.beautyincode.se)).
+
+## 🛠 Deploy to production
 
 Deploy to production occur when a release is created on Github. A Github Actions automatically creates the next version to be relased and adds any pull requests merged to the `master` branch since the last release to the release notes.
 
