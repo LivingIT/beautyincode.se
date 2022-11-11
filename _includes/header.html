@@ -6,11 +6,13 @@
       <div class="header__logo">
         <a href="/">
           <h1 class="at-only">{{ site.title }}</h1>
-          {% include svg.html icon="logo" %}
+          {% include svg.html icon="logo_new" %}
         </a>
       </div>
 
       <ul class="toc">
+        {%- comment -%} <li class="toc__item"><a href="/#schedule">Schedule</a></li>
+        <li class="toc__item"><a href="/#contact">Contact</a></li> {%- endcomment -%}
         <li class="toc__item"><a href="/videos/">Videos</a></li>
       </ul>
     </div>

@@ -12,6 +12,12 @@
         {{ item.description | markdownify }}
       </div>
       {% endif %}
+      {% if item.bio %}
+      <div class="schedule__item-bio">
+        <h4>About {{ item.name }}</h4>
+        {{ item.bio | markdownify }}
+      </div>
+      {% endif %}
     </div>
     <div class="schedule__item-image">
       <img src="{{ item.image }}" alt="">

@@ -7,19 +7,20 @@ layout: noheader
     <h1>
       Videos
     </h1>
-    <a href="#2020">2020</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#2019">2019</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#2018">2018</a>
+    {% for video in site.data.videos %}
+      <a href="#y{{video.year}}">{{video.year}}</a>
+    {% endfor %}
 
-    <h2 id="2020">2020</h2>
-    {% capture videoContent %}{% include_relative _content/videos/2020.md %}{% endcapture %}
-    {{ videoContent | markdownify }}
-    <h2 id="2019">2019</h2>
-    {% capture videoContent %}{% include_relative _content/videos/2019.md %}{% endcapture %}
-    {{ videoContent | markdownify }}
-    <h2 id="2018">2018</h2>
-    {% capture videoContent %}{% include_relative _content/videos/2018.md %}{% endcapture %}
-    {{ videoContent | markdownify }}
+    {% for video in site.data.videos %}
+      <h2 id="y{{video.year}}">{{ video.year }}</h2>
+      {% for speaker in video.speakers %}
+        <h3>{{ speaker.title }}</h3>
+        <p>{{ speaker.description }}</p>
+        <div class="embed-container">
+          <iframe src="https://www.youtube.com/embed/{{ speaker.videoId }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% endfor %}
+    {% endfor %}
   </div>
 </div>
 
