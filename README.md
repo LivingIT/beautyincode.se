@@ -30,7 +30,8 @@ Adding new stuff? Awesome! Follow these steps:
 2. Push this branch to Github once you're done and create a new [pull request](https://github.com/LivingIT/beautyincode.se/pulls).
 3. This will run tests on the code making sure everything works as expected.
 4. Either ask a colleague to review it, or if you think you're awesome, you can merge it yourself! 💪 _(just make sure that the tests aren't failing 😉)_
-5. A merge to `master` will trigger a deploy to our development environment ([https://dev.beautyincode.se](https://dev.beautyincode.se)).
+5. It's safe to delete your feature branch once the PR has been merged.
+6. A merge to `master` will trigger a deploy to our development environment ([https://dev.beautyincode.se](https://dev.beautyincode.se)).
 
 ## 🛠 Deploy to production
 
