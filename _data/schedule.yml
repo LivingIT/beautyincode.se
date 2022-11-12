@@ -5,16 +5,15 @@
     Coffee and tea will be served.
 
 - timeslot: "09:00 - 09:45"
-  name: "Dylan Beattie"
+  name: "Roy Osherove"
   title: "TBD"
-  image: "/images/speakers/dylan-beattie.jpg"
+  image: "/images/speakers/roy-osherove.jpg"
   bio: |
-    Dylan Beattie is a consultant, software developer and international keynote speaker.
-    He’s been building web applications since the 1990s, and works primarily on
-    Microsoft .NET, HTTP APIs, UX design, and distributed systems.
-
-    Dylan lives and works in London and when he’s not writing code he plays guitar
-    and writes songs.
+    Roy is the founder of [legatomusic.xyz](https://legatomusic.xyz) and is the author
+    of “[Art of Unit Testing](http://artofunittesting.com/)” and 
+    “[Elastic Leadership](https://elasticleadership.com/)”. He spends his time between
+    consulting & Training and working on his web3 startup relating to web3 music
+    licensing. You can find out more at [osherove.com](https://osherove.com).
   description: |
     TBA! In the meantime, please enjoy this lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,25 +29,6 @@
     Coffee and tea with a light snack will be served.
 
 - timeslot: "10:15 - 11:00"
-  name: "Linus Kvarnhammar"
-  title: "Hacked on national television"
-  image: "/images/speakers/linus-kvarnhammar.jpg"
-  bio: |
-    Linus is an independent security consultant and ethical hacker who focuses on the
-    offensive part of cyber security. He has more than 20 years of experience working
-    in the IT industry where the last 10 years have been spent exclusively doing
-    penetration tests of applications and networks with a few social engineering
-    assignments every now and then.
-  description: |
-    In 2021, Swedish national television (SVT) aired a six-part TV series called “Hacked”
-    where four professional hackers set out to hack into the private assets of normal people,
-    celebrities, and companies. They had all agreed to participate in a cyber security
-    experiment but were unaware of what exactly was going to happen. Linus was one of
-    the four hackers in the TV series and in this talk, he is going to talk about some of
-    the highlights that were seen on-screen as well as behind the scenes. This talk will
-    hopefully be both entertaining and eye-opening.
-
-- timeslot: "11:15 - 12:00"
   name: "Nyari Samushonga"
   title: "TBD"
   image: "/images/speakers/nyari-samushonga.jpg"
@@ -73,6 +53,25 @@
     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+- timeslot: "11:15 - 12:00"
+  name: "Linus Kvarnhammar"
+  title: "Hacked on national television"
+  image: "/images/speakers/linus-kvarnhammar.jpg"
+  bio: |
+    Linus is an independent security consultant and ethical hacker who focuses on the
+    offensive part of cyber security. He has more than 20 years of experience working
+    in the IT industry where the last 10 years have been spent exclusively doing
+    penetration tests of applications and networks with a few social engineering
+    assignments every now and then.
+  description: |
+    In 2021, Swedish national television (SVT) aired a six-part TV series called “Hacked”
+    where four professional hackers set out to hack into the private assets of normal people,
+    celebrities, and companies. They had all agreed to participate in a cyber security
+    experiment but were unaware of what exactly was going to happen. Linus was one of
+    the four hackers in the TV series and in this talk, he is going to talk about some of
+    the highlights that were seen on-screen as well as behind the scenes. This talk will
+    hopefully be both entertaining and eye-opening.
+
 - timeslot: "12:00 - 13:00"
   name: "Lunch"
   image: "/images/lunch.jpg"
@@ -84,6 +83,25 @@
     velit esse cillum dolore eu fugiat nulla pariatur with basil and lemon dressing.
 
 - timeslot: "13:00 - 13:45"
+  name: "Dylan Beattie"
+  title: "TBD"
+  image: "/images/speakers/dylan-beattie.jpg"
+  bio: |
+    Dylan Beattie is a consultant, software developer and international keynote speaker.
+    He’s been building web applications since the 1990s, and works primarily on
+    Microsoft .NET, HTTP APIs, UX design, and distributed systems.
+
+    Dylan lives and works in London and when he’s not writing code he plays guitar
+    and writes songs.
+  description: |
+    TBA! In the meantime, please enjoy this lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+- timeslot: "14:00 - 14:45"
   name: "Pelonomi Moiloa"
   title: "Protecting Machines from Us: Lessons from the Majority World"
   image: "/images/speakers/pelonomi-moiloa.jpg"
@@ -114,27 +132,6 @@
     into its core with intent, and machine learning that does not reflect the diversity
     of the users it is meant to serve. The human experience is fundamentally flawed but
     how do we keep the worst parts of ourselves from manifesting in the machines we create?
-
-- timeslot: "14:00 - 14:45"
-  name: "Roy Osherove"
-  title: "TBD"
-  image: "/images/speakers/roy-osherove.jpg"
-  bio: |
-    Roy Osherove is the organizer of the [CD/XP Israel meetup group](http://cdxpisrael.com/).
-    He’s the author of “[Art of Unit Testing](http://artofunittesting.com/)”, 
-    “[Elastic Leadership](https://elasticleadership.com/)” and the upcoming
-    “[Co-Ops: Pipeline Driven Organizations](https://pipelinedriven.org/)”.
-    
-    He has been working in the software industry for over 20 years in most types of
-    technical & testing roles, and these days is working as a freelance consultant &
-    trainer on-site for various companies across the world.
-  description: |
-    TBA! In the meantime, please enjoy this lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 - timeslot: "14:45 - 15:15"
   name: "Coffee"
