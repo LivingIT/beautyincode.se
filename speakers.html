@@ -11,13 +11,11 @@ title: Speakers
     <ul class="speakers">
       {% for item in site.data.schedule %}
       {% if item.bio %}
-      <li class="speakers__item">
-        <div class="speakers__container">
+        <li class="speakers__item">
           <h3 id="{{ item.name | slugify }}">{{ item.name }}</h3>
-          <img src="{{ item.image }}" alt="">
+          <img src="{{ item.image }}" class="speakers__image" alt="">
           <p>{{ item.bio | markdownify }}</p>
-        </div>
-      </li>
+        </li>
       {% endif %}
       {% endfor %}
   </ul>
