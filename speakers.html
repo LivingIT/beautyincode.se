@@ -11,8 +11,8 @@ title: Speakers
     <ul class="speakers">
       {% for item in site.data.schedule %}
       {% if item.bio %}
-        <li class="speakers__item">
-          <h3 id="{{ item.name | slugify }}">{{ item.name }}</h3>
+        <li class="speakers__item" id="{{ item.name | slugify }}">
+          <h3>{{ item.name }}</h3>
           <img src="{{ item.image }}" class="speakers__image" alt="">
           <p>{{ item.bio | markdownify }}</p>
         </li>
