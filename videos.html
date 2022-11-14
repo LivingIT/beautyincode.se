@@ -13,16 +13,22 @@ title: Videos
     {% endfor %}
     </ul>
 
+    <ul class="videos">
     {% for video in site.data.videos %}
       <h2 id="y{{video.year}}">{{ video.year }}</h2>
       {% for speaker in video.speakers %}
-        <h3>{{ speaker.title }}</h3>
-        <p>{{ speaker.description }}</p>
-        <div class="embed-container">
-          <iframe src="https://www.youtube.com/embed/{{ speaker.videoId }}" frameborder="0" allowfullscreen></iframe>
+      <li class="videos__item">
+        <div class="videos__container">
+          <h3>{{ speaker.title }}</h3>
+          <p>{{ speaker.description }}</p>
+          <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/{{ speaker.videoId }}" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
+      </li>
       {% endfor %}
     {% endfor %}
+  </ul>
   </div>
 </div>
 
