@@ -12,7 +12,7 @@ layout: noheader
       {% if item.bio %}
       <li class="speakers__item">
         <div class="speakers__container">
-          <h3 id="#{{ item.name | slugify }}">{{ item.name }}</h3>
+          <h3 id="{{ item.name | slugify }}">{{ item.name }}</h3>
           <img src="{{ item.image }}" alt="">
           <p>{{ item.bio | markdownify }}</p>
         </div>
