@@ -8,17 +8,18 @@
    * Layout
    */
   #header {
-    background-image: url("/images/hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsla(0, 0%, 0%, 0.8);
     color: hsl(0, 0%, 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .header__landmark {
     background-color: hsla(20, 10%, 18%, 0.9);
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .header__nav {
@@ -31,6 +32,7 @@
   }
 
   .header__logo .icon {
+    margin-top: 0;
     height: 4rem;
     width: 6rem;
   }
@@ -38,12 +40,15 @@
   /**
    * Table of contents
    */
+  #main-nav {
+    margin-top: 0;
+  }
+
   .toc {
     display: flex;
     font-weight: bold;
     text-align: right;
     text-transform: uppercase;
-    margin: 0;
     padding: 0;
   }
 

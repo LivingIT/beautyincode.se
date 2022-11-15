@@ -3,15 +3,19 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body{%if page.bodyClass %} class="{{ page.bodyClass }}"{% endif %}>
 
-  {% include header.html hideHero="true" %}
+  {% include header.html %}
 
   <main id="main-content">
+
+    {{ page.bodyClass }}
 
     {{ content }}
 
   </main>
+
+  {% include scrollToTop.html %}
 
   {% include footer.html %}
 

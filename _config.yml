@@ -11,6 +11,13 @@ analytics: 'UA-113788547-1'
 host: 0.0.0.0
 port: 5005
 
+# Default settings
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'page'
+
 # Exclude
 exclude:
   - 'CNAME'

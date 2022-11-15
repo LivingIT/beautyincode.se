@@ -34,6 +34,16 @@
     color: hsl(20, 10%, 18%);
   }
 
+  /* Hero theme */
+  .content-block.theme-hero {
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+  }
+
   /* Content block heading */
   .content-block h2 {
     font-size: 2em;

@@ -19,6 +19,10 @@
     margin-top: 0;
   }
 
+  .content-page main {
+    margin-top: 3rem;
+  }
+
   /**
    * Footer
    */

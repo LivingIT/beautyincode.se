@@ -5,18 +5,19 @@
  * Requires support for querySelector, classList and addEventListener
  */
 
-'use strict';
+"use strict";
 
 // Only run in capable browsers via feature detection
-var didCutTheMustard = 'querySelector' in document
-  && 'classList' in document.createElement('a')
-  && 'addEventListener' in window;
+var didCutTheMustard =
+  "querySelector" in document &&
+  "classList" in document.createElement("a") &&
+  "addEventListener" in window;
 
 /**
  * Countdown timer
  */
 function countdown(endDate) {
-  const countDownElem = document.querySelector('#countdown');
+  const countDownElem = document.querySelector("#countdown");
 
   if (!countDownElem) return;
 
@@ -37,37 +38,31 @@ function countdown(endDate) {
 
     if (timeRemaining >= 0) {
       days = parseInt(timeRemaining / 86400);
-      timeRemaining = (timeRemaining % 86400);
+      timeRemaining = timeRemaining % 86400;
 
       hours = parseInt(timeRemaining / 3600);
-      timeRemaining = (timeRemaining % 3600);
+      timeRemaining = timeRemaining % 3600;
 
       minutes = parseInt(timeRemaining / 60);
-      timeRemaining = (timeRemaining % 60);
+      timeRemaining = timeRemaining % 60;
 
       seconds = parseInt(timeRemaining);
 
-      countDownElem.querySelector('.days').innerHTML = parseInt(days, 10);
-      countDownElem.querySelector('.hours').innerHTML = hours < 10 ? "0" + hours : hours;
-      countDownElem.querySelector('.minutes').innerHTML = minutes < 10 ? "0" + minutes : minutes;
-      countDownElem.querySelector('.seconds').innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      countDownElem.querySelector(".days").innerHTML = parseInt(days, 10);
+      countDownElem.querySelector(".hours").innerHTML =
+        hours < 10 ? "0" + hours : hours;
+      countDownElem.querySelector(".minutes").innerHTML =
+        minutes < 10 ? "0" + minutes : minutes;
+      countDownElem.querySelector(".seconds").innerHTML =
+        seconds < 10 ? "0" + seconds : seconds;
     } else {
       return;
     }
 
-    const isActive = countDownElem.classList.contains('active');
+    const isActive = countDownElem.classList.contains("active");
 
-    if (!isActive) countDownElem.classList.add('active');
+    if (!isActive) countDownElem.classList.add("active");
   }
-}
-
-if (didCutTheMustard) {
-
-  // Add class "js" to html element
-  document.querySelector('html').classList.add('js');
-
-  // Start the countdown
-  countdown('2023/03/04 09:00:00');
 }
 
 function scrollToTop() {
@@ -76,20 +71,32 @@ function scrollToTop() {
 }
 
 function scrollHandler() {
-  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("scrollToTopContainer").style.display = "block";
   } else {
     document.getElementById("scrollToTopContainer").style.display = "none";
   }
 }
 
-if(document.getElementById("scrollToTopContainer") != undefined && 
-  document.getElementById("scrollToTopButton") != undefined) {
+if (didCutTheMustard) {
+  // Add class "js" to html element
+  document.querySelector("html").classList.add("js");
 
-  document.getElementById("scrollToTopButton").onclick = scrollToTop;
-  window.onscroll = scrollHandler;
+  // Start the countdown
+  countdown("2023/03/04 09:00:00");
 
-  if(document.body.scrollTop <= 50 || document.documentElement.scrollTop <= 50) {
-    document.getElementById("scrollToTopContainer").style.display = "none";
+  if (
+    document.getElementById("scrollToTopContainer") != undefined &&
+    document.getElementById("scrollToTopButton") != undefined
+  ) {
+    document.getElementById("scrollToTopButton").onclick = scrollToTop;
+    window.onscroll = scrollHandler;
+
+    if (
+      document.body.scrollTop <= 50 ||
+      document.documentElement.scrollTop <= 50
+    ) {
+      document.getElementById("scrollToTopContainer").style.display = "none";
+    }
   }
 }
