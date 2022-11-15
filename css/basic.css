@@ -28,8 +28,7 @@
    * HTML5 elements legacy reset
    */
   article,
-  aside
-  details,
+  aside details,
   figcaption,
   figure,
   footer,
@@ -119,7 +118,7 @@
    */
   html,
   body {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(30, 79%, 65%);
     color: hsl(0, 0%, 20%);
   }
 

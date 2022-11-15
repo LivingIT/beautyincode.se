@@ -1,18 +1,20 @@
 exclude:
-  - 'Dockerfile*'
-  - 'Gemfile'
-  - 'Gemfile.lock'
-  - 'LICENSE'
-  - 'README.md'
-  - 'css'
-  - 'docker-compose*.yml'
-  - 'js'
-  - 'node_modules'
-  - 'package.json'
-  - 'postcss.*.js'
-  - 'script'
-  - 'svg'
-  - 'svg-sprite.config.json'
-  - 'vendor'
-  - 'yarn-error.log'
-  - 'yarn.lock'
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "README.md"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "postcss.*.js"
+  - "svg"
+  - "svg-sprite.config.json"
+  - "vendor"
+  - "docker-compose.yml"
+  - "renovate.json"
+  - "css"
+  - "js"
+
+include:
+  - "dist"

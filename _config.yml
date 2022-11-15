@@ -1,31 +1,52 @@
 # Site settings
-title: 'Beauty In Code 2023'
-baseurl: ''
-url: 'https://beautyincode.se'
-permalink: 'pretty'
+title: "Beauty In Code 2023"
+baseurl: ""
+url: "https://beautyincode.se"
+permalink: "pretty"
 
 # Google Analytics tracking code
-analytics: 'UA-113788547-1'
+analytics: "UA-113788547-1"
 
 # Server settings
 host: 0.0.0.0
 port: 5005
 
+# Default settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: "dist/css"
+    values:
+      dist-css: true
+  - scope:
+      path: "css"
+    values:
+      dev-css: true
+  - scope:
+      path: "dist/js"
+    values:
+      dist-js: true
+  - scope:
+      path: "js"
+    values:
+      dev-js: true
+
 # Exclude
 exclude:
-  - 'CNAME'
-  - 'Gemfile'
-  - 'Gemfile.lock'
-  - 'LICENSE'
-  - 'README.md'
-  - 'node_modules'
-  - 'package.json'
-  - 'package-lock.json'
-  - 'postcss.*.js'
-  - 'script'
-  - 'src'
-  - 'svg-sprite.config.json'
-  - 'vendor'
-  - 'Dockerfile'
-  - 'docker-compose.yml'
-  - 'renovate.json'
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "README.md"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "postcss.*.js"
+  - "svg"
+  - "svg-sprite.config.json"
+  - "vendor"
+  - "docker-compose.yml"
+  - "renovate.json"

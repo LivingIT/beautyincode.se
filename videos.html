@@ -1,22 +1,17 @@
 ---
-layout: noheader
 title: Videos
 ---
 
-<div class="content-block theme-3" id="videos">
-  <div class="landmark-content">
-    <h1>{{ page.title }}</h1>
+<ul class="article-toc">
+  {% for video in site.data.videos %}
+    <li><a href="#y{{video.year}}">{{video.year}}</a></li>
+  {% endfor %}
+</ul>
 
-    <ul class="article-toc">
-    {% for video in site.data.videos %}
-      <li><a href="#y{{video.year}}">{{video.year}}</a></li>
-    {% endfor %}
-    </ul>
-
-    <ul class="videos">
-    {% for video in site.data.videos %}
-      <h2 id="y{{video.year}}">{{ video.year }}</h2>
-      {% for speaker in video.speakers %}
+<ul class="videos">
+  {% for video in site.data.videos %}
+    <h2 id="y{{video.year}}">{{ video.year }}</h2>
+    {% for speaker in video.speakers %}
       <li class="videos__item">
         <div class="videos__container">
           <h3>{{ speaker.title }}</h3>
@@ -26,11 +21,6 @@ title: Videos
           </div>
         </div>
       </li>
-      {% endfor %}
     {% endfor %}
-  </ul>
-  </div>
-</div>
-
-{% capture content %}{% include scrollToTop.html %}{% endcapture %}
-{{ content }}
+  {% endfor %}
+</ul>

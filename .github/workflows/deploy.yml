@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +26,7 @@ jobs:
         run: npm ci --production --omit=dev --ignore-scripts
 
       - name: Build assets
-        run: npm run build
+        run: npm run deploy
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

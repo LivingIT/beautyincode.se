@@ -1,10 +1,7 @@
 services:
-
   bic-jekyll:
     container_name: bic-jekyll
     image: bretfisher/jekyll-serve
-
-    command: bundle exec jekyll serve --watch --force_polling
 
     volumes:
       - .:/site
@@ -15,4 +12,7 @@ services:
       JEKYLL_ENV: development
 
     ports:
-      - '5005:5005'
+      - "5005:5005"
+      - "35729:35729"
+
+    command: bundle exec jekyll serve --watch --livereload --force_polling
