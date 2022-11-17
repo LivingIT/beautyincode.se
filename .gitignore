@@ -2,12 +2,10 @@
 _site
 .sass-cache
 .jekyll-metadata
-_includes/main.js
-_includes/sprite.svg
-_includes/styles.css
 
 # Node stuff
 node_modules
+dist
 
 # OS, editors & miscellaneous
 .vscode
@@ -15,3 +13,4 @@ node_modules
 .env
 .DS_Store
 .idea
+coc-settings.json

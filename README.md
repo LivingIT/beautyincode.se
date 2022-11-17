@@ -16,11 +16,13 @@ This will launch a Jekyll container in Docker.
 
 ### 🪛 Node
 
+You only need to run NPM if you wish to rebuild the SVG sprite.
+
 ~~~bash
-$ npm run start
+$ npm run svg
 ~~~
 
-This will watch for changes in CSS, JS and SVG files and run tasks accordingly.
+This will run [svg-sprite](https://github.com/svg-sprite/svg-sprite) and build any icons present in `/svg` to the sprite in `/images/sprite.svg`.
 
 ## 👩‍💻 Contributing
 

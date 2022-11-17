@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  {% include header.html hideHero="true" %}
+  {% include header.html %}
 
   <main id="main-content">
 
@@ -13,10 +13,10 @@
 
   </main>
 
+  {% include scrollToTop.html %}
+
   {% include footer.html %}
 
-  <style>{% include styles.css %}</style>
-  <script>{% include main.js %}</script>
-  {% include sprite.svg %}
+  {% include scripts.html %}
 </body>
 </html>

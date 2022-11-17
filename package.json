@@ -6,27 +6,25 @@
   "scripts": {
     "prepare": "husky install",
     "start": "nodemon",
-    "watch": "concurrently 'npm run watch:css' 'npm run watch:svg' 'npm run watch:js'",
-    "watch:css": "onchange ./src/css/* -i -- npm run css",
-    "watch:js": "onchange ./src/js/* -i -- npm run js",
-    "watch:svg": "onchange ./src/svg/* -i -- npm run svg",
-    "css": "uglifycss ./src/css/*.css --output ./_includes/styles.css",
-    "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
-    "js": "uglifyjs ./src/js/*.js --output ./_includes/main.js",
-    "jekyll:serve": "sleep 1; jekyll serve --incremental",
-    "jekyll:build": "jekyll build --incremental",
-    "build": "npm run css && npm run svg && npm run js",
+    "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
+    "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
+    "hash:css": "hashmark -l 8 css/*.css './dist/css/{name}-{hash}.css'",
+    "posthash:css": "npm run uglify:css",
+    "hash:js": "hashmark -l 8 js/*.js './dist/js/{name}-{hash}.js'",
+    "posthash:js": "npm run uglify:js",
+    "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "lint": "npm run lint:css && npm run lint:js",
-    "lint:js": "eslint src/js/*.js",
-    "lint:css": "stylelint ./src/css/*.css"
+    "lint:js": "eslint js/*.js",
+    "lint:css": "stylelint ./css/*.css",
+    "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
+    "deploy": "npm run hash:css && npm run hash:js && npm run svg"
   },
   "author": "Fredrik Frodlund",
   "license": "UNLICENSED",
   "dependencies": {
-    "concurrently": "^7.0.0",
     "eslint": "^8.0.0",
-    "nodemon": "^2.0.20",
-    "onchange": "^7.0.0",
+    "foreach-cli": "1.8.1",
+    "hashmark": "^5.0.0",
     "stylelint": "^14.0.0",
     "stylelint-color-format": "^1.0.0",
     "svg-sprite": "^2.0.0",
@@ -39,13 +37,13 @@
   },
   "lint-staged": {
     "*.css": [
-      "stylelint src/css/*.css"
+      "stylelint css/*.css"
     ]
   },
   "nodemonConfig": {
     "watch": [
-      "package.json"
+      "svg/*"
     ],
-    "exec": "npm run watch"
+    "exec": "npm run svg"
   }
 }

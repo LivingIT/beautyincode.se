@@ -1,1 +1,9 @@
-<script src="/js/main.js" defer></script>
+{% if jekyll.environment == "production" %}
+  {% assign js-files = site.static_files | where: "dist-js", true %}
+{% else %}
+  {% assign js-files = site.static_files | where: "dev-js", true %}
+{% endif %}
+
+{% for js in js-files %}
+  <script async src="{{ site.baseurl }}{{ js.path }}"></script>
+{% endfor %}
