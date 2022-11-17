@@ -39,7 +39,8 @@
   /* Hero theme */
   .content-block.theme-hero {
     --hero-offset: 0;
-    background-image: url("/images/hero.jpg");
+
+    background-image: url("/images/hero-2023-w942.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -52,6 +53,8 @@
 
     .content-block.theme-hero {
       --hero-offset: 5.2em;
+
+      background-image: url("/images/hero-2023-w1400.jpg");
       padding-top: calc(var(--vertical-padding) + var(--hero-offset));
     }
   }

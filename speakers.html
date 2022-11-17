@@ -7,7 +7,7 @@ title: Speakers
     {% if item.bio %}
       <li class="speakers__item" id="{{ item.name | slugify }}">
         <h3>{{ item.name }}</h3>
-        <img src="{{ item.image }}" class="speakers__image" alt="" loading="lazy">
+        <img src="{{ item.image }}" class="speakers__image" height="400" width="400" alt="" loading="lazy">
         <p>{{ item.bio | markdownify }}</p>
       </li>
     {% endif %}
