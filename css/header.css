@@ -8,7 +8,8 @@
    * Layout
    */
   #header {
-    background-color: hsla(0, 0%, 0%, 0.8);
+    background-color: hsla(20, 10%, 18%, 0.98);
+    padding: 0.5rem;
     color: hsl(0, 0%, 100%);
     position: sticky;
     top: 0;
@@ -16,11 +17,6 @@
   }
 
   .header__landmark {
-    background-color: hsla(20, 10%, 18%, 0.9);
-    padding: 0.5rem;
-  }
-
-  .header__nav {
     display: flex;
     align-items: center;
   }

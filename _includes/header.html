@@ -1,27 +1,25 @@
 <header id="header">
 
-  <div class="header__landmark">
+  <div class="header__landmark landmark-content">
 
-    <div class="landmark-content header__nav">
-      <div class="header__logo">
-        <a href="/">
-          {% if page.layout == "startpage" %}
-            <h1 class="at-only">{{ site.title }}</h1>
-          {% else %}
-            <p class="at-only">{{ site.title }}</p>
-          {% endif %}
-          {% include svg.html icon="logo_new" %}
-        </a>
-      </div>
-
-      <nav id="main-nav" aria-label="Main navigation">
-        <ul class="toc">
-          <li class="toc__item"><a href="{{ site.baseurl }}/">Home</a></li>
-          <li class="toc__item"><a href="{{ site.baseurl }}/speakers/">Speakers</a></li>
-          <li class="toc__item"><a href="{{ site.baseurl }}/videos/">Videos</a></li>
-        </ul>
-      </nav>
+    <div class="header__logo">
+      <a href="/">
+        {% if page.layout == "startpage" %}
+          <h1 class="at-only">{{ site.title }}</h1>
+        {% else %}
+          <p class="at-only">{{ site.title }}</p>
+        {% endif %}
+        {% include svg.html icon="logo" %}
+      </a>
     </div>
+
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="toc">
+        <li class="toc__item"><a href="{{ site.baseurl }}/">Home</a></li>
+        <li class="toc__item"><a href="{{ site.baseurl }}/speakers/">Speakers</a></li>
+        <li class="toc__item"><a href="{{ site.baseurl }}/videos/">Videos</a></li>
+      </ul>
+    </nav>
 
   </div>
 
