@@ -9,16 +9,22 @@
    */
   #header {
     background-color: hsla(20, 10%, 18%, 0.98);
-    padding: 0.5rem;
+    padding: 0.5em 1em;
     color: hsl(0, 0%, 100%);
-    position: sticky;
-    top: 0;
-    z-index: 1;
   }
 
-  .header__landmark {
-    display: flex;
-    align-items: center;
+  @media (min-width: 30em) {
+
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .header__landmark {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .header__logo {
@@ -32,13 +38,13 @@
   }
 
   /**
-   * Table of contents
+   * Main navigation
    */
   #main-nav {
     margin-top: 0;
   }
 
-  .toc {
+  .nav {
     display: flex;
     font-weight: bold;
     text-align: right;
@@ -46,16 +52,16 @@
     padding: 0;
   }
 
-  .toc__item + .toc__item {
+  .nav__item + .nav__item {
     margin-left: 1em;
   }
 
-  .toc__item a {
+  .nav__item a {
     text-decoration: none;
   }
 
-  .toc__item a:hover,
-  .toc__item a:active {
+  .nav__item a:hover,
+  .nav__item a:active {
     text-decoration: underline;
   }
 }
