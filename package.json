@@ -25,8 +25,6 @@
     "eslint": "^8.0.0",
     "foreach-cli": "1.8.1",
     "hashmark": "^5.0.0",
-    "nodemon": "^2.0.20",
-    "onchange": "^7.0.0",
     "stylelint": "^14.0.0",
     "stylelint-color-format": "^1.0.0",
     "svg-sprite": "^2.0.0",
