@@ -257,7 +257,10 @@
   /**
    * Target offset
    */
-  :target {
-    scroll-margin-top: 5.2em;
+  @media (min-width: 30em) {
+
+    :target {
+      scroll-margin-top: 5.2em;
+    }
   }
 }
