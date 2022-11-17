@@ -21,8 +21,8 @@
   height: 80%;
 }
 
-@media only screen and (max-width: 768px) {
-  
+@media only screen and (max-width: 48em) {
+
   #scrollToTopContainer {
     right: 2rem;
   }

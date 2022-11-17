@@ -38,15 +38,22 @@
 
   /* Hero theme */
   .content-block.theme-hero {
-    --block-offset: 5.2em;
+    --hero-offset: 0;
     background-image: url("/images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
-    margin-top: calc(var(--block-offset) * -1);
-    padding-top: calc(var(--block-offset) + var(--vertical-padding));
+    margin-top: calc(var(--hero-offset) * -1);
+  }
+
+  @media (min-width: 30em) {
+
+    .content-block.theme-hero {
+      --hero-offset: 5.2em;
+      padding-top: calc(var(--vertical-padding) + var(--hero-offset));
+    }
   }
 
   /* Content block heading */
@@ -62,8 +69,8 @@
     background-color: hsl(25, 83%, 56%);
     color: hsl(20, 10%, 18%);
     text-decoration: none;
-    padding: 1em 3em;
-    font-size: 1.2em;
+    padding: 1em 2em;
+    font-size: calc(0.8em + 1vw);
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: none;

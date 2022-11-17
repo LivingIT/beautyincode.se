@@ -2,14 +2,14 @@
   icon: email
   url: mailto:beautyincode@livingit.se
 - label: Twitter
-  icon: twitter_new
+  icon: twitter
   url: https://twitter.com/beautyincode
 - label: Facebook
-  icon: facebook_new
+  icon: facebook
   url: https://www.facebook.com/beautyincode/
 - label: LinkedIn
-  icon: linkedin_new
+  icon: linkedin
   url: https://www.linkedin.com/company/living-it
 - label: Instagram
-  icon: instagram_new
+  icon: instagram
   url: https://www.instagram.com/LivingITConsulting/

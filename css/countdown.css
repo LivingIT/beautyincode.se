@@ -12,6 +12,7 @@
     padding: 1rem 0.5rem;
     opacity: 0;
     transition: opacity 250ms ease-in-out;
+    white-space: nowrap;
   }
 
   .countdown > * {

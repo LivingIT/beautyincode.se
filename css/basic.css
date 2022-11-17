@@ -25,23 +25,6 @@
   }
 
   /**
-   * HTML5 elements legacy reset
-   */
-  article,
-  aside details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  main,
-  menu,
-  nav,
-  section {
-    display: block;
-  }
-
-  /**
    * Reset body & html spacing
    */
   body,
@@ -269,5 +252,12 @@
     height: 1.2em;
     width: 1.2em;
     vertical-align: -0.2em;
+  }
+
+  /**
+   * Target offset
+   */
+  :target {
+    scroll-margin-top: 5.2em;
   }
 }
