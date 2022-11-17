@@ -50,3 +50,4 @@ exclude:
   - "vendor"
   - "docker-compose.yml"
   - "renovate.json"
+  - "coc-settings.json"
