@@ -17,6 +17,23 @@ defaults:
       path: ''
     values:
       layout: 'page'
+  - scope:
+      path: 'dist/css'
+    values:
+      dist-css: true
+  - scope:
+      path: 'css'
+    values:
+      dev-css: true
+  - scope:
+      path: 'dist/js'
+    values:
+      dist-js: true
+  - scope:
+      path: 'js'
+    values:
+      dev-js: true
+
 
 # Exclude
 exclude:

@@ -10,8 +10,10 @@
    * Content block
    */
   .content-block {
+    --vertical-padding: 4em;
     background-color: hsl(0, 0%, 100%);
-    padding: 4em 1em;
+    padding: var(--vertical-padding) 1em;
+    margin-top: 0;
   }
 
   .content-block + .content-block {
@@ -36,12 +38,15 @@
 
   /* Hero theme */
   .content-block.theme-hero {
+    --block-offset: 5.2em;
     background-image: url("/images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
+    margin-top: calc(var(--block-offset) * -1);
+    padding-top: calc(var(--block-offset) + var(--vertical-padding));
   }
 
   /* Content block heading */
@@ -95,6 +100,13 @@
     text-align: center;
     top: 0;
     width: 100%;
+  }
+
+  /**
+   * Article
+   */
+  article {
+    padding-top: 2em;
   }
 
   /**

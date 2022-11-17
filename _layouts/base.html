@@ -3,13 +3,11 @@
 <head>
   {% include head.html %}
 </head>
-<body{%if page.bodyClass %} class="{{ page.bodyClass }}"{% endif %}>
+<body>
 
   {% include header.html %}
 
   <main id="main-content">
-
-    {{ page.bodyClass }}
 
     {{ content }}
 
@@ -19,8 +17,7 @@
 
   {% include footer.html %}
 
-  <style>{% include styles.css %}</style>
-  <script>{% include main.js %}</script>
+  {% include scripts.html %}
   {% include sprite.svg %}
 </body>
 </html>

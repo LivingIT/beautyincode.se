@@ -2,24 +2,14 @@
 title: Speakers
 ---
 
-<div class="content-block theme-3" id="speakers">
-  <div class="landmark-content">
-    <h1>
-      Speakers
-    </h1>
-    <ul class="speakers">
-      {% for item in site.data.schedule %}
-      {% if item.bio %}
-        <li class="speakers__item" id="{{ item.name | slugify }}">
-          <h3>{{ item.name }}</h3>
-          <img src="{{ item.image }}" class="speakers__image" alt="">
-          <p>{{ item.bio | markdownify }}</p>
-        </li>
-      {% endif %}
-      {% endfor %}
-  </ul>
-  </div>
-</div>
-
-{% capture content %}{% include scrollToTop.html %}{% endcapture %}
-{{ content }}
+<ul class="speakers">
+  {% for item in site.data.schedule %}
+    {% if item.bio %}
+      <li class="speakers__item" id="{{ item.name | slugify }}">
+        <h3>{{ item.name }}</h3>
+        <img src="{{ item.image }}" class="speakers__image" alt="">
+        <p>{{ item.bio | markdownify }}</p>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

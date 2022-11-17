@@ -10,6 +10,8 @@
     "watch:css": "onchange ./src/css/* -i -- npm run css",
     "watch:js": "onchange ./src/js/* -i -- npm run js",
     "watch:svg": "onchange ./src/svg/* -i -- npm run svg",
+    "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
+    "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
     "css": "uglifycss ./src/css/*.css --output ./_includes/styles.css",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "js": "uglifyjs ./src/js/*.js --output ./_includes/main.js",
@@ -25,6 +27,7 @@
   "dependencies": {
     "concurrently": "^7.0.0",
     "eslint": "^8.0.0",
+    "foreach-cli": "1.8.1",
     "nodemon": "^2.0.20",
     "onchange": "^7.0.0",
     "stylelint": "^14.0.0",
