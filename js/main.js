@@ -16,7 +16,7 @@ var didCutTheMustard =
 /**
  * Countdown timer
  */
-function countdown(endDate) {
+const countdown = (endDate) => {
   const countDownElem = document.querySelector("#countdown");
 
   if (!countDownElem) return;
@@ -29,9 +29,7 @@ function countdown(endDate) {
     return;
   }
 
-  setInterval(calculate, 1000);
-
-  function calculate() {
+  const calculate = () => {
     let startDate = new Date().getTime();
 
     let timeRemaining = parseInt((endDate - startDate) / 1000);
@@ -63,6 +61,8 @@ function countdown(endDate) {
 
     if (!isActive) countDownElem.classList.add("active");
   }
+
+  setInterval(calculate, 1000);
 }
 
 function scrollToTop() {
