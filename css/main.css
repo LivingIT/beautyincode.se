@@ -36,6 +36,12 @@
     color: hsl(20, 10%, 18%);
   }
 
+  .content-block.theme-4 {
+    background-color: hsl(25, 83%, 56%);
+    color: hsl(20, 10%, 18%);
+    text-align: center;
+  }
+
   /* Hero theme */
   .content-block.theme-hero {
     --hero-offset: 0;
@@ -84,6 +90,11 @@
   a.cta:hover,
   a.cta:focus {
     transform: scale(1.1);
+  }
+
+  a.cta_masterclass {
+    background-color: hsl(20, 10%, 18%);
+    color: hsl(0, 0%, 100%);
   }
 
   /**

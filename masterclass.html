@@ -1,0 +1,16 @@
+---
+title: Masterclass
+---
+
+<ul class="masterclass">
+  {% for item in site.data.masterclass %}
+      <li class="masterclass__item" id="{{ item.name | slugify }}">
+        <h2>{{ item.title }}</h2>
+        <img src="{{ item.image }}" class="" height="400" width="400" alt="" loading="lazy">
+        <p>{{ item.description | markdownify }}</p>
+        <p>When: {{ item.dateAndTime }}</p>
+        <p>Price: {{ item.price }}</p>
+        <a href="mailto:masterclass@livingit.se" class="cta masterclass__cta">Order now</a>
+      </li>
+  {% endfor %}
+</ul>
