@@ -3,16 +3,15 @@
  */
 
 @media screen {
-
   .countdown {
     display: none;
+    padding: 1rem 0.5rem;
     font-size: calc(1.4em + 2.6vw);
     font-weight: 500;
     line-height: 1;
-    padding: 1rem 0.5rem;
+    white-space: nowrap;
     opacity: 0;
     transition: opacity 250ms ease-in-out;
-    white-space: nowrap;
   }
 
   .countdown > * {
@@ -31,8 +30,8 @@
   .countdown__unit {
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .countdown__unit + .countdown__unit {

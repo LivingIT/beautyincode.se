@@ -5,10 +5,9 @@
  */
 
 @media all {
-
   * {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   /**
@@ -29,8 +28,8 @@
    */
   body,
   html {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   /**
@@ -50,9 +49,9 @@
    * Tables
    */
   table {
-    border-collapse: collapse;
-    border-spacing: 0;
     width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
   }
 
   table,
@@ -81,9 +80,9 @@
    * Images
    */
   img {
-    border: 0;
-    height: auto;
     max-width: 100%;
+    height: auto;
+    border: 0;
   }
 
   img.left {
@@ -101,8 +100,8 @@
    */
   html,
   body {
-    background-color: hsl(30, 79%, 65%);
     color: hsl(0, 0%, 20%);
+    background-color: hsl(30, 79%, 65%);
   }
 
   /**
@@ -134,9 +133,9 @@
   h4,
   h5,
   h6 {
+    margin: 2em 0 1em;
     font-weight: 700;
     line-height: 1.125;
-    margin: 2em 0 1em;
     text-transform: uppercase;
   }
 
@@ -193,8 +192,8 @@
 
   ul[class],
   ol[class] {
-    list-style: none;
     margin-left: 0;
+    list-style: none;
   }
 
   /**
@@ -235,12 +234,12 @@
    * Visually hidden (still visible to AT:s)
    */
   .at-only {
-    height: 1px;
-    left: -10000px;
-    overflow: hidden;
     position: absolute;
     top: auto;
+    left: -10000px;
     width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
   /**
@@ -248,17 +247,16 @@
    */
   .icon {
     display: inline-block;
-    fill: currentcolor;
-    height: 1.2em;
     width: 1.2em;
+    height: 1.2em;
     vertical-align: -0.2em;
+    fill: currentcolor;
   }
 
   /**
    * Target offset
    */
   @media (min-width: 30em) {
-
     :target {
       scroll-margin-top: 5.2em;
     }

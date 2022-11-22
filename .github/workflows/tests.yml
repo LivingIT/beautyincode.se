@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   test:
-
     name: Run linting tasks & HTML proofer
 
     runs-on: ubuntu-latest
@@ -16,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install Node packages
-        run: npm ci --production --omit=dev --ignore-scripts
+        run: npm ci --ignore-scripts
 
       - name: Build assets
         run: npm run deploy

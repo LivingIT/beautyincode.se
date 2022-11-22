@@ -3,19 +3,18 @@
  */
 
 @media screen {
-
   #footer {
-    background-color: hsl(32, 100%, 87%);
-    color: hsl(20, 10%, 18%);
     padding: 4em 1em;
+    color: hsl(20, 10%, 18%);
     text-align: center;
+    background-color: hsl(32, 100%, 87%);
   }
 
   .colophon {
-    margin-left: auto;
+    max-width: 28em;
     margin-right: auto;
     margin-bottom: 4em;
-    max-width: 28em;
+    margin-left: auto;
     font-size: 0.8em;
   }
 
@@ -38,8 +37,8 @@
   }
 
   .footer-links .icon {
-    height: 3em;
     width: 3em;
+    height: 3em;
   }
 
   /**
@@ -47,12 +46,12 @@
    */
   .founder-logo {
     display: inline-block;
-    text-align: center;
     margin-top: 2em;
+    text-align: center;
   }
 
   .founder-logo .icon {
-    height: 2em;
     width: 6em;
+    height: 2em;
   }
 }
