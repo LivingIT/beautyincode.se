@@ -25,15 +25,20 @@
     "eslint": "^8.0.0",
     "foreach-cli": "1.8.1",
     "hashmark": "^5.0.0",
-    "stylelint": "^14.0.0",
     "stylelint-color-format": "^1.0.0",
     "svg-sprite": "^2.0.0",
     "uglify-es": "^3.0.28",
     "uglifycss": "^0.0.29"
   },
   "devDependencies": {
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-prettier": "^2.0.0"
   },
   "lint-staged": {
     "*.css": [
