@@ -3,13 +3,12 @@
  */
 
 @media screen {
-
   /**
    * Landmark content
    */
   .landmark-content {
-    margin: 0 auto;
     max-width: 48rem;
+    margin: 0 auto;
   }
 
   /**

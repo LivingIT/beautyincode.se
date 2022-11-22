@@ -3,16 +3,15 @@
  */
 
 @media screen {
-
   .masterclass__item {
-    background-color: hsla(0, 0%, 100%, 0.1);
     padding: 1em;
+    background-color: hsla(0, 0%, 100%, 0.1);
   }
 
   .masterclass__item::after {
-    content: "";
     display: block;
     clear: both;
+    content: "";
   }
 
   .masterclass__item:nth-child(odd) {
@@ -23,5 +22,4 @@
     padding: 0.5em 1em !important;
     font-size: 1.2em !important;
   }
-
 }

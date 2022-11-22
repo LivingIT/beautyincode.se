@@ -3,14 +3,13 @@
  */
 
 @media screen {
-
   .hero {
-    padding: 0 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    justify-content: center;
+    padding: 0 1rem;
     text-shadow: 0 0 1px hsla(0, 0%, 0%, 0.9);
+    text-transform: uppercase;
   }
 
   .hero__message {

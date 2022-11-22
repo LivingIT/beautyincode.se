@@ -3,18 +3,16 @@
  */
 
 @media screen {
-
   /**
    * Layout
    */
   #header {
-    background-color: hsla(20, 10%, 18%, 0.98);
     padding: 0.5em 1em;
     color: hsl(0, 0%, 100%);
+    background-color: hsla(20, 10%, 18%, 0.98);
   }
 
   @media (min-width: 30em) {
-
     #header {
       position: sticky;
       top: 0;
@@ -32,9 +30,9 @@
   }
 
   .header__logo .icon {
-    margin-top: 0;
-    height: 4rem;
     width: 6rem;
+    height: 4rem;
+    margin-top: 0;
   }
 
   /**
@@ -46,10 +44,10 @@
 
   .nav {
     display: flex;
+    padding: 0;
     font-weight: bold;
     text-align: right;
     text-transform: uppercase;
-    padding: 0;
   }
 
   .nav__item + .nav__item {
