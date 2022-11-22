@@ -8,8 +8,11 @@
       {% if item.name and item.bio%}
         <h3><a href="/speakers/#{{ item.name | slugify }}">{{ item.name }}</a></h3>
       {% else %}
-      <h3>{{ item.name }}</h3>
+        <h3>{{ item.name }}</h3>
       {% endif %}
+      <div class="schedule__item-m-image">
+        <img src="{{ item.image }}" alt="" height="400" width="400" loading="lazy">
+      </div>
       {% if item.title %}<h4>{{ item.title }}</h4>{% endif %}
       {% if item.description %}
       <div class="schedule__item-description">
