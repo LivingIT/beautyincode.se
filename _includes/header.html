@@ -13,7 +13,11 @@
       </a>
     </div>
 
-    <nav id="main-nav" aria-label="Main navigation">
+    <nav id="main-nav" aria-label="Main">
+      <button id="main-nav-trigger" aria-hidden="true">
+        {% include svg.html icon="menu" %}
+        <span>Menu</span>
+      </button>
       <ul class="nav">
         <li class="nav__item"><a href="{{ site.baseurl }}/">Home</a></li>
         <li class="nav__item"><a href="{{ site.baseurl }}/speakers/">Speakers</a></li>

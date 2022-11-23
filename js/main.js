@@ -78,6 +78,58 @@ function scrollHandler() {
   }
 }
 
+// Toggle attributes true/false
+const attrToggle = (elem, attr) =>
+  elem.getAttribute(attr) == 'false'
+    ? elem.setAttribute(attr, 'true')
+    : elem.setAttribute(attr, 'false')
+
+// Check if child of elem
+const checkParent = (parent, child) => {
+  if (parent.contains(child)) return true
+  return false
+}
+
+const slideInNavigation = (nav, trigger) => {
+  const navElem = document.querySelector(nav)
+  const triggerElem = document.querySelector(trigger)
+
+  // Add a11y attributes
+  navElem.setAttribute('aria-expanded', 'false')
+  triggerElem.setAttribute('aria-controls', `#${navElem.id}`)
+  // triggerElem.setAttribute('aria-hidden', 'false')
+  triggerElem.setAttribute('id', 'main-nav-trigger')
+
+  document.addEventListener('click', (e) => {
+    if (e.target.closest(trigger)) {
+      attrToggle(navElem, 'aria-expanded')
+      triggerElem.toggleAttribute('aria-expanded')
+    }
+    if (
+      !e.target.closest(trigger) &&
+      navElem.getAttribute('aria-expanded') === 'true'
+    ) {
+      attrToggle(navElem, 'aria-expanded')
+      triggerElem.toggleAttribute('aria-expanded')
+    }
+  })
+
+  document.addEventListener('keyup', (e) => {
+    if (e.code == 'Tab') {
+      const focusElem = document.activeElement
+      console.log('focusElem: ', focusElem)
+      console.log('isInNav: ', checkParent(navElem, focusElem))
+      if (
+        !checkParent(navElem, focusElem) &&
+        navElem.getAttribute('aria-expanded') === 'true'
+      ) {
+        attrToggle(navElem, 'aria-expanded')
+        triggerElem.toggleAttribute('aria-expanded')
+      }
+    }
+  })
+}
+
 if (didCutTheMustard) {
   // Add class "js" to html element
   document.querySelector('html').classList.add('js')
@@ -99,4 +151,7 @@ if (didCutTheMustard) {
       document.getElementById('scrollToTopContainer').style.display = 'none'
     }
   }
+
+  // Fire up the slide-in menu
+  slideInNavigation('#main-nav', '#main-nav-trigger')
 }

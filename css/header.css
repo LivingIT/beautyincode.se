@@ -3,26 +3,18 @@
  */
 
 @media screen {
-  /**
-   * Layout
-   */
   #header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     padding: 0.5em 1em;
     color: hsl(0, 0%, 100%);
-    background-color: hsla(20, 10%, 18%, 0.98);
+    background-color: hsl(20, 10%, 18%);
   }
 
-  @media (min-width: 30em) {
-    #header {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
-
-    .header__landmark {
-      display: flex;
-      align-items: center;
-    }
+  .header__landmark {
+    display: flex;
+    align-items: center;
   }
 
   .header__logo {
@@ -33,33 +25,5 @@
     width: 6rem;
     height: 4rem;
     margin-top: 0;
-  }
-
-  /**
-   * Main navigation
-   */
-  #main-nav {
-    margin-top: 0;
-  }
-
-  .nav {
-    display: flex;
-    padding: 0;
-    font-weight: bold;
-    text-align: right;
-    text-transform: uppercase;
-  }
-
-  .nav__item + .nav__item {
-    margin-left: 1em;
-  }
-
-  .nav__item a {
-    text-decoration: none;
-  }
-
-  .nav__item a:hover,
-  .nav__item a:active {
-    text-decoration: underline;
   }
 }
