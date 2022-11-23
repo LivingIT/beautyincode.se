@@ -68,6 +68,8 @@
   }
 
   .nav__item a {
+    display: block;
+    padding: 0.25em 0;
     text-decoration: none;
   }
 
@@ -83,12 +85,20 @@
       position: static;
     }
 
-    #main-nav-trigger {
+    .js #main-nav[aria-expanded] {
+      filter: none;
+    }
+
+    .js #main-nav-trigger {
       display: none;
     }
 
     .nav {
       flex-direction: row;
+    }
+
+    .nav__item a {
+      padding: 0;
     }
 
     .nav__item + .nav__item {

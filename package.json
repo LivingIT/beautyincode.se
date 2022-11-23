@@ -42,6 +42,7 @@
   },
   "lint-staged": {
     "*.css": [
+      "stylelint --fix css/*.css",
       "stylelint css/*.css"
     ]
   },
