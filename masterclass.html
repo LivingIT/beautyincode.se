@@ -2,15 +2,22 @@
 title: Masterclass
 ---
 
-<ul class="masterclass">
+<!-- <ul class="masterclass">
   {% for item in site.data.masterclass %}
       <li class="masterclass__item" id="{{ item.name | slugify }}">
-        <h2>{{ item.title }}</h2>
+        <h2>Elastic, agile and adaptive leadership Workshop with Roy Osherove</h2>
         <img src="{{ item.image }}" class="" height="400" width="400" alt="" loading="lazy">
         <p>{{ item.description | markdownify }}</p>
-        <p>When: {{ item.dateAndTime }}</p>
-        <p>Price: {{ item.price }}</p>
+        <p>Where:Living IT, Gustav Adolfs torg 12 Malmö </p>
+        <p>When: 3 mars 9:00-17:00</p>
+        <p>Price: 6000 SEK excl. VAT</p>
         <a href="mailto:masterclass@livingit.se" class="cta masterclass__cta">Contact us!</a>
       </li>
   {% endfor %}
-</ul>
+</ul> -->
+
+
+<article>
+  {% capture content %}{% include_relative _content/masterclass.md %}{% endcapture %}
+  {{ content | markdownify }}
+</article>
