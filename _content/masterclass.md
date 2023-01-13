@@ -21,6 +21,6 @@ In this workshop we will learn essential skills and techniques for leading softw
 6. Commitment Language
 7. Exercises on Commitment Language
 
-**Where: Living IT, Gustav Adolfs torg 12 Malmö**  
-**When: 3 mars 9:00-17:00**  
-**Price: 6000 SEK excl. VAT**  
+**Where: Living IT, Gustav Adolfs Torg 12, Malmö**  
+**When: March 4, 9:00-17:00**  
+**Price: 8000 SEK incl. 25 % VAT**  
