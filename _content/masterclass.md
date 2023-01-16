@@ -23,7 +23,7 @@ In this workshop we will learn essential skills and techniques for leading softw
 6. Commitment Language
 7. Exercises on Commitment Language
 
-***Limited seats available**
+*** Limited number of seats!**
 
 **Where: Living IT, Gustav Adolfs Torg 12, Malmö**  
 **When: March 4, 9:00-17:00**  
