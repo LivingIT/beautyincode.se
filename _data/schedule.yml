@@ -16,6 +16,8 @@
   description: |
     Roy walks through the basics of what solidity smart contracts look like and what type of patterns are enabled through them. 
     We also discuss what practices become extra important(hint: testing, auditing), what practices become problematic (hint: continuous delivery), and what design patterns become problematic (hint: CRUD).
+  masterclass: |
+    Check out his masterclass "ELASTIC LEADERSHIP" on Friday the 3rd!
     
 
 - timeslot: "10:00 - 10:30"
@@ -73,7 +75,7 @@
 
 - timeslot: "13:15 - 14:00"
   name: "Dylan Beattie"
-  title: "TBA!"
+  title: "From Hot Metal to HTML: The Story of Typography"
   image: "/images/speakers/dylan-beattie.jpg"
   bio: |
     Dylan Beattie is a consultant, software developer and international keynote speaker.
@@ -83,6 +85,14 @@
     Dylan lives and works in London and when he’s not writing code he plays guitar
     and writes songs.
   description: |
+    Arial, Times New Roman, Consolas, Comic Sans… digital typography has turned us all into typesetters. 
+    The tools we use, the apps we build, the emails we send: with so much of our lives mediated by technology, something as seemingly innocuous as picking a typeface can end up defining our relationship with the systems we use, and become part of the identity that we project into the world. 
+    Typography is a fundamental part of modern information design, with implications for user experience, accessibility, even performance - and when it goes wrong, it can produce some of the most baffling bugs you’ve ever seen.
+    
+    Join Dylan Beattie for a journey into the weird and wonderful history of digital typography, from the origins of movable type in 8th century Asia, to the world of e-ink displays and web typography. 
+    We’ll look at the relationship between technology and typography over the centuries: the Gutenberg Press, Linotype machines, WYSIWYG and the desktop publishing revolution. 
+    What was so special about the Apple II? 
+    How do you design a pixel font? We’ll learn why they’re called upper and lower case, we’ll talk about why so many developers find CSS counter-intuitive - and we’ll find out why so many emails used to end with the letter J.
     
 
 - timeslot: "14:15 - 15:00"

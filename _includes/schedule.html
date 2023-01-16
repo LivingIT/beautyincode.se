@@ -19,6 +19,9 @@
         {{ item.description | markdownify }}
       </div>
       {% endif %}
+      {% if item.masterclass %}
+      <a href="/masterclass/"><div class="schedule__item-masterclass">{{item.masterclass}}</div></a>
+      {% endif %}
     </div>
     <div class="schedule__item-image">
       <img src="{{ item.image }}" alt="" height="400" width="400" loading="lazy">
