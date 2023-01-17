@@ -2,6 +2,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+vendor
 
 # Node stuff
 node_modules
