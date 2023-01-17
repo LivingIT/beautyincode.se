@@ -36,8 +36,6 @@
   }
 
   .content-block.theme-4 {
-    color: hsl(20, 10%, 18%);
-    text-align: center;
     background-color: hsl(25, 83%, 56%);
   }
 
@@ -177,5 +175,9 @@
 
   .figure-text > * {
     margin-top: 0;
+  }
+
+  .figure-text article {
+    padding: 0;
   }
 }
