@@ -36,9 +36,7 @@
   }
 
   .content-block.theme-4 {
-    color: hsl(20, 10%, 18%);
-    text-align: center;
-    background-color: hsl(25, 83%, 56%);
+    background-color: hsl(32, 100%, 87%);
   }
 
   /* Hero theme */
@@ -84,14 +82,16 @@
     transition: transform 500ms;
   }
 
+  a.cta__secondary {
+    padding: 0.75em 1.75em;
+    font-size: 1.4em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(20, 10%, 18%);
+  }
+
   a.cta:hover,
   a.cta:focus {
     transform: scale(1.1);
-  }
-
-  a.cta_masterclass {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(20, 10%, 18%);
   }
 
   /**
@@ -175,7 +175,15 @@
     grid-column-gap: 2em;
   }
 
+  .figure-text__alt-1 {
+    grid-template-columns: auto 1fr;
+  }
+
   .figure-text > * {
     margin-top: 0;
+  }
+
+  .figure-text article {
+    padding: 0;
   }
 }
