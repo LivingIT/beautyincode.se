@@ -16,7 +16,7 @@
   description: |
     Roy walks through the basics of what solidity smart contracts look like and what type of patterns are enabled through them. 
     We also discuss what practices become extra important(hint: testing, auditing), what practices become problematic (hint: continuous delivery), and what design patterns become problematic (hint: CRUD).
-  masterclass: "ELASTIC LEADERSHIP"
+  masterclass: "Elastic, agile and adaptive leadership"
 
 - timeslot: "10:00 - 10:30"
   name: "Fika"

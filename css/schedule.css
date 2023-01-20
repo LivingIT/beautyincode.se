@@ -54,6 +54,10 @@
     font-weight: bold;
   }
 
+  .schedule__item-masterclass-link {
+    text-transform: uppercase;
+  }
+
   @supports (display: grid) {
     .schedule__item {
       display: grid;
