@@ -6,6 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "start": "nodemon",
+    "jekyll": "bundle exec jekyll serve --drafts",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
     "hash:css": "hashmark -l 8 css/*.css './dist/css/{name}-{hash}.css'",

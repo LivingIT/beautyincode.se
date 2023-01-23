@@ -21,4 +21,29 @@
     font-size: calc(1em + 1vw);
     font-weight: bold;
   }
+
+  .hero__price-tag {
+    position: absolute;
+    top: -2.9em;
+    right: -5.6em;
+    padding: 3em 5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: hsl(25, 83%, 56%);
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: 30em) {
+    .hero__price-tag {
+      top: 0.7em;
+      font-size: 1.4em;
+    }
+  }
+
+  @media (min-width: 50em) {
+    .hero__price-tag {
+      top: 0;
+      font-size: 1.8em;
+    }
+  }
 }
