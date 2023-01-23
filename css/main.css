@@ -44,6 +44,7 @@
     --hero-offset: 0;
     position: relative;
     margin-top: calc(var(--hero-offset) * -1);
+    overflow: hidden;
     color: hsl(0, 0%, 100%);
     background-color: hsl(0, 0%, 0%);
     background-image: url("/images/hero-2023-w942.jpg");
