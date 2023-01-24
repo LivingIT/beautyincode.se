@@ -1,33 +1,34 @@
-- timeslot: "08:15 - 09:00"
-  name: "The doors open"
-  image: "/images/welcome.jpg"
+- timeslot: '08:15 - 09:00'
+  name: 'The doors open'
+  image: '/images/welcome.jpg'
   description: |
     Coffee and tea will be served.
 
-- timeslot: "09:00 - 10:00"
-  name: "Roy Osherove"
-  title: "The good, bad, and beautiful of writing blockchain-based smart contracts"
-  image: "/images/speakers/roy-osherove.jpg"
+- timeslot: '09:00 - 10:00'
+  name: 'Roy Osherove'
+  title: 'The good, bad, and beautiful of writing blockchain-based smart contracts'
+  image: '/images/speakers/roy-osherove.jpg'
   bio: |
-    Roy Osherove is the founder of Legato - a decentralized licensing platform. 
-    He is also the author of "The art of Unit Testing" and "Elastic Leadership". 
-    Roy trains and speaks worldwide on engineering practices, continuous delivery,  Coding in Web3, TDD, and more. 
+    Roy Osherove is the founder of Legato - a decentralized licensing platform.
+    He is also the author of "The art of Unit Testing" and "Elastic Leadership".
+    Roy trains and speaks worldwide on engineering practices, continuous delivery,  Coding in Web3, TDD, and more.
     You can find out more at [osherove.com](https://osherove.com).
   description: |
-    Roy walks through the basics of what solidity smart contracts look like and what type of patterns are enabled through them. 
+    Roy walks through the basics of what solidity smart contracts look like and what type of patterns are enabled through them.
     We also discuss what practices become extra important(hint: testing, auditing), what practices become problematic (hint: continuous delivery), and what design patterns become problematic (hint: CRUD).
-  masterclass: "Elastic, agile and adaptive leadership"
 
-- timeslot: "10:00 - 10:30"
-  name: "Fika"
-  image: "/images/fika.jpg"
+    **Check out his masterclass "[Elastic, agile and adaptive leadership](/masterclass/)" on Friday march 3rd!**
+
+- timeslot: '10:00 - 10:30'
+  name: 'Fika'
+  image: '/images/fika.jpg'
   description: |
     Coffee and tea with a light snack will be served.
 
-- timeslot: "10:30 - 11:15"
-  name: "Nyari Samushonga"
-  title: "TBA!"
-  image: "/images/speakers/nyari-samushonga.jpg"
+- timeslot: '10:30 - 11:15'
+  name: 'Nyari Samushonga'
+  title: 'TBA!'
+  image: '/images/speakers/nyari-samushonga.jpg'
   bio: |
     Nyari Samushonga is the CEO of WeThinkCode, a South African tech academy that operates
     in Joburg, Durban and Cape Town. As an Entrepreneur and Tech Executive, Nyari is
@@ -42,12 +43,11 @@
     Nyari finds sanity in road cycling and strength training and makes time for these
     activities to help her achieve balance.
   description: |
-    
 
-- timeslot: "11:30 - 12:15"
-  name: "Linus Kvarnhammar"
-  title: "Hacked on national television"
-  image: "/images/speakers/linus-kvarnhammar.jpg"
+- timeslot: '11:30 - 12:15'
+  name: 'Linus Kvarnhammar'
+  title: 'Hacked on national television'
+  image: '/images/speakers/linus-kvarnhammar.jpg'
   bio: |
     Linus is an independent security consultant and ethical hacker who focuses on the
     offensive part of cyber security. He has more than 20 years of experience working
@@ -63,18 +63,18 @@
     the highlights that were seen on-screen as well as behind the scenes. This talk will
     hopefully be both entertaining and eye-opening.
 
-- timeslot: "12:15 - 13:15"
-  name: "Lunch"
-  image: "/images/lunch.jpg"
+- timeslot: '12:15 - 13:15'
+  name: 'Lunch'
+  image: '/images/lunch.jpg'
   description: |
-    
+
 
     **Vegetarian and vegan option:** TBA!
 
-- timeslot: "13:15 - 14:00"
-  name: "Dylan Beattie"
-  title: "From Hot Metal to HTML: The Story of Typography"
-  image: "/images/speakers/dylan-beattie.jpg"
+- timeslot: '13:15 - 14:00'
+  name: 'Dylan Beattie'
+  title: 'From Hot Metal to HTML: The Story of Typography'
+  image: '/images/speakers/dylan-beattie.jpg'
   bio: |
     Dylan Beattie is a consultant, software developer and international keynote speaker.
     He’s been building web applications since the 1990s, and works primarily on
@@ -83,26 +83,25 @@
     Dylan lives and works in London and when he’s not writing code he plays guitar
     and writes songs.
   description: |
-    Arial, Times New Roman, Consolas, Comic Sans… digital typography has turned us all into typesetters. 
-    The tools we use, the apps we build, the emails we send: with so much of our lives mediated by technology, something as seemingly innocuous as picking a typeface can end up defining our relationship with the systems we use, and become part of the identity that we project into the world. 
+    Arial, Times New Roman, Consolas, Comic Sans… digital typography has turned us all into typesetters.
+    The tools we use, the apps we build, the emails we send: with so much of our lives mediated by technology, something as seemingly innocuous as picking a typeface can end up defining our relationship with the systems we use, and become part of the identity that we project into the world.
     Typography is a fundamental part of modern information design, with implications for user experience, accessibility, even performance - and when it goes wrong, it can produce some of the most baffling bugs you’ve ever seen.
-    
-    Join Dylan Beattie for a journey into the weird and wonderful history of digital typography, from the origins of movable type in 8th century Asia, to the world of e-ink displays and web typography. 
-    We’ll look at the relationship between technology and typography over the centuries: the Gutenberg Press, Linotype machines, WYSIWYG and the desktop publishing revolution. 
-    What was so special about the Apple II? 
-    How do you design a pixel font? We’ll learn why they’re called upper and lower case, we’ll talk about why so many developers find CSS counter-intuitive - and we’ll find out why so many emails used to end with the letter J.
-    
 
-- timeslot: "14:15 - 15:00"
-  name: "Pelonomi Moiloa"
-  title: "Protecting Machines from Us: Lessons from the Majority World"
-  image: "/images/speakers/pelonomi-moiloa.jpg"
+    Join Dylan Beattie for a journey into the weird and wonderful history of digital typography, from the origins of movable type in 8th century Asia, to the world of e-ink displays and web typography.
+    We’ll look at the relationship between technology and typography over the centuries: the Gutenberg Press, Linotype machines, WYSIWYG and the desktop publishing revolution.
+    What was so special about the Apple II?
+    How do you design a pixel font? We’ll learn why they’re called upper and lower case, we’ll talk about why so many developers find CSS counter-intuitive - and we’ll find out why so many emails used to end with the letter J.
+
+- timeslot: '14:15 - 15:00'
+  name: 'Pelonomi Moiloa'
+  title: 'Protecting Machines from Us: Lessons from the Majority World'
+  image: '/images/speakers/pelonomi-moiloa.jpg'
   bio: |
     Pelonomi is co-founder and CEO at Lelapa.AI, a machine learning startup bringing
     low-resource-powered African technology to the world. Pelonomi has eight years of
     experience in the data science space and has spent the past four years leading data
     science projects and productionalising machine learning solutions in the finance sector.
-    
+
     Pelonomi has biomedical and electrical engineering degrees from the university of the
     Witwatersrand with a Masters in Biomedical Engineering obtained while on scholarship
     at Tohoku University in Japan. With a passion for community, Pelonomi enjoys getting
@@ -125,16 +124,16 @@
     of the users it is meant to serve. The human experience is fundamentally flawed but
     how do we keep the worst parts of ourselves from manifesting in the machines we create?
 
-- timeslot: "15:00 - 15:30"
-  name: "Coffee"
-  image: "/images/coffee.jpg"
+- timeslot: '15:00 - 15:30'
+  name: 'Coffee'
+  image: '/images/coffee.jpg'
   description: |
     Coffee and tea with a light snack will be served.
 
-- timeslot: "15:30 - 16:30"
-  name: "Scott Hanselman"
-  title: "Mentorship vs Sponsorship - Systems Thinking and Stories"
-  image: "/images/speakers/scott-hanselman.jpg"
+- timeslot: '15:30 - 16:30'
+  name: 'Scott Hanselman'
+  title: 'Mentorship vs Sponsorship - Systems Thinking and Stories'
+  image: '/images/speakers/scott-hanselman.jpg'
   bio: |
     Scott has been a developer for 30 years and has been blogging at [hanselman.com](https://hanselman.com)
     for 20 years! He works in Open Source on .NET and the Azure Cloud for Microsoft out
@@ -143,8 +142,7 @@
     He's written a number of technical books and spoken in person to over one million
     developers worldwide! He's also on TikTok, which was very likely a huge mistake.
   description: |
-    Join Scott Hanselman for an upbeat discussion about what's beyond mentorship. 
-    What's the difference between mentorship and sponsorship and how does that build successful teams? What's the role of the senior engineer as a colleague to an early-in-career engineer? 
-    What's the difference between learning how to code and learning how to think about systems? What must we do to welcome the next generation of creators, and what are your responsibilities? 
+    Join Scott Hanselman for an upbeat discussion about what's beyond mentorship.
+    What's the difference between mentorship and sponsorship and how does that build successful teams? What's the role of the senior engineer as a colleague to an early-in-career engineer?
+    What's the difference between learning how to code and learning how to think about systems? What must we do to welcome the next generation of creators, and what are your responsibilities?
     Let's facilitate a welcoming culture of learning and exploration and normalize not knowing the answer!
-    

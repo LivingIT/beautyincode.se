@@ -1,9 +1,16 @@
-## Elastic, agile and adaptive leadership Workshop - with Roy Osherove
+---
+title: Elastic, agile and adaptive leadership Workshop - with Roy Osherove
+---
 
-<img src="/images/speakers/roy-osherove.jpg" class="" height="400" width="400" alt="" loading="lazy">
 
 ## The Problem
-As managers, architects, and other types of technical team leaders, you usually learn the “what” of how your teams should work. You learn about methodologies, practices and techniques for delivering software. 
+{% include image.html
+  url="/images/speakers/roy-osherove.jpg"
+  height="240"
+  width="240"
+  classes="right"
+%}
+As managers, architects, and other types of technical team leaders, you usually learn the “what” of how your teams should work. You learn about methodologies, practices and techniques for delivering software.
 Often,  you leave courses on these topics with a great desire to “change” how things work, but soon discover you are “stuck”. Stuck convincing your team to adopt specific practices. Stuck by not having enough time to learn how to accomplish these practices (“we don’t have time for unit testing”). Stuck with all the people related aspects of leading a team.
 
 ## Objective
@@ -23,8 +30,10 @@ In this workshop we will learn essential skills and techniques for leading softw
 6. Commitment Language
 7. Exercises on Commitment Language
 
-*** Limited number of seats!**
+**Limited number of seats!**
 
-**Where: Living IT, Gustav Adolfs Torg 12, Malmö**  
-**When: March 4, 9:00-17:00**  
-**Price: 8000 SEK incl. 25 % VAT**  
+**Where:** Living IT, Gustav Adolfs Torg 12, Malmö
+
+**When:** March 3, 9:00-17:00
+
+**Price:** 8000 SEK incl. 25 % VAT

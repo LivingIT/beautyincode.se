@@ -48,16 +48,6 @@
     text-transform: uppercase;
   }
 
-  .schedule__item-masterclass {
-    margin-top: 1em;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-
-  .schedule__item-masterclass-link {
-    text-transform: uppercase;
-  }
-
   @supports (display: grid) {
     .schedule__item {
       display: grid;

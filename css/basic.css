@@ -77,25 +77,6 @@
   }
 
   /**
-   * Images
-   */
-  img {
-    max-width: 100%;
-    height: auto;
-    border: 0;
-  }
-
-  img.left {
-    float: left;
-    margin: 0 1em 0.5em 0;
-  }
-
-  img.right {
-    float: right;
-    margin: 0 0 0.5em 1em;
-  }
-
-  /**
    * Body styling
    */
   html,
