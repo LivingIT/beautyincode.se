@@ -24,18 +24,25 @@
 
   .hero__price-tag {
     position: absolute;
-    top: -2.9em;
-    right: -5.6em;
-    padding: 3em 5em 1em;
+    top: -2.8em;
+    right: -5.9em;
+    padding: 3em 5em 0.3em;
     font-size: 1.2em;
     font-weight: bold;
+    line-height: 1;
     background-color: hsl(25, 83%, 56%);
     transform: rotate(45deg);
   }
 
+  .hero__price-tag-vat {
+    display: block;
+    font-size: 0.5em;
+    font-weight: normal;
+  }
+
   @media (min-width: 30em) {
     .hero__price-tag {
-      top: 0.7em;
+      top: 0.9em;
       font-size: 1.4em;
     }
   }
