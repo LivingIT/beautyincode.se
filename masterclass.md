@@ -1,5 +1,5 @@
 ---
-title: Elastic, agile and adaptive leadership Workshop - with Roy Osherove
+title: Elastic, agile and adaptive leadership masterclass – with Roy Osherove
 ---
 
 
@@ -37,3 +37,5 @@ In this workshop we will learn essential skills and techniques for leading softw
 **When:** March 3, 9:00-17:00
 
 **Price:** 8000 SEK incl. 25 % VAT
+
+<a href="/masterclass" class="cta cta__secondary">Register now</a>
