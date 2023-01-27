@@ -38,4 +38,4 @@ In this workshop we will learn essential skills and techniques for leading softw
 
 **Price:** 8000 SEK incl. 25 % VAT
 
-<a href="/masterclass" class="cta cta__secondary">Register now</a>
+<a href="https://events.magnetevents.com/Event/titel-51034/" class="cta cta__secondary">Register now</a>
