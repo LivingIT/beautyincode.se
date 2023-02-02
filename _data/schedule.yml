@@ -11,11 +11,18 @@
   bio: |
     Roy Osherove is the founder of Legato - a decentralized licensing platform.
     He is also the author of "The art of Unit Testing" and "Elastic Leadership".
-    Roy trains and speaks worldwide on engineering practices, continuous delivery,  Coding in Web3, TDD, and more.
+    Roy trains and speaks worldwide on engineering practices, continuous
+    delivery,  Coding in Web3, TDD, and more.
+
     You can find out more at [osherove.com](https://osherove.com).
+
   description: |
-    Roy walks through the basics of what solidity smart contracts look like and what type of patterns are enabled through them.
-    We also discuss what practices become extra important(hint: testing, auditing), what practices become problematic (hint: continuous delivery), and what design patterns become problematic (hint: CRUD).
+    Roy walks through the basics of what solidity smart contracts look like and
+    what type of patterns are enabled through them.
+
+    We also discuss what practices become extra important(hint: testing,
+    auditing), what practices become problematic (hint: continuous delivery),
+    and what design patterns become problematic (hint: CRUD).
 
     **Check out his masterclass "[Elastic, agile and adaptive leadership](/masterclass/)" on Friday march 3rd!**
 
@@ -27,22 +34,35 @@
 
 - timeslot: '10:30 - 11:15'
   name: 'Nyari Samushonga'
-  title: 'TBA!'
+  title: 'Running to Stand Still'
   image: '/images/speakers/nyari-samushonga.jpg'
   bio: |
-    Nyari Samushonga is the CEO of WeThinkCode, a South African tech academy that operates
-    in Joburg, Durban and Cape Town. As an Entrepreneur and Tech Executive, Nyari is
-    passionate about building teams that build useful software solutions.
+    Nyari Samushonga is the CEO of WeThinkCode, a South African tech academy
+    that operates in Joburg, Durban and Cape Town. As an Entrepreneur and Tech
+    Executive, Nyari is passionate about building teams that build useful
+    software solutions.
 
-    A Chartered Accountant, Nyari has previously operated as the Managing director of
-    ThoughtWorks Africa, a subsidiary of the global software development consultancy,
-    and a Manager in Deloitte's audit and assurance division operating in both Harare
-    and New York. Born in Zimbabwe, she also lived and worked in Tanzania. She is based
-    in Johannesburg, South Africa.
+    A Chartered Accountant, Nyari has previously operated as the Managing
+    director of ThoughtWorks Africa, a subsidiary of the global software
+    development consultancy, and a Manager in Deloitte's audit and assurance
+    division operating in both Harare and New York. Born in Zimbabwe, she also
+    lived and worked in Tanzania. She is based in Johannesburg, South Africa.
 
-    Nyari finds sanity in road cycling and strength training and makes time for these
-    activities to help her achieve balance.
+    Nyari finds sanity in road cycling and strength training and makes time for
+    these activities to help her achieve balance.
+
   description: |
+    Working in the world of software development, the need for speed has become
+    an ever-present expectation of teams that build solutions. As we work to
+    bring products to life, we are constantly being pressured to go faster. The
+    common ask is that we get more done in less time. This addiction to the
+    fast life has even seeped into our vocabulary for setbacks- we must “fail
+    fast”. So, whether you’re getting it right, or getting it wrong, what is
+    constant is the need for you to do it really quickly. In this talk, I will
+    slowly meander through a radical alternative. The inconvenient truth that,
+    sometimes, going fast can be at the expense of going the right way. I think
+    we have to face up to the unavoidable fact that some things just take more
+    time.
 
 - timeslot: '11:30 - 12:15'
   name: 'Linus Kvarnhammar'
@@ -54,6 +74,7 @@
     in the IT industry where the last 10 years have been spent exclusively doing
     penetration tests of applications and networks with a few social engineering
     assignments every now and then.
+
   description: |
     In 2021, Swedish national television (SVT) aired a six-part TV series called “Hacked”
     where four professional hackers set out to hack into the private assets of normal people,
@@ -67,8 +88,6 @@
   name: 'Lunch'
   image: '/images/lunch.jpg'
   description: |
-
-
     **Vegetarian and vegan option:** TBA!
 
 - timeslot: '13:15 - 14:00'
@@ -82,10 +101,17 @@
 
     Dylan lives and works in London and when he’s not writing code he plays guitar
     and writes songs.
+
   description: |
-    Arial, Times New Roman, Consolas, Comic Sans… digital typography has turned us all into typesetters.
-    The tools we use, the apps we build, the emails we send: with so much of our lives mediated by technology, something as seemingly innocuous as picking a typeface can end up defining our relationship with the systems we use, and become part of the identity that we project into the world.
-    Typography is a fundamental part of modern information design, with implications for user experience, accessibility, even performance - and when it goes wrong, it can produce some of the most baffling bugs you’ve ever seen.
+    Arial, Times New Roman, Consolas, Comic Sans… digital typography has turned
+    us all into typesetters. The tools we use, the apps we build, the emails we send: with so much of
+    our lives mediated by technology, something as seemingly innocuous as
+    picking a typeface can end up defining our relationship with the systems
+    we use, and become part of the identity that we project into the world.
+    Typography is a fundamental part of modern information design, with
+    implications for user experience, accessibility, even performance - and
+    when it goes wrong, it can produce some of the most baffling bugs you’ve
+    ever seen.
 
     Join Dylan Beattie for a journey into the weird and wonderful history of digital typography, from the origins of movable type in 8th century Asia, to the world of e-ink displays and web typography.
     We’ll look at the relationship between technology and typography over the centuries: the Gutenberg Press, Linotype machines, WYSIWYG and the desktop publishing revolution.
