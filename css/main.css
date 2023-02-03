@@ -75,9 +75,7 @@
     padding: 1em 2em;
     font-size: calc(0.8em + 1vw);
     font-weight: 700;
-    color: hsl(20, 10%, 18%);
     text-decoration: none;
-    text-shadow: none;
     text-transform: uppercase;
     background-color: hsl(25, 83%, 56%);
     border-radius: 50em;
