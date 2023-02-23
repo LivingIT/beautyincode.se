@@ -9,7 +9,7 @@ analytics: "G-BXEPCBVDFX"
 
 # SEO crap
 metaDescription: "Beauty in Code is a single-track IT conference at Malmö Live, Sweden, brought to you by Living IT. Every year in March we gather six amazing speakers that are bringing new exciting material for a full day of learning."
-og-image: "images/og-image.png"
+og-image: "images/og-image.jpg"
 
 # Server settings
 host: 0.0.0.0
