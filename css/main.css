@@ -43,6 +43,7 @@
   .content-block.theme-hero {
     --hero-offset: 0;
     position: relative;
+    min-height: 24em;
     margin-top: calc(var(--hero-offset) * -1);
     overflow: hidden;
     color: hsl(0, 0%, 100%);
