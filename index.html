@@ -23,10 +23,19 @@ layout: startpage
   </div>
 </div>
 
+{% comment %}
 <div class="content-block theme-3" id="schedule">
   <div class="landmark-content">
     <h2>Schedule</h2>
     {% include schedule.html %}
+  </div>
+</div>
+{% endcomment %}
+
+<div class="content-block theme-4" id="schedule">
+  <div class="landmark-content">
+    {% capture content %}{% include_relative _content/itsover.md %}{% endcapture %}
+    {{ content | markdownify }}
   </div>
 </div>
 
