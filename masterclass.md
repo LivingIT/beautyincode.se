@@ -1,5 +1,8 @@
 ---
 title: Elastic, agile and adaptive leadership masterclass – with Roy Osherove
+redirect: /
+sitemap:
+  exclude: 'yes'
 ---
 
 
