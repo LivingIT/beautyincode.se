@@ -1,4 +1,4 @@
-## Beauty in Code is over for this year
+## Beauty in Code 2023 is over
 
 Thank you to all who attended and helped us make it another great conference! If you have any suggestions, feel free to contact us ([details at the bottom of the page](#footer)).
 
