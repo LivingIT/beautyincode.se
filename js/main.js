@@ -135,7 +135,7 @@ if (didCutTheMustard) {
   document.querySelector('html').classList.add('js')
 
   // Start the countdown
-  countdown('2023/03/04 09:00:00')
+  countdown('2024/03/02 09:00:00')
 
   if (
     document.getElementById('scrollToTopContainer') != undefined &&
