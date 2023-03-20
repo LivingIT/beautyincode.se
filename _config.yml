@@ -1,15 +1,15 @@
 # Site settings
-title: "Beauty In Code 2023"
-baseurl: ""
-url: "https://beautyincode.se"
-permalink: "pretty"
+title: 'Beauty In Code 2024'
+baseurl: ''
+url: 'https://beautyincode.se'
+permalink: 'pretty'
 
 # Google Analytics tracking code
-analytics: "G-BXEPCBVDFX"
+analytics: 'G-BXEPCBVDFX'
 
 # SEO crap
-metaDescription: "Beauty in Code is a single-track IT conference at Malmö Live, Sweden, brought to you by Living IT. Every year in March we gather six amazing speakers that are bringing new exciting material for a full day of learning."
-og-image: "images/og-image.jpg"
+metaDescription: 'Beauty in Code is a single-track IT conference at Malmö Live, Sweden, brought to you by Living IT. Every year in March we gather six amazing speakers that are bringing new exciting material for a full day of learning.'
+og-image: 'images/og-image.jpg'
 
 # Server settings
 host: 0.0.0.0
@@ -18,40 +18,40 @@ port: 5005
 # Default settings
 defaults:
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "page"
+      layout: 'page'
   - scope:
-      path: "dist/css"
+      path: 'dist/css'
     values:
       dist-css: true
   - scope:
-      path: "css"
+      path: 'css'
     values:
       dev-css: true
   - scope:
-      path: "dist/js"
+      path: 'dist/js'
     values:
       dist-js: true
   - scope:
-      path: "js"
+      path: 'js'
     values:
       dev-js: true
 
 # Exclude
 exclude:
-  - "CNAME"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "LICENSE"
-  - "README.md"
-  - "node_modules"
-  - "package.json"
-  - "package-lock.json"
-  - "postcss.*.js"
-  - "svg"
-  - "svg-sprite.config.json"
-  - "vendor"
-  - "docker-compose.yml"
-  - "renovate.json"
-  - "coc-settings.json"
+  - 'CNAME'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'LICENSE'
+  - 'README.md'
+  - 'node_modules'
+  - 'package.json'
+  - 'package-lock.json'
+  - 'postcss.*.js'
+  - 'svg'
+  - 'svg-sprite.config.json'
+  - 'vendor'
+  - 'docker-compose.yml'
+  - 'renovate.json'
+  - 'coc-settings.json'
