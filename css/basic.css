@@ -85,6 +85,10 @@
     background-color: hsl(32, 100%, 87%);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   /**
    * Fonts & sizes
    * Base size set to 16px
@@ -237,6 +241,11 @@
   /**
    * Target offset
    */
+
+  :target {
+    scroll-margin-block-start: 3.2em;
+  }
+
   @media (min-width: 30em) {
     :target {
       scroll-margin-top: 5.2em;

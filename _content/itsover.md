@@ -1,9 +1,7 @@
-## Postponed again... 😢
-Given the current circumstances we must unfortunately postpone Beauty in Code 2022.
-Are hopes are high to meet again in 2023!  So save the date!
+## Beauty in Code 2023 is over
 
-Until then you can find the recorded sessions from previous conferences here:
+Thank you to all who attended and helped us make it another great conference! If you have any suggestions, feel free to contact us ([details at the bottom of the page](#footer)).
 
-<a href="/videos/#2020">2020</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="/videos/#2019">2019</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="/videos/#2018">2018</a> 
+**The next Beauty in Code will be back on March 2, 2024.**
+
+Until then you can find the recorded sessions from previous conferences over in [our video section](/videos/).
