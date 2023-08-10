@@ -23,24 +23,22 @@
   "author": "Fredrik Frodlund",
   "license": "UNLICENSED",
   "dependencies": {
-    "eslint": "^8.0.0",
+    "eslint": "^8.46.0",
     "foreach-cli": "1.8.1",
     "hashmark": "^5.0.0",
-    "stylelint-color-format": "^1.0.0",
-    "svg-sprite": "^2.0.0",
+    "stylelint-color-format": "^1.1.0",
+    "svg-sprite": "^2.0.2",
     "uglify-es": "^3.0.28",
     "uglifycss": "^0.0.29"
   },
   "devDependencies": {
-    "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "nodemon": "^3.0.1",
     "prettier": "3.0.1",
-    "stylelint": "^15.0.0",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-recess-order": "^4.0.0",
-    "stylelint-prettier": "^3.0.0"
+    "stylelint": "^15.10.2",
+    "stylelint-config-recess-order": "^4.3.0"
   },
   "lint-staged": {
     "*.css": [
