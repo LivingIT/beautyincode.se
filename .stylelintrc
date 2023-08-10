@@ -1,11 +1,7 @@
 {
-  "plugins": ["stylelint-color-format", "stylelint-prettier"],
-  "extends": [
-    "stylelint-prettier/recommended",
-    "stylelint-config-recess-order"
-  ],
+  "plugins": ["stylelint-color-format"],
+  "extends": ["stylelint-config-recess-order"],
   "rules": {
-    "prettier/prettier": true,
     "color-format/format": {
       "format": "hsl"
     }
