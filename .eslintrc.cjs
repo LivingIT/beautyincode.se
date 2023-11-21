@@ -1,6 +1,12 @@
 module.exports = {
   root: true,
-  extends: ['eslint:recommended', 'plugin:svelte/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:svelte/recommended',
+    'prettier'
+  ],
+  plugins: ['svelte', '@typescript-eslint'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
