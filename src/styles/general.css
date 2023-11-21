@@ -1,0 +1,205 @@
+/**
+ * general.css
+ *
+ * Overall styling
+ */
+
+@media screen {
+  /**
+   * Content block
+   */
+  .content-block {
+    --vertical-padding: 4em;
+    padding: var(--vertical-padding) 1em;
+    margin-top: 0;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .content-block + .content-block {
+    margin-top: 0;
+  }
+
+  /* Themes */
+  .content-block.theme-1 {
+    color: hsl(25, 83%, 56%);
+    background-color: hsl(20, 10%, 18%);
+  }
+
+  .content-block.theme-2 {
+    color: hsla(0, 0%, 100%, 0.8);
+    background-color: hsl(153, 100%, 13%);
+  }
+
+  .content-block.theme-3 {
+    color: hsl(20, 10%, 18%);
+    background-color: hsl(30, 79%, 65%);
+  }
+
+  .content-block.theme-4 {
+    background-color: hsl(32, 100%, 87%);
+  }
+
+  /* Hero theme */
+  .content-block.theme-hero {
+    --hero-offset: 0;
+    position: relative;
+    min-height: 24em;
+    margin-top: calc(var(--hero-offset) * -1);
+    overflow: hidden;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    background-image: url('/images/hero-2023-w942.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+  }
+
+  @media (min-width: 30em) {
+    .content-block.theme-hero {
+      --hero-offset: 5.2em;
+      padding-top: calc(var(--vertical-padding) + var(--hero-offset));
+
+      background-image: url('/images/hero-2023-w1400.jpg');
+    }
+  }
+
+  /* Content block heading */
+  .content-block h2 {
+    font-size: 2em;
+  }
+
+  /**
+   * CTA (Call to action)
+   */
+  a.cta {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: calc(0.8em + 1vw);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(25, 83%, 56%);
+    border-radius: 50em;
+    transition: transform 500ms;
+  }
+
+  a.cta__secondary {
+    padding: 0.75em 1.75em;
+    font-size: 1.4em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(20, 10%, 18%);
+  }
+
+  a.cta:hover,
+  a.cta:focus {
+    transform: scale(1.1);
+  }
+
+  /**
+   * Skip links
+   */
+  #skip {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 100;
+    width: 100%;
+  }
+
+  #skip a:focus,
+  #skip a:active {
+    position: absolute;
+    top: 0;
+    left: 9999px;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+    font-weight: bold;
+    line-height: 1;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    background: hsl(0, 0%, 27%);
+  }
+
+  /**
+   * Article
+   */
+  article {
+    padding: 4em 1em 6em;
+  }
+
+  /**
+   * Article ToC (Table of Contents)
+   */
+  .article-toc {
+    display: flex;
+    position: sticky;
+    top: 5.65rem;
+    z-index: 1;
+    background-color: hsl(32, 100%, 87%);
+    padding-block: 0.5em;
+  }
+
+  .article-toc a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(20, 10%, 18%);
+    color: white;
+    padding: 0 0.9em;
+    border-radius: 50em;
+  }
+
+  .article-toc a:hover,
+  .article-toc a:focus,
+  .article-toc a:active {
+    background-color: hsl(20, 10%, 27%);
+  }
+
+  .article-toc li + li {
+    margin-left: 0.5em;
+  }
+
+  /**
+   * Embed container
+   */
+  .embed-container {
+    position: relative;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 32em) {
+  /**
+   * Figure + text
+   */
+  .figure-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+  }
+
+  .figure-text__alt-1 {
+    grid-template-columns: auto 1fr;
+  }
+
+  .figure-text > * {
+    margin-top: 0;
+  }
+
+  .figure-text article {
+    padding: 0;
+  }
+}

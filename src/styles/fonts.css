@@ -1,0 +1,35 @@
+/**
+ * Atak Web font
+ */
+
+/* Regular */
+@font-face {
+  font-family: 'Atak';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/AtakRegular-Web.woff');
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Atak';
+  font-style: italic;
+  font-weight: normal;
+  src: url('/fonts/AtakRegular-Italic-Web.woff');
+}
+
+/* Semibold */
+@font-face {
+  font-family: 'Atak';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/AtakSemibold-Web.woff');
+}
+
+/* Semibold italic */
+@font-face {
+  font-family: 'Atak';
+  font-style: italic;
+  font-weight: bold;
+  src: url('/fonts/AtakSemibold-Italic-Web.woff');
+}
