@@ -1,17 +1,10 @@
-# Jekyll stuff
-_site
-.sass-cache
-.jekyll-metadata
-vendor
-
-# Node stuff
-node_modules
-dist
-
-# OS, editors & miscellaneous
-.vscode
-.cache
-.env
 .DS_Store
-.idea
-.vim
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

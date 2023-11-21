@@ -1,35 +1,35 @@
-name: Tests
-
-on: [push]
-
-jobs:
-  test:
-    name: Run linting tasks & HTML proofer
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-
-      - name: Install Node packages
-        run: npm ci --ignore-scripts
-
-      - name: Build assets
-        run: npm run deploy
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Jekyll build
-        run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
-
-      - name: stylelint
-        run: npm run lint:css
-
-      - name: eslint
-        run: npm run lint:js
+# name: Tests
+#
+# on: [push]
+#
+# jobs:
+#   test:
+#     name: Run linting tasks & HTML proofer
+#
+#     runs-on: ubuntu-latest
+#
+#     steps:
+#       - uses: actions/checkout@v3
+#
+#       - name: Setup Node
+#         uses: actions/setup-node@v3
+#
+#       - name: Install Node packages
+#         run: npm ci --ignore-scripts
+#
+#       - name: Build assets
+#         run: npm run deploy
+#
+#       - name: Set up Ruby
+#         uses: ruby/setup-ruby@v1
+#         with:
+#           bundler-cache: true
+#
+#       - name: Jekyll build
+#         run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
+#
+#       - name: stylelint
+#         run: npm run lint:css
+#
+#       - name: eslint
+#         run: npm run lint:js

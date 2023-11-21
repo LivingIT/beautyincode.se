@@ -1,55 +1,31 @@
 {
-  "name": "beautyincode.se",
-  "version": "1.0.1",
-  "description": "Web site for Beauty In Code",
-  "main": "index.html",
+  "name": "beautyincode-svelte",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "prepare": "husky install",
-    "start": "nodemon",
-    "jekyll": "bundle exec jekyll serve --drafts",
-    "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
-    "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
-    "hash:css": "hashmark -l 8 css/*.css './dist/css/{name}-{hash}.css'",
-    "posthash:css": "npm run uglify:css",
-    "hash:js": "hashmark -l 8 js/*.js './dist/js/{name}-{hash}.js'",
-    "posthash:js": "npm run uglify:js",
-    "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
-    "lint": "npm run lint:css && npm run lint:js",
-    "lint:js": "eslint js/*.js",
-    "lint:css": "stylelint ./css/*.css",
-    "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
-    "deploy": "npm run hash:css && npm run hash:js && npm run svg"
-  },
-  "author": "Fredrik Frodlund",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "eslint": "^8.46.0",
-    "foreach-cli": "1.8.1",
-    "hashmark": "^5.0.0",
-    "stylelint-color-format": "^1.1.0",
-    "svg-sprite": "^2.0.2",
-    "uglify-es": "^3.0.28",
-    "uglifycss": "^0.0.29"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
-    "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.0",
-    "nodemon": "^3.0.1",
-    "prettier": "3.0.2",
-    "stylelint": "^15.10.2",
-    "stylelint-config-recess-order": "^4.3.0"
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.20.4",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte": "^2.30.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^4.0.5",
+    "svelte-check": "^3.4.3",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2"
   },
-  "lint-staged": {
-    "*.css": [
-      "stylelint --fix css/*.css",
-      "stylelint css/*.css"
-    ]
-  },
-  "nodemonConfig": {
-    "watch": [
-      "svg/*"
-    ],
-    "exec": "npm run svg"
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-cloudflare": "^2.3.3"
   }
 }
