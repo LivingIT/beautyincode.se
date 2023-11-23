@@ -1,4 +1,5 @@
 <script>
+  /** @type {Video} video */
   export let video;
 </script>
 

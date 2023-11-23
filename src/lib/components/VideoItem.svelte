@@ -25,7 +25,7 @@
     <p>
       {video.description}
     </p>
-    <div class="embed-container">
+    <div class="videos__embed-container">
       {#if showVideo}
         <iframe
           src="https://www.youtube.com/embed/{video.videoId}"
@@ -67,8 +67,9 @@
     padding: 1em;
   }
 
-  button,
-  a {
+  a,
+  button {
+    --shadow-opacity: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -76,6 +77,21 @@
     grid-template: 1fr / 1fr;
     justify-items: center;
     align-items: center;
+    box-shadow: 0 0 1em hsl(0deg 0% 0% / var(--shadow-opacity));
+    transition:
+      transform 500ms ease-in-out,
+      box-shadow 500ms ease-in-out;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  button:hover,
+  button:focus,
+  button:active {
+    --shadow-opacity: 0.6;
+
+    transform: scale(1.02);
   }
 
   a::after,
@@ -90,8 +106,22 @@
     inset: 0;
   }
 
-  .youtube {
-    height: 4rem;
-    width: 6rem;
+  /**
+   * Embed container
+   */
+  .videos__embed-container {
+    position: relative;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  /** YouTube iframe */
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 </style>
