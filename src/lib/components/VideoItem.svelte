@@ -2,9 +2,7 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
 
-  import YouTube from '../../../svg/youtube.svg';
   import VideoThumbnail from './VideoThumbnail.svelte';
-  const youtubeEncoded = `data:image/svg+xml,${encodeURIComponent(YouTube)}`;
 
   /** @type {Video} video */
   export let video;
