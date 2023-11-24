@@ -3,6 +3,7 @@
 
   import CountDown from '$lib/components/CountDown.svelte';
   import ContentBlock from '$lib/components/ContentBlock.svelte';
+  import Schedule from '$lib/components/Schedule.svelte';
 </script>
 
 <svelte:head>
@@ -45,7 +46,9 @@
   </div>
 </ContentBlock>
 
-<ContentBlock theme="theme-4" id="schedule"></ContentBlock>
+<ContentBlock theme="theme-4" id="schedule">
+  <Schedule />
+</ContentBlock>
 
 <ContentBlock theme="theme-1">
   <h2 id="code-of-conduct">Code of Conduct</h2>
