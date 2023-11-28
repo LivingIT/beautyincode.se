@@ -1,5 +1,5 @@
 /**
- * @type {VideosByYear}
+ * @type {Object.<string, Array<{ title: string, videoId: string, description: string }>>}
  */
 export const videosByYear = {
   2023: [
