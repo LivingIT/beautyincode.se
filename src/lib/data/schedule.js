@@ -17,7 +17,7 @@ const schedule = [
   {
     timeslot: '9:00 - 9:05',
     name: 'Fredrik Mörk',
-    image: '/images/',
+    image: '/images/speakers/fredrik-mork.jpg',
     title: 'Opening keynote'
   },
   {
@@ -25,7 +25,6 @@ const schedule = [
     id: 'kesha-williams',
     name: 'Kesha Williams',
     title: 'TBD',
-    image: '',
     description: `<p>Coming soon…</p>`
   },
   {
@@ -38,7 +37,6 @@ const schedule = [
     id: 'niall-merrigan',
     name: 'Niall Merrigan',
     title: 'TBD',
-    image: '',
     description: `<p>Coming soon…</p>`
   },
   {
@@ -46,7 +44,6 @@ const schedule = [
     id: 'lisette-sutherland',
     name: 'Lisette Sutherland',
     title: 'TBD',
-    image: '',
     description: `<p>Coming soon…</p>`
   },
   {
@@ -59,7 +56,6 @@ const schedule = [
     id: 'dylan-beattie',
     name: 'Dylan Beattie',
     title: 'TBD',
-    image: '',
     description: `<p>Coming soon…</p>`
   },
   {
@@ -67,7 +63,6 @@ const schedule = [
     id: 'jonah-andersson',
     name: 'Jonah Andersson',
     title: 'TBD',
-    image: '',
     description: `<p>Coming soon…</p>`
   },
   {
