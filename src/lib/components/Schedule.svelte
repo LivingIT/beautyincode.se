@@ -1,24 +1,27 @@
 <script>
-  import { scheduleData } from '$lib/data/schedule';
+  import schedule from '$lib/data/schedule';
+  import speakers from '$lib/data/speakers';
   import slugify from '$lib/utils/slugify';
 </script>
 
 <ul class="schedule">
-  {#each scheduleData as item}
+  {#each schedule as item}
     <li class="schedule__item">
       <div class="schedule__item-timeslot">
         <span>{item.timeslot}</span>
       </div>
       <div class="schedule__item-content">
-        {#if item.name && item.bio}
-          <h3><a href="/speakers/#{slugify(item.name)}">{item.name}</a></h3>
+        {#if item.id}
+          {@const speaker = speakers[item.id]}
+          <h3><a href="/speakers/#{slugify(speaker.name)}">{speaker.name}</a></h3>
+          <div class="schedule__item-m-image">
+            <img src={speaker.image} alt="" height="400" width="400" loading="lazy" />
+          </div>
+          <h4>{item.title}</h4>
         {:else}
           <h3>{item.name}</h3>
+          {#if item.title}<h4>{item.title}</h4>{/if}
         {/if}
-        <div class="schedule__item-m-image">
-          <img src={item.image} alt="" height="400" width="400" loading="lazy" />
-        </div>
-        {#if item.title}<h4>{item.title}</h4>{/if}
         {#if item.description}
           <div class="schedule__item-description">
             {@html item.description}
@@ -26,7 +29,12 @@
         {/if}
       </div>
       <div class="schedule__item-image">
-        <img src={item.image} alt="" height="400" width="400" loading="lazy" />
+        {#if item.id}
+          {@const speaker = speakers[item.id]}
+          <img src={speaker.image} alt="" height="400" width="400" loading="lazy" />
+        {:else}
+          <img src={item.image} alt="" height="400" width="400" loading="lazy" />
+        {/if}
       </div>
     </li>
   {/each}
