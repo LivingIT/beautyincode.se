@@ -1,12 +1,16 @@
 /**
  * Speaker data structure
  * @typedef {Object} Speaker
- * @property {string} id - The unique identifier for the speaker
  * @property {string} name - The name of the speaker
  * @property {string} image - The URL to the speaker's image
- * @property {string} title - The title of the speaker's talk
  * @property {string} bio - The biography of the speaker
  */
+
+/**
+ * @typedef {{ [id: string]: Speaker }} Speakers
+ */
+
+/** @type {Speakers} */
 const speakers = {
   'lisette-sutherland': {
     name: 'Lisette Sutherland',
