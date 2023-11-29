@@ -1,5 +1,6 @@
 <script>
   import speakers from '$lib/data/speakers';
+  import slugify from '$lib/utils/slugify';
 
   /**
    * @type {Array<{ name: string, image: string, bio: string }>} - Array of sorted speakers
@@ -11,7 +12,7 @@
 </script>
 
 {#each sortedSpeakers as speaker}
-  <section class="speaker" id="roy-osherove">
+  <section class="speaker" id={slugify(speaker.name)}>
     <h3>{speaker.name}</h3>
     <img
       src={speaker.image}
