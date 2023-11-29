@@ -1,8 +1,16 @@
 <script>
   import speakers from '$lib/data/speakers';
+
+  /**
+   * @type {Array<{ name: string, image: string, bio: string }>} - Array of sorted speakers
+   */
+  const sortedSpeakers = Object.values(speakers).sort((a, b) => {
+    // Compare based on the speaker's ID (assuming the ID is a string)
+    return a.name.localeCompare(b.name);
+  });
 </script>
 
-{#each Object.values(speakers) as speaker}
+{#each sortedSpeakers as speaker}
   <section class="speaker" id="roy-osherove">
     <h3>{speaker.name}</h3>
     <img
