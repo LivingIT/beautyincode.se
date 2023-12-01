@@ -8,7 +8,10 @@
   {#each schedule as item}
     <li class="schedule__item">
       <div class="schedule__item-timeslot">
-        <span>{item.timeslot}</span>
+        <p aria-label="From {item.start} to {item.end}">
+          <time>{item.start}</time> -
+          <time>{item.end}</time>
+        </p>
       </div>
       <div class="schedule__item-content">
         {#if item.id}
@@ -60,7 +63,7 @@
       background-color: hsla(0, 0%, 100%, 0.2);
     }
 
-    .schedule__item-timeslot span {
+    .schedule__item-timeslot p {
       padding: 0.1em 0.2em;
       font-size: 0.8em;
       font-weight: 500;

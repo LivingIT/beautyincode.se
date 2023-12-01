@@ -47,6 +47,7 @@
 </ContentBlock>
 
 <ContentBlock theme="theme-4" id="schedule">
+  <h2>Schedule</h2>
   <Schedule />
 </ContentBlock>
 
