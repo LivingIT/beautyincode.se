@@ -233,12 +233,12 @@
    * Target offset
    */
 
-  :target {
+  * {
     scroll-margin-block-start: 3.2em;
   }
 
   @media (min-width: 30em) {
-    :target {
+    * {
       scroll-margin-block-start: 5.2em;
     }
   }
