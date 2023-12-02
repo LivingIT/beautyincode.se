@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
 
   /** @type {string} */
   export let endDate;
@@ -19,38 +20,63 @@
   /** @type {boolean} */
   let isActive = false;
 
-  /**
-   * Calculate the time remaining and update the countdown
-   */
-  const calculate = () => {
+  const calculateDaysLeft = () => {
     const end = new Date(endDate).getTime();
     let start = new Date().getTime();
     let timeRemaining = Math.floor((end - start) / 1000);
 
     if (timeRemaining >= 0) {
       days = Math.floor(timeRemaining / 86400);
-      hours = Math.floor((timeRemaining % 86400) / 3600);
-      minutes = Math.floor((timeRemaining % 3600) / 60);
-      seconds = timeRemaining % 60;
-
       isActive = true;
     } else {
       isActive = false;
     }
   };
 
-  onMount(() => {
-    const interval = setInterval(calculate, 1000);
-    return () => clearInterval(interval);
-  });
+  // Reactive statement to calculate days left
+  $: calculateDaysLeft();
+
+  // Client-side countdown logic
+  if (browser) {
+    /**
+     * Calculate the time remaining and update the countdown
+     */
+    const calculate = () => {
+      const end = new Date(endDate).getTime();
+      let start = new Date().getTime();
+      let timeRemaining = Math.floor((end - start) / 1000);
+
+      if (timeRemaining >= 0) {
+        days = Math.floor(timeRemaining / 86400);
+        hours = Math.floor((timeRemaining % 86400) / 3600);
+        minutes = Math.floor((timeRemaining % 3600) / 60);
+        seconds = timeRemaining % 60;
+
+        isActive = true;
+      } else {
+        isActive = false;
+      }
+    };
+
+    onMount(() => {
+      const interval = setInterval(calculate, 1000);
+      return () => clearInterval(interval);
+    });
+  }
 </script>
 
 <p id="countdown" class="countdown {isActive ? 'countdown--active' : ''}">
-  <span class="at-only">Event begins in</span>
-  <span class="countdown__unit days">{days}</span>
-  <span class="countdown__unit hours">{hours < 10 ? '0' + hours : hours}</span>
-  <span class="countdown__unit minutes">{minutes < 10 ? '0' + minutes : minutes}</span>
-  <span class="countdown__unit seconds">{seconds < 10 ? '0' + seconds : seconds}</span>
+  {#if browser}
+    <span class="at-only">Event begins in</span>
+    <span class="countdown__unit days">{days}</span>
+    <span class="countdown__unit hours">{hours < 10 ? '0' + hours : hours}</span>
+    <span class="countdown__unit minutes">{minutes < 10 ? '0' + minutes : minutes}</span>
+    <span class="countdown__unit seconds">{seconds < 10 ? '0' + seconds : seconds}</span>
+  {:else}
+    <span class="countdown__ssr">
+      Doors open in <span class="countdown__ssr-days">{days}</span> days
+    </span>
+  {/if}
 </p>
 
 <style>
