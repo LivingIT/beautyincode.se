@@ -2,12 +2,18 @@
   /** @type {Theme} */
   export let theme;
 
+  /** @type {string} */
+  export let heading = '';
+
   /** @type {string | null} */
   export let id = null;
 </script>
 
 <div class="content-block {theme}" id={id || null}>
   <div class="landmark-content">
+    {#if heading}
+      <h2>{heading}</h2>
+    {/if}
     <slot />
   </div>
 </div>
