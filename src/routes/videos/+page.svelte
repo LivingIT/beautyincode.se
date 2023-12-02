@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title} - Videos</title>
+  <title>Videos - {config.title}</title>
 </svelte:head>
 
 <div class="landmark-content">

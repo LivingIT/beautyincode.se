@@ -6,10 +6,10 @@
  */
 declare global {
   type Theme =
-    | 'theme-1' // Description of theme-1
-    | 'theme-2' // Description of theme-2
-    | 'theme-3' // Description of theme-3
-    | 'theme-4' // Description of theme-4
+    | 'theme-1' // Orange background color
+    | 'theme-2' // Light grey background color
+    | 'theme-3' // Brown background color
+    | 'theme-4' // Sand background color
     | 'theme-hero'; // hero theme
 }
 

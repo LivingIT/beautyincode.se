@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title} - Terms</title>
+  <title>Terms - {config.title}</title>
 </svelte:head>
 
 <div class="landmark-content">

@@ -1,8 +1,8 @@
 <script>
   import config from '../config';
 
-  import CountDown from '$lib/components/CountDown.svelte';
   import ContentBlock from '$lib/components/ContentBlock.svelte';
+  import CountDown from '$lib/components/CountDown.svelte';
   import Schedule from '$lib/components/Schedule.svelte';
 </script>
 
@@ -46,14 +46,11 @@
   </div>
 </ContentBlock>
 
-<ContentBlock theme="theme-4" id="schedule">
-  <h2>Schedule</h2>
+<ContentBlock theme="theme-4" id="schedule" heading="Schedule">
   <Schedule />
 </ContentBlock>
 
-<ContentBlock theme="theme-1">
-  <h2 id="code-of-conduct">Code of Conduct</h2>
-
+<ContentBlock theme="theme-1" id="code-of-conduct" heading="Code of Conduct">
   <p>
     Our conference is dedicated to providing a harassment-free conference experience for everyone,
     regardless of gender, gender identity and expression, age, sexual orientation, disability,
