@@ -32,7 +32,7 @@
 
   .hero__price-tag {
     position: absolute;
-    top: -2.8em;
+    top: -2.1em;
     right: -5.9em;
     padding: 3em 5em 0.3em;
     font-size: 1.2em;
@@ -50,14 +50,14 @@
 
   @media (min-width: 30em) {
     .hero__price-tag {
-      top: 0.9em;
+      top: 1.7em;
       font-size: 1.4em;
     }
   }
 
   @media (min-width: 50em) {
     .hero__price-tag {
-      top: 0;
+      top: 0.8em;
       font-size: 1.8em;
     }
   }
