@@ -2,8 +2,8 @@
   import config from '../config';
 
   import ContentBlock from '$lib/components/ContentBlock.svelte';
-  import CountDown from '$lib/components/CountDown.svelte';
   import Schedule from '$lib/components/Schedule.svelte';
+  import Hero from '$lib/components/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -11,12 +11,7 @@
 </svelte:head>
 
 <ContentBlock theme="theme-hero">
-  <div class="hero">
-    <div class="hero__message">
-      <p class="hero__time-date">March 2, 2024 — Malmö, Sweden</p>
-      <CountDown endDate="2024/03/02 09:00:00" />
-    </div>
-  </div>
+  <Hero />
 </ContentBlock>
 
 <ContentBlock theme="theme-1">
