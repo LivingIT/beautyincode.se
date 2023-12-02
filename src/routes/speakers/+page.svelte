@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title} - Speakers</title>
+  <title>Speakers - {config.title}</title>
 </svelte:head>
 
 <div class="landmark-content">
