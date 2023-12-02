@@ -23,6 +23,7 @@
 <style>
   .content-block {
     --vertical-padding: 4em;
+
     padding: var(--vertical-padding) 1em;
     margin-top: 0;
     background-color: hsl(0, 0%, 100%);
@@ -51,6 +52,7 @@
   /* Hero theme */
   .content-block--theme-hero {
     --hero-offset: 0;
+
     position: relative;
     min-height: 24em;
     margin-top: calc(var(--hero-offset) * -1);
@@ -66,8 +68,8 @@
   @media (min-width: 30em) {
     .content-block--theme-hero {
       --hero-offset: 5.2em;
-      padding-top: calc(var(--vertical-padding) + var(--hero-offset));
 
+      padding-top: calc(var(--vertical-padding) + var(--hero-offset));
       background-image: url('/images/hero-2023-w1400.jpg');
     }
   }
