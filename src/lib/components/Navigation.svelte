@@ -66,7 +66,9 @@
     width: var(--nav-width);
     padding: 1em;
     background-color: hsla(20, 10%, 18%, 1);
-    transition: right 200ms ease-in-out, filter 200ms ease-in-out;
+    transition:
+      right 200ms ease-in-out,
+      filter 200ms ease-in-out;
   }
 
   #main-nav[data-expanded='true'] {
