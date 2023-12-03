@@ -73,7 +73,7 @@
     font-weight: 500;
     line-height: 1;
     white-space: nowrap;
-    animation: fadeIn 1500ms ease-in;
+    animation: countDownFadeIn 1500ms ease-in;
   }
 
   .countdown__ssr {
@@ -122,7 +122,7 @@
     content: 'seconds';
   }
 
-  @keyframes fadeIn {
+  @keyframes countDownFadeIn {
     0% {
       opacity: 0;
     }
