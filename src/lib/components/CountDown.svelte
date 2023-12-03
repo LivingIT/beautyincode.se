@@ -17,9 +17,6 @@
   /** @type {number} */
   let seconds = 0;
 
-  /** @type {boolean} */
-  let isActive = false;
-
   const calculateDaysLeft = () => {
     const end = new Date(endDate).getTime();
     let start = new Date().getTime();
@@ -27,9 +24,6 @@
 
     if (timeRemaining >= 0) {
       days = Math.floor(timeRemaining / 86400);
-      isActive = true;
-    } else {
-      isActive = false;
     }
   };
 
@@ -38,9 +32,6 @@
 
   // Client-side countdown logic
   if (browser) {
-    /**
-     * Calculate the time remaining and update the countdown
-     */
     const calculate = () => {
       const end = new Date(endDate).getTime();
       let start = new Date().getTime();
@@ -51,10 +42,6 @@
         hours = Math.floor((timeRemaining % 86400) / 3600);
         minutes = Math.floor((timeRemaining % 3600) / 60);
         seconds = timeRemaining % 60;
-
-        isActive = true;
-      } else {
-        isActive = false;
       }
     };
 
@@ -65,7 +52,7 @@
   }
 </script>
 
-<p id="countdown" class="countdown {isActive ? 'countdown--active' : ''}">
+<p id="countdown" class="countdown">
   {#if browser}
     <span class="at-only">Event begins in</span>
     <span class="countdown__unit days">{days}</span>
@@ -74,7 +61,7 @@
     <span class="countdown__unit seconds">{seconds < 10 ? '0' + seconds : seconds}</span>
   {:else}
     <span class="countdown__ssr">
-      Doors open in <span class="countdown__ssr-days">{days}</span> days
+      Doors open in <em class="countdown__ssr-days">{days}</em> days
     </span>
   {/if}
 </p>
@@ -86,12 +73,19 @@
     font-weight: 500;
     line-height: 1;
     white-space: nowrap;
-    opacity: 0;
-    transition: opacity 250ms ease-in-out;
+    animation: fadeIn 1500ms ease-in;
   }
 
-  .countdown--active {
-    opacity: 1;
+  .countdown__ssr {
+    font-size: 0.5em;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .countdown__ssr-days {
+    font-size: 1.4em;
+    font-style: normal;
+    padding-inline: 0.25em;
   }
 
   .countdown__unit {
@@ -126,5 +120,19 @@
 
   .countdown__unit.seconds::after {
     content: 'seconds';
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    66% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 </style>
