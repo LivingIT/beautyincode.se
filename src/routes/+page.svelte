@@ -26,7 +26,7 @@
       <p>
         <strong>Beauty in Code</strong> is a single-track IT conference at Malmö Live, Sweden,
         brought to you by <a href="https://livingit.se">Living IT</a>. Every year in March we gather
-        six amazing speakers that are bringing new exciting material for a full day of learning.
+        amazing speakers that are bringing new exciting material for a full day of learning.
       </p>
 
       <p>
