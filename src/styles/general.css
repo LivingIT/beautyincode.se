@@ -69,26 +69,3 @@
     margin-left: 0.5em;
   }
 }
-
-@media screen and (min-width: 32em) {
-  /**
-   * Figure + text
-   */
-  .figure-text {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2em;
-  }
-
-  .figure-text__alt-1 {
-    grid-template-columns: auto 1fr;
-  }
-
-  .figure-text > * {
-    margin-top: 0;
-  }
-
-  .figure-text article {
-    padding: 0;
-  }
-}

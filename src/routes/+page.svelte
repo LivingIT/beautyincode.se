@@ -2,8 +2,9 @@
   import config from '../config';
 
   import ContentBlock from '$lib/components/ContentBlock.svelte';
-  import Schedule from '$lib/components/Schedule.svelte';
   import Hero from '$lib/components/Hero.svelte';
+  import FigureText from '$lib/components/FigureText.svelte';
+  import Schedule from '$lib/components/Schedule.svelte';
 </script>
 
 <svelte:head>
@@ -15,30 +16,7 @@
 </ContentBlock>
 
 <ContentBlock theme="theme-1">
-  <div class="figure-text">
-    <figure>
-      <img src="/images/logo.svg" height="149" width="300" alt="" loading="lazy" />
-      <img src="/images/malmo-live-night.jpg" height="1000" width="1000" alt="" loading="lazy" />
-    </figure>
-    <article>
-      <h2 id="about-the-conference">About the conference</h2>
-
-      <p>
-        <strong>Beauty in Code</strong> is a single-track IT conference at Malmö Live, Sweden,
-        brought to you by <a href="https://livingit.se">Living IT</a>. Every year in March we gather
-        amazing speakers that are bringing new exciting material for a full day of learning.
-      </p>
-
-      <p>
-        Our idea is to create a conference for everyone involved in the software industry. We put it
-        on a Saturday so no-one gets denied due to work. We keep the fee very low so everyone can
-        afford to attend. In fact, you only pay for the lunch and fika; the actual conference is on
-        us, because we love to share knowledge and this is our way of giving back to the community.
-      </p>
-
-      <p>We wish <em>you</em> welcome to an inspiring day at Malmö Live!</p>
-    </article>
-  </div>
+  <FigureText />
 </ContentBlock>
 
 <ContentBlock theme="theme-4" id="schedule" heading="Schedule">
