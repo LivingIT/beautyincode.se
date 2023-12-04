@@ -23,6 +23,9 @@
           <h4>{item.title}</h4>
         {:else}
           <h3>{item.name}</h3>
+          <div class="schedule__item-m-image">
+            <img src={item.image} alt="" height="400" width="400" loading="lazy" />
+          </div>
           {#if item.title}<h4>{item.title}</h4>{/if}
         {/if}
         {#if item.description}
