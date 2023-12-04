@@ -84,10 +84,10 @@
 
     .schedule__item-content h4 {
       display: block;
-      margin-top: 0.5em;
+      margin: 1.2em 0 0.6em;
       font-size: 1.1em;
-      font-weight: 400;
-      text-transform: uppercase;
+      font-weight: 600;
+      text-transform: none;
     }
 
     @supports (display: grid) {
