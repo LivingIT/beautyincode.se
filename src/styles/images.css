@@ -1,7 +1,8 @@
+/**
+ * Default global image styling
+ */
+
 @media screen {
-  /**
-   * Images
-   */
   img {
     max-width: 100%;
     height: auto;
