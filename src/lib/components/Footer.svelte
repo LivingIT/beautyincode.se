@@ -3,7 +3,7 @@
     <div class="colophon">
       <p>
         The name <strong>Beauty in Code</strong> is inspired by a chapter in Adam Tornhill's book
-        <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene"
+        <a href="https://pragprog.com/titles/atcrime2/your-code-as-a-crime-scene-second-edition/"
           >Your Code As A Crime Scene</a
         >.
       </p>
