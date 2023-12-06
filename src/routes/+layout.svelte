@@ -3,6 +3,7 @@
   import '../styles/main.css';
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import Analytics from '$lib/fragments/analytics.svelte';
 </script>
 
 <svelte:head>
@@ -14,6 +15,7 @@
   <meta property="og:image" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="og:image.url" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
+  <Analytics />
 </svelte:head>
 
 <Header />
