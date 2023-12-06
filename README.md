@@ -1,6 +1,6 @@
 # Beauty in Code
 
-## Developing
+## 👨‍💻 Developing
 
 Install packages
 
@@ -14,7 +14,7 @@ Run the dev server
 npm run dev
 ```
 
-## Building
+## 🛠️ Building
 
 To create a production version of your app:
 
@@ -22,4 +22,8 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `npm run preview` after running the build command.
+
+## 🚀 Deploy to production
+
+Cloudflare deployment is automatic and merge to `master` deploys to production.
