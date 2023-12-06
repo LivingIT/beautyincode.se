@@ -2,6 +2,12 @@
   import { page } from '$app/stores';
   import config from '../../config';
 
+  /**
+   * Global gtag function.
+   * @type {Gtag.Gtag}
+   */
+  let gtag;
+
   $: {
     if (typeof gtag !== 'undefined') {
       gtag('config', config.analytics, {
