@@ -19,8 +19,7 @@
 </script>
 
 <svelte:head>
-  {@html `<script async src="https://www.googletagmanager.com/gtag/js?id=${config.analytics}"}>
-  </script>
+  {@html `<script async src="https://www.googletagmanager.com/gtag/js?id=${config.analytics}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
