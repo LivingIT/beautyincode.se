@@ -15,8 +15,9 @@
   <meta property="og:image" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="og:image.url" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
-  <Analytics />
 </svelte:head>
+
+<Analytics id="G-BXEPCBVDFX" />
 
 <Header />
 

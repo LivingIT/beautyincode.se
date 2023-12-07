@@ -1,33 +1,19 @@
 <script>
   import { page } from '$app/stores';
-  import config from '../../config';
+  // import config from '../../config';
 
-  /**
-   * Global gtag function.
-   * @type {Gtag.Gtag}
-   */
-  let gtag;
-
-  $: {
-    if (typeof gtag !== 'undefined') {
-      gtag('config', config.analytics, {
-        page_title: document.title,
-        page_path: $page.url.pathname
-      });
-    }
-  }
+  export let id = '';
 </script>
 
 <svelte:head>
-  {@html `<script async src="https://www.googletagmanager.com/gtag/js?id=${config.analytics}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={id}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
-
     gtag('js', new Date());
-    gtag('config', ${config.analytics});
-  </script>`}
+
+    gtag('config', id);
+  </script>
 </svelte:head>
