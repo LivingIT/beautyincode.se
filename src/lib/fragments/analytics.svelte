@@ -1,7 +1,4 @@
 <script>
-  import { page } from '$app/stores';
-  // import config from '../../config';
-
   export let id = '';
 </script>
 
