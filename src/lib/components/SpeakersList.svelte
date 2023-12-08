@@ -13,7 +13,7 @@
 
 {#each sortedSpeakers as speaker}
   <section class="speaker" id={slugify(speaker.name)}>
-    <h3>{speaker.name}</h3>
+    <h2>{speaker.name}</h2>
     <img
       src={speaker.image}
       class="speaker__image"
