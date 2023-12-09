@@ -75,61 +75,55 @@
 </footer>
 
 <style>
+  #footer {
+    padding: 4em 1em;
+    color: var(--secondary-brand-color);
+    text-align: center;
+    background-color: var(--light-bg-color);
+  }
+
+  .colophon {
+    max-width: 28em;
+    margin-right: auto;
+    margin-bottom: 4em;
+    margin-left: auto;
+    font-size: 0.8em;
+  }
+
   /**
- * Footer
- */
-
-  @media screen {
-    #footer {
-      padding: 4em 1em;
-      color: var(--secondary-brand-color);
-      text-align: center;
-      background-color: var(--light-bg-color);
-    }
-
-    .colophon {
-      max-width: 28em;
-      margin-right: auto;
-      margin-bottom: 4em;
-      margin-left: auto;
-      font-size: 0.8em;
-    }
-
-    /**
    * Footer links
    */
-    .footer-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 0;
-    }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
 
-    .footer-links li + li {
-      margin-left: 1em;
-    }
+  .footer-links li + li {
+    margin-left: 1em;
+  }
 
-    .footer-links a {
-      display: block;
-    }
+  .footer-links a {
+    display: block;
+  }
 
-    .footer-links .icon {
-      width: 3em;
-      height: 3em;
-    }
+  .footer-links .icon {
+    width: 3em;
+    height: 3em;
+  }
 
-    /**
+  /**
    * Founder logo
    */
-    .founder-logo {
-      display: inline-block;
-      margin-top: 2em;
-      text-align: center;
-    }
+  .founder-logo {
+    display: inline-block;
+    margin-top: 2em;
+    text-align: center;
+  }
 
-    .founder-logo .icon {
-      width: 6em;
-      height: 2em;
-    }
+  .founder-logo .icon {
+    width: 6em;
+    height: 2em;
   }
 </style>

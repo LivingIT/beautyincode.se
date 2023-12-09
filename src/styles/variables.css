@@ -15,6 +15,7 @@
   --light-bg-color: hsl(32, 100%, 87%);
   --dark-bg-color: hsl(20, 10%, 18%);
   --medium-bg-color: hsl(30, 79%, 65%);
+  --attention-bg-color: hsl(0, 100%, 36%);
 
   /* Text colors */
   --light-text-color: hsl(0, 100%, 100%);
