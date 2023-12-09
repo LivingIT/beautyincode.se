@@ -14,17 +14,19 @@
   /** @type {Boolean} */
   let isNavExpanded = false;
 
+  /** @type {Boolean | undefined} */
+  let ariaHidden;
+
   /** @type {HTMLElement} */
   let navTriggerElem;
 
-  onMount(() => {
-    document.addEventListener('keyup', handleKeyUp);
-  });
-
-  $: {
-    $page; // reactive statement that runs on route change
-    isNavExpanded = false; // close nav when the route changes
-  }
+  /**
+   * Do not set aria-hidden on SSR or above 40em viewport
+   */
+  const updateAriaHidden = () => {
+    const isHorizontalNav = browser && window.matchMedia('(min-width: 40em)').matches;
+    ariaHidden = browser && !isHorizontalNav ? !isNavExpanded : undefined;
+  };
 
   function toggleNav() {
     isNavExpanded = !isNavExpanded;
@@ -44,8 +46,18 @@
     }
   };
 
-  // Do not display aria-hidden on SSR
-  let ariaHidden = browser ? !isNavExpanded : undefined;
+  onMount(() => {
+    updateAriaHidden();
+    document.addEventListener('keyup', handleKeyUp);
+    window.addEventListener('resize', updateAriaHidden);
+  });
+
+  $: {
+    $page; // reactive statement that runs on route change
+    isNavExpanded = false; // close nav when the route changes
+  }
+
+  $: updateAriaHidden();
 </script>
 
 <nav
