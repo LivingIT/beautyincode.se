@@ -43,7 +43,7 @@
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1;
-    background-color: var(--primary-brand-color);
+    background-color: var(--attention-bg-color);
     color: white;
     transform: rotate(45deg);
   }
