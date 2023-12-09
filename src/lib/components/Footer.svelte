@@ -1,3 +1,13 @@
+<script>
+  let footerLinks = [
+    { label: 'E-mail', link: 'mailto:beautyincode@livingit.se', icon: 'email' },
+    { label: 'Twitter', link: 'https://twitter.com/beautyincode', icon: 'twitter' },
+    { label: 'Facebook', link: 'https://www.facebook.com/beautyincode/', icon: 'facebook' },
+    { label: 'LinkedIn', link: 'https://www.linkedin.com/company/living-it', icon: 'linkedin' },
+    { label: 'Instagram', link: 'https://www.instagram.com/LivingITConsulting/', icon: 'instagram' }
+  ];
+</script>
+
 <footer id="footer">
   <div class="landmark-content" id="contact">
     <div class="colophon">
@@ -12,55 +22,17 @@
     <h2 class="at-only">Contact us</h2>
 
     <ul class="footer-links">
-      <li>
-        <a href="mailto:beautyincode@livingit.se">
-          <svg class="icon" height="24" width="24" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#email" />
-          </svg>
+      {#each footerLinks as { label, link, icon }}
+        <li>
+          <a href={link}>
+            <svg class="icon" height="24" width="24" aria-hidden="true">
+              <use xlink:href="/images/sprite.svg#{icon}" />
+            </svg>
 
-          <span class="at-only">E-mail</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://twitter.com/beautyincode">
-          <svg class="icon" height="24" width="24" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#twitter" />
-          </svg>
-
-          <span class="at-only">Twitter</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.facebook.com/beautyincode/">
-          <svg class="icon" height="24" width="24" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#facebook" />
-          </svg>
-
-          <span class="at-only">Facebook</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.linkedin.com/company/living-it">
-          <svg class="icon" height="24" width="24" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#linkedin" />
-          </svg>
-
-          <span class="at-only">LinkedIn</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.instagram.com/LivingITConsulting/">
-          <svg class="icon" height="24" width="24" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#instagram" />
-          </svg>
-
-          <span class="at-only">Instagram</span>
-        </a>
-      </li>
+            <span class="at-only">{label}</span>
+          </a>
+        </li>
+      {/each}
     </ul>
 
     <h2 class="at-only">Presented by</h2>
@@ -109,6 +81,7 @@
   }
 
   .footer-links .icon {
+    fill: currentColor;
     width: 3em;
     height: 3em;
   }
