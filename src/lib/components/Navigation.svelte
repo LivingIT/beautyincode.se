@@ -8,7 +8,7 @@
   const navItems = [
     { text: 'Home', url: '/' },
     { text: 'Speakers', url: '/speakers/' },
-    { text: 'Videos', url: '/videos/' }
+    { text: 'Videos', url: '/videos/' },
   ];
 
   /** @type {Boolean} */

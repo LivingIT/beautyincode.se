@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "addLabels": ["renovate"],
-   "major": {
+  "major": {
     "dependencyDashboardApproval": true
-  },
+  }
 }
