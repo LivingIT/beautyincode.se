@@ -43,7 +43,8 @@
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1;
-    background-color: hsl(25, 83%, 56%);
+    background-color: var(--primary-brand-color);
+    color: white;
     transform: rotate(45deg);
   }
 

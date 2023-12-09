@@ -131,7 +131,7 @@
       font-size: 1.12em;
       color: inherit;
       cursor: pointer;
-      background: hsl(20, 10%, 18%);
+      background: var(--secondary-brand-color);
       border: 0;
     }
 

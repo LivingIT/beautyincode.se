@@ -29,7 +29,7 @@
     z-index: 2;
     padding: 0.5em 1em;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(20, 10%, 18%);
+    background-color: var(--secondary-brand-color);
   }
 
   .header__landmark {
