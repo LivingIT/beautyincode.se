@@ -82,9 +82,9 @@
   @media screen {
     #footer {
       padding: 4em 1em;
-      color: hsl(20, 10%, 18%);
+      color: var(--secondary-brand-color);
       text-align: center;
-      background-color: hsl(32, 100%, 87%);
+      background-color: var(--light-bg-color);
     }
 
     .colophon {

@@ -31,22 +31,24 @@
 
   /* Themes */
   .content-block--theme-1 {
-    color: hsl(25, 83%, 56%);
-    background-color: hsl(20, 10%, 18%);
+    color: var(--light-text-color);
+    background-color: var(--dark-bg-color);
   }
 
+  /* TODO Refactor unused theme */
   .content-block--theme-2 {
     color: hsla(0, 0%, 100%, 0.8);
     background-color: hsl(153, 100%, 13%);
   }
 
   .content-block--theme-3 {
-    color: hsl(20, 10%, 18%);
-    background-color: hsl(30, 79%, 65%);
+    color: var(--secondary-brand-color);
+    background-color: var(--medium-bg-color);
   }
 
   .content-block--theme-4 {
-    background-color: hsl(32, 100%, 87%);
+    color: var(--dark-text-color);
+    background-color: var(--light-bg-color);
   }
 
   /* Hero theme */
@@ -58,7 +60,7 @@
     margin-top: calc(var(--hero-offset) * -1);
     overflow: hidden;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
+    background-color: var(--base-black);
     background-image: url('/images/hero-2023-w942.jpg');
     background-repeat: no-repeat;
     background-position: 100% 50%;
