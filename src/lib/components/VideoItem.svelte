@@ -29,7 +29,7 @@
       {#if showVideo}
         <iframe
           src="https://www.youtube.com/embed/{video.videoId}"
-          title=""
+          title="YouTube video: {video.title}"
           frameborder="0"
           allowfullscreen
           loading="lazy"

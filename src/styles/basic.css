@@ -95,7 +95,7 @@
    */
   html {
     font:
-      100%/1.5 'Atak',
+      100%/1.5 "Atak",
       sans-serif;
     font-weight: 300;
     text-size-adjust: 100%;
@@ -108,7 +108,7 @@
   code,
   kbd,
   pre {
-    font-family: Menlo, Courier, 'Courier New', monospace;
+    font-family: Menlo, Courier, "Courier New", monospace;
   }
 
   /**

@@ -12,7 +12,7 @@
     if (typeof gtag !== 'undefined') {
       gtag('config', 'G-BXEPCBVDFX', {
         page_title: document.title,
-        page_path: $page.url.pathname
+        page_path: $page.url.pathname,
       });
     }
   });

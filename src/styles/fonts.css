@@ -4,32 +4,36 @@
 
 /* Regular */
 @font-face {
-  font-family: 'Atak';
+  font-family: "Atak";
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/AtakRegular-Web.woff');
+  src: url("/fonts/AtakRegular-Web.woff");
+  font-display: swap;
 }
 
 /* Italic */
 @font-face {
-  font-family: 'Atak';
+  font-family: "Atak";
   font-style: italic;
   font-weight: normal;
-  src: url('/fonts/AtakRegular-Italic-Web.woff');
+  src: url("/fonts/AtakRegular-Italic-Web.woff");
+  font-display: swap;
 }
 
 /* Semibold */
 @font-face {
-  font-family: 'Atak';
+  font-family: "Atak";
   font-style: normal;
   font-weight: bold;
-  src: url('/fonts/AtakSemibold-Web.woff');
+  src: url("/fonts/AtakSemibold-Web.woff");
+  font-display: swap;
 }
 
 /* Semibold italic */
 @font-face {
-  font-family: 'Atak';
+  font-family: "Atak";
   font-style: italic;
   font-weight: bold;
-  src: url('/fonts/AtakSemibold-Italic-Web.woff');
+  src: url("/fonts/AtakSemibold-Italic-Web.woff");
+  font-display: swap;
 }
