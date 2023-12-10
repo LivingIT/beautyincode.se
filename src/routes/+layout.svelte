@@ -17,8 +17,6 @@
   <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
 </svelte:head>
 
-<Analytics />
-
 <Header />
 
 <main id="main-content">
@@ -26,3 +24,5 @@
 </main>
 
 <Footer />
+
+<Analytics />
