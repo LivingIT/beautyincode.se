@@ -72,6 +72,11 @@
       --hero-offset: 5.2em;
 
       padding-top: calc(var(--vertical-padding) + var(--hero-offset));
+    }
+  }
+
+  @media (min-width: 40em) {
+    .content-block--theme-hero {
       background-image: url('/images/hero-2023-w1400.jpg');
     }
   }
