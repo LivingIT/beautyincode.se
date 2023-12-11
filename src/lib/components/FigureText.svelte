@@ -2,9 +2,9 @@
   <figure role="presentation">
     <img src="/images/logo.svg" height="149" width="300" alt="" loading="lazy" />
     <img
-      src="/images/malmo-live-night-w200.jpg"
-      srcset="/images/malmo-live-night-w400.jpg, 
-              /images/malmo-live-night-w800.jpg 2x"
+      src="/images/malmo-live-night-w200.webp"
+      srcset="/images/malmo-live-night-w400.webp, 
+              /images/malmo-live-night-w800.webp 2x"
       height="1000"
       width="1000"
       alt=""
