@@ -1,9 +1,27 @@
 <script>
+  import Icon from './Icon.svelte';
+
   let footerLinks = [
-    { label: 'E-mail', link: 'mailto:beautyincode@livingit.se', icon: 'email' },
-    { label: 'Twitter', link: 'https://twitter.com/beautyincode', icon: 'twitter' },
-    { label: 'Facebook', link: 'https://www.facebook.com/beautyincode/', icon: 'facebook' },
-    { label: 'LinkedIn', link: 'https://www.linkedin.com/company/living-it', icon: 'linkedin' },
+    {
+      label: 'E-mail',
+      link: 'mailto:beautyincode@livingit.se',
+      icon: 'email',
+    },
+    {
+      label: 'Twitter',
+      link: 'https://twitter.com/beautyincode',
+      icon: 'twitter',
+    },
+    {
+      label: 'Facebook',
+      link: 'https://www.facebook.com/beautyincode/',
+      icon: 'facebook',
+    },
+    {
+      label: 'LinkedIn',
+      link: 'https://www.linkedin.com/company/living-it',
+      icon: 'linkedin',
+    },
     {
       label: 'Instagram',
       link: 'https://www.instagram.com/LivingITConsulting/',
@@ -29,10 +47,7 @@
       {#each footerLinks as { label, link, icon }}
         <li>
           <a href={link}>
-            <svg class="icon" height="24" width="24" aria-hidden="true">
-              <use xlink:href="/images/sprite.svg#{icon}" />
-            </svg>
-
+            <Icon name={icon} height={48} width={48} />
             <span class="at-only">{label}</span>
           </a>
         </li>
@@ -42,16 +57,13 @@
     <h2 class="at-only">Presented by</h2>
 
     <a href="https://livingit.se" class="founder-logo">
-      <span class="at-only">Living IT</span>
-      <svg class="icon" height="24" width="24" aria-hidden="true">
-        <use xlink:href="/images/sprite.svg#living-it" />
-      </svg>
+      <img src="/images/living-it.svg" alt="Living IT" />
     </a>
   </div>
 </footer>
 
 <style>
-  #footer {
+  footer {
     padding: 4em 1em;
     color: var(--secondary-brand-color);
     text-align: center;
@@ -84,12 +96,6 @@
     display: block;
   }
 
-  .footer-links .icon {
-    fill: currentColor;
-    width: 3em;
-    height: 3em;
-  }
-
   /**
    * Founder logo
    */
@@ -99,7 +105,7 @@
     text-align: center;
   }
 
-  .founder-logo .icon {
+  .founder-logo img {
     width: 6em;
     height: 2em;
   }

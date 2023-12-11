@@ -78,7 +78,7 @@
       on:click={toggleNav}
       bind:this={navTriggerElem}
     >
-      <Icon href="menu" />
+      <Icon name="menu" />
       <span>Menu</span>
     </button>
   {/if}
