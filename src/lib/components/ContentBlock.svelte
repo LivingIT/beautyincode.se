@@ -67,7 +67,7 @@
     background-size: cover;
   }
 
-  @media (min-width: 30em) {
+  @media (min-width: 40em) {
     .content-block--theme-hero {
       --hero-offset: 5.2em;
 
