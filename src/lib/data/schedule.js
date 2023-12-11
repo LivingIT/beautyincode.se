@@ -13,14 +13,14 @@ const schedule = [
     start: '08:15',
     end: '09:00',
     name: 'The doors open',
-    image: '/images/welcome.jpg',
+    image: '/images/welcome.webp',
     description: '<p>Coffee and tea will be served.</p>',
   },
   {
     start: '09:00',
     end: '09:05',
     name: 'Fredrik Mörk',
-    image: '/images/speakers/fredrik-mork.jpg',
+    image: '/images/speakers/fredrik-mork.webp',
     title: 'Opening',
   },
   {
@@ -35,7 +35,7 @@ const schedule = [
     start: '10:00',
     end: '10:30',
     name: 'Fika',
-    image: '/images/fika.jpg',
+    image: '/images/fika.webp',
   },
   {
     start: '10:30',
@@ -60,7 +60,7 @@ const schedule = [
     start: '12:15',
     end: '13:15',
     name: 'Lunch',
-    image: '/images/lunch.jpg',
+    image: '/images/lunch.webp',
   },
   {
     start: '13:15',
@@ -87,13 +87,13 @@ const schedule = [
     start: '15:00',
     end: '15:30',
     name: 'Fika',
-    image: '/images/fika.jpg',
+    image: '/images/fika.webp',
   },
   {
     start: '15:30',
     end: '16:30',
     name: 'Panel debate',
-    image: '/images/speakers/kevlin-henney.jpg',
+    image: '/images/speakers/kevlin-henney.webp',
     description: `<p>With all speakers. Hosted by Kevlin Henney.</p>`,
   },
 ];

@@ -61,7 +61,7 @@
     overflow: hidden;
     color: hsl(0, 0%, 100%);
     background-color: var(--base-black);
-    background-image: url('/images/hero-2023-w942.jpg');
+    background-image: url('/images/hero-2023-w942.webp');
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: cover;
@@ -77,7 +77,7 @@
 
   @media (min-width: 40em) {
     .content-block--theme-hero {
-      background-image: url('/images/hero-2023-w1400.jpg');
+      background-image: url('/images/hero-2023-w1400.webp');
     }
   }
 
