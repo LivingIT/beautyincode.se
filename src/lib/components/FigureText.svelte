@@ -1,7 +1,15 @@
 <div class="figure-text">
   <figure role="presentation">
     <img src="/images/logo.svg" height="149" width="300" alt="" loading="lazy" />
-    <img src="/images/malmo-live-night.jpg" height="1000" width="1000" alt="" loading="lazy" />
+    <img
+      src="/images/malmo-live-night-w200.jpg"
+      srcset="/images/malmo-live-night-w400.jpg, 
+              /images/malmo-live-night-w800.jpg 2x"
+      height="1000"
+      width="1000"
+      alt=""
+      loading="lazy"
+    />
   </figure>
   <article>
     <h2 id="about-the-conference">About the conference</h2>
