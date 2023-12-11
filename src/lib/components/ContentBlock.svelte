@@ -61,7 +61,8 @@
     overflow: hidden;
     color: hsl(0, 0%, 100%);
     background-color: var(--base-black);
-    background-image: url('/images/hero-2023-w942.jpg');
+    background-image: url('/images/hero-2023-w942.jpg'),
+      url('/cdn-cgi/image/fit=contain,width=480/images/hero-2023-w942.jpg');
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: cover;
