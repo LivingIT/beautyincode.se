@@ -3,25 +3,25 @@ import config from '../../config';
 let pages = [
   {
     loc: config.baseUrl,
-    lastmod: config.deployTime || '',
+    lastmod: config.deployTime,
     changefreq: 'daily',
     priority: 0.5,
   },
   {
     loc: `${config.baseUrl}/speakers/`,
-    lastmod: config.deployTime || '',
+    lastmod: config.deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${config.baseUrl}/terms/`,
-    lastmod: config.deployTime || '',
+    lastmod: config.deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${config.baseUrl}/videos/`,
-    lastmod: config.deployTime || '',
+    lastmod: config.deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
