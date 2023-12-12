@@ -13,7 +13,7 @@ const config = {
   googleSiteVerification: PUBLIC_GOOGLE_SITE_VERIFICATION,
   metaDescription: PUBLIC_META_DESCRIPTION,
   ogImage: PUBLIC_OG_IMAGE,
-  deployTime: PUBLIC_DEPLOY_TIMESTAMP,
+  deployTime: PUBLIC_DEPLOY_TIMESTAMP || '',
 };
 
 export default config;
