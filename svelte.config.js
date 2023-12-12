@@ -5,10 +5,6 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 const config = {
   preprocess: vitePreprocess(),
 
-  define: {
-    'process.env.PUBLIC_DEPLOY_TIMESTAMP': JSON.stringify(new Date().toISOString()),
-  },
-
   kit: {
     adapter: adapter(),
   },
