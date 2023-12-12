@@ -1,5 +1,47 @@
 import config from '../../config';
 
+let date = new Date();
+
+let pages = [
+  {
+    loc: config.baseUrl,
+    lastmod: config.deployTime || date,
+    changefreq: 'daily',
+    priority: 0.5,
+  },
+  {
+    loc: `${config.baseUrl}/speakers/`,
+    lastmod: config.deployTime || date,
+    changefreq: 'monthly',
+    priority: 0.3,
+  },
+  {
+    loc: `${config.baseUrl}/terms/`,
+    lastmod: config.deployTime || date,
+    changefreq: 'monthly',
+    priority: 0.3,
+  },
+  {
+    loc: `${config.baseUrl}/videos/`,
+    lastmod: config.deployTime || date,
+    changefreq: 'monthly',
+    priority: 0.3,
+  },
+];
+
+const items = pages
+  .map((page) => {
+    return `
+    <url>
+        <loc>${page.loc}</loc>
+        <lastmod>${page.lastmod}</lastmod>
+        <changefreq>${page.changefreq}</changefreq>
+        <priority>${page.priority}</priority>
+    </url>
+  `;
+  })
+  .join('');
+
 export async function GET() {
   return new Response(
     `
@@ -12,31 +54,9 @@ export async function GET() {
       xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
       xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
     >
-      <url>
-        <loc>${config.baseUrl}</loc>
-        <lastmod>${config.deployTime}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>${config.baseUrl}/speakers/</loc>
-        <lastmod>${config.deployTime}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>${config.baseUrl}/terms/</loc>
-        <lastmod>${config.deployTime}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>${config.baseUrl}/videos/</loc>
-        <lastmod>${config.deployTime}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    </urlset>`.trim(),
+      ${items}
+    </urlset>
+    `.trim(),
     {
       headers: {
         'Content-Type': 'application/xml',
