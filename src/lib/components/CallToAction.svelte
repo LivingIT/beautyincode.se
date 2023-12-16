@@ -9,19 +9,12 @@
    * send a click event to Google Analytics.
    * @param {MouseEvent} event - The mouse event
    */
-  const trackClick = (event) => {
-    event.preventDefault();
-
+  const trackClick = () => {
     gtag('event', 'click', {
       event_category: 'cta_click',
       event_label: url,
       value: 1,
     });
-
-    // debounce
-    setTimeout(() => {
-      window.location.href = url;
-    }, 200);
   };
 </script>
 
