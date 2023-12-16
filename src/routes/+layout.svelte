@@ -15,6 +15,9 @@
   <meta property="og:image" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="og:image.url" content={`${config.baseUrl}/${config.ogImage}`} />
   <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
+
+  <!-- Deployed: {config.deployTime} -->
+  <meta name="deploy-time" content={config.deployTime} />
 </svelte:head>
 
 <Header />
