@@ -4,8 +4,9 @@ import {
   PUBLIC_GOOGLE_SITE_VERIFICATION,
   PUBLIC_META_DESCRIPTION,
   PUBLIC_OG_IMAGE,
-  PUBLIC_DEPLOY_TIMESTAMP,
 } from '$env/static/public';
+
+import { DEPLOY_TIMESTAMP } from '$env/static/private';
 
 const config = {
   baseUrl: PUBLIC_BASE_URL,
@@ -13,7 +14,7 @@ const config = {
   googleSiteVerification: PUBLIC_GOOGLE_SITE_VERIFICATION,
   metaDescription: PUBLIC_META_DESCRIPTION,
   ogImage: PUBLIC_OG_IMAGE,
-  deployTime: PUBLIC_DEPLOY_TIMESTAMP || '',
+  deployTime: DEPLOY_TIMESTAMP || '',
 };
 
 export default config;
