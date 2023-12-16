@@ -4,9 +4,28 @@
 
   /** @type {string} */
   export let text;
+
+  /**
+   * send a click event to Google Analytics.
+   * @param {MouseEvent} event - The mouse event
+   */
+  const trackClick = (event) => {
+    event.preventDefault();
+
+    gtag('event', 'click', {
+      event_category: 'cta_click',
+      event_label: url,
+      value: 1,
+    });
+
+    // debounce
+    setTimeout(() => {
+      window.location.href = url;
+    }, 200);
+  };
 </script>
 
-<a href={url}>{text}</a>
+<a href={url} on:click={trackClick}>{text}</a>
 
 <style>
   a {
