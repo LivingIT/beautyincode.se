@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "prebuild": "cross-env PUBLIC_DEPLOY_TIMESTAMP=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")",
-    "build": "vite build",
+    "build": "PUBLIC_DEPLOY_TIMESTAMP=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
@@ -17,7 +16,6 @@
     "@sveltejs/adapter-cloudflare": "^2.3.3",
     "@sveltejs/kit": "^1.20.4",
     "@types/gtag.js": "^0.0.18",
-    "cross-env": "^7.0.3",
     "esbuild": "^0.19.7",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^9.0.0",
