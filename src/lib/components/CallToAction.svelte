@@ -4,9 +4,20 @@
 
   /** @type {string} */
   export let text;
+
+  /**
+   * send a click event to Google Analytics.
+   */
+  const trackClick = () => {
+    gtag('event', 'click', {
+      event_category: 'click',
+      event_label: 'cta_click',
+      value: 1,
+    });
+  };
 </script>
 
-<a href={url}>{text}</a>
+<a href={url} on:click={trackClick}>{text}</a>
 
 <style>
   a {
