@@ -7,12 +7,11 @@
 
   /**
    * send a click event to Google Analytics.
-   * @param {MouseEvent} event - The mouse event
    */
   const trackClick = () => {
     gtag('event', 'click', {
-      event_category: 'cta_click',
-      event_label: url,
+      event_category: 'click',
+      event_label: 'cta_click',
       value: 1,
     });
   };
