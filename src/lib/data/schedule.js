@@ -92,7 +92,7 @@ const schedule = [
   {
     start: '15:30',
     end: '16:30',
-    name: 'Panel debate',
+    name: 'Panel discussion',
     image: '/images/speakers/kevlin-henney.webp',
     description: `<p>With all speakers. Hosted by Kevlin Henney.</p>`,
   },
