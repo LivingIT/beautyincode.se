@@ -16,7 +16,7 @@ npm run dev
 
 ## 🛠️ Building
 
-To create a production version of your app:
+Create a production version of the site:
 
 ```bash
 npm run build
