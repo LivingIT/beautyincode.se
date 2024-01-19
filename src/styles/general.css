@@ -6,32 +6,6 @@
 
 @media screen {
   /**
-   * Skip links
-   */
-  #skip {
-    position: absolute;
-    top: 0;
-    left: -9999px;
-    z-index: 100;
-    width: 100%;
-  }
-
-  #skip a:focus,
-  #skip a:active {
-    position: absolute;
-    top: 0;
-    left: 9999px;
-    display: block;
-    width: 100%;
-    padding: 0.5em 0;
-    font-weight: bold;
-    line-height: 1;
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    background: hsl(0, 0%, 27%);
-  }
-
-  /**
    * Article
    */
   article {
