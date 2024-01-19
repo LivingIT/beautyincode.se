@@ -30,6 +30,7 @@
     padding: 0.5em 1em;
     color: hsl(0, 0%, 100%);
     background-color: var(--secondary-brand-color);
+    margin-block-start: 0;
   }
 
   .header__landmark {

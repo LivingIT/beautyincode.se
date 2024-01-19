@@ -4,6 +4,7 @@
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import Analytics from '$lib/fragments/analytics.svelte';
+  import SkipLinks from '$lib/components/SkipLinks.svelte';
 </script>
 
 <svelte:head>
@@ -19,6 +20,8 @@
   <!-- Deployed: {config.deployTime} -->
   <meta name="deploy-time" content={config.deployTime} />
 </svelte:head>
+
+<SkipLinks href="#main-content" />
 
 <Header />
 
