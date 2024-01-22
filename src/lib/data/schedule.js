@@ -43,7 +43,12 @@ const schedule = [
     id: 'niall-merrigan',
     name: 'Niall Merrigan',
     title: 'Optimistic Security',
-    description: `<p>Coming soon…</p>`,
+    description: `
+      <p>Security is very often explained as being very experienced based. The more mistakes you have made, the more likely you are to be prepared in the future.</p>
+      <p>Unfortunately this is not always the case as there is so much information that our brains need to take shortcuts to keep up. This is where biases come into the equation, and this can have a detrimental effect on our ability to secure our private and business lives.</p>
+      <p>In this session, Niall will look at various things that can affect how we make decisions as well as complicate our ability to react when dealing with a security event. We will look at real world examples of this and what happened and what could have been done.</p>
+      <p>This session will ask you to do an introspective on your security practices and look for own biases so that you can protect yourself better.</p>
+    `,
   },
   {
     start: '11:30',
