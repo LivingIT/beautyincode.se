@@ -11,6 +11,8 @@
     { text: 'Videos', url: '/videos/' },
   ];
 
+  const NAV_BREAKPOINT = '(max-width: 40em)';
+
   /** @type {Boolean} */
   let isNavExpanded = false;
 
@@ -24,7 +26,7 @@
    * Do not set aria-hidden on SSR or above 40em viewport
    */
   const updateAriaHidden = () => {
-    const isHorizontalNav = browser && window.matchMedia('(min-width: 40em)').matches;
+    const isHorizontalNav = browser && window.matchMedia(NAV_BREAKPOINT).matches;
     ariaHidden = browser && !isHorizontalNav ? !isNavExpanded : undefined;
   };
 
@@ -44,6 +46,23 @@
         isNavExpanded = false;
       }
     }
+  };
+
+  /**
+   * Returns the tabindex value if conditions are met
+   * otherwise returns undefined.
+   *
+   * @param {Boolean} isExpanded - The current state of navigation expansion.
+   * @returns {Number | undefined} - The tabindex value or undefined.
+   */
+  const getTabIndex = (isExpanded) => {
+    // Check if we're in the browser and the viewport width
+    const renderTabIndex = browser && window.matchMedia(NAV_BREAKPOINT).matches;
+
+    if (!renderTabIndex) {
+      return undefined;
+    }
+    return isExpanded ? 0 : -1;
   };
 
   onMount(() => {
@@ -84,7 +103,7 @@
   {/if}
   <ul class="nav" aria-hidden={ariaHidden}>
     {#each navItems as { text, url }}
-      <li class="nav__item"><a href={url} tabindex={isNavExpanded ? 0 : -1}>{text}</a></li>
+      <li class="nav__item"><a href={url} tabindex={getTabIndex(isNavExpanded)}>{text}</a></li>
     {/each}
   </ul>
 </nav>
