@@ -32,6 +32,7 @@
 
   const toggleNav = () => {
     isNavExpanded = !isNavExpanded;
+    ariaHidden = !ariaHidden;
   };
 
   /**
