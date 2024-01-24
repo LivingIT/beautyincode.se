@@ -26,13 +26,14 @@
    * Do not set aria-hidden on SSR or above 40em viewport
    */
   const updateAriaHidden = () => {
-    const isHorizontalNav = browser && window.matchMedia(NAV_BREAKPOINT).matches;
+    const isHorizontalNav = browser && !window.matchMedia(NAV_BREAKPOINT).matches;
     ariaHidden = browser && !isHorizontalNav ? !isNavExpanded : undefined;
   };
 
-  function toggleNav() {
+  const toggleNav = () => {
     isNavExpanded = !isNavExpanded;
-  }
+    ariaHidden = !ariaHidden;
+  };
 
   /**
    * Listen for tab input. If focus is outside mainNavElem, close it.
