@@ -30,9 +30,9 @@
     ariaHidden = browser && !isHorizontalNav ? !isNavExpanded : undefined;
   };
 
-  function toggleNav() {
+  const toggleNav = () => {
     isNavExpanded = !isNavExpanded;
-  }
+  };
 
   /**
    * Listen for tab input. If focus is outside mainNavElem, close it.
