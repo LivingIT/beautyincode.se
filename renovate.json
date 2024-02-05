@@ -1,7 +1,16 @@
 {
-  "extends": ["config:base"],
-  "addLabels": ["renovate"],
+  "extends": ["config:base", "schedule:weekdays"],
+  "prConcurrentLimit": 1,
+  "automergeSchedule": ["after 9am and before 2pm every weekday"],
   "major": {
     "dependencyDashboardApproval": true
-  }
+  },
+  "addLabels": ["renovate"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
 }
