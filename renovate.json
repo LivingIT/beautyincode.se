@@ -1,6 +1,5 @@
 {
   "extends": ["config:base", "schedule:weekdays"],
-  "prConcurrentLimit": 1,
   "automergeSchedule": ["after 9am and before 2pm every weekday"],
   "major": {
     "dependencyDashboardApproval": true
