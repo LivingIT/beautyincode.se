@@ -14,6 +14,8 @@
   <meta property="og:title" content={config.title} />
   <meta property="og:description" content={config.metaDescription} />
   <meta property="og:image" content={`${config.baseUrl}/${config.ogImage}`} />
+  <meta name="twitter:title" content={config.title} />
+  <meta name="twitter:description" content={config.metaDescription} />
   <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
 
   <!-- Deployed: {config.deployTime} -->
