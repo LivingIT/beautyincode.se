@@ -54,11 +54,18 @@
 
 <p id="countdown" class="countdown">
   {#if browser}
-    <span class="at-only">Event begins in</span>
-    <span class="countdown__unit days">{days}</span>
-    <span class="countdown__unit hours">{hours}</span>
-    <span class="countdown__unit minutes">{minutes}</span>
-    <span class="countdown__unit seconds">{seconds}</span>
+    {#if days > 0}
+      <span class="countdown__unit days">{days}</span>
+    {/if}
+    {#if hours > 0 || days > 0}
+      <span class="countdown__unit hours">{hours}</span>
+    {/if}
+    {#if minutes > 0 || hours > 0 || days > 0}
+      <span class="countdown__unit minutes">{minutes}</span>
+    {/if}
+    {#if seconds > 0 || minutes > 0 || hours > 0 || days > 0}
+      <span class="countdown__unit seconds">{seconds}</span>
+    {/if}
   {:else}
     <span class="countdown__ssr">
       Doors open in <em class="countdown__ssr-days">{days}</em> days
