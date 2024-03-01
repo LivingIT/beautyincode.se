@@ -63,9 +63,7 @@
     {#if minutes > 0 || hours > 0 || days > 0}
       <span class="countdown__unit minutes">{minutes}</span>
     {/if}
-    {#if seconds > 0 || minutes > 0 || hours > 0 || days > 0}
-      <span class="countdown__unit seconds">{seconds}</span>
-    {/if}
+    <span class="countdown__unit seconds">{seconds}</span>
   {:else}
     <span class="countdown__ssr">
       Doors open in <em class="countdown__ssr-days">{days}</em> days
