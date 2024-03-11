@@ -75,7 +75,8 @@ export const videosByYear = {
     {
       title: 'Dr. Alistair Cockburn - Answering questions with stories',
       videoId: 'EMss45AHaaw',
-      description: '',
+      description:
+        'In this extra talk, Alistair answers questions from the audience with stories from his work experience.',
     },
     {
       title: 'GeePaw Hill — Changing Changing Software',
