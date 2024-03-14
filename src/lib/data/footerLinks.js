@@ -5,9 +5,9 @@ export let footerLinks = [
     icon: 'email',
   },
   {
-    label: 'Twitter',
+    label: 'X',
     link: 'https://twitter.com/beautyincode',
-    icon: 'twitter',
+    icon: 'x',
   },
   {
     label: 'Facebook',
