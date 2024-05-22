@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "4.4.0",
-    "@sveltejs/kit": "2.5.9",
+    "@sveltejs/kit": "2.5.10",
     "@types/gtag.js": "0.0.19",
     "esbuild": "0.21.3",
     "eslint": "8.57.0",
