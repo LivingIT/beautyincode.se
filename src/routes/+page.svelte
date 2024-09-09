@@ -4,7 +4,7 @@
   import ContentBlock from '$lib/components/ContentBlock.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import FigureText from '$lib/components/FigureText.svelte';
-  import Schedule from '$lib/components/Schedule.svelte';
+  // import Schedule from '$lib/components/Schedule.svelte';
 </script>
 
 <svelte:head>
@@ -20,7 +20,8 @@
 </ContentBlock>
 
 <ContentBlock theme="theme-4" id="schedule" heading="Schedule">
-  <Schedule />
+  <!-- <Schedule /> -->
+  <p>We will release the schedule for 2025 soon, so be sure to check back!</p>
 </ContentBlock>
 
 <ContentBlock theme="theme-1" id="code-of-conduct" heading="Code of Conduct">

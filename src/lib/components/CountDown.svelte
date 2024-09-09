@@ -78,8 +78,7 @@
     font-weight: 500;
     line-height: 1;
     white-space: nowrap;
-    /*animation: countDownFadeIn 1500ms ease-in;*/
-    opacity: 0;
+    animation: countDownFadeIn 1500ms ease-in;
   }
 
   .countdown__ssr {
