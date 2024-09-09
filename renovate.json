@@ -3,6 +3,9 @@
   "extends": ["config:base", "schedule:weekdays"],
   "timezone": "CET",
   "automergeSchedule": ["after 9am and before 2pm every weekday"],
+  "nvm": {
+    "enabled": false
+  },
   "major": {
     "dependencyDashboardApproval": true
   },
