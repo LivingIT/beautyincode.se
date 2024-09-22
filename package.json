@@ -16,7 +16,7 @@
     "@sveltejs/adapter-cloudflare": "4.7.2",
     "@sveltejs/kit": "2.5.28",
     "@types/gtag.js": "0.0.20",
-    "esbuild": "0.21.5",
+    "esbuild": "0.24.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-svelte": "2.44.0",
