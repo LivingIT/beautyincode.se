@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { fade, slide } from 'svelte/transition';
   import { page } from '$app/stores';
 
   import { navToggle } from '../../state/navToggle.svelte';
