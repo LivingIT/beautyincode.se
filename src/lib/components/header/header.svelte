@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { navToggle } from '../../state/navToggle.svelte';
+  import { navToggle } from '../../../state/navToggle.svelte';
   import HeaderToggle from './headerToggle.svelte';
-  import Navigation from './navigation.svelte';
+  import Navigation from '../navigation.svelte';
 </script>
 
 <header class:expanded={navToggle.isNavOpen && !navToggle.isWideViewport}>

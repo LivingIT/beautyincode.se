@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { navToggle } from '../../state/navToggle.svelte';
+  import { navToggle } from '../../../state/navToggle.svelte';
   let isMenuOpen = $state(false);
 
   function toggleIcon() {
