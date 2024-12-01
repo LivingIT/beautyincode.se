@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Footer from '$lib/components/footer_.svelte';
-  import Header from '$lib/components/header_.svelte';
+  import Footer from '$lib/components/footer/footer.svelte';
+  import Header from '$lib/components/header/header.svelte';
   import {
     metaDescription,
     googleSiteVerification,
