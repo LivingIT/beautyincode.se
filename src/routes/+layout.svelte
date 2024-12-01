@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Footer from '$lib/components/footer.svelte';
+  import Footer from '$lib/components/footer_.svelte';
   import Header from '$lib/components/header_.svelte';
   import {
     metaDescription,
