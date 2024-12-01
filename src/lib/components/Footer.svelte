@@ -1,6 +1,33 @@
-<script>
-  import Icon from './Icon.svelte';
-  import { footerLinks } from '$lib/data/footerLinks';
+<script lang="ts">
+  import Icon from '@iconify/svelte';
+
+  const footerLinks = [
+    {
+      label: 'E-mail',
+      link: 'mailto:beautyincode@livingit.se',
+      icon: 'mdi:email',
+    },
+    {
+      label: 'X',
+      link: 'https://x.com/beautyincode',
+      icon: 'ri:twitter-x-fill',
+    },
+    {
+      label: 'Facebook',
+      link: 'https://www.facebook.com/beautyincode/',
+      icon: 'mdi:facebook',
+    },
+    {
+      label: 'LinkedIn',
+      link: 'https://www.linkedin.com/company/living-it',
+      icon: 'mdi:linkedin',
+    },
+    {
+      label: 'Instagram',
+      link: 'https://www.instagram.com/LivingITConsulting/',
+      icon: 'mdi:instagram',
+    },
+  ];
 </script>
 
 <footer id="footer">
@@ -20,7 +47,7 @@
       {#each footerLinks as { label, link, icon }}
         <li>
           <a href={link}>
-            <Icon name={icon} height={48} width={48} />
+            <Icon {icon} width={32} height={32} />
             <span class="at-only">{label}</span>
           </a>
         </li>
@@ -37,10 +64,10 @@
 
 <style>
   footer {
+    /* background-color: var(--dark-bg-color); */
+    /* color: var(--light-text-color); */
     padding: 4em 1em;
-    color: var(--secondary-brand-color);
     text-align: center;
-    background-color: var(--light-bg-color);
   }
 
   .colophon {
@@ -56,17 +83,21 @@
    */
   .footer-links {
     display: flex;
+    gap: 2em;
     align-items: center;
     justify-content: center;
     margin-left: 0;
   }
 
-  .footer-links li + li {
-    margin-left: 1em;
-  }
-
   .footer-links a {
     display: block;
+    transition: color ease-in-out 200ms;
+  }
+
+  .footer-links a:hover,
+  .footer-links a:focus,
+  .footer-links a:active {
+    color: var(--primary-brand-color);
   }
 
   /**

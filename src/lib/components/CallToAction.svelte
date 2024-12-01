@@ -1,23 +1,13 @@
-<script>
-  /** @type {string} */
-  export let url;
+<script lang="ts">
+  interface Props {
+    url: string;
+    text: string;
+  }
 
-  /** @type {string} */
-  export let text;
-
-  /**
-   * send a click event to Google Analytics.
-   */
-  const trackClick = () => {
-    gtag('event', 'click', {
-      event_category: 'click',
-      event_label: 'cta_click',
-      value: 1,
-    });
-  };
+  let { url, text }: Props = $props();
 </script>
 
-<a href={url} on:click={trackClick}>{text}</a>
+<a href={url}>{text}</a>
 
 <style>
   a {

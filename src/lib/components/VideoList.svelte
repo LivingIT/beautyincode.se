@@ -1,11 +1,10 @@
-<script>
-  import VideoItem from './VideoItem.svelte';
+<script lang="ts">
+  import VideoItem from './videoItem.svelte';
   import { videosByYear } from '$lib/data/videos';
 
-  /**
-   * @type {Array<string>} - An array of sorted years in descending order.
-   */
-  const sortedYears = Object.keys(videosByYear).sort((a, b) => Number(b) - Number(a));
+  const sortedYears: Array<string> = Object.keys(videosByYear).sort(
+    (a, b) => Number(b) - Number(a),
+  );
 </script>
 
 <ul class="article-toc">

@@ -1,0 +1,29 @@
+<script>
+  import CallToAction from './callToAction.svelte';
+</script>
+
+<header class="hero-header">
+  <h1><img src="/images/logo.svg" alt="Beauty in Code" /></h1>
+  <p>March 1, 2025</p>
+  <p>Malmö, Sweden</p>
+  <CallToAction url="https://www.event.com/" text="Get tickets now" />
+</header>
+
+<style>
+  .hero-header {
+    filter: drop-shadow(0 0 4px hsl(0 0 0 /0.4));
+    background-color: hsl(0 0 0 /0.3);
+    backdrop-filter: blur(0.6rem);
+    text-shadow: 0 0 1px hsl(0 0 0 / 0.5);
+    color: hsl(0 0 100);
+    padding: 5rem;
+    min-height: 5rem;
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+</style>

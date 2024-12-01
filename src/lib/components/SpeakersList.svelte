@@ -1,11 +1,14 @@
-<script>
+<script lang="ts">
   import speakers from '$lib/data/speakers';
   import slugify from '$lib/utils/slugify';
 
-  /**
-   * @type {Array<{ name: string, image: string, bio: string }>} - Array of sorted speakers
-   */
-  const sortedSpeakers = Object.values(speakers).sort((a, b) => {
+  interface Speaker {
+    name: string;
+    image: string;
+    bio: string;
+  }
+
+  const sortedSpeakers: Speaker[] = Object.values(speakers).sort((a, b) => {
     // Compare based on the speaker's ID (assuming the ID is a string)
     return a.name.localeCompare(b.name);
   });

@@ -4,21 +4,19 @@
 
 :root {
   /* Base colors */
-  --base-white: hsl(0, 100%, 100%);
-  --base-black: hsl(0, 0%, 0%);
+  --base-white: hsl(0 100 100);
+  --base-black: hsl(0 0 0);
 
   /* Brand colors */
-  --primary-brand-color: hsl(25, 83%, 51%);
-  --secondary-brand-color: hsl(20, 10%, 18%);
+  --primary-brand-color: hsl(25 83 51);
 
   /* Background colors */
-  --light-bg-color: hsl(32, 100%, 87%);
-  --dark-bg-color: hsl(20, 10%, 18%);
-  --medium-bg-color: hsl(30, 79%, 65%);
-  --attention-bg-color: hsl(0, 100%, 36%);
+  --light-bg-color: hsl(0 100 100);
+  --dark-bg-color: hsl(0 0 0);
+  --attention-bg-color: hsl(0 100 36);
 
   /* Text colors */
-  --light-text-color: hsl(0, 100%, 100%);
-  --dark-text-color: hsl(20, 10%, 18%);
-  --base-text-color: hsl(0, 0%, 20%);
+  --light-text-color: hsl(0 100 100);
+  --dark-text-color: hsl(0 0 0);
+  --base-text-color: hsl(0 0 10);
 }

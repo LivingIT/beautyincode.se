@@ -1,50 +1,43 @@
-<script>
-  import { page } from '$app/stores';
-  import config from '../../config';
-
-  import Navigation from './Navigation.svelte';
+<script lang="ts">
+  import { navToggle } from '../../state/navToggle.svelte';
+  import HeaderToggle from './headerToggle.svelte';
+  import Navigation from './navigation.svelte';
 </script>
 
-<header class="header" id="header">
-  <div class="header__landmark landmark-content">
-    <div class="header__logo">
-      <a href="/">
-        {#if $page.url.pathname === '/'}
-          <h1 class="at-only">{config.title}</h1>
-        {:else}
-          <p class="at-only">{config.title}</p>
-        {/if}
-        <img class="header__logo-icon" src="/images/logo.svg" alt="" />
-      </a>
-    </div>
-
-    <Navigation />
-  </div>
+<header class:expanded={navToggle.isNavOpen && !navToggle.isWideViewport}>
+  <Navigation />
+  {#if !navToggle.isWideViewport}
+    <HeaderToggle />
+  {/if}
 </header>
 
 <style>
-  .header {
+  header {
     position: sticky;
-    top: 0;
-    z-index: 2;
-    padding: 0.5em 1em;
-    color: hsl(0, 0%, 100%);
-    background-color: var(--secondary-brand-color);
-    margin-block-start: 0;
-  }
-
-  .header__landmark {
+    inset-block-start: 0;
+    background-color: hsl(0 0 0 / 0.6);
+    backdrop-filter: blur(1rem);
+    color: hsl(0 0 100);
+    padding: 1rem;
+    min-height: 5rem;
+    margin-block-end: -7rem;
     display: flex;
-    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    z-index: 1;
   }
 
-  .header__logo {
-    margin-right: auto;
+  .expanded {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: 0;
+    height: 100dvh;
   }
 
-  .header__logo-icon {
-    width: 6rem;
-    height: 4rem;
-    margin-top: 0;
+  @media (min-width: 34em) {
+    .expanded {
+      position: static;
+    }
   }
 </style>

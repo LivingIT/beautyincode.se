@@ -1,28 +1,31 @@
-<script>
-  import config from '../config';
+<script lang="ts">
+  import Footer from '$lib/components/footer.svelte';
+  import Header from '$lib/components/header.svelte';
+  import {
+    metaDescription,
+    googleSiteVerification,
+    baseUrl,
+    title,
+    ogImage,
+    deployTime,
+  } from '$lib/config';
   import '../styles/main.css';
-  import Header from '$lib/components/Header.svelte';
-  import Footer from '$lib/components/Footer.svelte';
-  import Analytics from '$lib/fragments/analytics.svelte';
-  import SkipLinks from '$lib/components/SkipLinks.svelte';
 </script>
 
 <svelte:head>
-  <meta name="description" content={config.metaDescription} />
-  <meta name="google-site-verification" content={config.googleSiteVerification} />
-  <meta property="og.url" content={config.baseUrl} />
-  <meta property="og:title" content={config.title} />
-  <meta property="og:description" content={config.metaDescription} />
-  <meta property="og:image" content={`${config.baseUrl}/${config.ogImage}`} />
-  <meta name="twitter:title" content={config.title} />
-  <meta name="twitter:description" content={config.metaDescription} />
-  <meta property="twitter:image" content={`${config.baseUrl}/${config.ogImage}`} />
+  <meta name="description" content={metaDescription} />
+  <meta name="google-site-verification" content={googleSiteVerification} />
+  <meta property="og.url" content={baseUrl} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={metaDescription} />
+  <meta property="og:image" content={`${baseUrl}/${ogImage}`} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={metaDescription} />
+  <meta property="twitter:image" content={`${baseUrl}/${ogImage}`} />
 
-  <!-- Deployed: {config.deployTime} -->
-  <meta name="deploy-time" content={config.deployTime} />
+  <!-- Deployed: {deployTime} -->
+  <meta name="deploy-time" content={deployTime} />
 </svelte:head>
-
-<SkipLinks href="#main-content" />
 
 <Header />
 
@@ -31,5 +34,3 @@
 </main>
 
 <Footer />
-
-<Analytics />

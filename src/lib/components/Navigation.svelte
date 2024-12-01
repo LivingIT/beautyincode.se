@@ -1,213 +1,142 @@
-<script>
-  import { onMount } from 'svelte';
+<script lang="ts">
+  import { fade, slide } from 'svelte/transition';
   import { page } from '$app/stores';
-  import { browser } from '$app/environment';
 
-  import Icon from './Icon.svelte';
+  import { navToggle } from '../../state/navToggle.svelte';
 
   const navItems = [
-    { text: 'Home', url: '/' },
-    { text: 'Speakers', url: '/speakers/' },
-    { text: 'Videos', url: '/videos/' },
+    { url: '/speakers/', label: 'Speakers' },
+    { url: '/schedule/', label: 'Schedule' },
+    { url: '/videos/', label: 'Videos' },
+    { url: '/tickets/', label: 'Tickets' },
   ];
 
-  const NAV_BREAKPOINT = '(max-width: 40em)';
-
-  /** @type {Boolean} */
-  let isNavExpanded = false;
-
-  /** @type {Boolean | undefined} */
-  let ariaHidden;
-
-  /** @type {HTMLElement} */
-  let navTriggerElem;
-
-  /**
-   * Do not set aria-hidden on SSR or above 40em viewport
-   */
-  const updateAriaHidden = () => {
-    const isHorizontalNav = browser && !window.matchMedia(NAV_BREAKPOINT).matches;
-    ariaHidden = browser && !isHorizontalNav ? !isNavExpanded : undefined;
-  };
-
-  const toggleNav = () => {
-    isNavExpanded = !isNavExpanded;
-    ariaHidden = !ariaHidden;
-  };
-
-  /**
-   * Listen for tab input. If focus is outside mainNavElem, close it.
-   *
-   * @param {KeyboardEvent} e
-   */
-  const handleKeyUp = (e) => {
-    if (e.code === 'Tab') {
-      const mainNavElem = document.getElementById('main-nav');
-      if (!mainNavElem?.contains(document.activeElement)) {
-        isNavExpanded = false;
-      }
-    }
-  };
-
-  /**
-   * Returns the tabindex value if conditions are met
-   * otherwise returns undefined.
-   *
-   * @param {Boolean} isExpanded - The current state of navigation expansion.
-   * @returns {Number | undefined} - The tabindex value or undefined.
-   */
-  const getTabIndex = (isExpanded) => {
-    // Check if we're in the browser and the viewport width
-    const renderTabIndex = browser && window.matchMedia(NAV_BREAKPOINT).matches;
-
-    if (!renderTabIndex) {
-      return undefined;
-    }
-    return isExpanded ? 0 : -1;
-  };
-
-  onMount(() => {
-    updateAriaHidden();
-    document.addEventListener('keyup', handleKeyUp);
-    window.addEventListener('resize', updateAriaHidden);
+  // Close navigation when user navigates
+  $effect(() => {
+    $page;
+    if (!navToggle.isWideViewport) navToggle.isNavOpen = false;
   });
-
-  $: {
-    $page; // reactive statement that runs on route change
-    isNavExpanded = false; // close nav when the route changes
-  }
-
-  $: updateAriaHidden();
 </script>
 
-<nav
-  id="main-nav"
-  class="main-nav"
-  class:main-nav--js={browser}
-  aria-label="Main"
-  data-expanded={isNavExpanded}
->
-  {#if browser}
-    <button
-      type="button"
-      class="main-nav__trigger"
-      id="main-nav-trigger"
-      aria-controls="main-nav"
-      aria-expanded={isNavExpanded}
-      aria-label="Menu: open main navigation"
-      on:click={toggleNav}
-      bind:this={navTriggerElem}
-    >
-      <Icon name="menu" />
-      <span>Menu</span>
-    </button>
-  {/if}
-  <ul class="nav" aria-hidden={ariaHidden}>
-    {#each navItems as { text, url }}
-      <li class="nav__item"><a href={url} tabindex={getTabIndex(isNavExpanded)}>{text}</a></li>
+<nav class:collapsed={!navToggle.isNavOpen}>
+  <ul>
+    <li class="logo">
+      <a href="/">Beauty in Code</a>
+    </li>
+    {#each navItems as { url, label }, index}
+      <li>
+        <a href={url}>
+          {label}
+        </a>
+      </li>
     {/each}
   </ul>
 </nav>
 
 <style>
-  @media screen {
-    .main-nav {
-      margin-top: 0;
+  nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: start;
+    margin-block-start: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  li + li {
+    align-self: start;
+    overflow: hidden;
+  }
+
+  .collapsed {
+    ul {
+      gap: 0;
     }
 
-    .main-nav--js {
-      --nav-width: 12em;
-
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: var(--nav-width);
-      padding: 1em;
-      background-color: hsla(20, 10%, 18%, 1);
-      transition:
-        right 200ms ease-in-out,
-        filter 200ms ease-in-out;
+    li + li {
+      max-height: 0;
     }
+  }
 
-    .main-nav--js[data-expanded='true'] {
-      filter: drop-shadow(0 0 0.5em hsla(0, 0%, 0%, 0.5));
-    }
+  :not(.logo) a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding-block: 0.4rem calc(0.4rem - 4px);
+    border-block-end: 4px solid transparent;
+    transition: border-block-end-color ease-in-out 200ms;
+  }
 
-    .main-nav--js[data-expanded='false'] {
-      right: calc(var(--nav-width) * -1);
-    }
+  :not(.logo) a:hover,
+  :not(.logo) a:focus,
+  :not(.logo) a:active {
+    border-block-end-color: var(--primary-brand-color);
+  }
 
-    .main-nav__trigger {
-      --width: 5.2em;
+  .logo a {
+    display: block;
+    padding: 0;
+    height: 3rem;
+    width: 5rem;
+    margin-inline: 1rem;
+    border: 0;
+    background-position: center;
+    background-image: url('/images/logo-monochrome.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -200%;
+    overflow: hidden;
+  }
 
-      position: absolute;
-      top: 1em;
-      left: calc((var(--width) - 0.2em) * -1);
-      display: flex;
+  .logo a:hover,
+  .logo a:focus,
+  .logo a:active {
+    background-image: url('/images/logo.svg');
+    border-block-end-color: transparent;
+  }
+
+  @media (min-width: 34em) {
+    nav {
       align-items: center;
-      padding: 0.5em 1em 0.5em 0.5em;
-      margin-top: 0;
-      font-size: 1.12em;
-      color: inherit;
-      cursor: pointer;
-      background: var(--secondary-brand-color);
-      border: 0;
     }
 
-    .main-nav__trigger span {
-      margin-block-start: 0;
-      margin-inline-start: 0.25em;
+    ul {
+      grid-template-columns: repeat(5, 1fr);
     }
 
-    /* Navigation list */
-    .nav {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      margin-top: 0;
-      font-weight: bold;
-      text-align: right;
-      text-transform: uppercase;
+    li,
+    li + li {
+      align-self: center;
     }
 
-    .nav__item a {
-      display: block;
-      padding: 0.25em 0;
-      text-decoration: none;
+    li:nth-child(2) {
+      order: 1;
     }
 
-    .nav__item a:hover,
-    .nav__item a:active {
-      text-decoration: underline;
+    li:nth-child(3) {
+      order: 2;
     }
 
-    @media (min-width: 40em) {
-      .main-nav--js {
-        --nav-width: unset;
+    .logo {
+      order: 3;
+    }
 
-        position: static;
-      }
+    li:nth-child(4) {
+      order: 4;
+    }
 
-      .main-nav--js[data-expanded] {
-        filter: none;
-      }
-
-      .main-nav__trigger {
-        display: none;
-      }
-
-      .nav {
-        flex-direction: row;
-      }
-
-      .nav__item a {
-        padding: 0;
-      }
-
-      .nav__item + .nav__item {
-        margin-left: 1em;
-      }
+    li:nth-child(5) {
+      order: 5;
     }
   }
 </style>
