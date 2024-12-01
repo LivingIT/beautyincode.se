@@ -9,5 +9,6 @@ export default defineConfig({
   css: {
     devSourcemap: true,
   },
+  envPrefix: ['CF_PAGES_'],
   plugins: [sveltekit()],
 });

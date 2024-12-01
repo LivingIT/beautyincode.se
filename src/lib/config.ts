@@ -5,9 +5,8 @@ import {
   PUBLIC_META_DESCRIPTION,
   PUBLIC_OG_IMAGE,
   // PUBLIC_DEPLOY_TIMESTAMP,
+  CF_PAGES_URL,
 } from '$env/static/public';
-
-import { CF_PAGES_URL } from '$env/static/private';
 
 export const baseUrl = CF_PAGES_URL || PUBLIC_BASE_URL;
 export const title = PUBLIC_SITE_TITLE;
