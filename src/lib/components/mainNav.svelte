@@ -22,9 +22,9 @@
     <li class="logo">
       <a href="/">Beauty in Code</a>
     </li>
-    {#each navItems as { url, label }, index}
+    {#each navItems as { url, label }}
       <li>
-        <a href={url}>
+        <a href={url} aria-current={$page.url.pathname == url ? 'page' : undefined}>
           {label}
         </a>
       </li>
@@ -78,7 +78,8 @@
 
   :not(.logo) a:hover,
   :not(.logo) a:focus,
-  :not(.logo) a:active {
+  :not(.logo) a:active,
+  :not(.logo) [aria-current='page'] {
     border-block-end-color: var(--primary-brand-color);
   }
 
