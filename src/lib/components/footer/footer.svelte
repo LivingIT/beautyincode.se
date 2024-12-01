@@ -64,8 +64,8 @@
 
 <style>
   footer {
-    /* background-color: var(--dark-bg-color); */
-    /* color: var(--light-text-color); */
+    background-color: var(--footer-overlay);
+    margin-block-start: 0;
     padding: 4em 1em;
     text-align: center;
   }

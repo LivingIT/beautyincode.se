@@ -3,6 +3,8 @@
  */
 
 :root {
+  color-scheme: light dark;
+
   /* Base colors */
   --base-white: hsl(0 100 100);
   --base-black: hsl(0 0 0);
@@ -12,11 +14,20 @@
 
   /* Background colors */
   --light-bg-color: hsl(0 100 100);
-  --dark-bg-color: hsl(0 0 0);
+  --dark-bg-color: hsl(25 83 3);
   --attention-bg-color: hsl(0 100 36);
+
+  --bg-color: light-dark(var(--light-bg-color), var(--dark-bg-color));
 
   /* Text colors */
   --light-text-color: hsl(0 100 100);
   --dark-text-color: hsl(0 0 0);
   --base-text-color: hsl(0 0 10);
+
+  --text-color: light-dark(var(--dark-text-color), var(--light-text-color));
+
+  /* Footer */
+  --footer-light: hsl(0 0 0 / 0.05);
+  --footer-dark: hsl(0 0 100 / 0.01);
+  --footer-overlay: light-dark(var(--footer-light), var(--footer-dark));
 }

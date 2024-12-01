@@ -17,7 +17,6 @@
 
 <style>
   section {
-    background-color: hsl(0 0 100);
     padding: 4rem 1rem;
   }
 
