@@ -1,12 +1,12 @@
 <script>
-  import CallToAction from './callToAction.svelte';
+  import ButtonCTA from '$lib/components/buttonCTA.svelte';
 </script>
 
 <header class="hero-header">
   <h1><img src="/images/logo.svg" alt="Beauty in Code" /></h1>
   <p>March 1, 2025</p>
   <p>Malmö, Sweden</p>
-  <CallToAction url="https://www.event.com/" text="Get tickets now" />
+  <ButtonCTA url="https://www.event.com/" text="Get tickets now" />
 </header>
 
 <style>
