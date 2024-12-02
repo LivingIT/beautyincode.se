@@ -7,7 +7,7 @@
     { url: '/speakers/', label: 'Speakers' },
     { url: '/schedule/', label: 'Schedule' },
     { url: '/videos/', label: 'Videos' },
-    { url: '/tickets/', label: 'Tickets' },
+    { url: 'https://events.magnetevents.com/Event/beauty-in-code-2025-60124/', label: 'Tickets' },
   ];
 
   // Close navigation when user navigates
