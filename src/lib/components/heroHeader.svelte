@@ -16,14 +16,24 @@
     backdrop-filter: blur(0.6rem);
     text-shadow: 0 0 1px hsl(0 0 0 / 0.5);
     color: hsl(0 0 100);
-    padding: 5rem;
+    padding: 5vmax;
     min-height: 5rem;
     max-width: 90vw;
     text-align: center;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
+  }
+
+  @media (min-width: 40em) {
+    .hero-header {
+      padding: 5rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
   }
 </style>

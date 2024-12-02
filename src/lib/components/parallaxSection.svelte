@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 101dvh;
+    height: 101vh;
     color: hsl(0 0 100);
     background-color: var(--dark-bg-color);
     background-image: var(--section-bg);
@@ -30,8 +30,9 @@
   }
 
   :global(section h1) {
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 0 0 5px var(--dark-bg-color);
+    margin-block-start: 3rem;
   }
 
   .semi {
