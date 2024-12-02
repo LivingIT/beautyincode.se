@@ -15,6 +15,8 @@
 <style>
   .article-toc {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     position: sticky;
     top: 5.65rem;
     z-index: 1;
@@ -37,9 +39,5 @@
   .article-toc a:focus,
   .article-toc a:active {
     opacity: 0.7;
-  }
-
-  .article-toc li + li {
-    margin-left: 0.5em;
   }
 </style>

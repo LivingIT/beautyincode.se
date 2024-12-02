@@ -208,7 +208,7 @@
    * Target offset
    */
   * {
-    scroll-margin-block-start: 3.2em;
+    scroll-margin-block-start: 6.2em;
   }
 
   @media (min-width: 30em) {
