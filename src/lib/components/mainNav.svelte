@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { eventUrl } from '$lib/config';
 
   import { navToggle } from '../../state/navToggle.svelte';
 
@@ -8,7 +9,7 @@
     { url: '/schedule/', label: 'Schedule' },
     { url: '/videos/', label: 'Videos' },
     {
-      url: 'https://events.magnetevents.com/Event/beauty-in-code-2025-60124/',
+      url: eventUrl,
       label: 'Tickets',
       isExternal: true,
     },
