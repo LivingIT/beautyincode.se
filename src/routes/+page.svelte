@@ -42,4 +42,4 @@
   </p>
 </ArticleSection>
 
-<ParallaxSection backgroundImage="/images/covers/mingel_7.webp"></ParallaxSection>
+<ParallaxSection backgroundImage="/images/covers/linda_1.webp"></ParallaxSection>
