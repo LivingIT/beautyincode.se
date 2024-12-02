@@ -4,7 +4,7 @@
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
 </script>
 
-<ParallaxSection backgroundImage="/images/covers/nyari_1.webp">
+<ParallaxSection backgroundImage="/images/covers/henney_11.webp">
   <HeroHeader />
 </ParallaxSection>
 
@@ -42,4 +42,4 @@
   </p>
 </ArticleSection>
 
-<ParallaxSection backgroundImage="/images/covers/henney_9.webp"></ParallaxSection>
+<ParallaxSection backgroundImage="/images/covers/mingel_7.webp"></ParallaxSection>
