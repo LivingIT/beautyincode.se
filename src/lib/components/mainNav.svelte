@@ -7,7 +7,11 @@
     { url: '/speakers/', label: 'Speakers' },
     { url: '/schedule/', label: 'Schedule' },
     { url: '/videos/', label: 'Videos' },
-    { url: 'https://events.magnetevents.com/Event/beauty-in-code-2025-60124/', label: 'Tickets' },
+    {
+      url: 'https://events.magnetevents.com/Event/beauty-in-code-2025-60124/',
+      label: 'Tickets',
+      isExternal: true,
+    },
   ];
 
   // Close navigation when user navigates
@@ -22,9 +26,13 @@
     <li class="logo">
       <a href="/">Beauty in Code</a>
     </li>
-    {#each navItems as { url, label }}
+    {#each navItems as { url, label, isExternal }}
       <li>
-        <a href={url} aria-current={$page.url.pathname == url ? 'page' : undefined}>
+        <a
+          href={url}
+          aria-current={$page.url.pathname == url ? 'page' : undefined}
+          target={isExternal ? '_blank' : undefined}
+        >
           {label}
         </a>
       </li>
