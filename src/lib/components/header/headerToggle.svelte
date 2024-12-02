@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { page } from '$app/stores';
   import { navToggle } from '../../../state/navToggle.svelte';
+
   let isMenuOpen = $state(false);
 
   function toggleIcon() {
@@ -7,6 +9,11 @@
     console.log(isMenuOpen);
     navToggle.isNavOpen = isMenuOpen;
   }
+
+  $effect(() => {
+    $page;
+    if (!navToggle.isWideViewport) isMenuOpen = false;
+  });
 </script>
 
 <button aria-label="Show main navigation" onclick={() => toggleIcon()}>
