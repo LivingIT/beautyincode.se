@@ -207,13 +207,13 @@
   /**
    * Target offset
    */
-  /* * { */
-  /*   scroll-margin-block-start: 3.2em; */
-  /* } */
-  /**/
-  /* @media (min-width: 30em) { */
-  /*   * { */
-  /*     scroll-margin-block-start: 5.2em; */
-  /*   } */
-  /* } */
+  * {
+    scroll-margin-block-start: 3.2em;
+  }
+
+  @media (min-width: 30em) {
+    * {
+      scroll-margin-block-start: 5.2em;
+    }
+  }
 }

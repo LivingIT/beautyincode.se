@@ -7,6 +7,43 @@ type Video = {
 type VideosByYear = Record<string, Video[]>;
 
 export const videosByYear: VideosByYear = {
+  2024: [
+    {
+      title: 'Kesha Williams - Ethics in AI',
+      videoId: 'GdTl5ZSioYg',
+      description:
+        "This talk dives into the critical role of ethics in the fast-evolving AI landscape, with a special emphasis on Large Language Models (LLMs). We'll tackle the challenges and strategic solutions for ensuring data privacy, reducing biases, and enhancing transparency in AI systems. Anchored by real-world case studies, our discussion will underline the crucial balance between cutting-edge AI development and ethical responsibility. Participants will gain insights into responsibly implementing LLMs in data projects, focusing on compliance and ethical integrity.",
+    },
+    {
+      title: 'Niall Merrigan: "Optimistic Security"',
+      videoId: 'eIz8nXW6140',
+      description:
+        'In this session, Niall will look at various things that can affect how we make decisions as well as complicate our ability to react when dealing with a security event. We will look at real world examples of this and what happened and what could have been done.',
+    },
+    {
+      title: 'Lisette Sutherland: Thriving in the future of work: remote-first',
+      videoId: 'eLJCC-WCLgE',
+      description:
+        "In this presentation, tailored for workers who may think, \"We've been working remotely for years now; what else is there to learn?\" we'll dive deeper into the nuances of the virtual office and explore innovative strategies for seamless collaboration at a distance. We'll go beyond the basics and delve into advanced techniques digital nomads, virtual entrepreneurs, and global organizations use to foster a truly connected remote workforce.",
+    },
+    {
+      title: 'Dylan Beattie: "Analogue Evolution, Digital Revolution"',
+      videoId: 'LVNd7ODYlrA',
+      description:
+        'Technological progress is non-linear. Sometimes, innovation is a smooth curve; hundreds of small, incremental improvements over many years – until something comes along that changes the game; something that fundamentally challenges our assumptions around what technology can achieve. Within the last few decades, technology has profoundly and irreversibly changed the shape of human society; how we work, how we relax, how we communicate and collaborate. And, in almost every case, the key has been digitalisation: the ability to transform part of our reality into a stream of bits.',
+    },
+    {
+      title: 'Jonah Andersson: "Cloud Migration Mistakes You Should Avoid"',
+      videoId: 'IVdCHJ_lIf0',
+      description:
+        'Join Jonah Andersson, in this enlightening and lessons-learned session where she shares the landscape of cloud migration, her own cloud migration journey as a developer and IT architect. In this session, we will be exploring the most critical mistakes that developers, IT architects, and business leaders must avoid at all costs.',
+    },
+    {
+      title: 'Kevlin Henney: "Panel discussion with all speakers"',
+      videoId: '37f0Jz-bm7I',
+      description: 'Panel discussion with all speakers.',
+    },
+  ],
   2023: [
     {
       title:
