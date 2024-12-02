@@ -1,17 +1,14 @@
 <script lang="ts">
   import VideoItem from './videoItem.svelte';
   import { videosByYear } from '$lib/data/videos';
+  import ArticleToc from '../articleToc.svelte';
 
   const sortedYears: Array<string> = Object.keys(videosByYear).sort(
     (a, b) => Number(b) - Number(a),
   );
 </script>
 
-<ul class="article-toc">
-  {#each sortedYears as year}
-    <li><a href="#y{year}">{year}</a></li>
-  {/each}
-</ul>
+<ArticleToc items={sortedYears} />
 
 {#each sortedYears as year}
   {#if videosByYear[year].length > 0}
