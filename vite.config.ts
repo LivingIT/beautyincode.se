@@ -11,4 +11,7 @@ export default defineConfig({
   },
   envPrefix: ['CF_PAGES_'],
   plugins: [sveltekit()],
+  define: {
+    'import.meta.env.VITE_CF_PAGES_URL': JSON.stringify(process.env.CF_PAGES_URL),
+  },
 });

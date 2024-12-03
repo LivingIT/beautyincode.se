@@ -8,7 +8,9 @@ import {
   PUBLIC_DEPLOY_TIMESTAMP,
 } from '$env/static/public';
 
-export const baseUrl = PUBLIC_BASE_URL;
+const cfPagesUrl = import.meta.env.VITE_CF_PAGES_URL || process.env.CF_PAGES_URL;
+
+export const baseUrl = cfPagesUrl || PUBLIC_BASE_URL; // Use Cloudflare's URL if available
 export const title = PUBLIC_SITE_TITLE;
 export const googleSiteVerification = PUBLIC_GOOGLE_SITE_VERIFICATION;
 export const metaDescription = PUBLIC_META_DESCRIPTION;
