@@ -12,7 +12,7 @@
 <style>
   a {
     display: inline-block;
-    padding: 1em 2em;
+    padding: 1em;
     font-size: calc(0.8em + 1vw);
     font-weight: 700;
     text-decoration: none;
