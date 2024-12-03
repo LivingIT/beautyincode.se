@@ -34,6 +34,10 @@
     margin-block-start: 4em;
   }
 
+  h2:first-of-type {
+    margin-block-start: 0;
+  }
+
   h3 {
     font-size: 1.2em;
   }
