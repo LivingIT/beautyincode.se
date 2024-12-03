@@ -13,6 +13,7 @@
 </script>
 
 <svelte:head>
+  <title>{title}</title>
   <meta name="description" content={metaDescription} />
   <meta name="google-site-verification" content={googleSiteVerification} />
   <meta property="og.url" content={baseUrl} />
