@@ -9,9 +9,6 @@ export default defineConfig({
   css: {
     devSourcemap: true,
   },
-  envPrefix: ['CF_PAGES_'],
+  envPrefix: ['VITE_', 'CF_PAGES_'],
   plugins: [sveltekit()],
-  define: {
-    'import.meta.env.VITE_CF_PAGES_URL': JSON.stringify(process.env.CF_PAGES_URL),
-  },
 });
