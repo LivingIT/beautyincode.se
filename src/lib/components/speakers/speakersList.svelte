@@ -8,7 +8,7 @@
     bio: string;
   }
 
-  const sortedSpeakers: Speaker[] = Object.values(speakers).sort((a, b) => {
+  const sortedSpeakers: Array<Speaker> = Object.values(speakers).sort((a, b) => {
     // Compare based on the speaker's ID (assuming the ID is a string)
     return a.name.localeCompare(b.name);
   });

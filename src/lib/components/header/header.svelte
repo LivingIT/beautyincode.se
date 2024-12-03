@@ -33,6 +33,7 @@
     inset-inline: 0;
     inset-block-start: 0;
     height: 100dvh;
+    z-index: 10;
   }
 
   @media (min-width: 34em) {

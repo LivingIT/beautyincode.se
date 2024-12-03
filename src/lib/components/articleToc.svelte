@@ -1,6 +1,6 @@
 <script lang="ts">
   interface Props {
-    items: string[];
+    items: Array<string>;
   }
 
   let { items }: Props = $props();
