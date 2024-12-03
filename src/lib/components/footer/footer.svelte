@@ -57,7 +57,10 @@
     <h2 class="at-only">Presented by</h2>
 
     <a href="https://livingit.se" class="founder-logo">
-      <img src="/images/living-it.svg" alt="Living IT" />
+      <picture>
+        <source srcset="/images/living-it-dark.svg" media="(prefers-color-scheme: dark)" />
+        <img src="/images/living-it.svg" alt="Living IT" />
+      </picture>
     </a>
   </div>
 </footer>
