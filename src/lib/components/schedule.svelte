@@ -25,7 +25,8 @@
 <style>
   h2 {
     font-size: 0.875em;
-    background-color: light-dark(hsl(0 0 94), hsl(0 0 12));
+    background-color: var(--primary-brand-color);
+    color: var(--base-white);
     border: 2px solid var(--bg-color);
     border-radius: 50em;
     position: sticky;
