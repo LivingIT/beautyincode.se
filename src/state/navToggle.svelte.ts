@@ -1,7 +1,7 @@
 import { browser } from '$app/environment';
 
 export const navToggle = $state({
-  isNavOpen: false,
+  isNavOpen: true,
   isWideViewport: false,
 });
 

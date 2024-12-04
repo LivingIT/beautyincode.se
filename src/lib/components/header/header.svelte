@@ -1,10 +1,12 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import { navToggle } from '../../../state/navToggle.svelte';
+
   import HeaderToggle from './headerToggle.svelte';
   import MainNav from '../mainNav.svelte';
 </script>
 
-<header class:expanded={navToggle.isNavOpen && !navToggle.isWideViewport}>
+<header class:expanded={navToggle.isNavOpen && !navToggle.isWideViewport} class:js={browser}>
   <MainNav />
   {#if !navToggle.isWideViewport}
     <HeaderToggle />
@@ -28,7 +30,7 @@
     z-index: 1;
   }
 
-  .expanded {
+  .expanded.js {
     position: fixed;
     inset-inline: 0;
     inset-block-start: 0;

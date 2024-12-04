@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { navToggle } from '../../../state/navToggle.svelte';
 
@@ -16,19 +17,21 @@
   });
 </script>
 
-<button aria-label="Show main navigation" onclick={() => toggleIcon()}>
-  <svg
-    width="30"
-    height="30"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 30 30"
-    class:is-open={isMenuOpen}
-  >
-    <path stroke-width="2" d="M4 8 L26 8"></path>
-    <path stroke-width="2" d="M4 15 L26 15"></path>
-    <path stroke-width="2" d="M4 22 L26 22"></path>
-  </svg>
-</button>
+{#if browser}
+  <button aria-label="Show main navigation" onclick={() => toggleIcon()}>
+    <svg
+      width="30"
+      height="30"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      class:is-open={isMenuOpen}
+    >
+      <path stroke-width="2" d="M4 8 L26 8"></path>
+      <path stroke-width="2" d="M4 15 L26 15"></path>
+      <path stroke-width="2" d="M4 22 L26 22"></path>
+    </svg>
+  </button>
+{/if}
 
 <style>
   button {

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { eventUrl } from '$lib/config';
 
@@ -18,11 +19,11 @@
   // Close navigation when user navigates
   $effect(() => {
     $page;
-    if (!navToggle.isWideViewport) navToggle.isNavOpen = false;
+    if (!navToggle.isWideViewport && browser) navToggle.isNavOpen = false;
   });
 </script>
 
-<nav class:collapsed={!navToggle.isNavOpen}>
+<nav class:collapsed={!navToggle.isNavOpen} class:js={browser}>
   <ul>
     <li class="logo">
       <a href="/">Beauty in Code</a>
