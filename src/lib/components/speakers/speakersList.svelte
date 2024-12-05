@@ -9,7 +9,7 @@
   }
 
   const sortedSpeakers: Array<Speaker> = Object.values(speakers).sort((a, b) => {
-    // Compare based on the speaker's ID (assuming the ID is a string)
+    // Compare based on the speaker's ID
     return a.name.localeCompare(b.name);
   });
 </script>
