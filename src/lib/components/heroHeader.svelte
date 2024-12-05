@@ -6,9 +6,11 @@
 
 <header class="hero-header">
   <h1><img src="/images/logo.svg" alt="Beauty in Code" /></h1>
-  <p>March 1, 2025</p>
-  <p>Malmö, Sweden</p>
-  <ButtonCTA url={eventUrl} text="Get tickets now" />
+  <div>
+    <p>March 1, 2025</p>
+    <p>Malmö, Sweden</p>
+    <ButtonCTA url={eventUrl} text="Get tickets now" />
+  </div>
 </header>
 
 <style>
@@ -19,17 +21,31 @@
     text-shadow: 0 0 1px hsl(0 0 0 / 0.5);
     color: hsl(0 0 100);
     padding: 5vmax;
-    min-height: 5rem;
+    max-height: 80vh;
     max-width: 90vw;
     text-align: center;
   }
 
+  @media (orientation: landscape) and (max-width: 62.5em) {
+    .hero-header {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
 
-  @media (min-width: 40em) {
+  @media (min-width: 56em) {
     .hero-header {
       padding: 5rem;
     }

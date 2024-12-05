@@ -29,7 +29,7 @@
     margin-block-start: 0;
   }
 
-  :global(section h1) {
+  :global(section > h1) {
     font-size: 4rem;
     text-shadow: 0 0 5px var(--dark-bg-color);
     margin-block-start: 3rem;
