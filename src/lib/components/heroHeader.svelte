@@ -26,7 +26,7 @@
     text-align: center;
   }
 
-  @media (orientation: landscape) and (max-width: 56.25em) {
+  @media (orientation: landscape) and (max-width: 62.5em) {
     .hero-header {
       display: grid;
       gap: 2rem;
