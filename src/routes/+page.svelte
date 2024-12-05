@@ -1,30 +1,42 @@
-<script>
-  import config from '../config';
+<script lang="ts">
+  import { title } from '$lib/config';
 
-  import ContentBlock from '$lib/components/ContentBlock.svelte';
-  import Hero from '$lib/components/Hero.svelte';
-  import FigureText from '$lib/components/FigureText.svelte';
-  // import Schedule from '$lib/components/Schedule.svelte';
+  import ArticleSection from '$lib/components/articleSection.svelte';
+  import HeroHeader from '$lib/components/heroHeader.svelte';
+  import ParallaxSection from '$lib/components/parallaxSection.svelte';
 </script>
 
 <svelte:head>
-  <title>{config.title}</title>
+  <title>{title}</title>
 </svelte:head>
 
-<ContentBlock theme="theme-hero">
-  <Hero />
-</ContentBlock>
+<ParallaxSection backgroundImage="/images/covers/henney_11.webp">
+  <HeroHeader />
+</ParallaxSection>
 
-<ContentBlock theme="theme-1">
-  <FigureText />
-</ContentBlock>
+<ArticleSection>
+  <h2>About the conference</h2>
 
-<ContentBlock theme="theme-4" id="schedule" heading="Schedule">
-  <!-- <Schedule /> -->
-  <p>We will release the schedule for 2025 soon, so be sure to check back!</p>
-</ContentBlock>
+  <p>
+    <strong>Beauty in Code</strong> is a single-track IT conference at Malmö Live, Sweden, brought
+    to you by <a href="https://livingit.se">Living IT</a>. Every year in March we gather amazing
+    speakers that are bringing new exciting material for a full day of learning.
+  </p>
 
-<ContentBlock theme="theme-1" id="code-of-conduct" heading="Code of Conduct">
+  <p>
+    Our idea is to create a conference for everyone involved in the software industry. We put it on
+    a Saturday so no-one gets denied due to work. We keep the fee very low so everyone can afford to
+    attend. In fact, you only pay for the lunch and fika; the actual conference is on us, because we
+    love to share knowledge and this is our way of giving back to the community.
+  </p>
+
+  <p>We wish <em>you</em> welcome to an inspiring day at Malmö Live!</p>
+</ArticleSection>
+
+<ParallaxSection backgroundImage="/images/covers/cockburn_19.webp"></ParallaxSection>
+
+<ArticleSection>
+  <h2>Code of conduct</h2>
   <p>
     Our conference is dedicated to providing a harassment-free conference experience for everyone,
     regardless of gender, gender identity and expression, age, sexual orientation, disability,
@@ -34,4 +46,6 @@
     Twitter and other online media. Conference participants violating these rules may be sanctioned
     or expelled from the conference without a refund at the discretion of the conference organisers.
   </p>
-</ContentBlock>
+</ArticleSection>
+
+<ParallaxSection backgroundImage="/images/covers/linda_1.webp"></ParallaxSection>

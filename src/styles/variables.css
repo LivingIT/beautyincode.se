@@ -3,22 +3,36 @@
  */
 
 :root {
+  color-scheme: light dark;
+
   /* Base colors */
-  --base-white: hsl(0, 100%, 100%);
-  --base-black: hsl(0, 0%, 0%);
+  --base-white: hsl(0 100 100);
+  --base-black: hsl(0 0 0);
 
   /* Brand colors */
-  --primary-brand-color: hsl(25, 83%, 51%);
-  --secondary-brand-color: hsl(20, 10%, 18%);
+  --primary-brand-color: hsl(25 83 51);
 
   /* Background colors */
-  --light-bg-color: hsl(32, 100%, 87%);
-  --dark-bg-color: hsl(20, 10%, 18%);
-  --medium-bg-color: hsl(30, 79%, 65%);
-  --attention-bg-color: hsl(0, 100%, 36%);
+  --light-bg-color: hsl(0 100 100);
+  --dark-bg-color: hsl(25 83 3);
+  --attention-bg-color: hsl(0 100 36);
+
+  --bg-color: light-dark(var(--light-bg-color), var(--dark-bg-color));
+
+  --light-bg-color-alpha: hsl(0 0 100 / 0.6);
+  --dark-bg-color-alpha: hsl(0 0 0 / 0.6);
+
+  --bg-color-alpha: light-dark(var(--light-bg-color-alpha), var(--dark-bg-color-alpha));
 
   /* Text colors */
-  --light-text-color: hsl(0, 100%, 100%);
-  --dark-text-color: hsl(20, 10%, 18%);
-  --base-text-color: hsl(0, 0%, 20%);
+  --light-text-color: hsl(0 100 100);
+  --dark-text-color: hsl(0 0 0);
+  --base-text-color: hsl(0 0 10);
+
+  --text-color: light-dark(var(--dark-text-color), var(--light-text-color));
+
+  /* Footer */
+  --footer-light: hsl(0 0 0 / 0.05);
+  --footer-dark: hsl(0 0 100 / 0.01);
+  --footer-overlay: light-dark(var(--footer-light), var(--footer-dark));
 }

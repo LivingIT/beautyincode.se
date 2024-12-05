@@ -1,16 +1,21 @@
-<script>
-  // import SpeakersList from '$lib/components/SpeakersList.svelte';
-  import config from '../../config';
+<script lang="ts">
+  import { title } from '$lib/config';
+
+  import ArticleSection from '$lib/components/articleSection.svelte';
+  import ParallaxSection from '$lib/components/parallaxSection.svelte';
+  import SpeakersList from '$lib/components/speakers/speakersList.svelte';
+
+  const pageTitle = 'Videos';
 </script>
 
 <svelte:head>
-  <title>Speakers - {config.title}</title>
+  <title>{pageTitle} - {title}</title>
 </svelte:head>
 
-<div class="landmark-content">
-  <article>
-    <h1>Speakers</h1>
-    <p>We will release the speakers list for 2025 soon, so be sure to check back!</p>
-    <!-- <SpeakersList /> -->
-  </article>
-</div>
+<ParallaxSection backgroundImage="/images/covers/henney_4.webp" isSemi>
+  <h1>{pageTitle}</h1>
+</ParallaxSection>
+
+<ArticleSection>
+  <SpeakersList />
+</ArticleSection>

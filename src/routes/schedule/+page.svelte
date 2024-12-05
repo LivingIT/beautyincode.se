@@ -3,19 +3,19 @@
 
   import ArticleSection from '$lib/components/articleSection.svelte';
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
-  import VideoList from '$lib/components/videos/videoList.svelte';
+  import Schedule from '$lib/components/schedule.svelte';
 
-  const pageTitle = 'Videos';
+  const pageTitle = 'Schedule';
 </script>
 
 <svelte:head>
   <title>{pageTitle} - {title}</title>
 </svelte:head>
 
-<ParallaxSection backgroundImage="/images/covers/mingel_10.webp" isSemi>
+<ParallaxSection backgroundImage="/images/covers/mingel_49.webp" isSemi>
   <h1>{pageTitle}</h1>
 </ParallaxSection>
 
 <ArticleSection>
-  <VideoList />
+  <Schedule />
 </ArticleSection>
