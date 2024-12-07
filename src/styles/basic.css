@@ -54,9 +54,14 @@
     background-color: var(--bg-color);
   }
 
+  /**
+   * TODO: We’ll test disabling smooth scrolling for a known Sveltekit bug (https://github.com/sveltejs/kit/issues/2733)
+   */
+  /*
   html {
     scroll-behavior: smooth;
   }
+  */
 
   /**
    * Fonts & sizes
