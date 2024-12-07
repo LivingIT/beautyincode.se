@@ -1,9 +1,13 @@
 <script lang="ts">
   import { schedule } from '$lib/data/schedule';
+  import slugify from '$lib/utils/slugify';
 </script>
 
 {#each schedule as { time, speakerSlug, name, description, title, image }}
-  <h2>{time}</h2>
+  {@const timeSlotId = `timeslot-${slugify(time)}`}
+  <h2 id={timeSlotId}>
+    <a href={`#${timeSlotId}`}>{time}</a>
+  </h2>
   <section>
     <img src={speakerSlug ? `/images/speakers/${speakerSlug}.webp` : image} alt="" />
     <div>
@@ -33,6 +37,16 @@
     top: 5.2em;
     padding: 0.4em 1em;
     margin-block-start: 4em;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
   }
 
   h2:first-of-type {
