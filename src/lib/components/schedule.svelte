@@ -34,7 +34,7 @@
     border: 2px solid var(--bg-color);
     border-radius: 50em;
     position: sticky;
-    top: 5.2em;
+    top: 4.75em;
     padding: 0.4em 1em;
     margin-block-start: 4em;
 
