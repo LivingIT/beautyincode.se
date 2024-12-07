@@ -30,7 +30,7 @@
   h2 {
     font-size: 0.875em;
     background-color: var(--primary-brand-color);
-    color: var(--base-white);
+    color: var(--base-black);
     border: 2px solid var(--bg-color);
     border-radius: 50em;
     position: sticky;
