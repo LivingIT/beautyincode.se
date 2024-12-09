@@ -64,8 +64,8 @@ export const schedule: Array<ScheduleItem> = [
     time: '14:15',
     speakerSlug: 'gitte-klitgaard',
     name: 'Gitte Klitgaard',
-    title: 'What Engineering Departments would look like with great managers',
-    description: `<p>In today’s tech world, short-term gains often overshadow long-term investments in people and quality. Layoffs and role shifts are stripping teams of crucial support like coaches, managers, and designers, leading to disengagement, stress, and diminished work quality. Great managers—who drive up to 70% of team engagement—are key to creating safe, challenging environments where engineering teams thrive and deliver value. This talk explores what it takes to build such an engineering culture, define great management, and question whether we’ve truly lost the magic in how we run companies.</p>`,
+    title: 'TBA',
+    description: `<p>We will update with Gitte’s talk soon.</p>`,
   },
   {
     time: '15:00',
