@@ -45,7 +45,7 @@ const speakers: SpeakersList = {
     name: 'Kevlin Henney',
     image: '/images/speakers/kevlin-henney.webp',
     bio: `
-      <p>TBD</p>
+      <p>Kevlin is an independent consultant, trainer, speaker and writer. His development interests and work with companies covers programming, practice and people. He has contributed to open- and closed-source codebases, been a columnist for a number of magazines and sites and has been on far too many committees (it has been said that "a committee is a cul-de-sac down which ideas are lured and then quietly strangled"). He is co-author of two volumes in the <em>Pattern-Oriented Software Architecture</em> series, editor of <em>97 Things Every Programmer Should Know</em> and co-editor of <em>97 Things Every Java Programmer Should Know</em>.</p>
     `,
   },
   'dave-farley': {
