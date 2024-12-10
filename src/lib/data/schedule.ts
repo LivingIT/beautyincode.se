@@ -37,8 +37,10 @@ export const schedule: Array<ScheduleItem> = [
     time: '10:30',
     speakerSlug: 'lisette-sutherland',
     name: 'Lisette Sutherland',
-    title: 'TBA',
-    description: `<p>We will update with Lisette’s talk soon.</p>`,
+    title: 'The Future of Work: Deliberate, Flexible, and Connected',
+    description: `<p>As hybrid work environments become the norm, the future of work is both flexible and deliberate. Many forward-thinking companies are now hiring Heads of Remote to integrate flexibility into their operational DNA. This talk will explore how organizations can thrive in a flexible-first world by focusing on intentional collaboration, advanced tools, and a redefined approach to company culture.</p>
+<p>Join us for a dynamic exploration of how modern teams can enhance productivity and connection, whether working in the office, remotely, or anywhere in between. Whether you’re a seasoned remote worker or new to hybrid arrangements, this talk will equip you with the knowledge to succeed in today’s evolving work environment.
+</p>`,
   },
   {
     time: '11:30',
