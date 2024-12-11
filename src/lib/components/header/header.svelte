@@ -17,9 +17,8 @@
   header {
     position: sticky;
     inset-block-start: 0;
-    background-color: hsl(0 0 0 / 0.6);
-    backdrop-filter: blur(1rem);
-    color: hsl(0 0 100);
+    background-color: hsl(0deg 0% 0% / 0.8);
+    color: hsl(0deg 0% 100%);
     padding: 1rem;
     min-height: 5rem;
     margin-block-end: -7rem;
@@ -28,6 +27,15 @@
     justify-content: center;
     align-content: center;
     z-index: 1;
+
+    transition: background-color 200ms ease-in-out;
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    header {
+      background-color: hsl(0deg 0% 0% / 0.6);
+      backdrop-filter: blur(1rem);
+    }
   }
 
   .expanded {
@@ -35,6 +43,7 @@
   }
 
   .expanded.js {
+    background-color: hsl(0deg 0% 0% / 0.9);
     position: fixed;
     inset-inline: 0;
     inset-block-start: 0;

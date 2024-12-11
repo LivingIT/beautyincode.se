@@ -6,33 +6,37 @@
   color-scheme: light dark;
 
   /* Base colors */
-  --base-white: hsl(0 100 100);
-  --base-black: hsl(0 0 0);
+  --base-white: hsl(0deg 100% 100%);
+  --base-black: hsl(0deg 0% 0%);
 
   /* Brand colors */
-  --primary-brand-color: hsl(25 83 51);
+  --primary-brand-color: hsl(25deg 83% 51%);
 
-  /* Background colors */
-  --light-bg-color: hsl(0 100 100);
-  --dark-bg-color: hsl(25 83 3);
-  --attention-bg-color: hsl(0 100 36);
+  /* Light theme colors */
+  --light-bg-color: hsl(0deg 100% 100%);
+  --light-bg-color-alpha: hsl(0deg 0% 100% / 0.6);
+  --light-text-color: hsl(0deg 0% 0%);
+  --footer-light: hsl(0deg 0% 0% / 0.05);
 
-  --bg-color: light-dark(var(--light-bg-color), var(--dark-bg-color));
+  /* Dark theme colors */
+  --dark-bg-color: hsl(25deg 83% 3%);
+  --dark-bg-color-alpha: hsl(0deg 0% 0% / 0.6);
+  --dark-text-color: hsl(0deg 0% 100%);
+  --footer-dark: hsl(0deg 0% 100% / 0.01);
 
-  --light-bg-color-alpha: hsl(0 0 100 / 0.6);
-  --dark-bg-color-alpha: hsl(0 0 0 / 0.6);
+  /* Defaults (overridden by media queries) */
+  --bg-color: var(--light-bg-color);
+  --bg-color-alpha: var(--light-bg-color-alpha);
+  --text-color: var(--light-text-color);
+  --footer-overlay: var(--footer-light);
+}
 
-  --bg-color-alpha: light-dark(var(--light-bg-color-alpha), var(--dark-bg-color-alpha));
-
-  /* Text colors */
-  --light-text-color: hsl(0 100 100);
-  --dark-text-color: hsl(0 0 0);
-  --base-text-color: hsl(0 0 10);
-
-  --text-color: light-dark(var(--dark-text-color), var(--light-text-color));
-
-  /* Footer */
-  --footer-light: hsl(0 0 0 / 0.05);
-  --footer-dark: hsl(0 0 100 / 0.01);
-  --footer-overlay: light-dark(var(--footer-light), var(--footer-dark));
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--dark-bg-color);
+    --bg-color-alpha: var(--dark-bg-color-alpha);
+    --text-color: var(--dark-text-color);
+    --footer-overlay: var(--footer-dark);
+  }
 }

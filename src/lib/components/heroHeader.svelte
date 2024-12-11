@@ -15,22 +15,28 @@
 
 <style>
   .hero-header {
-    filter: drop-shadow(0 0 4px hsl(0 0 0 /0.4));
-    background-color: hsl(0 0 0 /0.3);
-    backdrop-filter: blur(0.6rem);
-    text-shadow: 0 0 1px hsl(0 0 0 / 0.5);
-    color: hsl(0 0 100);
+    filter: drop-shadow(0 0 4px hsl(0deg 0% 0% /0.4));
+    background-color: hsl(0deg 0% 0% /0.8);
+    text-shadow: 0 0 1px hsl(0deg 0% 0% / 0.5);
+    color: hsl(0deg 0% 100%);
     padding: 5vmax;
     max-height: 80vh;
     max-width: 90vw;
     text-align: center;
   }
 
-  @media (orientation: landscape) and (max-width: 62.5em) {
+  @supports (backdrop-filter: blur(1rem)) {
     .hero-header {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: 1fr 1fr;
+      background-color: hsl(0deg 0% 0% /0.3);
+      backdrop-filter: blur(0.6rem);
+    }
+
+    @media (orientation: landscape) and (max-width: 62.5em) {
+      .hero-header {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     h1 {

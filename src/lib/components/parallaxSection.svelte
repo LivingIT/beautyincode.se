@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     height: 101vh;
-    color: hsl(0 0 100);
+    color: hsl(0deg 0% 100%);
     background-color: var(--dark-bg-color);
     background-image: var(--section-bg);
     background-position: top center;
@@ -37,6 +37,7 @@
 
   .semi {
     height: 50dvh;
+    align-items: end;
   }
 
   /* Safari iOS can’t handle fixed yet */
