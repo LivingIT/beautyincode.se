@@ -17,7 +17,7 @@
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--light-text-color);
+    color: var(--base-white);
     background-color: var(--primary-brand-color);
     border-radius: 50em;
     transition: transform 500ms;

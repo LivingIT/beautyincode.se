@@ -17,12 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    position: sticky;
-    top: 5.65rem;
-    z-index: 1;
     padding-block: 0.5em;
-    background-color: var(--bg-color-alpha);
-    backdrop-filter: blur(1rem);
   }
 
   .article-toc a {
