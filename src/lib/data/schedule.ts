@@ -59,8 +59,9 @@ export const schedule: Array<ScheduleItem> = [
     time: '13:15',
     speakerSlug: 'kevlin-henney',
     name: 'Kevlin Henney',
-    title: 'TBA',
-    description: `<p>We will update with Kevlin’s talk soon.</p>`,
+    title: 'Learning from Failure',
+    description: `<p>We are surrounded by failure. Everywhere we look — our browsers, our phones, supermarket checkouts, advertising billboards, airport timetables — there's often a display showing a broken configuration, a bootup sequence or the blue screen of death. And sometimes the failure is bigger than what we see — just think of CrowdStrike.</p>
+<p>As software professionals we need to ask what we can learn from these failures. What simple but time-tested techniques can we apply to reduce the probability of something going wrong?</p>`,
   },
   {
     time: '14:15',
