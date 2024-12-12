@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Footer from '$lib/components/footer/footer.svelte';
-  import Header from '$lib/components/header/header.svelte';
+  import '../styles/main.css';
+
   import {
     metaDescription,
     googleSiteVerification,
@@ -9,7 +9,10 @@
     ogImage,
     deployTime,
   } from '$lib/config';
-  import '../styles/main.css';
+
+  import Analytics from '$lib/components/analytics.svelte';
+  import Footer from '$lib/components/footer/footer.svelte';
+  import Header from '$lib/components/header/header.svelte';
 </script>
 
 <svelte:head>
@@ -35,3 +38,5 @@
 </main>
 
 <Footer />
+
+<Analytics />

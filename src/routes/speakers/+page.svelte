@@ -5,7 +5,7 @@
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
   import SpeakersList from '$lib/components/speakers/speakersList.svelte';
 
-  const pageTitle = 'Videos';
+  const pageTitle = 'Speakers';
 </script>
 
 <svelte:head>
