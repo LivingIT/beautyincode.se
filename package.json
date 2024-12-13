@@ -17,7 +17,7 @@
     "@sveltejs/adapter-auto": "3.3.1",
     "@sveltejs/adapter-cloudflare": "4.8.0",
     "@sveltejs/kit": "2.10.1",
-    "@sveltejs/vite-plugin-svelte": "5.0.1",
+    "@sveltejs/vite-plugin-svelte": "5.0.2",
     "@types/eslint": "9.6.1",
     "@types/gtag.js": "0.0.20",
     "eslint": "9.16.0",
