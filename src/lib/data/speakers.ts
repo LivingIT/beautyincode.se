@@ -48,15 +48,15 @@ const speakers: SpeakersList = {
       <p>Kevlin is an independent consultant, trainer, speaker and writer. His development interests and work with companies covers programming, practice and people. He has contributed to open- and closed-source codebases, been a columnist for a number of magazines and sites and has been on far too many committees (it has been said that "a committee is a cul-de-sac down which ideas are lured and then quietly strangled"). He is co-author of two volumes in the <em>Pattern-Oriented Software Architecture</em> series, editor of <em>97 Things Every Programmer Should Know</em> and co-editor of <em>97 Things Every Java Programmer Should Know</em>.</p>
     `,
   },
-  'dave-farley': {
-    name: 'Dave Farley',
-    image: '/images/speakers/dave-farley.webp',
-    bio: `
-      <p>Dave Farley is a pioneer of Continuous Delivery, thought-leader and expert practitioner in CD, DevOps, TDD and software design. He was an early adopter of agile development techniques, employing iterative development, continuous integration and significant levels of automated testing, working in large scale distributed systems. Dave has a long track record in creating high-performance teams, shaping organisations for success, and creating outstanding software.</p>
-
-      <p>Dave is the managing director and founder of Continuous Delivery Ltd, one of the authors of the Reactive Manifesto, and a winner of the Duke Award for the open source LMAX Disruptor project. He is author of two best-selling books - "Continuous Delivery" and "Modern Software Engineering", founder of the CD.Training school and creator of the popular CD YouTube channel.</p>
-    `,
-  },
+  // 'dave-farley': {
+  //   name: 'Dave Farley',
+  //   image: '/images/speakers/dave-farley.webp',
+  //   bio: `
+  //     <p>Dave Farley is a pioneer of Continuous Delivery, thought-leader and expert practitioner in CD, DevOps, TDD and software design. He was an early adopter of agile development techniques, employing iterative development, continuous integration and significant levels of automated testing, working in large scale distributed systems. Dave has a long track record in creating high-performance teams, shaping organisations for success, and creating outstanding software.</p>
+  //
+  //     <p>Dave is the managing director and founder of Continuous Delivery Ltd, one of the authors of the Reactive Manifesto, and a winner of the Duke Award for the open source LMAX Disruptor project. He is author of two best-selling books - "Continuous Delivery" and "Modern Software Engineering", founder of the CD.Training school and creator of the popular CD YouTube channel.</p>
+  //   `,
+  // },
 };
 
 export default speakers;
