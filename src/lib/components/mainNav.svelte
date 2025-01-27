@@ -44,6 +44,8 @@
 
 <style>
   nav {
+    flex: 1;
+
     display: flex;
     justify-content: center;
     align-content: center;
