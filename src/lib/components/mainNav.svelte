@@ -120,6 +120,11 @@
   }
 
   @media (min-width: 34em) {
+    nav,
+    ul {
+      flex: 0 1 auto;
+    }
+
     nav {
       align-items: center;
     }

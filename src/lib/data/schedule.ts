@@ -80,9 +80,9 @@ We want an organisation that fosters great managers, and gives them the mandate 
   },
   {
     time: '15:30',
-    // speakerSlug: 'dave-farley',
-    name: 'TBA',
-    // title: 'TBA',
+    speakerSlug: 'kent-beck',
+    name: 'Kent Beck',
+    title: 'The Forest & The Desert aka XP 3.0',
     description: `<p>We will update this slot soon.</p>
 `,
   },
