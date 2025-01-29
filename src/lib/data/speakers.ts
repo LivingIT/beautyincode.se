@@ -52,7 +52,7 @@ const speakers: SpeakersList = {
     name: 'Kent Beck',
     image: '/images/speakers/kent-beck.webp',
     bio: `
-      <p>Forty years of the mission of helping geeks feel safe in the world, Kent Beck's approach of refined skills in service of deeply human goals puts him at odds with almost everyone on some topic--programming, software design, project management, coaching, and creativity. Inventor of Extreme Programming and Test-Driven Development. Author (with Erich Gamma) of JUnit. Pioneer (with Ward Cunningham) of software patterns. Signatory of the Agile Manifesto. His rare combination of technical expertise and engaging storytelling makes him one of our industry's most compelling speakers.</p>
+      <p>Forty years of the mission of helping geeks feel safe in the world, Kent Beck's approach of refined skills in service of deeply human goals puts him at odds with almost everyone on some topic – programming, software design, project management, coaching, and creativity. Inventor of Extreme Programming and Test-Driven Development. Author (with Erich Gamma) of JUnit. Pioneer (with Ward Cunningham) of software patterns. Signatory of the Agile Manifesto. His rare combination of technical expertise and engaging storytelling makes him one of our industry's most compelling speakers.</p>
 <p>Janteloven would <em>not</em> approve.</p>
     `,
   },
