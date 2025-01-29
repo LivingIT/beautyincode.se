@@ -82,8 +82,8 @@ We want an organisation that fosters great managers, and gives them the mandate 
     time: '15:30',
     speakerSlug: 'kent-beck',
     name: 'Kent Beck',
-    title: 'The Forest & The Desert aka XP 3.0',
-    description: `<p>We will update this slot soon.</p>
-`,
+    title: 'The Forest & The Desert Are Parallel Universes',
+    description: `<p>So close and yet so far. We see similar behaviors in The Forest & The Desert, but with opposite meanings. Similar words but opposite meanings. Superficially similar goals but working out at completely different scales.</p>
+    <p>What is The Forest? What is The Desert? Why are they so different, despite the similarities? And how can we get from crumbs to cake and stay there?</p>`,
   },
 ];
