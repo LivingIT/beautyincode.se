@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -9,5 +10,5 @@ export default defineConfig({
   css: {
     devSourcemap: true,
   },
-  plugins: [sveltekit()],
+  plugins: [sveltekit(), SvelteKitPWA()],
 });
