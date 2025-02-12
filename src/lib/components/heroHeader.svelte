@@ -10,6 +10,7 @@
     <p>March 1, 2025</p>
     <p>Malmö, Sweden</p>
     <ButtonCTA url={eventUrl} text="Get tickets now" />
+    <p class="notabene"><small>Ticket sales close on February 26</small></p>
   </div>
 </header>
 
@@ -49,6 +50,15 @@
   p {
     font-size: 1.4rem;
     font-weight: 400;
+  }
+
+  .notabene {
+    margin-block-start: 2rem;
+    font-style: italic;
+
+    small {
+      font-size: max(min(0.5vw, 0.5em), 1rem);
+    }
   }
 
   @media (min-width: 56em) {
