@@ -10,9 +10,10 @@
     { url: '/schedule/', label: 'Schedule' },
     { url: '/videos/', label: 'Videos' },
     {
-      url: eventUrl,
+      // url: eventUrl,
+      url: '/tickets/',
       label: 'Tickets',
-      isExternal: true,
+      isExternal: false,
     },
   ];
 
