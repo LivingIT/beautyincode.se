@@ -27,6 +27,8 @@
     background-attachment: fixed;
     background-size: cover;
     margin-block-start: 0;
+    padding-inline: 2rem;
+    text-align: center;
   }
 
   :global(section > h1) {
