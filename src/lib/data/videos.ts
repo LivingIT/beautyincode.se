@@ -7,9 +7,17 @@ type Video = {
 type VideosByYear = Record<string, Video[]>;
 
 export const videosByYear: VideosByYear = {
+  2025: [
+    {
+      title: 'Nicholas Fernholm: "From AI Risk to AI Opportunities"',
+      videoId: 'UJCrh1VuMeE',
+      description:
+        "In a world characterized by unpredictability, complexity, and rapid technological change, the ability to foresee and manage uncertainty and new innovations is key to success. During this lecture, we will explore how technologies such as AI and new tools can be used to adapt to an uncertain future, and how we can build robust strategies to meet tomorrow's challenges.",
+    },
+  ],
   2024: [
     {
-      title: 'Kesha Williams - Ethics in AI',
+      title: 'Kesha Williams: "Ethics in AI"',
       videoId: 'GdTl5ZSioYg',
       description:
         "This talk dives into the critical role of ethics in the fast-evolving AI landscape, with a special emphasis on Large Language Models (LLMs). We'll tackle the challenges and strategic solutions for ensuring data privacy, reducing biases, and enhancing transparency in AI systems. Anchored by real-world case studies, our discussion will underline the crucial balance between cutting-edge AI development and ethical responsibility. Participants will gain insights into responsibly implementing LLMs in data projects, focusing on compliance and ethical integrity.",
