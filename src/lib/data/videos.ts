@@ -14,6 +14,12 @@ export const videosByYear: VideosByYear = {
       description:
         "In a world characterized by unpredictability, complexity, and rapid technological change, the ability to foresee and manage uncertainty and new innovations is key to success. During this lecture, we will explore how technologies such as AI and new tools can be used to adapt to an uncertain future, and how we can build robust strategies to meet tomorrow's challenges.",
     },
+    {
+      title: 'Lisette Sutherland: "The Future of Work: Deliberate, Flexible, and Connected"',
+      videoId: 'fKSUklwCCVg',
+      description:
+        'As hybrid work environments become the norm, the future of work is both flexible and deliberate. Many forward-thinking companies are now hiring Heads of Remote to integrate flexibility into their operational DNA. This talk will explore how organizations can thrive in a flexible-first world by focusing on intentional collaboration, advanced tools, and a redefined approach to company culture.',
+    },
   ],
   2024: [
     {
