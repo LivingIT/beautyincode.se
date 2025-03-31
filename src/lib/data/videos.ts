@@ -9,6 +9,12 @@ type VideosByYear = Record<string, Video[]>;
 export const videosByYear: VideosByYear = {
   2025: [
     {
+      title: 'Linda Rising: "The Magic of Teams"',
+      videoId: 'YG7jD4M-sBw',
+      description:
+        "Humans have been working in teams as long as humans have been around. We've learned a lot but what does science say about teams? You've likely heard of Dunbar's Number but did you know it's not a single number but a series of ranges of numbers? New research on rituals helps explain the success of agile. We know that the elements of the agile process are not new, but that leads to the “hole is greater than the sum of its parts” solution. The power of ritual might offer a better explanation. This talk will touch on two “magic” aspects of teams – size and ritual – and what that might mean for better ways of working.",
+    },
+    {
       title: 'Nicholas Fernholm: "From AI Risk to AI Opportunities"',
       videoId: 'UJCrh1VuMeE',
       description:
