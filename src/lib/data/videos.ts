@@ -9,6 +9,12 @@ type VideosByYear = Record<string, Video[]>;
 export const videosByYear: VideosByYear = {
   2025: [
     {
+      title: 'Kevlin Henney: "Learning from Failure"',
+      videoId: 'PSOaOWAGavY',
+      description:
+        "We are surrounded by failure. Everywhere we look — our browsers, our phones, supermarket checkouts, advertising billboards, airport timetables — there's often a display showing a broken configuration, a bootup sequence or the blue screen of death. And sometimes the failure is bigger than what we see — just think of CrowdStrike. As software professionals we need to ask what we can learn from these failures. What simple but time-tested techniques can we apply to reduce the probability of something going wrong?",
+    },
+    {
       title: 'Linda Rising: "The Magic of Teams"',
       videoId: 'YG7jD4M-sBw',
       description:
