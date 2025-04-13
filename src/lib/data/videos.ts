@@ -9,6 +9,12 @@ type VideosByYear = Record<string, Video[]>;
 export const videosByYear: VideosByYear = {
   2025: [
     {
+      title: 'Gitte Klitgaard: "What Engineering Dept. would look like with great managers"',
+      videoId: '2s-1nZYwjO4',
+      description:
+        'Over the last years, disengagement in the global workforce have grown, number of stressed people have grown, number of lonely people have grown. While the job market has an impact on the numbers, the managers have a lot higher impact. We want an organisation that fosters great managers, and gives them the mandate to create safe and challenging working environments; where engineering teams thrive and create great quality products that provide value; where we don’t need magic to run a company. Come hear what that could look like.',
+    },
+    {
       title: 'Kevlin Henney: "Learning from Failure"',
       videoId: 'PSOaOWAGavY',
       description:
