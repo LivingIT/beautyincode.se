@@ -9,6 +9,12 @@ type VideosByYear = Record<string, Video[]>;
 export const videosByYear: VideosByYear = {
   2025: [
     {
+      title: 'Kent Beck: "The Forest & The Desert Are Parallel Universes"',
+      videoId: 'dtu9Ks2CN-U',
+      description:
+        'So close and yet so far. We see similar behaviors in The Forest & The Desert, but with opposite meanings. Similar words but opposite meanings. Superficially similar goals but working out at completely different scales. What is The Forest? What is The Desert? Why are they so different, despite the similarities? And how can we get from crumbs to cake and stay there?',
+    },
+    {
       title: 'Gitte Klitgaard: "What Engineering Dept. would look like with great managers"',
       videoId: '2s-1nZYwjO4',
       description:
