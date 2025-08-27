@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { page } from '$app/stores';
+  import { afterNavigate } from '$app/navigation';
   import { navToggle } from '../../../state/navToggle.svelte';
 
   let isMenuOpen = $state(false);
@@ -11,8 +11,7 @@
     navToggle.isNavOpen = isMenuOpen;
   }
 
-  $effect(() => {
-    $page;
+  afterNavigate(() => {
     if (!navToggle.isWideViewport) isMenuOpen = false;
   });
 </script>
