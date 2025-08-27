@@ -1,7 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { page } from '$app/stores';
-  import { eventUrl } from '$lib/config';
+  import { afterNavigate } from '$app/navigation';
+  import { page } from '$app/state';
 
   import { navToggle } from '../../state/navToggle.svelte';
 
@@ -18,9 +18,10 @@
   ];
 
   // Close navigation when user navigates
-  $effect(() => {
-    $page;
-    if (!navToggle.isWideViewport && browser) navToggle.isNavOpen = false;
+  afterNavigate(() => {
+    if (!navToggle.isWideViewport && browser) {
+      navToggle.isNavOpen = false;
+    }
   });
 </script>
 
@@ -33,7 +34,7 @@
       <li>
         <a
           href={url}
-          aria-current={$page.url.pathname == url ? 'page' : undefined}
+          aria-current={page.url.pathname == url ? 'page' : undefined}
           target={isExternal ? '_blank' : undefined}
         >
           {label}
