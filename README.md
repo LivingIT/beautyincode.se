@@ -2,16 +2,16 @@
 
 ## 👨‍💻 Developing
 
-Install packages
+Install packages. ⚠️**Note!** This project uses `pnpm`, not `npm`.
 
 ```bash
-npm run install
+pnpm run install
 ```
 
 Run the dev server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## 🛠️ Building
@@ -19,10 +19,10 @@ npm run dev
 Create a production version of the site:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview` after running the build command.
+You can preview the production build with `pnpm run preview` after running the build command.
 
 ## 🚀 Deploy to production
 
