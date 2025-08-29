@@ -2,7 +2,9 @@
 
 ## 👨‍💻 Developing
 
-Install packages. ⚠️**Note!** This project uses `pnpm`, not `npm`.
+Install packages. 
+
+⚠️ _**Note!** This project uses `pnpm`, not `npm`._
 
 ```bash
 pnpm run install
