@@ -17,23 +17,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
-      - name: Cache NPM
-        uses: actions/cache@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          version: 9
+          run_install: false
 
       - name: Install Node packages
-        run: npm ci --ignore-scripts
+        run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Set environment
         run: cp .env.example .env
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Svelte check
-        run: npm run check
+        run: pnpm check
