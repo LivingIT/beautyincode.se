@@ -13,7 +13,7 @@
     "lint": "prettier --check . && eslint ."
   },
   "devDependencies": {
-    "@iconify/svelte": "5.0.1",
+    "@iconify/svelte": "5.0.2",
     "@sveltejs/adapter-auto": "6.1.0",
     "@sveltejs/adapter-cloudflare": "7.2.3",
     "@sveltejs/kit": "2.38.1",
