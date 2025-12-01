@@ -6,7 +6,7 @@
 <header class="hero-header">
   <h1><img src="/images/logo.svg" alt="Beauty in Code" /></h1>
   <div>
-    <p>March 1, 2025</p>
+    <p>March 7, 2026</p>
     <p>Malmö, Sweden</p>
     <!--
     <ButtonCTA url={eventUrl} text="Get tickets now" />
