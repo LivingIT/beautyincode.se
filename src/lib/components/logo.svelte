@@ -1,7 +1,3 @@
-<script lang="ts">
-  // your script goes here
-</script>
-
 <img src="/images/logo-monochrome.svg" alt="" />
 
 <style>

@@ -1,30 +1,36 @@
 <script lang="ts">
   import { schedule } from '$lib/data/schedule';
   import slugify from '$lib/utils/slugify';
+
+  const showSchedule = false;
 </script>
 
-{#each schedule as { time, speakerSlug, name, description, title, image }}
-  {@const timeSlotId = `timeslot-${slugify(time)}`}
-  <h2 id={timeSlotId}>
-    <a href={`#${timeSlotId}`}>{time}</a>
-  </h2>
-  <section>
-    <img src={speakerSlug ? `/images/speakers/${speakerSlug}.webp` : image} alt="" />
-    <div>
-      <h3>
-        {#if title}
-          {title} -
-        {/if}
-        {#if speakerSlug}
-          <a href={`/speakers/#${speakerSlug}`}>{name}</a>
-        {:else}
-          {name}
-        {/if}
-      </h3>
-      {@html description}
-    </div>
-  </section>
-{/each}
+{#if showSchedule}
+  {#each schedule as { time, speakerSlug, name, description, title, image }}
+    {@const timeSlotId = `timeslot-${slugify(time)}`}
+    <h2 id={timeSlotId}>
+      <a href={`#${timeSlotId}`}>{time}</a>
+    </h2>
+    <section>
+      <img src={speakerSlug ? `/images/speakers/${speakerSlug}.webp` : image} alt="" />
+      <div>
+        <h3>
+          {#if title}
+            {title} -
+          {/if}
+          {#if speakerSlug}
+            <a href={`/speakers/#${speakerSlug}`}>{name}</a>
+          {:else}
+            {name}
+          {/if}
+        </h3>
+        {@html description}
+      </div>
+    </section>
+  {/each}
+{:else}
+  <p>Schedule for Beauty in Code 2026 will be released soon™!</p>
+{/if}
 
 <style>
   h2 {
