@@ -17,24 +17,22 @@
 
 <ArticleSection>
   <h2 id="cancellation-policy">Cancellation policy</h2>
-  <p>
-    Please note that once the registration has been made and the confirmation email has been sent
-    out, the registration fee is non-refundable. In case of illness or unforeseen circumstances,
-    ticket(s) can be transferred to a colleague without any charge, just
-    <a href="mailto:beautyincode@livingit.se">contact us</a>.
-  </p>
+  <p>All registrations are binding. Once your registration is completed
+     and you have received the confirmation email, the ticket fee is
+     <strong>non-refundable</strong>.</p>
 
-  <p>
-    Living IT Consulting Group AB will carry out the event with respect to participants’ health and
-    follow current restrictions and regulations from the Public Health Agency of Sweden. You can get
-    a full refund if we postpone or cancel the event or have to limit the number of participants.
-    You can as well get a full refund because of national or international restrictions or state
-    enforced quarantine.
-  </p>
-
+  <p>If you are unable to attend due to illness or unforeseen
+     circumstances, your ticket may be <strong>transferred to a colleague at
+     no additional cost</strong>. Please contact us for assistance at
+     beautyincode@livingit.se.</p>
+	 
+  <p>You are entitled to a <strong>full refund</strong> if the event is
+     postponed or cancelled.</p>
+	 
   <h2 id="vat">VAT</h2>
-  <p>
-    According to Swedish regulations from Skatteverket, we must charge Swedish VAT on the ticket
-    price (25%) to all attendees, both Swedish and International companies.
-  </p>
+  <p>In accordance with Swedish tax regulations (Skatteverket),
+     <strong>25% Swedish VAT</strong> must be charged on all conference
+     tickets — this applies to both Swedish and international attendees,
+     including foreign companies.</p>
+
 </ArticleSection>
