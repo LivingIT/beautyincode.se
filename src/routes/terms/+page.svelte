@@ -11,7 +11,7 @@
   <title>{pageTitle} - {title}</title>
 </svelte:head>
 
-<ParallaxSection backgroundImage="/images/covers/mingel_55.webp" isSemi>
+<ParallaxSection backgroundImage="/images/covers/terms.webp" isSemi>
   <h1>{pageTitle}</h1>
 </ParallaxSection>
 

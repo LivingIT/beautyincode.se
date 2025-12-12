@@ -11,7 +11,7 @@
   <title>{pageTitle} - {title}</title>
 </svelte:head>
 
-<ParallaxSection backgroundImage="/images/covers/mingel_9.webp" isSemi={false}>
+<ParallaxSection backgroundImage="/images/covers/tickets.webp" isSemi={false}>
   <h1>Ticket sales have closed!</h1>
 </ParallaxSection>
 

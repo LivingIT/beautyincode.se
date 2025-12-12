@@ -10,7 +10,7 @@
   <title>{title}</title>
 </svelte:head>
 
-<ParallaxSection backgroundImage="/images/covers/henney_11.webp">
+<ParallaxSection backgroundImage="/images/covers/main1.webp">
   <HeroHeader />
 </ParallaxSection>
 
@@ -33,7 +33,7 @@
   <p>We wish <em>you</em> welcome to an inspiring day at Malmö Live!</p>
 </ArticleSection>
 
-<ParallaxSection backgroundImage="/images/covers/cockburn_19.webp"></ParallaxSection>
+<ParallaxSection backgroundImage="/images/covers/main2.webp"></ParallaxSection>
 
 <ArticleSection>
   <h2>Code of conduct</h2>
@@ -48,4 +48,4 @@
   </p>
 </ArticleSection>
 
-<ParallaxSection backgroundImage="/images/covers/linda_1.webp"></ParallaxSection>
+<ParallaxSection backgroundImage="/images/covers/main3.webp"></ParallaxSection>

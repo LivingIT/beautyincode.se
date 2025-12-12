@@ -12,7 +12,7 @@
   <title>{pageTitle} - {title}</title>
 </svelte:head>
 
-<ParallaxSection backgroundImage="/images/covers/henney_4.webp" isSemi>
+<ParallaxSection backgroundImage="/images/covers/speakers.webp" isSemi>
   <h1>{pageTitle}</h1>
 </ParallaxSection>
 

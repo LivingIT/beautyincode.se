@@ -6,11 +6,11 @@
 <header class="hero-header">
   <h1><img src="/images/logo.svg" alt="Beauty in Code" /></h1>
   <div>
-    <p>March 1, 2025</p>
+    <p>March 7, 2026</p>
     <p>Malmö, Sweden</p>
     <!--
     <ButtonCTA url={eventUrl} text="Get tickets now" />
-    <p class="notabene"><small>Ticket sales close on February 26</small></p>
+    <p class="notabene"><small>Ticket sales close on March 4</small></p>
     -->
   </div>
 </header>
