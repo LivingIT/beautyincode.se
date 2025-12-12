@@ -17,7 +17,7 @@ const speakers: SpeakersList = {
       Susanne Pettersson</p>
     `,
   },
-  'rendle': {
+  rendle: {
     name: 'Rendle',
     image: '/images/speakers/rendle.webp',
     bio: `
