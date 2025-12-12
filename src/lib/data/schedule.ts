@@ -22,8 +22,8 @@ export const schedule: Array<ScheduleItem> = [
   },
   {
     time: '09:05',
-    speakerSlug: 'nicholas-fernholm',
-    name: 'Nicholas Fernholm',
+    speakerSlug: 'susanne-pettersson',
+    name: 'Susanne Pettersson',
     title: 'From AI Risk to AI Opportunities',
     description: `<p>In a world characterized by unpredictability, complexity, and rapid technological change, the ability to foresee and manage uncertainty and new innovations is key to success. During this lecture, we will explore how technologies such as AI and new tools can be used to adapt to an uncertain future, and how we can build robust strategies to meet tomorrow's challenges.</p>`,
   },
@@ -35,19 +35,17 @@ export const schedule: Array<ScheduleItem> = [
   },
   {
     time: '10:30',
-    speakerSlug: 'lisette-sutherland',
-    name: 'Lisette Sutherland',
-    title: 'The Future of Work: Deliberate, Flexible, and Connected',
-    description: `<p>As hybrid work environments become the norm, the future of work is both flexible and deliberate. Many forward-thinking companies are now hiring Heads of Remote to integrate flexibility into their operational DNA. This talk will explore how organizations can thrive in a flexible-first world by focusing on intentional collaboration, advanced tools, and a redefined approach to company culture.</p>
-<p>Join us for a dynamic exploration of how modern teams can enhance productivity and connection, whether working in the office, remotely, or anywhere in between. Whether you’re a seasoned remote worker or new to hybrid arrangements, this talk will equip you with the knowledge to succeed in today’s evolving work environment.
-</p>`,
+    speakerSlug: 'rendle',
+    name: 'Rendle',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
   },
   {
     time: '11:30',
-    speakerSlug: 'linda-rising',
-    name: 'Linda Rising',
-    title: 'The Magic of Teams',
-    description: `<p>Humans have been working in teams as long as humans have been around. We've learned a lot but what does science say about teams? You've likely heard of Dunbar's Number but did you know it's not a single number but a series of ranges of numbers? New research on rituals helps explain the success of agile. We know that the elements of the agile process are not new, but that leads to the "whole is greater than the sum of its parts" solution. The power of ritual might offer a better explanation. This talk will touch on two "magic" aspects of teams -- size and ritual -- and what that might mean for better ways of working.</p>`,
+    speakerSlug: 'trisha-gee',
+    name: 'Trisha Gee',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
   },
   {
     time: '12:15',
@@ -57,20 +55,17 @@ export const schedule: Array<ScheduleItem> = [
   },
   {
     time: '13:15',
-    speakerSlug: 'kevlin-henney',
-    name: 'Kevlin Henney',
-    title: 'Learning from Failure',
-    description: `<p>We are surrounded by failure. Everywhere we look — our browsers, our phones, supermarket checkouts, advertising billboards, airport timetables — there's often a display showing a broken configuration, a bootup sequence or the blue screen of death. And sometimes the failure is bigger than what we see — just think of CrowdStrike.</p>
-<p>As software professionals we need to ask what we can learn from these failures. What simple but time-tested techniques can we apply to reduce the probability of something going wrong?</p>`,
+    speakerSlug: 'dylan-beattie',
+    name: 'Dylan Beattie',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
   },
   {
     time: '14:15',
-    speakerSlug: 'gitte-klitgaard',
-    name: 'Gitte Klitgaard',
-    title: 'What Engineering Departments would look like with great managers',
-    description: `<p>Over the last years, disengagement in the global workforce have grown, number of stressed people have grown, number of lonely people have grown. While the job market has an impact on the numbers, the managers have a lot higher impact.
-We want an organisation that fosters great managers, and gives them the mandate to create safe and challenging working environments; where engineering teams thrive and create great quality products that provide value; where we don’t need magic to run a company.</p>
-      <p>Come hear what that could look like.</p>`,
+    speakerSlug: 'linda-rising',
+    name: 'Linda Rising',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
   },
   {
     time: '15:00',
@@ -80,10 +75,9 @@ We want an organisation that fosters great managers, and gives them the mandate 
   },
   {
     time: '15:30',
-    speakerSlug: 'kent-beck',
-    name: 'Kent Beck',
-    title: 'The Forest & The Desert Are Parallel Universes',
-    description: `<p>So close and yet so far. We see similar behaviors in The Forest & The Desert, but with opposite meanings. Similar words but opposite meanings. Superficially similar goals but working out at completely different scales.</p>
-    <p>What is The Forest? What is The Desert? Why are they so different, despite the similarities? And how can we get from crumbs to cake and stay there?</p>`,
+    speakerSlug: 'dave-farley',
+    name: 'Dave Farley',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
   },
 ];

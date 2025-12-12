@@ -26,6 +26,12 @@ const pages = [
     priority: 0.3,
   },
   {
+    loc: `${baseUrl}/privacy/`,
+    lastmod: deployTime,
+    changefreq: 'monthly',
+    priority: 0.3,
+  },
+  {
     loc: `${baseUrl}/videos/`,
     lastmod: deployTime,
     changefreq: 'monthly',

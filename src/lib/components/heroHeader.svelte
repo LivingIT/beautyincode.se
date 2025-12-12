@@ -10,7 +10,7 @@
     <p>Malmö, Sweden</p>
     <!--
     <ButtonCTA url={eventUrl} text="Get tickets now" />
-    <p class="notabene"><small>Ticket sales close on February 26</small></p>
+    <p class="notabene"><small>Ticket sales close on March 4</small></p>
     -->
   </div>
 </header>
