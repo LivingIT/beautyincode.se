@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // import { eventUrl } from '$lib/config';
   // import ButtonCTA from '$lib/components/buttonCTA.svelte';
 </script>

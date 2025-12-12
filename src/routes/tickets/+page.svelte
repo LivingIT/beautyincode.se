@@ -12,7 +12,7 @@
 </svelte:head>
 
 <ParallaxSection backgroundImage="/images/covers/tickets.webp" isSemi={false}>
-  <h1>Ticket sales have closed!</h1>
+  <h1>Ticket sales for 2026 will open soon!</h1>
 </ParallaxSection>
 
 <!-- <ArticleSection> -->
