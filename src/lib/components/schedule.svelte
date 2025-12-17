@@ -2,7 +2,7 @@
   import { schedule } from '$lib/data/schedule';
   import slugify from '$lib/utils/slugify';
 
-  const showSchedule = false;
+  const showSchedule = true;
 </script>
 
 {#if showSchedule}
