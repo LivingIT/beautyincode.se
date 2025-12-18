@@ -1,6 +1,8 @@
 <script lang="ts">
   import { eventUrl } from '$lib/config';
   import ButtonCTA from '$lib/components/buttonCTA.svelte';
+
+  const SHOW_NOTABENE = false;
 </script>
 
 <header class="hero-header">
@@ -9,7 +11,9 @@
     <p>March 7, 2026</p>
     <p>Malmö, Sweden</p>
     <ButtonCTA url={eventUrl} text="Get tickets now" />
-    <p class="notabene"><small>Ticket sales close on March 4</small></p>
+    {#if SHOW_NOTABENE}
+      <p class="notabene"><small>Ticket sales close on March 4</small></p>
+    {/if}
   </div>
 </header>
 
@@ -51,7 +55,6 @@
     font-weight: 400;
   }
 
-  /*
   .notabene {
     margin-block-start: 2rem;
     font-style: italic;
@@ -60,7 +63,6 @@
       font-size: max(min(0.5vw, 0.5em), 1rem);
     }
   }
-  */
 
   @media (min-width: 56em) {
     .hero-header {
