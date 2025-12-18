@@ -1,6 +1,6 @@
 <script lang="ts">
-  // import { eventUrl } from '$lib/config';
-  // import ButtonCTA from '$lib/components/buttonCTA.svelte';
+  import { eventUrl } from '$lib/config';
+  import ButtonCTA from '$lib/components/buttonCTA.svelte';
 </script>
 
 <header class="hero-header">
@@ -8,10 +8,8 @@
   <div>
     <p>March 7, 2026</p>
     <p>Malmö, Sweden</p>
-    <!--
     <ButtonCTA url={eventUrl} text="Get tickets now" />
     <p class="notabene"><small>Ticket sales close on March 4</small></p>
-    -->
   </div>
 </header>
 
