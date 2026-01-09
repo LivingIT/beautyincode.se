@@ -82,7 +82,9 @@ export const schedule: Array<ScheduleItem> = [
     time: '15:30',
     speakerSlug: 'dave-farley',
     name: 'Dave Farley',
-    title: 'TBA',
-    description: `<p>TBA!</p>`,
+    title: 'Modern Software Engineering - Building Better Software Faster',
+    description: `<p>What really works to help us build better software faster? What are the fundamentals of our profession, that if we get them right, and apply them whatever our goal and whatever our technology, will increase our chances of success. Some of these ideas have been hiding in plain sight, and if we just take them and build our practice and process on them, we do get better results. So what are they, what does that take, and what are the hallmarks of great software development?</p>
+
+<p>In this talk Dave Farley explores these ideas, and with examples from software and other industries illustrates each of 10 ideas that when combined can be used to form the basis of a modern, agile, engineering approach to software development. Dave also answers the question “what does ‘quality’ in software really mean?”.</p>`,
   },
 ];
