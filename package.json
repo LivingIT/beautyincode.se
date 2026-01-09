@@ -18,7 +18,7 @@
     "@iconify/svelte": "5.2.1",
     "@sveltejs/adapter-cloudflare": "7.2.4",
     "@sveltejs/kit": "2.49.4",
-    "@sveltejs/vite-plugin-svelte": "6.2.3",
+    "@sveltejs/vite-plugin-svelte": "6.2.4",
     "@types/eslint": "9.6.1",
     "@types/gtag.js": "0.0.20",
     "eslint": "9.39.2",
