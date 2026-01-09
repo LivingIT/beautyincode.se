@@ -37,8 +37,9 @@ export const schedule: Array<ScheduleItem> = [
     time: '10:30',
     speakerSlug: 'rendle',
     name: 'Rendle',
-    title: 'TBA',
-    description: `<p>TBA!</p>`,
+    title: 'Futurology for Developers',
+    description: `<p>2024 was the 35th anniversary of my first job in tech. On my first day I was given a Wyse 60 terminal attached via RS232 cables to a Tandon 286, and told to learn C from a dead tree so I could write text applications for an 80x24 character screen. Fast-forward to now: my phone is about a million times more powerful than that Tandon; screens are 3840x2160 pixels; every computer in the world is attached to every other thing with no cables; and we code using... still basically C, even if we get LLMs to write it for us.</p>
+<p>Having lived through all these changes in realtime, and as an incurable neophile, I think I can make an educated guess as to what the next 35 years are going to be like, and what we're all going to be doing by 2060. If anything, I'm going to underestimate it, but hopefully you'll be inspired, invigorated and maybe even informed about the future of your career in tech. And yes, you do have one.</p>`,
   },
   {
     time: '11:30',
