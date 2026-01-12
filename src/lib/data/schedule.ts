@@ -45,8 +45,11 @@ export const schedule: Array<ScheduleItem> = [
     time: '11:30',
     speakerSlug: 'trisha-gee',
     name: 'Trisha Gee',
-    title: 'TBA',
-    description: `<p>TBA!</p>`,
+    title: 'Developer Productivity Engineering: What’s in it for me?',
+    description: `<p>It may surprise you to learn that we developers are a patient, tolerant species. People pay us to do what we enjoy - write code and create working applications. In return, we will put up with all sorts of blockages and toil that get in the way of this - long build times, flaky tests, hard-to-debug toolchain failures and so on.</p>
+<p>Is this truly the price we need to pay? Could there be a better world, where the build is as fast as it could possibly be? A world where problems that affect many developers are quickly identified and fixed?</p>
+<p>Welcome to the world of Developer Productivity Engineering, where we can get computers to do what they’re good at (automation) to make developers’ lives easier, and make us more effective at our jobs. And while developer joy may be a difficult thing to sell to decision-makers, effective developers who are making the best use of their time, and their hardware, have a direct impact on an organization’s ROI.</p>
+<p>In this talk, Trisha will explore what DPE is, give you some practical ways to get started, and discuss ways to help the leaders in your organisation to understand the enormous value DPE could unlock.</p>`,
   },
   {
     time: '12:15',
