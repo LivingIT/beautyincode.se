@@ -24,8 +24,19 @@ export const schedule: Array<ScheduleItem> = [
     time: '09:05',
     speakerSlug: 'susanne-pettersson',
     name: 'Susanne Pettersson',
-    title: 'TBA',
-    description: `<p>TBA!</p>`,
+    title: 'Creating Winning Teams',
+    description: `<p>What is it that allows some teams to thrive, while others fall short?</p>
+<p>In elite sport, the answer is clear: success is never achieved alone. Medals are won when teams are strong together. And this is something we can all learn from! As a mental performance coach within Swedish elite sport, my daily mission is clear: to make other people become heroes and help them peak at championships where medals are on the line.</p>
+<p>This experience has shown me that success comes from balancing individual strength with teampower.</p>
+<p>Few things are more important than creating environments where people with different ambitions, personalities, and competencies work together with joy, trust, and purpose.</p>
+<p>In a warm, engaging, and meaningful way, I share my experiences on how to build successful teams. When people feel psychologically safe, emotionally balanced, and mentally prepared, performance follows naturally.</p>
+<p>Because when individuals grow, teams win—and when teams win together, medals follow.</p>
+<p>Key themes include:</p>
+<ul>
+<li>Key factors behind high-performing and winning teams</li>
+<li>Psychological safety as a foundation for excellence</li>
+<li>Understanding the importance of having a good stare of mind</li>
+</ul>`,
   },
   {
     time: '10:00',
