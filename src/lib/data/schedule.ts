@@ -83,8 +83,8 @@ export const schedule: Array<ScheduleItem> = [
     time: '14:15',
     speakerSlug: 'linda-rising',
     name: 'Linda Rising',
-    title: 'TBA',
-    description: `<p>TBA!</p>`,
+    title: 'The Power of an Agile Mindset – for Groups',
+    description: `<p>In August 2011 in Salt Lake City, Linda gave the closing keynote for the Agile Conference. It introduced the notion of "the agile mindset," based on the research of Stanford psychologist, Carol Dweck. The idea of the agile mindset has grown over time and now the focus has moved up a level to organizations. The question is, "Can an organization, like an individual, have a fixed or a growth mindset? If so, what are the effects on the organization and its employees?" Linda will tackle this question and related ones, with some tips for improving your mindset and that of your team and organization.</p>`,
   },
   {
     time: '15:00',
