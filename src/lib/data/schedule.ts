@@ -56,11 +56,12 @@ export const schedule: Array<ScheduleItem> = [
     time: '11:30',
     speakerSlug: 'trisha-gee',
     name: 'Trisha Gee',
-    title: 'Developer Productivity Engineering: What’s in it for me?',
-    description: `<p>It may surprise you to learn that we developers are a patient, tolerant species. People pay us to do what we enjoy - write code and create working applications. In return, we will put up with all sorts of blockages and toil that get in the way of this - long build times, flaky tests, hard-to-debug toolchain failures and so on.</p>
-<p>Is this truly the price we need to pay? Could there be a better world, where the build is as fast as it could possibly be? A world where problems that affect many developers are quickly identified and fixed?</p>
-<p>Welcome to the world of Developer Productivity Engineering, where we can get computers to do what they’re good at (automation) to make developers’ lives easier, and make us more effective at our jobs. And while developer joy may be a difficult thing to sell to decision-makers, effective developers who are making the best use of their time, and their hardware, have a direct impact on an organization’s ROI.</p>
-<p>In this talk, Trisha will explore what DPE is, give you some practical ways to get started, and discuss ways to help the leaders in your organisation to understand the enormous value DPE could unlock.</p>`,
+    title: 'Are Your Tests Slowing You Down?',
+    description: `<p>Testing is a Good Thing, right? Especially automated testing. But "Good things come to those who wait" is not something that's going to appeal to the busy developer. You want results, and you want them now. You're in The Zone working on a problem, and the last thing you want is to break your flow wrestling with your testing framework or waiting for the tests to finish running.</p>
+
+<p>More code means more tests. More coverage means more tests. More tests mean more time. Time that you want to spend being productive, creative, innovative. How can you balance the need for quality with the need for speed?</p>
+
+<p>In this talk, Trisha will identify issues that slow down developers when writing, running and debugging tests, and look at tools that can help developers with each of these problems. There will be live coding, analysis of social media poll results, an overview of solutions in this space, "best practice" recommendations, and machine learning will be mentioned at some point.</p>`,
   },
   {
     time: '12:15',
