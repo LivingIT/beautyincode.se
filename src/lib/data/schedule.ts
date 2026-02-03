@@ -102,4 +102,9 @@ export const schedule: Array<ScheduleItem> = [
 
 <p>In this talk Dave Farley explores these ideas, and with examples from software and other industries illustrates each of 10 ideas that when combined can be used to form the basis of a modern, agile, engineering approach to software development. Dave also answers the question “what does ‘quality’ in software really mean?”.</p>`,
   },
+  {
+    time: '16:30',
+    name: 'The End',
+    image: '/images/farewell.webp',
+  },
 ];
