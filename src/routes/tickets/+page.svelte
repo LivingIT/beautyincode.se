@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { eventUrl, title } from '$lib/config';
+  import { eventUrl, ticketSalesClosed, title } from '$lib/config';
 
   import ArticleSection from '$lib/components/articleSection.svelte';
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
@@ -23,7 +23,11 @@
   </p>
 
   <aside>
-    <ButtonCTA url={eventUrl} text="Get tickets now" />
+    {#if ticketSalesClosed}
+      <p>Ticket sales have closed!</p>
+    {:else}
+      <ButtonCTA url={eventUrl} text="Get tickets now" />
+    {/if}
   </aside>
 </ArticleSection>
 
@@ -31,5 +35,9 @@
   aside {
     margin-block: 4rem;
     text-align: center;
+
+    p {
+      font-size: 2em;
+    }
   }
 </style>

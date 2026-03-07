@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { eventUrl } from '$lib/config';
+  import { eventUrl, ticketSalesClosed } from '$lib/config';
   import ButtonCTA from '$lib/components/buttonCTA.svelte';
 
   const SHOW_NOTABENE = false;
@@ -10,7 +10,11 @@
   <div>
     <p>March 7, 2026</p>
     <p>Malmö, Sweden</p>
-    <ButtonCTA url={eventUrl} text="Get tickets now" />
+    {#if ticketSalesClosed}
+      <p>Ticket sales have closed!</p>
+    {:else}
+      <ButtonCTA url={eventUrl} text="Get tickets now" />
+    {/if}
     {#if SHOW_NOTABENE}
       <p class="notabene"><small>Ticket sales close on March 4</small></p>
     {/if}
