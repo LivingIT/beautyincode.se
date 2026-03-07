@@ -1,11 +1,12 @@
 import {
   PUBLIC_BASE_URL,
-  PUBLIC_SITE_TITLE,
+  PUBLIC_DEPLOY_TIMESTAMP,
+  PUBLIC_EVENT_URL,
   PUBLIC_GOOGLE_SITE_VERIFICATION,
   PUBLIC_META_DESCRIPTION,
   PUBLIC_OG_IMAGE,
-  PUBLIC_EVENT_URL,
-  PUBLIC_DEPLOY_TIMESTAMP,
+  PUBLIC_SITE_TITLE,
+  PUBLIC_TICKET_SALES_CLOSED,
 } from '$env/static/public';
 
 export const baseUrl = PUBLIC_BASE_URL;
@@ -15,3 +16,4 @@ export const metaDescription = PUBLIC_META_DESCRIPTION;
 export const ogImage = PUBLIC_OG_IMAGE;
 export const eventUrl = PUBLIC_EVENT_URL;
 export const deployTime = PUBLIC_DEPLOY_TIMESTAMP;
+export const ticketSalesClosed = PUBLIC_TICKET_SALES_CLOSED;
