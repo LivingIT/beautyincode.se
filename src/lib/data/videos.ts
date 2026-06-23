@@ -7,6 +7,38 @@ type Video = {
 type VideosByYear = Record<string, Video[]>;
 
 export const videosByYear: VideosByYear = {
+  2026: [
+    {
+      title: 'Emmz Rendle: "Futurology for Developers"',
+      videoId: 'EP5jdJ0R55k',
+      description:
+        '2024 was the 35th anniversary of my first job in tech. On my first day I was given a Wyse 60 terminal attached via RS232 cables to a Tandon 286, and told to learn C from a dead tree so I could write text applications for an 80x24 character screen. Fast-forward to now: my phone is about a million times more powerful than that Tandon; screens are 3840x2160 pixels; every computer in the world is attached to every other thing with no cables; and we code using... still basically C, even if we get LLMs to write it for us. Having lived through all these changes in realtime, and as an incurable neophile, I think I can make an educated guess as to what the next 35 years are going to be like, and what we\'re all going to be doing by 2060. If anything, I\'m going to underestimate it, but hopefully you\'ll be inspired, invigorated and maybe even informed about the future of your career in tech. And yes, you do have one.',
+    },
+    {
+      title: 'Trisha Gee: "Are Your Tests Slowing You Down?"',
+      videoId: 'Zk86_xSh6h0',
+      description:
+        'Testing is a Good Thing, right? Especially automated testing. But "Good things come to those who wait" is not something that\'s going to appeal to the busy developer. You want results, and you want them now. You\'re in The Zone working on a problem, and the last thing you want is to break your flow wrestling with your testing framework or waiting for the tests to finish running. More code means more tests. More coverage means more tests. More tests mean more time. Time that you want to spend being productive, creative, innovative. How can you balance the need for quality with the need for speed? In this talk, Trisha will identify issues that slow down developers when writing, running and debugging tests, and look at tools that can help developers with each of these problems. There will be live coding, analysis of social media poll results, an overview of solutions in this space, "best practice" recommendations, and machine learning will be mentioned at some point.',
+    },
+    {
+      title: 'Dylan Beattie: "Do It With Style: Rethinking CSS"',
+      videoId: 'oHMPBnJIulk',
+      description:
+        "Cascading Style Sheets. CSS. The language everybody loves to hate. Everything's global, there's no control flow, there's no error messages... in fact, some people say it isn't even a real programming language. But CSS isn't just about making websites look pretty. It's one of the fundamental building blocks of the open web, and it's continuously evolving. Modern CSS has variables, grids, flexboxes, animations, view transitions... When it comes to layout, accessibility, interaction and validation, CSS can do all kinds of things you thought were impossible - or at least, only possible with a lot of complicated JavaScript. Dylan Beattie's been building web applications since before CSS was invented - yes, really - and in this session, he'll take you on a whirlwind tour of some of the weird and wonderful things you can do in 2026 using semantic HTML, a generous sprinkling of CSS, and absolutely no JavaScript. OK, maybe a tiny bit of JavaScript. But absolutely no React.",
+    },
+    {
+      title: 'Linda Rising: "The Power of an Agile Mindset – for Groups"',
+      videoId: 'U5dLU7xJgHo',
+      description:
+        'In August 2011 in Salt Lake City, Linda gave the closing keynote for the Agile Conference. It introduced the notion of "the agile mindset," based on the research of Stanford psychologist, Carol Dweck. The idea of the agile mindset has grown over time and now the focus has moved up a level to organizations. The question is, "Can an organization, like an individual, have a fixed or a growth mindset? If so, what are the effects on the organization and its employees?" Linda will tackle this question and related ones, with some tips for improving your mindset and that of your team and organization.',
+    },
+    {
+      title: 'Dave Farley: "Modern Software Engineering – Building Better Software Faster"',
+      videoId: '2cFNQEzJRJk',
+      description:
+        'What really works to help us build better software faster? What are the fundamentals of our profession, that if we get them right, and apply them whatever our goal and whatever our technology, will increase our chances of success. Some of these ideas have been hiding in plain sight, and if we just take them and build our practice and process on them, we do get better results. So what are they, what does that take, and what are the hallmarks of great software development? In this talk Dave Farley explores these ideas, and with examples from software and other industries illustrates each of 10 ideas that when combined can be used to form the basis of a modern, agile, engineering approach to software development. Dave also answers the question “what does ‘quality’ in software really mean?”.',
+    },
+  ],
   2025: [
     {
       title: 'Kent Beck: "The Forest & The Desert Are Parallel Universes"',
