@@ -29,7 +29,7 @@
     "mdsvex": "0.12.6",
     "prettier": "3.9.5",
     "prettier-plugin-svelte": "3.5.2",
-    "svelte": "5.56.5",
+    "svelte": "5.56.6",
     "svelte-check": "4.7.3",
     "typescript": "5.9.3",
     "typescript-eslint": "8.64.0",
