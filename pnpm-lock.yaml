@@ -45,8 +45,8 @@ importers:
         specifier: 16.5.0
         version: 16.5.0
       mdsvex:
-        specifier: 0.12.6
-        version: 0.12.6(svelte@5.56.7(@typescript-eslint/types@8.65.0))
+        specifier: 0.12.8
+        version: 0.12.8(svelte@5.56.7(@typescript-eslint/types@8.65.0))
       prettier:
         specifier: 3.9.6
         version: 3.9.6
@@ -1103,8 +1103,8 @@ packages:
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
-  mdsvex@0.12.6:
-    resolution: {integrity: sha512-pupx2gzWh3hDtm/iDW4WuCpljmyHbHi34r7ktOqpPGvyiM4MyfNgdJ3qMizXdgCErmvYC9Nn/qyjePy+4ss9Wg==}
+  mdsvex@0.12.8:
+    resolution: {integrity: sha512-v2sbRA9QWf0tpYWfREI5Kq7OqqrqoUzfmMKbgdOoWGfPDLc1JYU4EgDDF0N9WFhmjFW5agKrYwo/mDVutBKWKw==}
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0 || ^5.0.0-next.120
 
@@ -2377,7 +2377,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  mdsvex@0.12.6(svelte@5.56.7(@typescript-eslint/types@8.65.0)):
+  mdsvex@0.12.8(svelte@5.56.7(@typescript-eslint/types@8.65.0)):
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 2.0.11
