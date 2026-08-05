@@ -44,8 +44,9 @@
     <h2 class="at-only">Contact us</h2>
 
     <ul class="footer-links">
-      {#each footerLinks as { label, link, icon }}
+      {#each footerLinks as { label, link, icon } (label)}
         <li>
+          <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external link -->
           <a href={link}>
             <Icon {icon} width={32} height={32} />
             <span class="at-only">{label}</span>
