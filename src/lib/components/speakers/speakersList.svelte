@@ -14,7 +14,7 @@
   });
 </script>
 
-{#each sortedSpeakers as speaker}
+{#each sortedSpeakers as speaker (speaker.name)}
   <section class="speaker" id={slugify(speaker.name)}>
     <h2>{speaker.name}</h2>
     <img

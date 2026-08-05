@@ -10,11 +10,11 @@
 
 <ArticleToc items={sortedYears} />
 
-{#each sortedYears as year}
+{#each sortedYears as year (year)}
   {#if videosByYear[year].length > 0}
     <h2 id="y{year}">{year}</h2>
     <ul class="videos">
-      {#each videosByYear[year] as video}
+      {#each videosByYear[year] as video (video.videoId)}
         <VideoItem {video} />
       {/each}
     </ul>

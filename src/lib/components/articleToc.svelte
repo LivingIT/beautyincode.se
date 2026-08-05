@@ -7,7 +7,7 @@
 </script>
 
 <ul class="article-toc">
-  {#each items as item}
+  {#each items as item (item)}
     <li><a href="#y{item}">{item}</a></li>
   {/each}
 </ul>

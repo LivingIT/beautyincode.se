@@ -10,10 +10,6 @@
   const revealVideo = () => {
     return (showVideo = true);
   };
-
-  $effect(() => {
-    showVideo = false;
-  });
 </script>
 
 <li class="videos__item">

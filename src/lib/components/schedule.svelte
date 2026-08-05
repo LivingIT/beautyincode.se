@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
   import { schedule } from '$lib/data/schedule';
   import slugify from '$lib/utils/slugify';
 
@@ -6,7 +7,7 @@
 </script>
 
 {#if showSchedule}
-  {#each schedule as { time, speakerSlug, name, description, title, image }}
+  {#each schedule as { time, speakerSlug, name, description, title, image } (time)}
     {@const timeSlotId = `timeslot-${slugify(time)}`}
     <h2 id={timeSlotId}>
       <a href={`#${timeSlotId}`}>{time}</a>
@@ -19,7 +20,7 @@
             {title} -
           {/if}
           {#if speakerSlug}
-            <a href={`/speakers/#${speakerSlug}`}>{name}</a>
+            <a href={resolve(`/speakers/#${speakerSlug}`)}>{name}</a>
           {:else}
             {name}
           {/if}

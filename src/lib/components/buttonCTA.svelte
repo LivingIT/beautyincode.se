@@ -7,6 +7,7 @@
   let { url, text }: Props = $props();
 </script>
 
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external ticket URL -->
 <a href={url}>{text}</a>
 
 <style>
