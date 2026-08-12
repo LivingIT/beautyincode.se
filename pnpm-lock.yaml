@@ -21,7 +21,7 @@ importers:
         version: 5.2.2(svelte@5.56.8(@typescript-eslint/types@8.67.0))
       '@sveltejs/adapter-cloudflare':
         specifier: 7.2.9
-        version: 7.2.9(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5)))(wrangler@4.120.1)
+        version: 7.2.9(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5)))(wrangler@4.121.0)
       '@sveltejs/kit':
         specifier: 2.70.2
         version: 2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5))
@@ -74,8 +74,8 @@ importers:
         specifier: 7.3.6
         version: 7.3.6(@types/node@25.9.5)
       wrangler:
-        specifier: 4.120.1
-        version: 4.120.1
+        specifier: 4.121.0
+        version: 4.121.0
 
 packages:
 
@@ -1163,8 +1163,8 @@ packages:
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0 || ^5.0.0-next.120
 
-  miniflare@5.20260804.0-alpha:
-    resolution: {integrity: sha512-UDegnTukIpJCI/lNyQXU7B8kYFLcMZihlxqqOocnc62tV8AO6XofmFmZm3ZLDXTWZpkZnLLJ2sKCSlTIEXO3dQ==}
+  miniflare@5.20260804.1-alpha:
+    resolution: {integrity: sha512-J0QBHEj+d75TyFE9VhH+2dXgvdYt/pfyDlm+9IiYUFocQvqYy9iuW1DIqNawh1N7Kr6iMrDzVkgDSdt6pA75uA==}
     engines: {node: '>=22.0.0'}
 
   minimatch@10.2.6:
@@ -1504,8 +1504,8 @@ packages:
     resolution: {integrity: sha512-+TvsA6VAVoMC3XDKR5MoC/qlLqDixEfOBysDEKnPIPou/NvoPWCAuXHXMsswwlvmEuvX56lQjvELLyLuzTKvRw==}
     engines: {node: '>=12'}
 
-  wrangler@4.120.1:
-    resolution: {integrity: sha512-rQJ38rY02XiVITbSBWHC7oap3M2evcXgsC4CdlIX4WQENUZMMnue9j2vXO4aIi39KR+jDH+UHK8JNqp1+UjkRQ==}
+  wrangler@4.121.0:
+    resolution: {integrity: sha512-dcARWk6CyaD0vJBSLjJn4K2yo+mYko73hzryq+t/9DXnyAq877RWIMl7uOMcDKs5dDXdoickNhZTKxBYT9XKsA==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
@@ -1958,12 +1958,12 @@ snapshots:
     dependencies:
       acorn: 8.18.0
 
-  '@sveltejs/adapter-cloudflare@7.2.9(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5)))(wrangler@4.120.1)':
+  '@sveltejs/adapter-cloudflare@7.2.9(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5)))(wrangler@4.121.0)':
     dependencies:
       '@cloudflare/workers-types': 4.20260702.1
       '@sveltejs/kit': 2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5))
       worktop: 0.8.0-next.18
-      wrangler: 4.120.1
+      wrangler: 4.121.0
 
   '@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@7.3.6(@types/node@25.9.5)))(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@7.3.6(@types/node@25.9.5))':
     dependencies:
@@ -2443,7 +2443,7 @@ snapshots:
       unist-util-visit: 2.0.3
       vfile-message: 2.0.4
 
-  miniflare@5.20260804.0-alpha:
+  miniflare@5.20260804.1-alpha:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.35.2
@@ -2797,13 +2797,13 @@ snapshots:
       mrmime: 2.0.1
       regexparam: 3.0.0
 
-  wrangler@4.120.1:
+  wrangler@4.121.0:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.0
       '@cloudflare/unenv-preset': 2.16.1(unenv@2.0.0-rc.24)(workerd@1.20260804.1)
       blake3-wasm: 2.1.5
       esbuild: 0.28.1
-      miniflare: 5.20260804.0-alpha
+      miniflare: 5.20260804.1-alpha
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.24
       workerd: 1.20260804.1
