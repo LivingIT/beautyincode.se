@@ -47,8 +47,8 @@ importers:
         specifier: 3.23.0
         version: 3.23.0(eslint@9.39.5)(svelte@5.56.10(@typescript-eslint/types@8.67.0))
       globals:
-        specifier: 16.5.0
-        version: 16.5.0
+        specifier: 17.11.0
+        version: 17.11.0
       mdsvex:
         specifier: 0.12.8
         version: 0.12.8(svelte@5.56.10(@typescript-eslint/types@8.67.0))
@@ -1079,6 +1079,10 @@ packages:
 
   globals@16.5.0:
     resolution: {integrity: sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==}
+    engines: {node: '>=18'}
+
+  globals@17.11.0:
+    resolution: {integrity: sha512-Z2I8hM+PbJDXQDq3Icgpzv+mPdwr68iZUU9d5WW4FuXfDUQfkZaZuvjMv42/5crNyw154+9+VWXbYrUgDXbxNw==}
     engines: {node: '>=18'}
 
   has-flag@4.0.0:
@@ -2371,6 +2375,8 @@ snapshots:
   globals@14.0.0: {}
 
   globals@16.5.0: {}
+
+  globals@17.11.0: {}
 
   has-flag@4.0.0: {}
 
