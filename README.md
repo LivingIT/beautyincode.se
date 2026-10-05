@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Developing
 
-Install packages. 
+Install packages.
 
 ⚠️ _**Note!** This project uses `pnpm`, not `npm`._
 
