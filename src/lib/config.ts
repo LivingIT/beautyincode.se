@@ -16,4 +16,4 @@ export const metaDescription = PUBLIC_META_DESCRIPTION;
 export const ogImage = PUBLIC_OG_IMAGE;
 export const eventUrl = PUBLIC_EVENT_URL;
 export const deployTime = PUBLIC_DEPLOY_TIMESTAMP;
-export const ticketSalesClosed = PUBLIC_TICKET_SALES_CLOSED;
+export const ticketSalesClosed = PUBLIC_TICKET_SALES_CLOSED === 'true';
