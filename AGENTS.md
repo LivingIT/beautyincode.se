@@ -22,3 +22,17 @@ Most changes are content edits in `src/lib/data/`:
 - **Videos**: `videos.ts`, grouped by conference year, newest year first. `videoId` is the YouTube ID; title format is `Speaker Name: "Talk Title"`.
 
 Images are `.webp` under `static/images/`.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues on LivingIT/beautyincode.se, via `gh`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: root `CONTEXT.md` + `docs/adr/`. See `docs/agents/domain.md`.
