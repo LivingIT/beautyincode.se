@@ -35,7 +35,7 @@ export const schedule: Array<ScheduleItem> = [
 <ul>
 <li>Key factors behind high-performing and winning teams</li>
 <li>Psychological safety as a foundation for excellence</li>
-<li>Understanding the importance of having a good stare of mind</li>
+<li>Understanding the importance of having a good state of mind</li>
 </ul>`,
   },
   {
