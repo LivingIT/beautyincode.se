@@ -17,7 +17,7 @@ Closes #N
 1. Open [<page> in the branch preview](<branch preview URL>/<path>), and [in production](https://beautyincode.se/<path>) to compare.
 2. <One action, using the page's exact labels.>
    - <What the reviewer should see.>
-3. <When the change affects what a page shows, the visual check from the [rendered check](../../../docs/development/checks.md#rendered-check): each changed page at 360 and 1280 pixels wide, in the light and the dark colour scheme.>
+3. <When the change affects what a page shows, the visual check the [rendered check](../../../docs/development/checks.md#rendered-check) describes.>
 
 <The expected visible change, or "No visible change is expected.">
 

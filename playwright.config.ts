@@ -1,9 +1,7 @@
-import { readFileSync } from 'node:fs';
-import { parseEnv } from 'node:util';
 import { defineConfig, devices } from '@playwright/test';
 
-// Variables set in the process win over `.env`, so the build sees `.env.example`.
-const env = parseEnv(readFileSync('.env.example', 'utf8')) as Record<string, string>;
+// The build, the server and the tests read `.env.example`: process variables win over `.env`.
+process.loadEnvFile('.env.example');
 
 export default defineConfig({
   testDir: 'tests/e2e',
@@ -25,7 +23,6 @@ export default defineConfig({
   webServer: {
     command: 'pnpm build && pnpm preview --port 4173 --strictPort',
     url: 'http://localhost:4173',
-    env,
     timeout: 120_000,
   },
 });

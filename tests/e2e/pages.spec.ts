@@ -1,11 +1,9 @@
-import { readFileSync } from 'node:fs';
-import { parseEnv } from 'node:util';
 import { expect, test } from '@playwright/test';
 
 import speakers from '../../src/lib/data/speakers';
 import { schedule } from '../../src/lib/data/schedule';
 
-const { PUBLIC_SITE_TITLE: siteTitle } = parseEnv(readFileSync('.env.example', 'utf8'));
+const siteTitle = process.env.PUBLIC_SITE_TITLE ?? '';
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {
@@ -28,7 +26,8 @@ test('every page in the sitemap renders without console errors', async ({ page, 
       errors = [];
       const response = await page.goto(path);
       expect(response?.status()).toBe(200);
-      await expect(page).toHaveTitle(new RegExp(`${siteTitle}$`));
+      const title = await page.title();
+      expect(title.slice(-siteTitle.length)).toBe(siteTitle);
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
@@ -49,7 +48,9 @@ test('the schedule links each talk to its speaker', async ({ page }) => {
   }
 });
 
-test('the hero and the tickets page show open ticket sales', async ({ page }) => {
+test('the hero and the tickets page show open ticket sales, as .env.example sets them', async ({
+  page,
+}) => {
   for (const path of ['/', '/tickets/']) {
     await page.goto(path);
     await expect(page.getByRole('link', { name: 'Get tickets now' })).toBeVisible();
