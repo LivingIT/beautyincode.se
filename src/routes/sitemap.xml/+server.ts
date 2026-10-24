@@ -20,6 +20,12 @@ const pages = [
     priority: 0.3,
   },
   {
+    loc: `${baseUrl}/tickets/`,
+    lastmod: deployTime,
+    changefreq: 'monthly',
+    priority: 0.3,
+  },
+  {
     loc: `${baseUrl}/terms/`,
     lastmod: deployTime,
     changefreq: 'monthly',
