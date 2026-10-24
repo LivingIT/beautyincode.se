@@ -65,4 +65,6 @@ const speakers: SpeakersList = {
   },
 };
 
+export const speakerPhoto = (slug: string) => `/images/speakers/${slug}.webp`;
+
 export default speakers;

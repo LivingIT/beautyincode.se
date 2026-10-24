@@ -21,8 +21,8 @@ none) into it and run `pnpm install --frozen-lockfile` there before any check.
 | `pnpm build`  | Production build with the Cloudflare adapter.                              |
 | `pnpm format` | Fixes Prettier formatting.                                                 |
 
-In Claude Code, a `PostToolUse` hook formats each edited file and a `Stop` hook runs `pnpm check`
-and `pnpm lint` before a turn ends with uncommitted changes (`.claude/hooks/`).
+In Claude Code, a `PostToolUse` hook formats each edited file and a `Stop` hook runs `pnpm check`,
+`pnpm lint` and `pnpm test` before a turn ends with uncommitted changes (`.claude/hooks/`).
 
 ## Rendered check
 

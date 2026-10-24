@@ -17,7 +17,7 @@ them like any other file.
 - `pr-description`: the pull request body template.
 
 Both are adapted from the LivingIT/livingit-intelligence repository's skills of the same name,
-without its test suite, design canvas and deployment scripts.
+without its page tests, design canvas and deployment scripts.
 
 ## Adapted from mattpocock/skills
 

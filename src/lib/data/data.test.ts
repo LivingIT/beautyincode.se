@@ -1,14 +1,14 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
 import { schedule } from './schedule';
-import speakers from './speakers';
+import speakers, { speakerPhoto } from './speakers';
 import { videosByYear } from './videos';
 
 const staticFile = (path: string) => new URL(`../../../static${path}`, import.meta.url);
 
 describe('speakers', () => {
   test.each(Object.keys(speakers))('%s has a photo', (slug) => {
-    expect(existsSync(staticFile(`/images/speakers/${slug}.webp`))).toBe(true);
+    expect(existsSync(staticFile(speakerPhoto(slug)))).toBe(true);
   });
 });
 
@@ -69,7 +69,7 @@ describe('videos', () => {
   // Integer-like keys always enumerate ascending, so read the year order from the source.
   test('years are newest first', () => {
     const source = readFileSync(new URL('./videos.ts', import.meta.url), 'utf8');
-    const years = [...source.matchAll(/^ {2}'?(\d{4})'?: \[/gm)].map(([, year]) => Number(year));
+    const years = [...source.matchAll(/^\s*'?(\d{4})'?:/gm)].map(([, year]) => Number(year));
     expect(years).toEqual(
       Object.keys(videosByYear)
         .map(Number)

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import speakers from '$lib/data/speakers';
+  import speakers, { speakerPhoto } from '$lib/data/speakers';
 
   const sortedSpeakers = Object.entries(speakers).sort(([, a], [, b]) =>
     a.name.localeCompare(b.name),
@@ -10,7 +10,7 @@
   <section class="speaker" id={slug}>
     <h2>{speaker.name}</h2>
     <img
-      src={`/images/speakers/${slug}.webp`}
+      src={speakerPhoto(slug)}
       class="speaker__image"
       height="400"
       width="400"

@@ -73,7 +73,7 @@ content ticket's test seams are `No automated test: covered by data checks`.
 A ticket qualifies for `work-ticket` when it is open, labelled `ready-for-agent`, not labelled
 `spec`, has no assignee (or only the developer starting it), all its blockers are closed, and its
 contract passes the body rules: at least one checkable acceptance criterion, no deferred decision
-about scope or behaviour, for a ticket that changes application code its test seams, and, for a
+about scope or behaviour, its test seams when it changes application code or content, and, for a
 content ticket, all the content it publishes.
 
 This query applies every rule except the body rules; check those by reading each result's

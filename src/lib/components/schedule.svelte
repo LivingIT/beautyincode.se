@@ -1,6 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import { schedule } from '$lib/data/schedule';
+  import { speakerPhoto } from '$lib/data/speakers';
   import slugify from '$lib/utils/slugify';
 
   const showSchedule = true;
@@ -13,7 +14,7 @@
       <a href={`#${timeSlotId}`}>{time}</a>
     </h2>
     <section>
-      <img src={speakerSlug ? `/images/speakers/${speakerSlug}.webp` : image} alt="" />
+      <img src={speakerSlug ? speakerPhoto(speakerSlug) : image} alt="" />
       <div>
         <h3>
           {#if title}
