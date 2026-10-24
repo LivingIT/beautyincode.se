@@ -1,0 +1,7 @@
+#!/bin/sh
+# Refuses a commit on master; see AGENTS.md#git-workflow. Also run as
+# pre-merge-commit, so a merge on master is refused too.
+if [ "$(git symbolic-ref --short -q HEAD)" = "master" ]; then
+  echo "Refused: never commit to master. Work on an agent/ branch in its own worktree; see AGENTS.md#git-workflow." >&2
+  exit 1
+fi

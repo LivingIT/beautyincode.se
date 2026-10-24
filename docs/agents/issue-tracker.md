@@ -1,45 +1,102 @@
 # Issue tracker: GitHub
 
-Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all operations.
+Issues and specs live in LivingIT/beautyincode.se. Use the `gh` CLI from the project worktree, with
+`--body-file` for multiline bodies and comments. Renovate's Dependency Dashboard issue and pull
+requests are outside this workflow; the queries below leave them out with `-author:app/renovate`.
 
-## Conventions
+## Searching before publishing
 
-- **Create an issue**: `gh issue create --title "..." --body "..."`. Use a heredoc for multi-line bodies.
-- **Read an issue**: `gh issue view <number> --comments`, filtering comments by `jq` and also fetching labels.
-- **List issues**: `gh issue list --state open --json number,title,body,labels,comments --jq '[.[] | {number, title, body, labels: [.labels[].name], comments: [.comments[].body]}]'` with appropriate `--label` and `--state` filters.
-- **Comment on an issue**: `gh issue comment <number> --body "..."`
-- **Apply / remove labels**: `gh issue edit <number> --add-label "..."` / `--remove-label "..."`
-- **Close**: `gh issue close <number> --comment "..."`
+Before publishing any issue, by a skill or by hand, search for overlap, contradiction and earlier
+rejection, then read the likely matches:
 
-Infer the repo from `git remote -v`; `gh` does this automatically when run inside a clone.
+```sh
+gh issue list --state open --search '<key terms> -author:app/renovate'
+gh issue list --state closed --search '<key terms> reason:"not planned"'
+```
 
-## Pull requests as a triage surface
+Report each match with its link before publishing, and link related issues from the new one. Do
+not publish an issue that duplicates or contradicts an open one; put the match to a maintainer
+instead.
 
-**PRs as a request surface: no.** _(Set to `yes` if this repo treats external PRs as feature requests; `/triage` reads this flag.)_
+## Labels
 
-When set to `yes`, PRs run through the same labels and states as issues, using the `gh pr` equivalents:
+Every issue carries a **state**, which drives the workflow, and a **kind**, which is informational.
+When publishing an approved issue that needs one of these labels, create the label if it is
+missing (`gh label create`). Do not rename or delete other labels.
 
-- **Read a PR**: `gh pr view <number> --comments` and `gh pr diff <number>` for the diff.
-- **List external PRs for triage**: `gh pr list --state open --json number,title,body,labels,author,authorAssociation,comments` then keep only `authorAssociation` of `CONTRIBUTOR`, `FIRST_TIME_CONTRIBUTOR`, or `NONE` (drop `OWNER`/`MEMBER`/`COLLABORATOR`).
-- **Comment / label / close**: `gh pr comment`, `gh pr edit --add-label`/`--remove-label`, `gh pr close`.
+### State
 
-GitHub shares one number space across issues and PRs, so a bare `#42` may be either: resolve with `gh pr view 42` and fall back to `gh issue view 42`.
+Every open issue has exactly one state, except a spec, which carries none. An open issue without a
+state counts as `needs-triage`.
 
-## When a skill says "publish to the issue tracker"
+| Label             | Meaning                                                                    | Set by                                                                                       | Leaves by                                                               |
+| ----------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `needs-triage`    | Not yet worked into shape.                                                 | Anyone filing outside `triage` and `to-tickets`, including agents filing defects they found. | `/triage` or a maintainer: to another state, or closed.                 |
+| `needs-info`      | Waits on a human answer.                                                   | Triage, when the answer must come from someone absent; `work-ticket` giving up.              | The answer lands in the contract; a maintainer moves it on.             |
+| `ready-for-agent` | Fully specified; an agent may take it if unassigned and unblocked.         | Triage, `to-tickets`, or a maintainer filing a ticket that passes the body rules.            | A merged pull request closes it; giving up moves it to `needs-info`.    |
+| `ready-for-human` | Specified, but a person must do it (Cloudflare, ticketing, design, admin). | Triage; `to-tickets` when a maintainer says so.                                              | Closed when done; to `ready-for-agent` if an agent can do it after all. |
+| `wontfix`         | Will not be done; closed as not planned with the reasoning in a comment.   | A maintainer.                                                                                | Final; a reopened issue goes to `needs-triage`.                         |
 
-Create a GitHub issue.
+There is no blocked state; blocking is a [dependency](#dependencies).
 
-## When a skill says "fetch the relevant ticket"
+### Kind
 
-Run `gh issue view <number> --comments`.
+| Label           | Meaning                                                                           |
+| --------------- | --------------------------------------------------------------------------------- |
+| `content`       | Speakers, schedule, videos, images or page copy; no change to how the site works. |
+| `bug`           | Something is broken.                                                              |
+| `enhancement`   | A new feature or improvement.                                                     |
+| `documentation` | Documentation, agent instructions or a recorded decision.                         |
+| `spec`          | A spec, split into tickets by `to-tickets` and never worked directly.             |
 
-## Wayfinding operations
+## Contract
 
-Used by `/wayfinder`. The **map** is a single issue with **child** issues as tickets.
+An issue's contract is its latest comment headed `## Agent Brief`; without one, its body. Other
+comments are discussion: a decision recorded only there is not part of the contract. To change the
+contract, post a new complete Agent Brief, or edit the body while no brief exists. `triage` writes
+briefs in the format of its [AGENT-BRIEF.md](../../.agents/skills/triage/AGENT-BRIEF.md).
 
-- **Map**: a single issue labelled `wayfinder:map`, holding the Notes / Decisions-so-far / Fog body. `gh issue create --label wayfinder:map`.
-- **Child ticket**: an issue linked to the map as a GitHub sub-issue (`gh api` on the sub-issues endpoint). Where sub-issues aren't enabled, add the child to a task list in the map body and put `Part of #<map>` at the top of the child body. Labels: `wayfinder:<type>` (`research`/`prototype`/`grilling`/`task`). Once claimed, the ticket is assigned to the driving dev.
-- **Blocking**: GitHub's **native issue dependencies**, the canonical, UI-visible representation. Add an edge with `gh api --method POST repos/<owner>/<repo>/issues/<child>/dependencies/blocked_by -F issue_id=<blocker-db-id>`, where `<blocker-db-id>` is the blocker's numeric **database id** (`gh api repos/<owner>/<repo>/issues/<n> --jq .id`, _not_ the `#number` or `node_id`). GitHub reports `issue_dependencies_summary.blocked_by` (open blockers only, the live gate). Where dependencies aren't available, fall back to a `Blocked by: #<n>, #<n>` line at the top of the child body. A ticket is unblocked when every blocker is closed.
-- **Frontier query**: list the map's open children (`gh issue list --state open`, scoped to the map's sub-issues / task list), drop any with an open blocker (`issue_dependencies_summary.blocked_by > 0`, or an open issue in the `Blocked by` line) or an assignee; first in map order wins.
-- **Claim**: `gh issue edit <n> --add-assignee @me`, the session's first write.
-- **Resolve**: `gh issue comment <n> --body "<answer>"`, then `gh issue close <n>`, then append a context pointer (gist + link) to the map's Decisions-so-far.
+A contract settles the change's scope, behaviour and acceptance criteria; implementation details
+are left to the agent. A fix to a defect in the lines the pull request changes, such as a review
+finding, is within the contract unless it needs behaviour the contract excludes.
+
+A content ticket's contract carries the content itself: the exact text, names, times, links and
+YouTube IDs, and each image as an attachment or link. The agent publishes what is given and asks
+for what is missing.
+
+## Qualifying tickets
+
+A ticket qualifies for `work-ticket` when it is open, labelled `ready-for-agent`, not labelled
+`spec`, has no assignee (or only the developer starting it), all its blockers are closed, and its
+contract passes the body rules: at least one checkable acceptance criterion, no deferred decision
+about scope or behaviour, and, for a content ticket, all the content it publishes.
+
+This query applies every rule except the body rules; check those by reading each result's
+contract:
+
+```sh
+gh issue list --search 'is:open label:ready-for-agent -label:spec no:assignee -is:blocked sort:created-asc'
+```
+
+## Triage
+
+These queries list what waits on triage: open issues in `needs-triage` or with no state, then
+those in `needs-info`.
+
+```sh
+gh issue list --search 'is:open -author:app/renovate -label:spec -label:needs-info -label:ready-for-agent -label:ready-for-human -label:wontfix sort:created-asc'
+gh issue list --search 'is:open label:needs-info sort:created-asc'
+```
+
+## Dependencies
+
+A native GitHub issue dependency ("blocked by") is the only record of a blocker. Add one with
+`gh issue edit <N> --add-blocked-by <M>`, and list a ticket's blockers with:
+
+```sh
+gh api graphql -f query='{ repository(owner: "LivingIT", name: "beautyincode.se") { issue(number: <N>) { blockedBy(first: 20) { nodes { number state labels(first: 10) { nodes { name } } } } } } }'
+```
+
+A ticket split from a spec is its sub-issue: `gh issue create --parent <spec> ...`. If the tracker
+looks empty or unreachable, check that `gh auth status` shows an account that can read the
+repository.
