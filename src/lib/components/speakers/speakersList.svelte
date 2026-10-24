@@ -1,24 +1,16 @@
 <script lang="ts">
-  import speakers from '$lib/data/speakers';
-  import slugify from '$lib/utils/slugify';
+  import speakers, { speakerPhoto } from '$lib/data/speakers';
 
-  interface Speaker {
-    name: string;
-    image: string;
-    bio: string;
-  }
-
-  const sortedSpeakers: Array<Speaker> = Object.values(speakers).sort((a, b) => {
-    // Compare based on the speaker's ID
-    return a.name.localeCompare(b.name);
-  });
+  const sortedSpeakers = Object.entries(speakers).sort(([, a], [, b]) =>
+    a.name.localeCompare(b.name),
+  );
 </script>
 
-{#each sortedSpeakers as speaker (speaker.name)}
-  <section class="speaker" id={slugify(speaker.name)}>
+{#each sortedSpeakers as [slug, speaker] (slug)}
+  <section class="speaker" id={slug}>
     <h2>{speaker.name}</h2>
     <img
-      src={speaker.image}
+      src={speakerPhoto(slug)}
       class="speaker__image"
       height="400"
       width="400"

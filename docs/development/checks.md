@@ -15,13 +15,14 @@ none) into it and run `pnpm install --frozen-lockfile` there before any check.
 
 | Command       | What it does                                                               |
 | ------------- | -------------------------------------------------------------------------- |
+| `pnpm test`   | Vitest, once: the data checks on `src/lib/data/` and the config tests.     |
 | `pnpm lint`   | remark's link and anchor check on Markdown, Prettier's check, then ESLint. |
 | `pnpm check`  | `svelte-kit sync` and `svelte-check`: types and Svelte diagnostics.        |
 | `pnpm build`  | Production build with the Cloudflare adapter.                              |
 | `pnpm format` | Fixes Prettier formatting.                                                 |
 
-In Claude Code, a `PostToolUse` hook formats each edited file and a `Stop` hook runs `pnpm check`
-and `pnpm lint` before a turn ends with uncommitted changes (`.claude/hooks/`).
+In Claude Code, a `PostToolUse` hook formats each edited file and a `Stop` hook runs `pnpm check`,
+`pnpm lint` and `pnpm test` before a turn ends with uncommitted changes (`.claude/hooks/`).
 
 ## Rendered check
 
