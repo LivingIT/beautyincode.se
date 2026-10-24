@@ -64,12 +64,17 @@ A content ticket's contract carries the content itself: the exact text, names, t
 YouTube IDs, and each image as an attachment or link. The agent publishes what is given and asks
 for what is missing.
 
+A ticket that changes application code names its **test seams**: the public interfaces its tests
+exercise, each with one line on what a test there catches, or `No automated test: <reason>`. A
+content ticket's test seams are `No automated test: covered by data checks`.
+
 ## Qualifying tickets
 
 A ticket qualifies for `work-ticket` when it is open, labelled `ready-for-agent`, not labelled
 `spec`, has no assignee (or only the developer starting it), all its blockers are closed, and its
 contract passes the body rules: at least one checkable acceptance criterion, no deferred decision
-about scope or behaviour, and, for a content ticket, all the content it publishes.
+about scope or behaviour, for a ticket that changes application code its test seams, and, for a
+content ticket, all the content it publishes.
 
 This query applies every rule except the body rules; check those by reading each result's
 contract:

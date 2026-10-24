@@ -63,6 +63,7 @@ Publish the approved tickets to the issue tracker, one issue per ticket, in depe
 
 - Use the issue template below.
 - Apply `ready-for-agent`, or `ready-for-human` when a maintainer says a person must do it, and one kind label: `content`, `bug`, `enhancement` or `documentation`. The tickets are agent-grabbable by construction.
+- Name its test seams, as [Contract](../../../docs/agents/issue-tracker.md#contract) requires.
 - For a content ticket, carry the content itself, as [Contract](../../../docs/agents/issue-tracker.md#contract) requires.
 - Set its blockers as native dependencies, as [Dependencies](../../../docs/agents/issue-tracker.md#dependencies) says.
 - When the ticket builds a decision settled in triage, give it the acceptance criteria [Decisions](../../../WAY_OF_WORKING.md#decisions) describes, with the glossary or ADR text in full.
@@ -88,6 +89,10 @@ The end-to-end behaviour this ticket makes work, from the user's perspective, no
 
 - [ ] Criterion 1
 - [ ] Criterion 2
+
+## Test seams
+
+The public interfaces the tests exercise, each with one line on what a test there catches; or `No automated test: <reason>`.
 
 </issue-template>
 

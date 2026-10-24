@@ -28,12 +28,13 @@ MIT, full notice in [LICENSE-mattpocock](LICENSE-mattpocock).
 - Maintaining skills and agent instructions: `writing-for-agents`.
 - Issue intake and specs: `triage`, `grilling`, which `triage` calls, `to-spec` and `to-tickets`.
   They carry this repo's rules directly: its label names, its contract, content tickets and its
-  search before publishing. There is no test suite, so tickets and specs name no test seams.
+  search before publishing.
+- Building: `tdd`, which `work-ticket` calls at a ticket's test seams. It takes the seams from the
+  contract and drops upstream's pointer to `codebase-design`, which is not carried.
 - Domain docs: `domain-modeling`, which `triage` calls.
 
-Upstream's `tdd` and `codebase-design` are not carried, since the repo has no tests. A personal
-mattpocock-skills plugin shows its own copies with a `mattpocock-skills:` prefix; this repo's
-skills are the unprefixed ones.
+A personal mattpocock-skills plugin shows its own copies with a `mattpocock-skills:` prefix; this
+repo's skills are the unprefixed ones.
 
 ## Maintenance
 

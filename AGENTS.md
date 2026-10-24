@@ -66,11 +66,11 @@ title, time or link the ticket does not give.
 
 ## Verification and handoff
 
-A change is done when `pnpm lint` and `pnpm check` pass, and `pnpm build` succeeds when you
-touched routes, components, styles, config or dependencies. A change to what a page shows, content
+A change is done when `pnpm test`, `pnpm lint` and `pnpm check` pass, and `pnpm build` succeeds
+when you touched routes, components, styles, config or dependencies. `pnpm test` runs the Vitest
+suite, including the data checks on `src/lib/data/`. A change to what a page shows, content
 included, also needs the [rendered check](docs/development/checks.md#rendered-check). CI runs
-lint, check and build on every pull request. There is no automated test suite; do not add one
-unless a ticket asks for it.
+tests, lint, check and build on every pull request.
 
 Report what changed, the checks performed and any remaining limitations. Distinguish a pull
 request ready for review from merged work.
@@ -103,7 +103,7 @@ them. A skill with `disable-model-invocation` is started by the developer, direc
 to an outcome that a skill they started hands over to it, as `triage` hands larger work to
 `to-spec`.
 
-Claude Code subagents are versioned in `.claude/agents/`. `checks-runner` runs the check, lint and
+Claude Code subagents are versioned in `.claude/agents/`. `checks-runner` runs the test, check, lint and
 build commands its caller selects, or reads a failed CI run, and reports only the failures.
 `ux-reviewer` reviews a page or piece of copy and recommends prioritized fixes without editing
 files.

@@ -62,6 +62,11 @@ Be specific about edge cases and error conditions.
 - [ ] Specific, testable criterion 2
 - [ ] Specific, testable criterion 3
 
+**Test seams:**
+Tickets that change application code, and content tickets, as
+[Contract](../../../docs/agents/issue-tracker.md#contract) requires: the public interfaces the
+tests exercise, or `No automated test: <reason>`.
+
 **Content:**
 Content tickets only, as [Contract](../../../docs/agents/issue-tracker.md#contract) requires: the
 exact text, names, times, links, YouTube IDs and image attachments to publish.
@@ -106,6 +111,11 @@ and append "..." to indicate truncation.
 - [ ] Truncated descriptions end with "..."
 - [ ] The total length including "..." does not exceed 1024 chars
 
+**Test seams:**
+
+- The function that extracts a skill's description from SKILL.md
+  frontmatter: catches cuts mid-word and overlong results
+
 **Out of scope:**
 
 - Changing the 1024 char limit itself
@@ -134,6 +144,8 @@ and the 10:30 schedule slot shows her talk, linking to her bio.
 - [ ] Her photo is the attached image, cropped square
 - [ ] The 10:30 slot shows "Ada Example" and the title below, and links
       to her entry on the speakers page
+
+**Test seams:** No automated test: covered by data checks
 
 **Content:**
 
@@ -170,5 +182,6 @@ This is bad because:
 - Vague description ("the triage thing is broken")
 - References file paths and line numbers that will go stale
 - No acceptance criteria
+- No test seams
 - No scope boundaries
 - No description of current vs desired behavior

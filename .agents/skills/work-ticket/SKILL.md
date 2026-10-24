@@ -79,7 +79,9 @@ A documentation ticket: edit the files against its acceptance criteria.
 Any other ticket: in Claude Code, first send the `Explore` subagent the contract and ask for a
 **pattern map**, under 300 words: for each acceptance criterion, the existing code to follow, as
 `file:line` with one line on what to copy, and every other file a change of this kind touches
-(such as `sitemap.xml`, navigation or `config.ts`). Then read the files you will change, and build.
+(such as `sitemap.xml`, navigation or `config.ts`). Then read the files you will change, and build
+with the [`tdd`](../tdd/SKILL.md) skill at the contract's test seams. A contract with
+`No automated test: <reason>` gets no new test.
 
 Commit to the current branch with Conventional Commit messages. Done when each acceptance
 criterion is met by a commit, or noted for the pull request as one only a human can verify.

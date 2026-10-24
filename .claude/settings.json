@@ -10,6 +10,7 @@
       "Bash(pnpm preview)",
       "Bash(pnpm check)",
       "Bash(pnpm lint)",
+      "Bash(pnpm test)",
       "Bash(pnpm format)",
       "Bash(pnpm exec prettier:*)",
       "Bash(pnpm exec eslint:*)",

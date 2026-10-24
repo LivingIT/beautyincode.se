@@ -56,6 +56,10 @@ Exception: if a prototype produced a snippet that encodes a decision more precis
 
 How a reviewer sees each user story working on the branch preview: the pages and what they show.
 
+## Test Seams
+
+The public interfaces the tests will exercise, each with one line on what a test there catches, so the tickets can carry them as [Contract](../../../docs/agents/issue-tracker.md#contract) requires.
+
 ## Out of Scope
 
 A description of the things that are out of scope for this spec.
