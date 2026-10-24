@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 import speakers from '../../src/lib/data/speakers';
 import { schedule } from '../../src/lib/data/schedule';
 
-const siteTitle = process.env.PUBLIC_SITE_TITLE ?? '';
+const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {

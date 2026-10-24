@@ -2,7 +2,8 @@
 
 How to run this repository's checks, the rendered check, the dev server, task worktrees and branch
 previews. Which checks a change needs is in
-[Verification and handoff](../../AGENTS.md#verification-and-handoff); first-time setup is in the [README](../../README.md#-developing).
+[Verification and handoff](../../AGENTS.md#verification-and-handoff); first-time setup is in the
+[README](../../README.md#-developing).
 
 ## Worktrees
 
