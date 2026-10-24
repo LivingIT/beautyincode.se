@@ -93,8 +93,9 @@ the contract and commit; a finding whose fix needs behaviour the contract exclud
 checks [AGENTS.md requires](../../../AGENTS.md#verification-and-handoff), in Claude Code through
 the `checks-runner` subagent with the worktree's path, and fix from its report. Run the
 [rendered check](../../../docs/development/checks.md#rendered-check) when the change affects what a
-page shows. Any later commit except review fixes, including a merge, needs another `code-review`
-against a freshly fetched `origin/master`.
+page shows: `pnpm test:e2e` through `checks-runner`, and the visual check for How to test. Any
+later commit except review fixes, including a merge, needs another `code-review` against a freshly
+fetched `origin/master`.
 
 List each other concrete defect you saw in material read for the ticket and ask the developer once
 which to fix here (after [changing the contract](../../../docs/agents/issue-tracker.md#contract)

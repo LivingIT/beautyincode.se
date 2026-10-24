@@ -98,7 +98,7 @@ The owners that are not obvious from a name:
 - Labels, the contract, qualifying rules, triage queues and dependencies:
   [the issue tracker doc](docs/agents/issue-tracker.md).
 - How each step runs: the skill that runs it, listed in [the skills README](.agents/skills/README.md).
-- Running checks, the rendered check, worktrees and previews:
+- Running checks, the rendered check, the dev server, worktrees and previews:
   [Checks](docs/development/checks.md).
 
 ## Terms

@@ -69,8 +69,8 @@ title, time or link the ticket does not give.
 A change is done when `pnpm test`, `pnpm lint` and `pnpm check` pass, and `pnpm build` succeeds
 when you touched routes, components, styles, config or dependencies. A change to what a page
 shows, content included, also needs the
-[rendered check](docs/development/checks.md#rendered-check). CI runs tests, lint, check and build
-on every pull request.
+[rendered check](docs/development/checks.md#rendered-check), which runs `pnpm test:e2e`. CI runs
+tests, lint, check, build and the page tests on every pull request.
 
 Report what changed, the checks performed and any remaining limitations. Distinguish a pull
 request ready for review from merged work.

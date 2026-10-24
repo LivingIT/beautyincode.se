@@ -22,7 +22,7 @@ Done when you can name the page's components and its data source in `src/lib/dat
 
 ## 2. See the real thing, or read the code
 
-Run the page as the [rendered check](../../docs/development/checks.md#rendered-check) says, with
+Run the site as [Dev server](../../docs/development/checks.md#dev-server) says, with
 Bash `run_in_background: true` for the server, and stop what you started when done. On each page in
 scope, at 360 and 1280 pixels wide and in both colour schemes:
 
