@@ -1,25 +1,16 @@
 import { browser } from '$app/environment';
+import { MediaQuery } from 'svelte/reactivity';
 
-export const navToggle = $state({
-  isNavOpen: true,
-  isWideViewport: false,
-});
+class NavToggle {
+  #wideViewport = new MediaQuery('min-width: 34em');
 
-if (browser) {
-  function updateViewportState() {
-    navToggle.isWideViewport = window.matchMedia('(min-width: 34em)').matches;
+  // Open on the server, so the menu works without JavaScript. In the browser it follows the
+  // viewport: a toggle overrides it until the viewport crosses the breakpoint.
+  isNavOpen = $derived(!browser || this.#wideViewport.current);
 
-    if (navToggle.isWideViewport) {
-      navToggle.isNavOpen = true;
-    } else {
-      navToggle.isNavOpen = false;
-    }
+  get isWideViewport() {
+    return this.#wideViewport.current;
   }
-
-  // Initial check
-  updateViewportState();
-
-  // Create a media query listener
-  const mediaQuery = window.matchMedia('(min-width: 34em)');
-  mediaQuery.addEventListener('change', updateViewportState);
 }
+
+export const navToggle = new NavToggle();
