@@ -10,4 +10,7 @@ export default defineConfig({
     devSourcemap: true,
   },
   plugins: [sveltekit()],
+  test: {
+    include: ['src/**/*.test.ts'],
+  },
 });

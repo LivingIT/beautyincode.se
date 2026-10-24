@@ -1,29 +1,20 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { afterNavigate } from '$app/navigation';
   import { navToggle } from '../../../state/navToggle.svelte';
-
-  let isMenuOpen = $state(false);
-
-  function toggleIcon() {
-    isMenuOpen = !isMenuOpen;
-    console.log(isMenuOpen);
-    navToggle.isNavOpen = isMenuOpen;
-  }
-
-  afterNavigate(() => {
-    if (!navToggle.isWideViewport) isMenuOpen = false;
-  });
 </script>
 
 {#if browser}
-  <button aria-label="Show main navigation" onclick={() => toggleIcon()}>
+  <button
+    aria-label="Show main navigation"
+    aria-expanded={navToggle.isNavOpen}
+    onclick={() => (navToggle.isNavOpen = !navToggle.isNavOpen)}
+  >
     <svg
       width="30"
       height="30"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 30 30"
-      class:is-open={isMenuOpen}
+      class:is-open={navToggle.isNavOpen}
     >
       <path stroke-width="2" d="M4 8 L26 8"></path>
       <path stroke-width="2" d="M4 15 L26 15"></path>
