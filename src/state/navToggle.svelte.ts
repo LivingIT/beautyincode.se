@@ -2,7 +2,7 @@ import { browser } from '$app/environment';
 import { MediaQuery } from 'svelte/reactivity';
 
 class NavToggle {
-  #wideViewport = new MediaQuery('min-width: 34em');
+  #wideViewport = new MediaQuery('min-width: 34em', false);
 
   // Open on the server, so the menu works without JavaScript. In the browser it follows the
   // viewport: a toggle overrides it until the viewport crosses the breakpoint.
