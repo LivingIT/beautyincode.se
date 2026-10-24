@@ -39,7 +39,7 @@
       <a href={resolve('/')}>Beauty in Code</a>
     </li>
     {#each navItems as { url, label, isExternal } (url)}
-      <li>
+      <li aria-hidden={!navToggle.isNavOpen} inert={!navToggle.isNavOpen}>
         <a
           href={resolve(url)}
           aria-current={page.url.pathname == url ? 'page' : undefined}

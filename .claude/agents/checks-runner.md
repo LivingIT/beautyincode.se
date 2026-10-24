@@ -17,8 +17,8 @@ Send each command's output to a log in the system temp directory, named after th
 each run of non-alphanumeric characters as `-`: `pnpm lint > "$TMPDIR/pnpm-lint.log" 2>&1`. Read
 each log with `Grep` for failure markers, then `Read` only the lines around them: for TypeScript,
 Svelte and ESLint the `file:line` error lines, for Vitest the `FAIL` lines and their assertion, for
-Prettier the `[warn]` file names, for remark the `warning` lines, for the build its first `error`
-lines.
+Playwright the `✘` lines and their `Error:` lines, for Prettier the `[warn]` file names, for remark
+the `warning` lines, for the build its first `error` lines.
 
 Done when every named command has exited and each failure in its log is located.
 
