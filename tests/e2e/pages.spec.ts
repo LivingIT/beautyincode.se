@@ -11,7 +11,10 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
 });
 
-test('every page in the sitemap renders without console errors', async ({ page, request }) => {
+test('every page in the sitemap renders its title and Open Graph URL without console errors', async ({
+  page,
+  request,
+}) => {
   const sitemap = await (await request.get('/sitemap.xml')).text();
   const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => new URL(loc).pathname);
   expect(paths.length).toBeGreaterThan(0);
