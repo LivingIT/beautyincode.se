@@ -34,6 +34,13 @@ test('every page in the sitemap renders without console errors', async ({ page, 
   }
 });
 
+test('robots.txt is served as plain text without a redirect', async ({ request }) => {
+  const response = await request.get('/robots.txt', { maxRedirects: 0 });
+  expect(response.status()).toBe(200);
+  expect(response.headers()['content-type']).toBe('text/plain');
+  expect(await response.text()).toContain(`Sitemap: ${process.env.PUBLIC_BASE_URL}/sitemap.xml`);
+});
+
 test('the speakers page has an anchor for each speaker', async ({ page }) => {
   await page.goto('/speakers/');
   for (const slug of Object.keys(speakers)) {
