@@ -47,6 +47,8 @@ without horizontal scrolling.
 
 ## Images
 
-Images are `.webp` under `static/images/`. A speaker photo is 400 by 400 pixels at
-`static/images/speakers/<slug>.webp`. Crop a source image square around the face, then convert it
-with `cwebp -q 80 -resize 400 400 <source> -o <target>`; the result stays well under 50 kB.
+Images live under `static/images/`. Photos and other raster images are `.webp`, logos and icons
+are `.svg`, and the Open Graph image is `og-image.jpg`, kept as JPEG because not every social
+crawler reads WebP. A speaker photo is 400 by 400 pixels at `static/images/speakers/<slug>.webp`.
+Crop a source image square around the face, then convert it with
+`cwebp -q 80 -resize 400 400 <source> -o <target>`; the result stays well under 50 kB.
