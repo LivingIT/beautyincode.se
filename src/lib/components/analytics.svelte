@@ -17,7 +17,7 @@
   {#if googleAnalyticsId}
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}>
     </script>
-    {@html `<script>
+    <script data-id={googleAnalyticsId}>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
@@ -25,7 +25,7 @@
       }
 
       gtag('js', new Date());
-      gtag('config', ${JSON.stringify(googleAnalyticsId)});
-    </script>`}
+      gtag('config', document.currentScript.dataset.id);
+    </script>
   {/if}
 </svelte:head>

@@ -102,9 +102,9 @@ test('no page loads Google Analytics, since .env.example leaves PUBLIC_GOOGLE_AN
 }) => {
   const paths = await sitemapPaths(request);
   const analyticsRequests: Array<string> = [];
-  page.on('request', (request) => {
-    if (new URL(request.url()).hostname === 'www.googletagmanager.com') {
-      analyticsRequests.push(request.url());
+  page.on('request', (sent) => {
+    if (new URL(sent.url()).hostname === 'www.googletagmanager.com') {
+      analyticsRequests.push(sent.url());
     }
   });
 
