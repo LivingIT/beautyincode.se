@@ -107,6 +107,16 @@ test('robots.txt is served as plain text without a redirect', async ({ request }
   expect(response.headers()['content-type']).toBe('text/plain');
 });
 
+test('every response is marked noindex, since the tests serve on a host other than PUBLIC_BASE_URL', async ({
+  request,
+}) => {
+  const paths = [...(await sitemapPaths(request)), '/robots.txt', '/sitemap.xml', '/no-such-page/'];
+  for (const path of paths) {
+    const response = await request.get(path);
+    expect(response.headers()['x-robots-tag'], path).toBe('noindex');
+  }
+});
+
 test('the speakers page has an anchor for each speaker', async ({ page }) => {
   await page.goto('/speakers/');
   for (const slug of Object.keys(speakers)) {

@@ -14,14 +14,14 @@ none) into it and run `pnpm install --frozen-lockfile` there before any check.
 
 ## Checks and commands
 
-| Command         | What it does                                                                             |
-| --------------- | ---------------------------------------------------------------------------------------- |
-| `pnpm test`     | Vitest, once: the data checks on `src/lib/data/`, the config tests and the route tests.  |
-| `pnpm lint`     | remark's link and anchor check on Markdown, Prettier's check, then ESLint.               |
-| `pnpm check`    | `svelte-kit sync` and `svelte-check`: types and Svelte diagnostics.                      |
-| `pnpm build`    | Production build with the Cloudflare adapter.                                            |
-| `pnpm test:e2e` | Playwright page tests at 360 and 1280 pixels wide, on a fresh build with `.env.example`. |
-| `pnpm format`   | Fixes Prettier formatting.                                                               |
+| Command         | What it does                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------- |
+| `pnpm test`     | Vitest, once: the data checks on `src/lib/data/`, the config tests, the route tests and the server hook test. |
+| `pnpm lint`     | remark's link and anchor check on Markdown, Prettier's check, then ESLint.                                    |
+| `pnpm check`    | `svelte-kit sync` and `svelte-check`: types and Svelte diagnostics.                                           |
+| `pnpm build`    | Production build with the Cloudflare adapter.                                                                 |
+| `pnpm test:e2e` | Playwright page tests at 360 and 1280 pixels wide, on a fresh build with `.env.example`.                      |
+| `pnpm format`   | Fixes Prettier formatting.                                                                                    |
 
 The page tests also run an axe scan of every page in `sitemap.xml`, in the light and the dark
 colour scheme, and fail on any WCAG 2.0, 2.1 or 2.2 level A or AA violation. Results axe cannot
