@@ -1,14 +1,11 @@
 <script lang="ts">
-  import { title } from '$lib/config';
-
   import ArticleSection from '$lib/components/articleSection.svelte';
   import HeroHeader from '$lib/components/heroHeader.svelte';
+  import PageHead from '$lib/components/pageHead.svelte';
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-</svelte:head>
+<PageHead />
 
 <ParallaxSection backgroundImage="/images/covers/main1.webp">
   <HeroHeader />

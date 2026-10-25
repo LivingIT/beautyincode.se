@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
 });
 
-test('every page in the sitemap renders its title and Open Graph URL without console errors', async ({
+test('every page in the sitemap renders its title, share titles and Open Graph URL without console errors', async ({
   page,
   request,
 }) => {
@@ -32,6 +32,11 @@ test('every page in the sitemap renders its title and Open Graph URL without con
       expect(response?.status()).toBe(200);
       const title = await page.title();
       expect(title.slice(-siteTitle.length)).toBe(siteTitle);
+      if (path === '/') expect(title).toBe(siteTitle);
+      for (const shareTitle of ['meta[property="og:title"]', 'meta[name="twitter:title"]']) {
+        await expect(page.locator(shareTitle)).toHaveCount(1);
+        await expect(page.locator(shareTitle)).toHaveAttribute('content', title);
+      }
       await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
         'content',
         `${baseUrl}${path}`,

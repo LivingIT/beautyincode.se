@@ -23,10 +23,8 @@
   <meta name="google-site-verification" content={googleSiteVerification} />
   <meta property="og:url" content={`${baseUrl}${page.url.pathname}`} />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
   <meta property="og:description" content={metaDescription} />
   <meta property="og:image" content={`${baseUrl}/${ogImage}`} />
-  <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={metaDescription} />
   <meta property="twitter:image" content={`${baseUrl}/${ogImage}`} />
 
