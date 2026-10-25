@@ -26,8 +26,8 @@ Refer to a section by an anchor link to its heading, so lint catches a renamed h
 - Styles are plain CSS: component styles in the component's `<style>` block, global styles and
   design tokens as custom properties in `src/styles/`. Use the tokens in `variables.css` for
   colours; do not add Tailwind, Sass or a component library.
-- Read configuration only through `src/lib/config.ts`; add a new setting there and to
-  `.env.example`.
+- Read configuration only through `src/lib/config.ts`; add a new setting there, declare it in
+  `src/env.ts` and add it to `.env.example`.
 - Keep content in `src/lib/data/` as typed data, not in components. Components and routes render
   it.
 - Name component files in camelCase (`speakersList.svelte`), as the existing ones are.
