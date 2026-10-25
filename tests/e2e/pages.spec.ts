@@ -5,6 +5,7 @@ import { schedule } from '../../src/lib/data/schedule';
 
 const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
 const baseUrl = String(process.env.PUBLIC_BASE_URL);
+const ogImage = String(process.env.PUBLIC_OG_IMAGE);
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {
@@ -43,7 +44,10 @@ test('every page in the sitemap renders its title, share titles and Open Graph U
       );
       await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
       await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website');
-      await expect(page.locator('meta[name="twitter:image"]')).toHaveCount(1);
+      await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute(
+        'content',
+        `${baseUrl}/${ogImage}`,
+      );
       await expect(page.locator('meta[property="twitter:image"]')).toHaveCount(0);
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
