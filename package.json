@@ -7,7 +7,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "vite dev",
     "prepare": "svelte-kit sync && git config core.hooksPath .githooks",
-    "build": "vite build",
+    "build": "PUBLIC_DEPLOY_TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ) vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
