@@ -4,6 +4,7 @@ import speakers from '../../src/lib/data/speakers';
 import { schedule } from '../../src/lib/data/schedule';
 
 const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
+const baseUrl = String(process.env.PUBLIC_BASE_URL);
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {
@@ -28,6 +29,11 @@ test('every page in the sitemap renders without console errors', async ({ page, 
       expect(response?.status()).toBe(200);
       const title = await page.title();
       expect(title.slice(-siteTitle.length)).toBe(siteTitle);
+      await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
+        'content',
+        `${baseUrl}${path}`,
+      );
+      await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
