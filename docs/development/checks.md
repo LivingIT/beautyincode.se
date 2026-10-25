@@ -39,8 +39,8 @@ A change to what a page shows gets checked as rendered pages before its pull req
    `pnpm exec playwright install chromium` once.
 2. Write the visual check into the pull request's How to test, for the reviewer: each changed page
    at 360 and 1280 pixels wide, in the light and the dark colour scheme, showing the change with
-   nothing overflowing or overlapping. For a speaker, cover both `/speakers/#<slug>` and their
-   slot on `/schedule/`.
+   nothing overflowing or overlapping and text over a background image readable. For a speaker,
+   cover both `/speakers/#<slug>` and their slot on `/schedule/`.
 
 ## Dev server
 
