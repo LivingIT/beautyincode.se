@@ -1,4 +1,4 @@
-import { baseUrl } from '$lib/config';
+import { baseUrl } from '#lib/config.ts';
 
 export function GET() {
   return new Response(`User-agent: *\nAllow: /\n\nSitemap: ${baseUrl}/sitemap.xml\n`, {

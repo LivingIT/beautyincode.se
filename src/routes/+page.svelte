@@ -1,8 +1,8 @@
 <script lang="ts">
-  import ArticleSection from '$lib/components/articleSection.svelte';
-  import HeroHeader from '$lib/components/heroHeader.svelte';
-  import PageHead from '$lib/components/pageHead.svelte';
-  import ParallaxSection from '$lib/components/parallaxSection.svelte';
+  import ArticleSection from '#lib/components/articleSection.svelte';
+  import HeroHeader from '#lib/components/heroHeader.svelte';
+  import PageHead from '#lib/components/pageHead.svelte';
+  import ParallaxSection from '#lib/components/parallaxSection.svelte';
 </script>
 
 <PageHead />

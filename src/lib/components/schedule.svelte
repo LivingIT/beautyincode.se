@@ -1,8 +1,8 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import { schedule } from '$lib/data/schedule';
-  import { speakerPhoto } from '$lib/data/speakers';
-  import slugify from '$lib/utils/slugify';
+  import { schedule } from '#lib/data/schedule.ts';
+  import { speakerPhoto } from '#lib/data/speakers.ts';
+  import slugify from '#lib/utils/slugify.ts';
 
   const showSchedule = true;
 </script>
@@ -21,7 +21,7 @@
             {title} -
           {/if}
           {#if speakerSlug}
-            <a href={resolve(`/speakers/#${speakerSlug}`)}>{name}</a>
+            <a href={resolve(`speakers/#${speakerSlug}`)}>{name}</a>
           {:else}
             {name}
           {/if}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { browser } from '$app/environment';
+  import { browser } from '$app/env';
   import { navToggle } from '../../../state/navToggle.svelte';
 
   import HeaderToggle from './headerToggle.svelte';

@@ -1,7 +1,7 @@
 import { afterEach, expect, test, vi } from 'vitest';
 
 const sitemapFor = async (deployTimestamp: string) => {
-  vi.doMock(import('$env/static/public'), async (importOriginal) => ({
+  vi.doMock(import('$app/env/public'), async (importOriginal) => ({
     ...(await importOriginal()),
     PUBLIC_DEPLOY_TIMESTAMP: deployTimestamp,
   }));

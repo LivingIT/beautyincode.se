@@ -1,6 +1,6 @@
-import type { Handle } from '@sveltejs/kit';
+import type { Handle } from '@sveltejs/kit/hooks';
 
-import { baseUrl } from '$lib/config';
+import { baseUrl } from '#lib/config.ts';
 
 const productionHost = new URL(baseUrl).host;
 

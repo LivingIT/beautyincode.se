@@ -1,6 +1,6 @@
 <script lang="ts">
   import VideoItem from './videoItem.svelte';
-  import { videosByYear } from '$lib/data/videos';
+  import { videosByYear } from '#lib/data/videos.ts';
   import ArticleToc from '../articleToc.svelte';
 
   const sortedYears: Array<string> = Object.keys(videosByYear).sort(
