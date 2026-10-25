@@ -1,6 +1,8 @@
 <script lang="ts">
   import '../styles/main.css';
 
+  import { page } from '$app/state';
+
   import {
     metaDescription,
     googleSiteVerification,
@@ -19,7 +21,8 @@
   <title>{title}</title>
   <meta name="description" content={metaDescription} />
   <meta name="google-site-verification" content={googleSiteVerification} />
-  <meta property="og.url" content={baseUrl} />
+  <meta property="og:url" content={`${baseUrl}${page.url.pathname}`} />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={metaDescription} />
   <meta property="og:image" content={`${baseUrl}/${ogImage}`} />

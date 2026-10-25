@@ -4,13 +4,17 @@ import speakers from '../../src/lib/data/speakers';
 import { schedule } from '../../src/lib/data/schedule';
 
 const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
+const baseUrl = String(process.env.PUBLIC_BASE_URL);
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {
   await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
 });
 
-test('every page in the sitemap renders without console errors', async ({ page, request }) => {
+test('every page in the sitemap renders its title and Open Graph URL without console errors', async ({
+  page,
+  request,
+}) => {
   const sitemap = await (await request.get('/sitemap.xml')).text();
   const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => new URL(loc).pathname);
   expect(paths.length).toBeGreaterThan(0);
@@ -28,6 +32,12 @@ test('every page in the sitemap renders without console errors', async ({ page, 
       expect(response?.status()).toBe(200);
       const title = await page.title();
       expect(title.slice(-siteTitle.length)).toBe(siteTitle);
+      await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
+        'content',
+        `${baseUrl}${path}`,
+      );
+      await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
+      await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website');
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
