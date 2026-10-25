@@ -34,6 +34,7 @@ test('every page in the sitemap renders without console errors', async ({ page, 
         `${baseUrl}${path}`,
       );
       await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
+      await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website');
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
