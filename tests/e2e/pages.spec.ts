@@ -43,6 +43,8 @@ test('every page in the sitemap renders its title, share titles and Open Graph U
       );
       await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
       await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website');
+      await expect(page.locator('meta[name="twitter:image"]')).toHaveCount(1);
+      await expect(page.locator('meta[property="twitter:image"]')).toHaveCount(0);
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
