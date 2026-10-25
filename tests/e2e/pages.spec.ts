@@ -44,6 +44,22 @@ test('every page in the sitemap renders its title and Open Graph URL without con
   }
 });
 
+test('the sitemap, meta tag and deploy comment show one build-time W3C timestamp', async ({
+  request,
+}) => {
+  const sitemap = await (await request.get('/sitemap.xml')).text();
+  const lastmods = new Set([...sitemap.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(([, t]) => t));
+  expect(lastmods.size).toBe(1);
+  const [deployTime] = lastmods;
+  expect(deployTime).toMatch(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/);
+
+  for (const [, loc] of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)) {
+    const html = await (await request.get(new URL(loc).pathname)).text();
+    expect(html).toContain(`<meta name="deploy-time" content="${deployTime}"`);
+    expect(html).toContain(`<!-- Deployed: ${deployTime} -->`);
+  }
+});
+
 test('robots.txt is served as plain text without a redirect', async ({ request }) => {
   const response = await request.get('/robots.txt', { maxRedirects: 0 });
   expect(response.status()).toBe(200);

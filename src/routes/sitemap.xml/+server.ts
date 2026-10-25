@@ -3,43 +3,36 @@ import { baseUrl, deployTime } from '$lib/config';
 const pages = [
   {
     loc: baseUrl,
-    lastmod: deployTime,
     changefreq: 'daily',
     priority: 0.5,
   },
   {
     loc: `${baseUrl}/schedule/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${baseUrl}/speakers/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${baseUrl}/tickets/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${baseUrl}/terms/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${baseUrl}/privacy/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
   {
     loc: `${baseUrl}/videos/`,
-    lastmod: deployTime,
     changefreq: 'monthly',
     priority: 0.3,
   },
@@ -50,7 +43,7 @@ const items = pages
     return `
     <url>
         <loc>${page.loc}</loc>
-        <lastmod>${page.lastmod}</lastmod>
+        ${deployTime ? `<lastmod>${deployTime}</lastmod>` : ''}
         <changefreq>${page.changefreq}</changefreq>
         <priority>${page.priority}</priority>
     </url>

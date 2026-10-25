@@ -30,7 +30,7 @@
   <meta name="twitter:description" content={metaDescription} />
   <meta property="twitter:image" content={`${baseUrl}/${ogImage}`} />
 
-  <!-- Deployed: {deployTime} -->
+  {@html `<!-- Deployed: ${deployTime} -->`}
   <meta name="deploy-time" content={deployTime} />
 </svelte:head>
 
