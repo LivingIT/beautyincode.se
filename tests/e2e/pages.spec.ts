@@ -1,4 +1,5 @@
-import { expect, test } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import { expect, test, type APIRequestContext } from '@playwright/test';
 
 import speakers from '../../src/lib/data/speakers';
 import { schedule } from '../../src/lib/data/schedule';
@@ -12,13 +13,18 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
 });
 
+async function sitemapPaths(request: APIRequestContext) {
+  const sitemap = await (await request.get('/sitemap.xml')).text();
+  const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => new URL(loc).pathname);
+  expect(paths.length).toBeGreaterThan(0);
+  return paths;
+}
+
 test('every page in the sitemap renders its title, share titles and Open Graph URL without console errors', async ({
   page,
   request,
 }) => {
-  const sitemap = await (await request.get('/sitemap.xml')).text();
-  const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => new URL(loc).pathname);
-  expect(paths.length).toBeGreaterThan(0);
+  const paths = await sitemapPaths(request);
 
   let errors: Array<string> = [];
   page.on('console', (message) => {
@@ -52,6 +58,30 @@ test('every page in the sitemap renders its title, share titles and Open Graph U
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
+  }
+});
+
+// Incomplete results, such as contrast over the hero image, stay part of the manual rendered check.
+test('every page in the sitemap has no WCAG A or AA violations in either colour scheme', async ({
+  page,
+  request,
+}) => {
+  const paths = await sitemapPaths(request);
+  for (const colorScheme of ['light', 'dark'] as const) {
+    await page.emulateMedia({ colorScheme });
+    for (const path of paths) {
+      await test.step(`${path} (${colorScheme})`, async () => {
+        await page.goto(path);
+        const { violations } = await new AxeBuilder({ page })
+          .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+          .analyze();
+        const found = violations.map(({ id, nodes }) => ({
+          rule: id,
+          elements: nodes.map(({ target }) => target.join(' ')),
+        }));
+        expect(found, `WCAG violations on ${path} (${colorScheme})`).toEqual([]);
+      });
+    }
   }
 });
 
