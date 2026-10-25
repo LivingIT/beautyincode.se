@@ -1,15 +1,12 @@
 <script lang="ts">
-  import { title } from '$lib/config';
-
   import ArticleSection from '$lib/components/articleSection.svelte';
+  import PageHead from '$lib/components/pageHead.svelte';
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
 
   const pageTitle = 'Terms and conditions';
 </script>
 
-<svelte:head>
-  <title>{pageTitle} - {title}</title>
-</svelte:head>
+<PageHead {pageTitle} />
 
 <ParallaxSection backgroundImage="/images/covers/terms.webp" isSemi>
   <h1>{pageTitle}</h1>

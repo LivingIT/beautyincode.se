@@ -1,6 +1,8 @@
 <script lang="ts">
   import '../styles/main.css';
 
+  import type { Snippet } from 'svelte';
+
   import { page } from '$app/state';
 
   import {
@@ -15,6 +17,12 @@
   import Analytics from '$lib/components/analytics.svelte';
   import Footer from '$lib/components/footer/footer.svelte';
   import Header from '$lib/components/header/header.svelte';
+
+  interface Props {
+    children: Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -23,12 +31,10 @@
   <meta name="google-site-verification" content={googleSiteVerification} />
   <meta property="og:url" content={`${baseUrl}${page.url.pathname}`} />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
   <meta property="og:description" content={metaDescription} />
   <meta property="og:image" content={`${baseUrl}/${ogImage}`} />
-  <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={metaDescription} />
-  <meta property="twitter:image" content={`${baseUrl}/${ogImage}`} />
+  <meta name="twitter:image" content={`${baseUrl}/${ogImage}`} />
 
   {@html `<!-- Deployed: ${deployTime} -->`}
   <meta name="deploy-time" content={deployTime} />
@@ -37,7 +43,7 @@
 <Header />
 
 <main id="main-content">
-  <slot />
+  {@render children()}
 </main>
 
 <Footer />

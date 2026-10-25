@@ -1,16 +1,15 @@
 <script lang="ts">
-  import { eventUrl, ticketSalesClosed, title } from '$lib/config';
+  import { eventUrl, ticketSalesClosed } from '$lib/config';
 
   import ArticleSection from '$lib/components/articleSection.svelte';
+  import PageHead from '$lib/components/pageHead.svelte';
   import ParallaxSection from '$lib/components/parallaxSection.svelte';
   import ButtonCTA from '$lib/components/buttonCTA.svelte';
 
   const pageTitle = 'Tickets';
 </script>
 
-<svelte:head>
-  <title>{pageTitle} - {title}</title>
-</svelte:head>
+<PageHead {pageTitle} />
 
 <ParallaxSection backgroundImage="/images/covers/tickets.webp" isSemi={true}>
   <h1>Tickets for Beauty in Code 2026</h1>

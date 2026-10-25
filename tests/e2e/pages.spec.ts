@@ -5,13 +5,14 @@ import { schedule } from '../../src/lib/data/schedule';
 
 const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
 const baseUrl = String(process.env.PUBLIC_BASE_URL);
+const ogImage = String(process.env.PUBLIC_OG_IMAGE);
 
 // Keep the tests off the network: analytics loads from Google.
 test.beforeEach(async ({ page }) => {
   await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
 });
 
-test('every page in the sitemap renders its title and Open Graph URL without console errors', async ({
+test('every page in the sitemap renders its title, share titles and Open Graph URL without console errors', async ({
   page,
   request,
 }) => {
@@ -32,12 +33,22 @@ test('every page in the sitemap renders its title and Open Graph URL without con
       expect(response?.status()).toBe(200);
       const title = await page.title();
       expect(title.slice(-siteTitle.length)).toBe(siteTitle);
+      if (path === '/') expect(title).toBe(siteTitle);
+      for (const shareTitle of ['meta[property="og:title"]', 'meta[name="twitter:title"]']) {
+        await expect(page.locator(shareTitle)).toHaveCount(1);
+        await expect(page.locator(shareTitle)).toHaveAttribute('content', title);
+      }
       await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
         'content',
         `${baseUrl}${path}`,
       );
       await expect(page.locator('meta[property="og.url"]')).toHaveCount(0);
       await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website');
+      await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute(
+        'content',
+        `${baseUrl}/${ogImage}`,
+      );
+      await expect(page.locator('meta[property="twitter:image"]')).toHaveCount(0);
       await page.waitForLoadState('networkidle');
       expect(errors).toEqual([]);
     });
