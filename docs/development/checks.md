@@ -16,7 +16,7 @@ none) into it and run `pnpm install --frozen-lockfile` there before any check.
 
 | Command         | What it does                                                                             |
 | --------------- | ---------------------------------------------------------------------------------------- |
-| `pnpm test`     | Vitest, once: the data checks on `src/lib/data/` and the config tests.                   |
+| `pnpm test`     | Vitest, once: the data checks on `src/lib/data/`, the config tests and the route tests.  |
 | `pnpm lint`     | remark's link and anchor check on Markdown, Prettier's check, then ESLint.               |
 | `pnpm check`    | `svelte-kit sync` and `svelte-check`: types and Svelte diagnostics.                      |
 | `pnpm build`    | Production build with the Cloudflare adapter.                                            |
