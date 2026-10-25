@@ -8,11 +8,6 @@ const siteTitle = String(process.env.PUBLIC_SITE_TITLE);
 const baseUrl = String(process.env.PUBLIC_BASE_URL);
 const ogImage = String(process.env.PUBLIC_OG_IMAGE);
 
-// Keep the tests off the network: analytics loads from Google.
-test.beforeEach(async ({ page }) => {
-  await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ body: '' }));
-});
-
 async function sitemapPaths(request: APIRequestContext) {
   const sitemap = await (await request.get('/sitemap.xml')).text();
   const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => new URL(loc).pathname);
@@ -99,6 +94,28 @@ test('the sitemap, meta tag and deploy comment show one build-time W3C timestamp
     expect(html).toContain(`<meta name="deploy-time" content="${deployTime}"`);
     expect(html).toContain(`<!-- Deployed: ${deployTime} -->`);
   }
+});
+
+test('no page loads Google Analytics, since .env.example leaves PUBLIC_GOOGLE_ANALYTICS empty', async ({
+  page,
+  request,
+}) => {
+  const paths = await sitemapPaths(request);
+  const analyticsRequests: Array<string> = [];
+  page.on('request', (request) => {
+    if (new URL(request.url()).hostname === 'www.googletagmanager.com') {
+      analyticsRequests.push(request.url());
+    }
+  });
+
+  for (const path of paths) {
+    await test.step(path, async () => {
+      await page.goto(path);
+      await page.waitForLoadState('networkidle');
+      expect(await page.evaluate(() => 'gtag' in window || 'dataLayer' in window)).toBe(false);
+    });
+  }
+  expect(analyticsRequests).toEqual([]);
 });
 
 test('robots.txt is served as plain text without a redirect', async ({ request }) => {
