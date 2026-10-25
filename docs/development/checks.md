@@ -23,6 +23,10 @@ none) into it and run `pnpm install --frozen-lockfile` there before any check.
 | `pnpm test:e2e` | Playwright page tests at 360 and 1280 pixels wide, on a fresh build with `.env.example`. |
 | `pnpm format`   | Fixes Prettier formatting.                                                               |
 
+The page tests also run an axe scan of every page in `sitemap.xml`, in the light and the dark
+colour scheme, and fail on any WCAG 2.0, 2.1 or 2.2 level A or AA violation. Results axe cannot
+decide, such as contrast over a background image, do not fail them.
+
 In Claude Code, a `PostToolUse` hook formats each edited file and a `Stop` hook runs `pnpm check`,
 `pnpm lint` and `pnpm test` before a turn ends with uncommitted changes (`.claude/hooks/`).
 
