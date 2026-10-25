@@ -61,8 +61,8 @@ Most changes are content edits in `src/lib/data/`:
 - **Videos**: `videos.ts`, grouped by conference year, newest year first. `videoId` is the YouTube
   ID; title format is `Speaker Name: "Talk Title"`.
 
-Images are `.webp` under `static/images/`. Content comes from the ticket: never write a bio, talk
-title, time or link the ticket does not give.
+Images follow [Images](CODING_STANDARDS.md#images). Content comes from the ticket: never write a
+bio, talk title, time or link the ticket does not give.
 
 ## Verification and handoff
 
