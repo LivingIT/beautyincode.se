@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { eventUrl, ticketSalesClosed } from '$lib/config';
-  import ButtonCTA from '$lib/components/buttonCTA.svelte';
+  import { eventUrl, ticketSalesClosed } from '#lib/config.ts';
+  import ButtonCTA from '#lib/components/buttonCTA.svelte';
 
   const SHOW_NOTABENE = false;
 </script>

@@ -1,4 +1,4 @@
-import { baseUrl, deployTime } from '$lib/config';
+import { baseUrl, deployTime } from '#lib/config.ts';
 
 const pages = [
   {

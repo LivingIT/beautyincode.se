@@ -12,11 +12,11 @@
     title,
     ogImage,
     deployTime,
-  } from '$lib/config';
+  } from '#lib/config.ts';
 
-  import Analytics from '$lib/components/analytics.svelte';
-  import Footer from '$lib/components/footer/footer.svelte';
-  import Header from '$lib/components/header/header.svelte';
+  import Analytics from '#lib/components/analytics.svelte';
+  import Footer from '#lib/components/footer/footer.svelte';
+  import Header from '#lib/components/header/header.svelte';
 
   interface Props {
     children: Snippet;

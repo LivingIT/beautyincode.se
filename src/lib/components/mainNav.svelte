@@ -1,25 +1,25 @@
 <script lang="ts">
-  import { browser } from '$app/environment';
+  import { browser } from '$app/env';
   import { afterNavigate } from '$app/navigation';
   import { resolve } from '$app/paths';
   import { page } from '$app/state';
-  import type { Pathname } from '$app/types';
+  import type { Path } from '$app/types';
 
   import { navToggle } from '../../state/navToggle.svelte';
 
   interface NavItem {
-    url: Pathname;
+    url: Path;
     label: string;
     isExternal?: boolean;
   }
 
   const navItems: Array<NavItem> = [
-    { url: '/speakers/', label: 'Speakers' },
-    { url: '/schedule/', label: 'Schedule' },
-    { url: '/videos/', label: 'Videos' },
+    { url: 'speakers/', label: 'Speakers' },
+    { url: 'schedule/', label: 'Schedule' },
+    { url: 'videos/', label: 'Videos' },
     {
       // url: eventUrl,
-      url: '/tickets/',
+      url: 'tickets/',
       label: 'Tickets',
       isExternal: false,
     },
@@ -42,7 +42,7 @@
       <li aria-hidden={!navToggle.isNavOpen} inert={!navToggle.isNavOpen}>
         <a
           href={resolve(url)}
-          aria-current={page.url.pathname == url ? 'page' : undefined}
+          aria-current={page.url.pathname == `/${url}` ? 'page' : undefined}
           target={isExternal ? '_blank' : undefined}
         >
           {label}

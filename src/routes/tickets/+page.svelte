@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { eventUrl, ticketSalesClosed } from '$lib/config';
+  import { eventUrl, ticketSalesClosed } from '#lib/config.ts';
 
-  import ArticleSection from '$lib/components/articleSection.svelte';
-  import PageHead from '$lib/components/pageHead.svelte';
-  import ParallaxSection from '$lib/components/parallaxSection.svelte';
-  import ButtonCTA from '$lib/components/buttonCTA.svelte';
+  import ArticleSection from '#lib/components/articleSection.svelte';
+  import PageHead from '#lib/components/pageHead.svelte';
+  import ParallaxSection from '#lib/components/parallaxSection.svelte';
+  import ButtonCTA from '#lib/components/buttonCTA.svelte';
 
   const pageTitle = 'Tickets';
 </script>

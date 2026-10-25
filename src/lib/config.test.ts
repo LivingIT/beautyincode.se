@@ -1,11 +1,11 @@
 import { afterEach, describe, expect, test, vi } from 'vitest';
 
 const ticketSalesClosedFor = async (value: string) => {
-  vi.doMock(import('$env/static/public'), async (importOriginal) => ({
+  vi.doMock(import('$app/env/public'), async (importOriginal) => ({
     ...(await importOriginal()),
     PUBLIC_TICKET_SALES_CLOSED: value,
   }));
-  const { ticketSalesClosed } = await import('$lib/config');
+  const { ticketSalesClosed } = await import('#lib/config.ts');
   return ticketSalesClosed;
 };
 

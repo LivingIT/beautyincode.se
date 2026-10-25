@@ -1,7 +1,7 @@
 import type { RequestEvent } from '@sveltejs/kit';
 import { expect, test, vi } from 'vitest';
 
-vi.mock(import('$env/static/public'), async (importOriginal) => ({
+vi.mock(import('$app/env/public'), async (importOriginal) => ({
   ...(await importOriginal()),
   PUBLIC_BASE_URL: 'https://example.test',
 }));

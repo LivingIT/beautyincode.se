@@ -7,7 +7,7 @@ import {
   PUBLIC_OG_IMAGE,
   PUBLIC_SITE_TITLE,
   PUBLIC_TICKET_SALES_CLOSED,
-} from '$env/static/public';
+} from '$app/env/public';
 
 export const baseUrl = PUBLIC_BASE_URL;
 export const title = PUBLIC_SITE_TITLE;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import speakers, { speakerPhoto } from '$lib/data/speakers';
+  import speakers, { speakerPhoto } from '#lib/data/speakers.ts';
 
   const sortedSpeakers = Object.entries(speakers).sort(([, a], [, b]) =>
     a.name.localeCompare(b.name),
