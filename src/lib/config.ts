@@ -2,6 +2,7 @@ import {
   PUBLIC_BASE_URL,
   PUBLIC_DEPLOY_TIMESTAMP,
   PUBLIC_EVENT_URL,
+  PUBLIC_GOOGLE_ANALYTICS,
   PUBLIC_GOOGLE_SITE_VERIFICATION,
   PUBLIC_META_DESCRIPTION,
   PUBLIC_OG_IMAGE,
@@ -11,6 +12,7 @@ import {
 
 export const baseUrl = PUBLIC_BASE_URL;
 export const title = PUBLIC_SITE_TITLE;
+export const googleAnalyticsId = PUBLIC_GOOGLE_ANALYTICS;
 export const googleSiteVerification = PUBLIC_GOOGLE_SITE_VERIFICATION;
 export const metaDescription = PUBLIC_META_DESCRIPTION;
 export const ogImage = PUBLIC_OG_IMAGE;

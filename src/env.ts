@@ -6,6 +6,7 @@ export const variables = defineEnvVars({
   PUBLIC_BASE_URL: publicStatic,
   PUBLIC_DEPLOY_TIMESTAMP: publicStatic,
   PUBLIC_EVENT_URL: publicStatic,
+  PUBLIC_GOOGLE_ANALYTICS: publicStatic,
   PUBLIC_GOOGLE_SITE_VERIFICATION: publicStatic,
   PUBLIC_META_DESCRIPTION: publicStatic,
   PUBLIC_OG_IMAGE: publicStatic,
