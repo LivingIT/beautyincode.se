@@ -9,8 +9,8 @@ previews. Which checks a change needs is in
 
 Each task works in a sibling worktree, `../beautyincode.se-<N>`, created by
 [`work-ticket`](../../.agents/skills/work-ticket/SKILL.md#4-worktree). A new worktree has no
-`.env` and no `node_modules`: copy the main checkout's `.env` (or `.env.example` when there is
-none) into it and run `pnpm install --frozen-lockfile` there before any check.
+`.env` and no `node_modules`: copy its `.env.example` to `.env` and run
+`pnpm install --frozen-lockfile` there before any check.
 
 ## Checks and commands
 
