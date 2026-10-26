@@ -5,7 +5,7 @@
   "imports": {
     "#lib/*": "./src/lib/*"
   },
-  "packageManager": "pnpm@10.34.8",
+  "packageManager": "pnpm@10.34.9",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite dev",
