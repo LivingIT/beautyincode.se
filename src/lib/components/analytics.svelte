@@ -25,7 +25,7 @@
       }
 
       gtag('js', new Date());
-      gtag('config', document.currentScript.dataset.id);
+      gtag('config', document.currentScript.dataset.id, { send_page_view: false });
     </script>
   {/if}
 </svelte:head>
