@@ -25,7 +25,7 @@
     "@iconify/svelte": "5.2.4",
     "@playwright/test": "1.65.1",
     "@sveltejs/adapter-cloudflare": "8.0.3",
-    "@sveltejs/kit": "3.3.1",
+    "@sveltejs/kit": "3.4.0",
     "@sveltejs/vite-plugin-svelte": "7.3.1",
     "@types/eslint": "9.6.1",
     "@types/gtag.js": "0.0.20",
