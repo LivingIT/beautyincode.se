@@ -27,7 +27,7 @@ importers:
         version: 1.65.1
       '@sveltejs/adapter-cloudflare':
         specifier: 8.0.4
-        version: 8.0.4(@sveltejs/kit@3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))
+        version: 8.0.4(@sveltejs/kit@3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))
       '@sveltejs/kit':
         specifier: 3.4.1
         version: 3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
@@ -86,11 +86,11 @@ importers:
         specifier: 8.3.8
         version: 8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: 5.1.1
-        version: 5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: 5.1.2
+        version: 5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
       wrangler:
         specifier: 4.168.0
-        version: 4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
+        version: 4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
 
 packages:
 
@@ -942,8 +942,8 @@ packages:
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
-  '@vitest/mocker@5.1.1':
-    resolution: {integrity: sha512-b2OgTB4+3ImWIVafXKazJXwLKwQxUNnix6b3xUvUTMh7RyXlrtzoxfZr8aEz9zkHOMAS4K5lu3TvFWoiVeVTQg==}
+  '@vitest/mocker@5.1.2':
+    resolution: {integrity: sha512-UGc97wUIy0Ji2+9GxzHEJiOhiwkaukgE7VYcUNnjpX3sWnwQ8XogmNXX4WyOukxYgKb8Nh2XFa7KId0ZjpmVhQ==}
     peerDependencies:
       msw: ^2.4.9 || ^3.0.0
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -953,8 +953,8 @@ packages:
       vite:
         optional: true
 
-  '@vitest/spy@5.1.1':
-    resolution: {integrity: sha512-6K8C6alQG1/Yc8/ZI22iJS7JEsxPdVzqtqDq+/xM4Z0mGVykemMVjLhqMy/q6/IHYG3kKD8hKSwRen/ZdyI9vQ==}
+  '@vitest/spy@5.1.2':
+    resolution: {integrity: sha512-PQl0/3+p9GaY71+MHywN6oyHfLhVDD5kcbm7oNRldA2F0ExMU3S8RQdnpteJ9gFAdK5P6KCgE6LqCpUgy57KzA==}
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -2382,20 +2382,20 @@ packages:
       vite:
         optional: true
 
-  vitest@5.1.1:
-    resolution: {integrity: sha512-trVmzUFOSraCZcI3uZIMD5FqBh4atFkC/XuJP/IU7qtyQay0FCs3Ia+0QiQ2JJwGyWG/xrcBoJNel2+O7kEZ0g==}
+  vitest@5.1.2:
+    resolution: {integrity: sha512-VIa2wXV208WraXUbzH+dQUrGcFpPuaiRA8HlhXS8R6/sy9cynw6OMqGj8fmAlH1hot7huTCtWUE14+FdXU3eLw==}
     engines: {node: ^22.12.0 || ^24.0.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@opentelemetry/api': ^1.9.0
       '@types/node': ^22.0.0 || >=24.0.0
-      '@vitest/browser-playwright': 5.1.1
-      '@vitest/browser-preview': 5.1.1
+      '@vitest/browser-playwright': 5.1.2
+      '@vitest/browser-preview': 5.1.2
       '@vitest/browser-webdriverio': ^5.0.0-beta.5 || >=5.0.0
-      '@vitest/coverage-istanbul': 5.1.1
-      '@vitest/coverage-v8': 5.1.1
-      '@vitest/ui': 5.1.1
+      '@vitest/coverage-istanbul': 5.1.2
+      '@vitest/coverage-v8': 5.1.2
+      '@vitest/ui': 5.1.2
       happy-dom: '*'
       jsdom: '*'
       vite: ^6.4.0 || ^7.0.0 || ^8.0.0
@@ -2555,13 +2555,13 @@ snapshots:
     optionalDependencies:
       workerd: 1.20261123.1
 
-  '@cloudflare/vite-plugin@1.70.0(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))':
+  '@cloudflare/vite-plugin@1.70.0(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))':
     dependencies:
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20261123.1)
       miniflare: 5.20261116.0-beta(@types/node@25.9.12)
       unenv: 2.0.0-rc.24
       vite: 8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)
-      wrangler: 4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
+      wrangler: 4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
       ws: 8.22.0
     transitivePeerDependencies:
       - '@types/node'
@@ -2600,14 +2600,14 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20261123.1':
     optional: true
 
-  '@cloudflare/workers-utils@0.57.0(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))':
+  '@cloudflare/workers-utils@0.57.0(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))':
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       chalk: 5.3.0
       dotenv: 16.3.1
       undici: 7.30.2
     optionalDependencies:
-      vitest: 5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
+      vitest: 5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -3038,13 +3038,13 @@ snapshots:
     dependencies:
       acorn: 8.18.0
 
-  '@sveltejs/adapter-cloudflare@8.0.4(@sveltejs/kit@3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))':
+  '@sveltejs/adapter-cloudflare@8.0.4(@sveltejs/kit@3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))':
     dependencies:
-      '@cloudflare/vite-plugin': 1.70.0(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))
+      '@cloudflare/vite-plugin': 1.70.0(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))(workerd@1.20261123.1)(wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))))
       '@rolldown/pluginutils': 1.0.1
       '@sveltejs/kit': 3.4.1(@sveltejs/vite-plugin-svelte@7.3.2(svelte@5.59.2(@typescript-eslint/types@8.74.0))(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))(svelte@5.59.2(@typescript-eslint/types@8.74.0))(typescript@6.0.3)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
       magic-string: 1.4.5
-      wrangler: 4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
+      wrangler: 4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -3248,16 +3248,16 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@vitest/mocker@5.1.1(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))':
+  '@vitest/mocker@5.1.2(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
-      '@vitest/spy': 5.1.1
+      '@vitest/spy': 5.1.2
       estree-walker: 3.0.3
       magic-string: 1.4.5
     optionalDependencies:
       vite: 8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)
 
-  '@vitest/spy@5.1.1': {}
+  '@vitest/spy@5.1.2': {}
 
   abbrev@2.0.0: {}
 
@@ -4806,10 +4806,10 @@ snapshots:
     optionalDependencies:
       vite: 8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)
 
-  vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)):
+  vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.1.1(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
+      '@vitest/mocker': 5.1.2(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -4866,11 +4866,11 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20261123.1
       '@cloudflare/workerd-windows-64': 1.20261123.1
 
-  wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))):
+  wrangler@4.168.0(@types/node@25.9.12)(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1))):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.1
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20261123.1)
-      '@cloudflare/workers-utils': 0.57.0(vitest@5.1.1(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
+      '@cloudflare/workers-utils': 0.57.0(vitest@5.1.2(@types/node@25.9.12)(vite@8.3.8(@types/node@25.9.12)(esbuild@0.28.2)(yaml@2.9.1)))
       '@cspotcode/source-map-support': 0.8.1
       '@types/yargs': 17.0.24
       cloudflare: 5.2.0
